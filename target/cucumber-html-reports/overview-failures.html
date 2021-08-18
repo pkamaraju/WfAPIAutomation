@@ -76,7 +76,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>demo</td>
-            <td>16 Aug 2021, 05:23</td>
+            <td>18 Aug 2021, 01:57</td>
     </tr>
   </tbody>
 </table>
@@ -124,7 +124,7 @@ $(document).ready(function() {
   </div>
 
   
-  <span class="lead-duration duration">180ms</span>
+  <span class="lead-duration duration">083ms</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -186,7 +186,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method GET</span>
   
-  <span class="lead-duration duration">176ms</span>
+  <span class="lead-duration duration">078ms</span>
 
   </div>
 
@@ -201,7 +201,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>05:23:42.681 request:
+        <pre>01:57:44.475 request:
 1 &gt; GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C9392
 1 &gt; Authorization: Basic cWE6cWE=
 1 &gt; Host: aws07wflapp02.aws07.wfl.cloud:8080
@@ -210,10 +210,10 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-05:23:42.855 response time in milliseconds: 172
+01:57:44.550 response time in milliseconds: 75
 1 &lt; 200
 1 &lt; Content-Language: en
-1 &lt; Date: Mon, 16 Aug 2021 09:23:43 GMT
+1 &lt; Date: Wed, 18 Aug 2021 05:57:44 GMT
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
 []
@@ -254,7 +254,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">print response</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">001ms</span>
 
   </div>
 
@@ -269,7 +269,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details">
-        <pre>05:23:42.857 [print] [
+        <pre>01:57:44.553 [print] [
 ]
  
 </pre>
@@ -303,7 +303,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details">
-        <pre>05:23:42.858 [print] =========Validating field values in response================= : 
+        <pre>01:57:44.554 [print] =========Validating field values in response================= : 
 </pre>
       </div>
     </div>
@@ -320,7 +320,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">match response[0].policy.policyNumber == 'CP0000863460'</span>
   
-  <span class="lead-duration duration">001ms</span>
+  <span class="lead-duration duration">002ms</span>
 
   </div>
 
@@ -351,7 +351,7 @@ classpath:wflclaim/getClaim.feature:15</pre>
           <a>Doc string</a>
       </div>
       <div id="msg-7" class="collapse collapsable-details">
-        <pre>05:23:42.860 classpath:wflclaim/getClaim.feature:15
+        <pre>01:57:44.557 classpath:wflclaim/getClaim.feature:15
 * match response[0].policy.policyNumber == 'CP0000863460'
 match failed: EQUALS
   $ | actual path does not exist (STRING:STRING)
@@ -516,7 +516,7 @@ classpath:wflclaim/getClaim.feature:15
   </div>
 
   
-  <span class="lead-duration duration">503ms</span>
+  <span class="lead-duration duration">140ms</span>
 
 
     <span data-toggle="collapse" class=" collapsable-control" data-target="#element-8">
@@ -578,7 +578,7 @@ classpath:wflclaim/getClaim.feature:15
   <span class="keyword indention">When</span>
   <span class="name">method GET</span>
   
-  <span class="lead-duration duration">498ms</span>
+  <span class="lead-duration duration">135ms</span>
 
   </div>
 
@@ -593,7 +593,7 @@ classpath:wflclaim/getClaim.feature:15
           <a>Doc string</a>
       </div>
       <div id="msg-10" class="collapse collapsable-details">
-        <pre>05:23:44.802 request:
+        <pre>01:57:46.432 request:
 1 &gt; GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510977
 1 &gt; Authorization: Basic cWE6cWE=
 1 &gt; Host: aws07wflapp02.aws07.wfl.cloud:8080
@@ -602,13 +602,13 @@ classpath:wflclaim/getClaim.feature:15
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-05:23:45.297 response time in milliseconds: 494
+01:57:46.564 response time in milliseconds: 131
 1 &lt; 200
 1 &lt; Content-Language: en
 1 &lt; X-Paging-Limit: 10
 1 &lt; X-Paging-Offset: 0
 1 &lt; X-Total-Count: 1
-1 &lt; Date: Mon, 16 Aug 2021 09:23:45 GMT
+1 &lt; Date: Wed, 18 Aug 2021 05:57:46 GMT
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
 [{&quot;addresses&quot;:[{&quot;temporary&quot;:false,&quot;city&quot;:&quot;Test&quot;,&quot;postalCode&quot;:&quot;10928&quot;,&quot;latitude&quot;:null,&quot;countryCd&quot;:&quot;US&quot;,&quot;county&quot;:null,&quot;accuracy&quot;:null,&quot;contactType&quot;:&quot;residence&quot;,&quot;referenceId&quot;:null,&quot;effectiveTo&quot;:null,&quot;duration&quot;:null,&quot;subdivision&quot;:null,&quot;extensionFields&quot;:{},&quot;validationIndicator&quot;:null,&quot;stateProvCd&quot;:&quot;GA&quot;,&quot;addressLine1&quot;:&quot;test lane&quot;,&quot;addressLine2&quot;:&quot;&quot;,&quot;id&quot;:30641766,&quot;addressLine3&quot;:&quot;&quot;,&quot;contactMethod&quot;:&quot;ADDRESS&quot;,&quot;longitude&quot;:null,&quot;inCareOf&quot;:null,&quot;preferredInd&quot;:null,&quot;communicationPreferences&quot;:[],&quot;attention&quot;:null,&quot;comment&quot;:null,&quot;doNotSolicitInd&quot;:null,&quot;effectiveFrom&quot;:null}],&quot;preferredSpokenLanguageCd&quot;:&quot;ENGLISH&quot;,&quot;registeredOnline&quot;:false,&quot;individualDetails&quot;:{&quot;lastName&quot;:&quot;Miller&quot;,&quot;associateEmployments&quot;:false,&quot;designationDescription&quot;:null,&quot;deceased&quot;:false,&quot;occupationDescription&quot;:null,&quot;title&quot;:null,&quot;suffix&quot;:null,&quot;associateBusinessEntity&quot;:false,&quot;extensionFields&quot;:{},&quot;genderCd&quot;:&quot;male&quot;,&quot;nickname&quot;:null,&quot;deathDate&quot;:null,&quot;associateProviders&quot;:false,&quot;occupationCd&quot;:null,&quot;designationCd&quot;:null,&quot;birthDate&quot;:null,&quot;firstName&quot;:&quot;John&quot;,&quot;deathNotificationReceived&quot;:false,&quot;disabilities&quot;:[],&quot;maritalStatusCd&quot;:null,&quot;taxId&quot;:&quot;109-12-9289&quot;,&quot;citizenshipCd&quot;:null,&quot;tobaccoCd&quot;:null,&quot;middleName&quot;:&quot;&quot;,&quot;interests&quot;:[]},&quot;majorAccount&quot;:null,&quot;lastUpdateDate&quot;:&quot;2020-11-30T22:36:30.737Z&quot;,&quot;preferredCurrency&quot;:null,&quot;phones&quot;:[],&quot;sourceCd&quot;:&quot;UNKNOWN&quot;,&quot;socialNets&quot;:[],&quot;rateDatePayment&quot;:null,&quot;businessCustomerAdditionalNames&quot;:null,&quot;segments&quot;:[],&quot;customerStatus&quot;:&quot;CUSTOMER&quot;,&quot;emails&quot;:[],&quot;webAddresses&quot;:[],&quot;specialClaimReview&quot;:false,&quot;archived&quot;:false,&quot;customerType&quot;:&quot;INDV&quot;,&quot;sourceOfExchangeRate&quot;:null,&quot;extensionFields&quot;:{},&quot;groupInfo&quot;:[],&quot;preferredWrittenLanguageCd&quot;:&quot;ENGLISH&quot;,&quot;customerEmployments&quot;:null,&quot;paperless&quot;:false,&quot;agencies&quot;:[],&quot;indCustomerAdditionalNames&quot;:[],&quot;businessDetails&quot;:null,&quot;customerNumber&quot;:&quot;510977&quot;,&quot;accountNumber&quot;:&quot;610977&quot;,&quot;genericRelationships&quot;:[],&quot;displayValue&quot;:&quot;John Miller&quot;,&quot;ratingCd&quot;:&quot;UNKNOWN&quot;,&quot;preferredContactMethod&quot;:null,&quot;navigationLinks&quot;:[],&quot;chats&quot;:[],&quot;rateDateIntake&quot;:null,&quot;brandCd&quot;:null,&quot;providers&quot;:null}]
@@ -664,7 +664,7 @@ classpath:wflclaim/getClaim.feature:15
           <a>Doc string</a>
       </div>
       <div id="msg-11" class="collapse collapsable-details">
-        <pre>05:23:45.300 [print] [
+        <pre>01:57:46.567 [print] [
   {
     &quot;addresses&quot;: [
       {
@@ -798,7 +798,7 @@ classpath:wflclaim/getClaim.feature:15
   <span class="keyword indention">*</span>
   <span class="name">print '=========Validating field values in response================= :'</span>
   
-  <span class="lead-duration duration">001ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -813,7 +813,7 @@ classpath:wflclaim/getClaim.feature:15
           <a>Doc string</a>
       </div>
       <div id="msg-12" class="collapse collapsable-details">
-        <pre>05:23:45.301 [print] =========Validating field values in response================= : 
+        <pre>01:57:46.569 [print] =========Validating field values in response================= : 
 </pre>
       </div>
     </div>
@@ -882,7 +882,7 @@ classpath:wflclaim/getCustomerNumber.feature:16</pre>
           <a>Doc string</a>
       </div>
       <div id="msg-14" class="collapse collapsable-details">
-        <pre>05:23:45.304 classpath:wflclaim/getCustomerNumber.feature:16
+        <pre>01:57:46.571 classpath:wflclaim/getCustomerNumber.feature:16
 * match response[0].customerType == 'CP0000863460'
 match failed: EQUALS
   $ | not equal (STRING:STRING)
