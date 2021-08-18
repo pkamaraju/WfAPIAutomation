@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: demo.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 5.787 s <<< FAILURE! - in demo.TestRunner
-testSample[1][2]  Time elapsed: 0.186 s  <<< FAILURE!
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 7.108 s <<< FAILURE! - in demo.TestRunner
+testSample[1][2]  Time elapsed: 0.268 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 match failed: EQUALS
   $ | not equal (NUMBER:NUMBER)
@@ -11,7 +11,7 @@ match failed: EQUALS
 
 classpath:demo/user1.feature:12
 
-testSample[1][3]  Time elapsed: 1.747 s  <<< FAILURE!
+testSample[1][3]  Time elapsed: 2.379 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 match failed: EQUALS
   $ | not equal (NUMBER:NUMBER)

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: wflclaim.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.6 s <<< FAILURE! - in wflclaim.TestRunner
-testGetClaim  Time elapsed: 3.599 s  <<< FAILURE!
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.412 s <<< FAILURE! - in wflclaim.TestRunner
+testGetClaim  Time elapsed: 4.411 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 match failed: EQUALS
   $ | actual path does not exist (STRING:STRING)
