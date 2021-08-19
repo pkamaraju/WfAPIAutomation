@@ -22,15 +22,15 @@
       <img src="karate-logo.svg" alt="Karate"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
-      <div id="nav-fail" class="bg-danger">1</div>
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-type">
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2021-08-18 02:11:26 AM</div>
+    <div>2021-08-19 03:19:16 AM</div>
   </div>        
 </div>
 
@@ -38,7 +38,7 @@
           <div class="nav-item passed">
             <a href="#[1.1:22]"><span>[1.1:22]</span> <span>Validate get customer details for given Claim ID : 510377</span></a>
           </div>
-          <div class="nav-item failed">
+          <div class="nav-item passed">
             <a href="#[1.2:23]"><span>[1.2:23]</span> <span>Validate get customer details for given Claim ID : 510977</span></a>
           </div>
         </div>
@@ -65,7 +65,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>148</span>
+              <span>ms:</span>&nbsp;<span>167</span>
             </div>
           </div>
           <div class="step-row">
@@ -172,7 +172,7 @@
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">131</div>
+    <div class="time-cell passed">148</div>
   </div>
 
    
@@ -181,7 +181,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.10">02:11:25.893 request:
+  <div class="preformatted" data-parent="1.10">03:19:16.587 request:
 1 &gt; GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510377
 1 &gt; Authorization: Basic cWE6cWE=
 1 &gt; Host: aws07wflapp02.aws07.wfl.cloud:8080
@@ -190,13 +190,13 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-02:11:26.021 response time in milliseconds: 127
+03:19:16.732 response time in milliseconds: 143
 1 &lt; 200
 1 &lt; Content-Language: en
 1 &lt; X-Paging-Limit: 10
 1 &lt; X-Paging-Offset: 0
 1 &lt; X-Total-Count: 1
-1 &lt; Date: Wed, 18 Aug 2021 06:11:26 GMT
+1 &lt; Date: Thu, 19 Aug 2021 07:19:16 GMT
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
 [{&quot;addresses&quot;:[{&quot;temporary&quot;:false,&quot;city&quot;:&quot;Walnut Creek&quot;,&quot;postalCode&quot;:&quot;94596&quot;,&quot;latitude&quot;:null,&quot;countryCd&quot;:&quot;US&quot;,&quot;county&quot;:null,&quot;accuracy&quot;:null,&quot;contactType&quot;:&quot;residence&quot;,&quot;referenceId&quot;:null,&quot;effectiveTo&quot;:null,&quot;duration&quot;:null,&quot;subdivision&quot;:null,&quot;extensionFields&quot;:{},&quot;validationIndicator&quot;:null,&quot;stateProvCd&quot;:&quot;CA&quot;,&quot;addressLine1&quot;:&quot;Address97144281&quot;,&quot;addressLine2&quot;:&quot;&quot;,&quot;id&quot;:7905231,&quot;addressLine3&quot;:&quot;&quot;,&quot;contactMethod&quot;:&quot;ADDRESS&quot;,&quot;longitude&quot;:null,&quot;inCareOf&quot;:null,&quot;preferredInd&quot;:null,&quot;communicationPreferences&quot;:[],&quot;attention&quot;:null,&quot;comment&quot;:null,&quot;doNotSolicitInd&quot;:null,&quot;effectiveFrom&quot;:null}],&quot;preferredSpokenLanguageCd&quot;:&quot;ENGLISH&quot;,&quot;registeredOnline&quot;:false,&quot;individualDetails&quot;:{&quot;lastName&quot;:&quot;Smith09877373&quot;,&quot;associateEmployments&quot;:false,&quot;designationDescription&quot;:null,&quot;deceased&quot;:false,&quot;occupationDescription&quot;:null,&quot;title&quot;:null,&quot;suffix&quot;:null,&quot;associateBusinessEntity&quot;:false,&quot;extensionFields&quot;:{},&quot;genderCd&quot;:&quot;male&quot;,&quot;nickname&quot;:null,&quot;deathDate&quot;:null,&quot;associateProviders&quot;:false,&quot;occupationCd&quot;:null,&quot;designationCd&quot;:null,&quot;birthDate&quot;:&quot;1995-09-02&quot;,&quot;firstName&quot;:&quot;John87780675&quot;,&quot;deathNotificationReceived&quot;:false,&quot;disabilities&quot;:[],&quot;maritalStatusCd&quot;:null,&quot;taxId&quot;:&quot;046-42-2369&quot;,&quot;citizenshipCd&quot;:null,&quot;tobaccoCd&quot;:&quot;YES&quot;,&quot;middleName&quot;:&quot;&quot;,&quot;interests&quot;:[]},&quot;majorAccount&quot;:null,&quot;lastUpdateDate&quot;:&quot;2020-09-02T08:44:02.380Z&quot;,&quot;preferredCurrency&quot;:null,&quot;phones&quot;:[],&quot;sourceCd&quot;:&quot;UNKNOWN&quot;,&quot;socialNets&quot;:[],&quot;rateDatePayment&quot;:null,&quot;businessCustomerAdditionalNames&quot;:null,&quot;segments&quot;:[],&quot;customerStatus&quot;:&quot;CUSTOMER&quot;,&quot;emails&quot;:[],&quot;webAddresses&quot;:[],&quot;specialClaimReview&quot;:false,&quot;archived&quot;:false,&quot;customerType&quot;:&quot;INDV&quot;,&quot;sourceOfExchangeRate&quot;:null,&quot;extensionFields&quot;:{},&quot;groupInfo&quot;:[],&quot;preferredWrittenLanguageCd&quot;:&quot;ENGLISH&quot;,&quot;customerEmployments&quot;:null,&quot;paperless&quot;:false,&quot;agencies&quot;:[],&quot;indCustomerAdditionalNames&quot;:[],&quot;businessDetails&quot;:null,&quot;customerNumber&quot;:&quot;510377&quot;,&quot;accountNumber&quot;:&quot;610377&quot;,&quot;genericRelationships&quot;:[],&quot;displayValue&quot;:&quot;John87780675 Smith09877373&quot;,&quot;ratingCd&quot;:&quot;UNKNOWN&quot;,&quot;preferredContactMethod&quot;:null,&quot;navigationLinks&quot;:[],&quot;chats&quot;:[],&quot;rateDateIntake&quot;:null,&quot;brandCd&quot;:null,&quot;providers&quot;:null}]
@@ -247,7 +247,7 @@
         <span>Then</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -256,7 +256,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.12">02:11:26.023 [print] [
+  <div class="preformatted" data-parent="1.12">03:19:16.736 [print] [
   {
     &quot;addresses&quot;: [
       {
@@ -402,7 +402,7 @@
 
   
 
-  <div class="preformatted" data-parent="1.14">02:11:26.024 [print] =========Validating field values in response================= : 
+  <div class="preformatted" data-parent="1.14">03:19:16.737 [print] =========Validating field values in response================= : 
 </div>   
 
   
@@ -450,7 +450,7 @@
         <span>*</span>&nbsp;<span>match response[0].customerType == &#39;INDV&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -534,8 +534,8 @@
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>150</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>155</span>
             </div>
           </div>
           <div class="step-row">
@@ -586,7 +586,7 @@
         <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">18</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -642,7 +642,7 @@
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">128</div>
+    <div class="time-cell passed">149</div>
   </div>
 
    
@@ -651,7 +651,7 @@
 
   
 
-  <div class="preformatted" data-parent="2.10">02:11:26.051 request:
+  <div class="preformatted" data-parent="2.10">03:19:16.751 request:
 1 &gt; GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510977
 1 &gt; Authorization: Basic cWE6cWE=
 1 &gt; Host: aws07wflapp02.aws07.wfl.cloud:8080
@@ -660,13 +660,13 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-02:11:26.176 response time in milliseconds: 124
+03:19:16.896 response time in milliseconds: 144
 1 &lt; 200
 1 &lt; Content-Language: en
 1 &lt; X-Paging-Limit: 10
 1 &lt; X-Paging-Offset: 0
 1 &lt; X-Total-Count: 1
-1 &lt; Date: Wed, 18 Aug 2021 06:11:26 GMT
+1 &lt; Date: Thu, 19 Aug 2021 07:19:17 GMT
 1 &lt; Content-Type: application/json;charset=UTF-8
 1 &lt; Transfer-Encoding: chunked
 [{&quot;addresses&quot;:[{&quot;temporary&quot;:false,&quot;city&quot;:&quot;Test&quot;,&quot;postalCode&quot;:&quot;10928&quot;,&quot;latitude&quot;:null,&quot;countryCd&quot;:&quot;US&quot;,&quot;county&quot;:null,&quot;accuracy&quot;:null,&quot;contactType&quot;:&quot;residence&quot;,&quot;referenceId&quot;:null,&quot;effectiveTo&quot;:null,&quot;duration&quot;:null,&quot;subdivision&quot;:null,&quot;extensionFields&quot;:{},&quot;validationIndicator&quot;:null,&quot;stateProvCd&quot;:&quot;GA&quot;,&quot;addressLine1&quot;:&quot;test lane&quot;,&quot;addressLine2&quot;:&quot;&quot;,&quot;id&quot;:30641766,&quot;addressLine3&quot;:&quot;&quot;,&quot;contactMethod&quot;:&quot;ADDRESS&quot;,&quot;longitude&quot;:null,&quot;inCareOf&quot;:null,&quot;preferredInd&quot;:null,&quot;communicationPreferences&quot;:[],&quot;attention&quot;:null,&quot;comment&quot;:null,&quot;doNotSolicitInd&quot;:null,&quot;effectiveFrom&quot;:null}],&quot;preferredSpokenLanguageCd&quot;:&quot;ENGLISH&quot;,&quot;registeredOnline&quot;:false,&quot;individualDetails&quot;:{&quot;lastName&quot;:&quot;Miller&quot;,&quot;associateEmployments&quot;:false,&quot;designationDescription&quot;:null,&quot;deceased&quot;:false,&quot;occupationDescription&quot;:null,&quot;title&quot;:null,&quot;suffix&quot;:null,&quot;associateBusinessEntity&quot;:false,&quot;extensionFields&quot;:{},&quot;genderCd&quot;:&quot;male&quot;,&quot;nickname&quot;:null,&quot;deathDate&quot;:null,&quot;associateProviders&quot;:false,&quot;occupationCd&quot;:null,&quot;designationCd&quot;:null,&quot;birthDate&quot;:null,&quot;firstName&quot;:&quot;John&quot;,&quot;deathNotificationReceived&quot;:false,&quot;disabilities&quot;:[],&quot;maritalStatusCd&quot;:null,&quot;taxId&quot;:&quot;109-12-9289&quot;,&quot;citizenshipCd&quot;:null,&quot;tobaccoCd&quot;:null,&quot;middleName&quot;:&quot;&quot;,&quot;interests&quot;:[]},&quot;majorAccount&quot;:null,&quot;lastUpdateDate&quot;:&quot;2020-11-30T22:36:30.737Z&quot;,&quot;preferredCurrency&quot;:null,&quot;phones&quot;:[],&quot;sourceCd&quot;:&quot;UNKNOWN&quot;,&quot;socialNets&quot;:[],&quot;rateDatePayment&quot;:null,&quot;businessCustomerAdditionalNames&quot;:null,&quot;segments&quot;:[],&quot;customerStatus&quot;:&quot;CUSTOMER&quot;,&quot;emails&quot;:[],&quot;webAddresses&quot;:[],&quot;specialClaimReview&quot;:false,&quot;archived&quot;:false,&quot;customerType&quot;:&quot;INDV&quot;,&quot;sourceOfExchangeRate&quot;:null,&quot;extensionFields&quot;:{},&quot;groupInfo&quot;:[],&quot;preferredWrittenLanguageCd&quot;:&quot;ENGLISH&quot;,&quot;customerEmployments&quot;:null,&quot;paperless&quot;:false,&quot;agencies&quot;:[],&quot;indCustomerAdditionalNames&quot;:[],&quot;businessDetails&quot;:null,&quot;customerNumber&quot;:&quot;510977&quot;,&quot;accountNumber&quot;:&quot;610977&quot;,&quot;genericRelationships&quot;:[],&quot;displayValue&quot;:&quot;John Miller&quot;,&quot;ratingCd&quot;:&quot;UNKNOWN&quot;,&quot;preferredContactMethod&quot;:null,&quot;navigationLinks&quot;:[],&quot;chats&quot;:[],&quot;rateDateIntake&quot;:null,&quot;brandCd&quot;:null,&quot;providers&quot;:null}]
@@ -726,7 +726,7 @@
 
   
 
-  <div class="preformatted" data-parent="2.12">02:11:26.179 [print] [
+  <div class="preformatted" data-parent="2.12">03:19:16.900 [print] [
   {
     &quot;addresses&quot;: [
       {
@@ -863,7 +863,7 @@
         <span>*</span>&nbsp;<span>print &#39;=========Validating field values in response================= :&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -872,7 +872,7 @@
 
   
 
-  <div class="preformatted" data-parent="2.14">02:11:26.180 [print] =========Validating field values in response================= : 
+  <div class="preformatted" data-parent="2.14">03:19:16.901 [print] =========Validating field values in response================= : 
 </div>   
 
   
@@ -914,13 +914,13 @@
 
   <div class="step-row">
     <div class="step-container" id="2.16">
-      <div class="step-ref failed">16</div>
+      <div class="step-ref passed">16</div>
       
-      <div class="step-cell failed">
-        <span>*</span>&nbsp;<span>match response[0].customerType == &#39;CP0000863460&#39;</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response[0].customerType == &#39;INDV&#39;</span>
       </div>
     </div>
-    <div class="time-cell failed">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -929,15 +929,7 @@
 
   
 
-  <div class="preformatted" data-parent="2.16">02:11:26.182 classpath:wflclaim/getCustomerNumber.feature:16
-* match response[0].customerType == &#39;CP0000863460&#39;
-match failed: EQUALS
-  $ | not equal (STRING:STRING)
-  &#39;INDV&#39;
-  &#39;CP0000863460&#39;
-
-classpath:wflclaim/getCustomerNumber.feature:16
-</div>   
+     
 
   
 
@@ -950,13 +942,13 @@ classpath:wflclaim/getCustomerNumber.feature:16
 
   <div class="step-row">
     <div class="step-container" id="2.17">
-      <div class="step-ref skipped">17</div>
+      <div class="step-ref passed">17</div>
       
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>match response[0].accountNumber == &#39;GB_AC&#39;</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response[0].accountNumber == &#39;610977&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -978,13 +970,13 @@ classpath:wflclaim/getCustomerNumber.feature:16
 
   <div class="step-row">
     <div class="step-container" id="2.18">
-      <div class="step-ref skipped">18</div>
+      <div class="step-ref passed">18</div>
       
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>match response[0].customerStatus == &#39;ACTIVE&#39;</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response[0].customerStatus == &#39;CUSTOMER&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    

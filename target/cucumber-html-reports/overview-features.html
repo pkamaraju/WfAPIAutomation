@@ -52,8 +52,8 @@ $(document).ready(function() {
         datasets: [{
             data: [
                 40,
-                2,
-                8,
+                1,
+                0,
                 0,
                 0
             ],
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 50) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 41) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                2,
-                2
+                3,
+                1
             ],
             backgroundColor: [
                 "#00B000",
@@ -157,8 +157,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   0,
-                   2
+                   1,
+                   1
                ],
                backgroundColor: [
                 "#00B000",
@@ -232,7 +232,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>demo</td>
-            <td>18 Aug 2021, 02:11</td>
+            <td>19 Aug 2021, 03:19</td>
     </tr>
   </tbody>
 </table>
@@ -329,36 +329,36 @@ $(document).ready(function() {
           <tr>
         <td class="tagname"><a href="report-feature_wflclaim-getClaim-feature.html">wflclaim/getClaim.feature</a></td>
         
-        <td      class="passed"    >21</td>
+        <td      class="passed"    >18</td>
         <td      class="failed"    >1</td>
-        <td     class="skipped"   >6</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">28</td>
+        <td >0</td>
+        <td class="total">19</td>
 
         <td  class="passed"    >1</td>
         <td  class="failed"    >1</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="326212700">326ms</td>
+        <td class="duration" data-value="1016697200">1s 016ms</td>
         <td class="failed">Failed</td>
       </tr>
           <tr>
         <td class="tagname"><a href="report-feature_wflclaim-getCustomerNumber-feature_1.html">wflclaim/getCustomerNumber.feature</a></td>
         
-        <td      class="passed"    >19</td>
-        <td      class="failed"    >1</td>
-        <td     class="skipped"   >2</td>
+        <td      class="passed"    >22</td>
+        <td >0</td>
+        <td >0</td>
         <td >0</td>
         <td >0</td>
         <td class="total">22</td>
 
-        <td  class="passed"    >1</td>
-        <td  class="failed"    >1</td>
+        <td  class="passed"    >2</td>
+        <td >0</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="298099500">298ms</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="322117903">322ms</td>
+        <td class="passed">Passed</td>
       </tr>
       </tbody>
 
@@ -366,32 +366,32 @@ $(document).ready(function() {
     <tr>
       <td>2</td>
             <td>40</td>
-      <td>2</td>
-      <td>8</td>
+      <td>1</td>
       <td>0</td>
       <td>0</td>
-      <td>50</td>
+      <td>0</td>
+      <td>41</td>
 
-      <td>2</td>
-      <td>2</td>
+      <td>3</td>
+      <td>1</td>
       <td>4</td>
 
-      <td class="duration">624ms</td>
+      <td class="duration">1s 338ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>80.00%</td>
-      <td>4.00%</td>
-      <td>16.00%</td>
+            <td>97.56%</td>
+      <td>2.44%</td>
       <td>0.00%</td>
       <td>0.00%</td>
+      <td>0.00%</td>
+      <td></td>
+      <td>75.00%</td>
+      <td>25.00%</td>
+      <td></td>
       <td></td>
       <td>50.00%</td>
-      <td>50.00%</td>
-      <td></td>
-      <td></td>
-      <td>0.00%</td>
     </tr>
   </tfoot>
 </table>

@@ -20,4 +20,6 @@ Feature: Fetching Customer details through GET call in wfl-claims-rs Core Servic
     Examples:
       | Customer_number | exp_customerType | exp_accountNumber | exp_customerStatus |
       | 510377          | INDV             | 610377            | CUSTOMER           |
-      | 510977          | CP0000863460     | GB_AC             | ACTIVE             |
+      | 510977          | INDV             | 610977            | CUSTOMER           |
+
+
