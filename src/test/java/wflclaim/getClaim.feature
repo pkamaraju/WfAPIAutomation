@@ -5,7 +5,7 @@ Feature: fetching Claim status through GET call in WFL CLaim Core Services
     * header Authorization = call read('basic-auth.js')
     #*  header Authorization = call read('basic-auth.js') { username: 'qa', password: 'qa' }
 
- @reg
+ @smoke
   Scenario Outline: Validate get claim response for given Claim ID : <ClaimID>
     Given path 'wfl-claims-rs/v1/claims?claimNumber=<ClaimID>'
     When method GET

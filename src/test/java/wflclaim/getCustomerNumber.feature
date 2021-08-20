@@ -4,7 +4,7 @@ Feature: Fetching Customer details through GET call in wfl-claims-rs Core Servic
     * url baseUrl
     * header Authorization = call read('basic-auth.js')
     #*  header Authorization = call read('basic-auth.js') { username: 'qa', password: 'qa' }
-  @smoke
+  @reg
   Scenario Outline: Validate get customer details for given Claim ID : <Customer_number>
     Given path 'customercore-rs/v1/customers/details?customerNumber=<Customer_number>'
     When method GET
