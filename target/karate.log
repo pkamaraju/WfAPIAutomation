@@ -1,167 +1,5 @@
-02:11:18.838 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-02:11:20.948 [main] DEBUG com.intuit.karate - request:
-1 > GET https://reqres.in/api/users/2
-1 > Host: reqres.in
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
-1 > Accept-Encoding: gzip,deflate
-
-
-02:11:21.536 [main] DEBUG com.intuit.karate - response time in milliseconds: 531
-1 < 200
-1 < Date: Wed, 18 Aug 2021 06:11:21 GMT
-1 < Content-Type: application/json; charset=utf-8
-1 < Transfer-Encoding: chunked
-1 < Connection: keep-alive
-1 < x-powered-by: Express
-1 < access-control-allow-origin: *
-1 < etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
-1 < via: 1.1 vegur
-1 < Cache-Control: max-age=14400
-1 < CF-Cache-Status: HIT
-1 < Age: 1925
-1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=BUT2%2BzE6VJe%2BSUCuKr29Geg%2B6PhIjXlg4vNxcEI%2BXP7btpOanSd4qwouHZISulolHzLXpFMjtGI65j0Ysu6Yfs1X%2FTWvI%2ByJ9kPqwj29PFHicnvEV9dG6gbVYMQ%3D"}],"group":"cf-nel","max_age":604800}
-1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 < Vary: Accept-Encoding
-1 < Server: cloudflare
-1 < CF-RAY: 6808fbfc8b3b5b5e-IAD
-1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
-{"data":{"last_name":"Weaver","id":2,"avatar":"https:\/\/reqres.in\/img\/faces\/2-image.jpg","first_name":"Janet","email":"janet.weaver@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
-02:11:21.652 [main] INFO  com.intuit.karate - [print] {
-  "data": {
-    "last_name": "Weaver",
-    "id": 2,
-    "avatar": "https://reqres.in/img/faces/2-image.jpg",
-    "first_name": "Janet",
-    "email": "janet.weaver@reqres.in"
-  },
-  "support": {
-    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
-    "url": "https://reqres.in/#support-heading"
-  }
-}
- 
-02:11:21.697 [main] INFO  com.intuit.karate - [print] the value of a is: {
-  "data": {
-    "last_name": "Weaver",
-    "id": 2,
-    "avatar": "https://reqres.in/img/faces/2-image.jpg",
-    "first_name": "Janet",
-    "email": "janet.weaver@reqres.in"
-  },
-  "support": {
-    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
-    "url": "https://reqres.in/#support-heading"
-  }
-}
- 
-02:11:21.701 [main] INFO  com.intuit.karate - [print] value is : 5 
-02:11:21.728 [main] DEBUG com.intuit.karate - request:
-1 > GET https://reqres.in/api/users/3
-1 > Host: reqres.in
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
-1 > Accept-Encoding: gzip,deflate
-
-
-02:11:21.851 [main] DEBUG com.intuit.karate - response time in milliseconds: 123
-1 < 200
-1 < Date: Wed, 18 Aug 2021 06:11:22 GMT
-1 < Content-Type: application/json; charset=utf-8
-1 < Transfer-Encoding: chunked
-1 < Connection: keep-alive
-1 < x-powered-by: Express
-1 < access-control-allow-origin: *
-1 < etag: W/"112-EeInfgHWtnxhYRnwgZUB667e024"
-1 < via: 1.1 vegur
-1 < Cache-Control: max-age=14400
-1 < CF-Cache-Status: HIT
-1 < Age: 2383
-1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=qsHXh8H4ieYl9GM2HeoMFGkkZtJClPBgizONQze9JGvH%2FWv831AvjWWczXXswT6pEb%2F0ROmkMlMLQsgQfwDT6OJEVuM12p0c0gSLdiBR%2Fhx84o3jDs7NV2qPKj4%3D"}],"group":"cf-nel","max_age":604800}
-1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 < Vary: Accept-Encoding
-1 < Server: cloudflare
-1 < CF-RAY: 6808fbfee941595b-IAD
-1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
-{"data":{"last_name":"Wong","id":3,"avatar":"https:\/\/reqres.in\/img\/faces\/3-image.jpg","first_name":"Emma","email":"emma.wong@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
-02:11:21.853 [main] INFO  com.intuit.karate - [print] {
-  "data": {
-    "last_name": "Wong",
-    "id": 3,
-    "avatar": "https://reqres.in/img/faces/3-image.jpg",
-    "first_name": "Emma",
-    "email": "emma.wong@reqres.in"
-  },
-  "support": {
-    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
-    "url": "https://reqres.in/#support-heading"
-  }
-}
- 
-02:11:21.856 [main] ERROR com.intuit.karate - classpath:demo/user1.feature:12
-* match response.data.id == 2
-match failed: EQUALS
-  $ | not equal (NUMBER:NUMBER)
-  3
-  2
-
-classpath:demo/user1.feature:12
-02:11:21.922 [main] DEBUG com.intuit.karate - request:
-1 > GET https://reqres.in/api/users/4
-1 > Host: reqres.in
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
-1 > Accept-Encoding: gzip,deflate
-
-
-02:11:22.048 [main] DEBUG com.intuit.karate - response time in milliseconds: 126
-1 < 200
-1 < Date: Wed, 18 Aug 2021 06:11:22 GMT
-1 < Content-Type: application/json; charset=utf-8
-1 < Transfer-Encoding: chunked
-1 < Connection: keep-alive
-1 < x-powered-by: Express
-1 < access-control-allow-origin: *
-1 < etag: W/"110-Xdg3LtI+q2zMxihHlfeIZQo/bvY"
-1 < via: 1.1 vegur
-1 < Cache-Control: max-age=14400
-1 < CF-Cache-Status: HIT
-1 < Age: 2601
-1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=At5IUXbySZDCccDVDdDiv5dlCvtxYJjStJknjhJrQp9i5NgMtlf0ExKcIsBSW9ZN37o5oooGApL0TDKxBeCnACPOkdb%2FerQ6KfzfJ5XxmuoNQOJNsxjsf8w2qAc%3D"}],"group":"cf-nel","max_age":604800}
-1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
-1 < Vary: Accept-Encoding
-1 < Server: cloudflare
-1 < CF-RAY: 6808fc002d655a34-IAD
-1 < alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
-{"data":{"last_name":"Holt","id":4,"avatar":"https:\/\/reqres.in\/img\/faces\/4-image.jpg","first_name":"Eve","email":"eve.holt@reqres.in"},"support":{"text":"To keep ReqRes free, contributions towards server costs are appreciated!","url":"https:\/\/reqres.in\/#support-heading"}}
-02:11:22.053 [main] INFO  com.intuit.karate - [print] {
-  "data": {
-    "last_name": "Holt",
-    "id": 4,
-    "avatar": "https://reqres.in/img/faces/4-image.jpg",
-    "first_name": "Eve",
-    "email": "eve.holt@reqres.in"
-  },
-  "support": {
-    "text": "To keep ReqRes free, contributions towards server costs are appreciated!",
-    "url": "https://reqres.in/#support-heading"
-  }
-}
- 
-02:11:22.055 [main] ERROR com.intuit.karate - classpath:demo/user1.feature:12
-* match response.data.id == 2
-match failed: EQUALS
-  $ | not equal (NUMBER:NUMBER)
-  4
-  2
-
-classpath:demo/user1.feature:12
-02:11:24.943 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-02:11:24.985 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1629267084973
-02:11:25.079 [main] DEBUG com.intuit.karate - request:
+05:46:03.412 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+05:46:05.490 [main] DEBUG com.intuit.karate - request:
 1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392
 1 > Authorization: Basic cWE6cWE=
 1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
@@ -170,14 +8,14 @@ classpath:demo/user1.feature:12
 1 > Accept-Encoding: gzip,deflate
 
 
-02:11:25.239 [main] DEBUG com.intuit.karate - response time in milliseconds: 158
+05:46:05.772 [main] DEBUG com.intuit.karate - response time in milliseconds: 230
 1 < 200
 1 < Content-Language: en
-1 < Date: Wed, 18 Aug 2021 06:11:25 GMT
+1 < Date: Fri, 20 Aug 2021 09:46:05 GMT
 1 < Content-Type: application/json;charset=UTF-8
 1 < Transfer-Encoding: chunked
 [{"addresses":null,"extension":{},"currencyCd":null,"policyNumber":"CP0000863460","lossDt":"2021-07-16T00:00:00Z","lossDesc":"test","typeOfResolution":"WITHDRAWN","productVersion":null,"selectedRiskItemOids":null,"knownTimeInd":null,"componentName":null,"causeOfLossCd":null,"lossLocationDesc":null,"claimNumber":"C1392","policy":{"termExpirationDate":"2022-01-01T00:00:00Z","policyLOB":"ACC","riskItems":null,"policyNumber":"CP0000863460","verified":null,"policyStatus":"ACTIVE","productVersion":null,"inceptionDate":null,"parties":[{"nameTypeCd":null,"lastName":"Test","addresses":null,"extension":{},"bankAccountInfo":null,"instanceName":null,"roles":null,"phones":null,"bankName":null,"oid":null,"type":null,"suffix":null,"relationShipToInsuredCd":null,"accountHolderName":null,"emails":null,"contactPreferenceCd":null,"preferredPaymentMethod":null,"companyNumber":null,"namePrefix":null,"bankBranchCd":null,"bankAccountNumber":null,"componentName":null,"bankTransitNumber":null,"birthDt":null,"externalId":null,"additionalNameInd":null,"externalPartyInd":false,"partyRoles":null,"displayValue":null,"firstName":"Test 22","bankAccountType":null,"bankCd":null,"middleName":null,"otherName":null,"partyNumber":null,"additionalName":null}],"termEffectiveDate":"2021-01-01T00:00:00Z","componentName":null,"reportedPolicyNumber":"CP0000863460","policyBLOB":null,"productCd":"GB_AC"},"reportingMethod":null,"reportedDt":"2021-07-16T18:31:00Z","totalIncurred":{"amount":0.0,"currencyCd":"USD"},"policyProductCd":"GB_AC","customerNumber":"520181","claimsPolicyStatus":null,"lineOfBusinessCd":"ACC","claimStatusCd":"CLOSED","claimSubStatusCd":null,"additionalClaimNumber":"OC1392","lossLocation":null,"parties":null,"secondaryLossCauseCd":null,"fileOwner":{"displayValue":"New Claims \u2013 Accident CI HI","typeCd":null,"refId":null},"policyProductVersion":null,"productCd":"CLAIM_ACC_HEALTH"}]
-02:11:25.242 [main] INFO  com.intuit.karate - [print] [
+05:46:05.794 [main] INFO  com.intuit.karate - [print] [
   {
     "addresses": null,
     "extension": {
@@ -276,329 +114,8 @@ classpath:demo/user1.feature:12
   }
 ]
  
-02:11:25.244 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
-02:11:25.261 [main] DEBUG com.intuit.karate - request:
-1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C9392
-1 > Authorization: Basic cWE6cWE=
-1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
-1 > Accept-Encoding: gzip,deflate
-
-
-02:11:25.346 [main] DEBUG com.intuit.karate - response time in milliseconds: 85
-1 < 200
-1 < Content-Language: en
-1 < Date: Wed, 18 Aug 2021 06:11:25 GMT
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-[]
-02:11:25.348 [main] INFO  com.intuit.karate - [print] [
-]
- 
-02:11:25.349 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
-02:11:25.350 [main] ERROR com.intuit.karate - classpath:wflclaim/getClaim.feature:15
-* match response[0].policy.policyNumber == 'CP0000863460'
-match failed: EQUALS
-  $ | actual path does not exist (STRING:STRING)
-  '#notpresent'
-  'CP0000863460'
-
-classpath:wflclaim/getClaim.feature:15
-02:11:25.862 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) classpath:wflclaim/getClaim.feature
-02:11:25.893 [main] DEBUG com.intuit.karate - request:
-1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510377
-1 > Authorization: Basic cWE6cWE=
-1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
-1 > Accept-Encoding: gzip,deflate
-
-
-02:11:26.020 [main] DEBUG com.intuit.karate - response time in milliseconds: 127
-1 < 200
-1 < Content-Language: en
-1 < X-Paging-Limit: 10
-1 < X-Paging-Offset: 0
-1 < X-Total-Count: 1
-1 < Date: Wed, 18 Aug 2021 06:11:26 GMT
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-[{"addresses":[{"temporary":false,"city":"Walnut Creek","postalCode":"94596","latitude":null,"countryCd":"US","county":null,"accuracy":null,"contactType":"residence","referenceId":null,"effectiveTo":null,"duration":null,"subdivision":null,"extensionFields":{},"validationIndicator":null,"stateProvCd":"CA","addressLine1":"Address97144281","addressLine2":"","id":7905231,"addressLine3":"","contactMethod":"ADDRESS","longitude":null,"inCareOf":null,"preferredInd":null,"communicationPreferences":[],"attention":null,"comment":null,"doNotSolicitInd":null,"effectiveFrom":null}],"preferredSpokenLanguageCd":"ENGLISH","registeredOnline":false,"individualDetails":{"lastName":"Smith09877373","associateEmployments":false,"designationDescription":null,"deceased":false,"occupationDescription":null,"title":null,"suffix":null,"associateBusinessEntity":false,"extensionFields":{},"genderCd":"male","nickname":null,"deathDate":null,"associateProviders":false,"occupationCd":null,"designationCd":null,"birthDate":"1995-09-02","firstName":"John87780675","deathNotificationReceived":false,"disabilities":[],"maritalStatusCd":null,"taxId":"046-42-2369","citizenshipCd":null,"tobaccoCd":"YES","middleName":"","interests":[]},"majorAccount":null,"lastUpdateDate":"2020-09-02T08:44:02.380Z","preferredCurrency":null,"phones":[],"sourceCd":"UNKNOWN","socialNets":[],"rateDatePayment":null,"businessCustomerAdditionalNames":null,"segments":[],"customerStatus":"CUSTOMER","emails":[],"webAddresses":[],"specialClaimReview":false,"archived":false,"customerType":"INDV","sourceOfExchangeRate":null,"extensionFields":{},"groupInfo":[],"preferredWrittenLanguageCd":"ENGLISH","customerEmployments":null,"paperless":false,"agencies":[],"indCustomerAdditionalNames":[],"businessDetails":null,"customerNumber":"510377","accountNumber":"610377","genericRelationships":[],"displayValue":"John87780675 Smith09877373","ratingCd":"UNKNOWN","preferredContactMethod":null,"navigationLinks":[],"chats":[],"rateDateIntake":null,"brandCd":null,"providers":null}]
-02:11:26.022 [main] INFO  com.intuit.karate - [print] [
-  {
-    "addresses": [
-      {
-        "temporary": false,
-        "city": "Walnut Creek",
-        "postalCode": "94596",
-        "latitude": null,
-        "countryCd": "US",
-        "county": null,
-        "accuracy": null,
-        "contactType": "residence",
-        "referenceId": null,
-        "effectiveTo": null,
-        "duration": null,
-        "subdivision": null,
-        "extensionFields": {
-        },
-        "validationIndicator": null,
-        "stateProvCd": "CA",
-        "addressLine1": "Address97144281",
-        "addressLine2": "",
-        "id": 7905231,
-        "addressLine3": "",
-        "contactMethod": "ADDRESS",
-        "longitude": null,
-        "inCareOf": null,
-        "preferredInd": null,
-        "communicationPreferences": [
-        ],
-        "attention": null,
-        "comment": null,
-        "doNotSolicitInd": null,
-        "effectiveFrom": null
-      }
-    ],
-    "preferredSpokenLanguageCd": "ENGLISH",
-    "registeredOnline": false,
-    "individualDetails": {
-      "lastName": "Smith09877373",
-      "associateEmployments": false,
-      "designationDescription": null,
-      "deceased": false,
-      "occupationDescription": null,
-      "title": null,
-      "suffix": null,
-      "associateBusinessEntity": false,
-      "extensionFields": {
-      },
-      "genderCd": "male",
-      "nickname": null,
-      "deathDate": null,
-      "associateProviders": false,
-      "occupationCd": null,
-      "designationCd": null,
-      "birthDate": "1995-09-02",
-      "firstName": "John87780675",
-      "deathNotificationReceived": false,
-      "disabilities": [
-      ],
-      "maritalStatusCd": null,
-      "taxId": "046-42-2369",
-      "citizenshipCd": null,
-      "tobaccoCd": "YES",
-      "middleName": "",
-      "interests": [
-      ]
-    },
-    "majorAccount": null,
-    "lastUpdateDate": "2020-09-02T08:44:02.380Z",
-    "preferredCurrency": null,
-    "phones": [
-    ],
-    "sourceCd": "UNKNOWN",
-    "socialNets": [
-    ],
-    "rateDatePayment": null,
-    "businessCustomerAdditionalNames": null,
-    "segments": [
-    ],
-    "customerStatus": "CUSTOMER",
-    "emails": [
-    ],
-    "webAddresses": [
-    ],
-    "specialClaimReview": false,
-    "archived": false,
-    "customerType": "INDV",
-    "sourceOfExchangeRate": null,
-    "extensionFields": {
-    },
-    "groupInfo": [
-    ],
-    "preferredWrittenLanguageCd": "ENGLISH",
-    "customerEmployments": null,
-    "paperless": false,
-    "agencies": [
-    ],
-    "indCustomerAdditionalNames": [
-    ],
-    "businessDetails": null,
-    "customerNumber": "510377",
-    "accountNumber": "610377",
-    "genericRelationships": [
-    ],
-    "displayValue": "John87780675 Smith09877373",
-    "ratingCd": "UNKNOWN",
-    "preferredContactMethod": null,
-    "navigationLinks": [
-    ],
-    "chats": [
-    ],
-    "rateDateIntake": null,
-    "brandCd": null,
-    "providers": null
-  }
-]
- 
-02:11:26.024 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
-02:11:26.051 [main] DEBUG com.intuit.karate - request:
-1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510977
-1 > Authorization: Basic cWE6cWE=
-1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
-1 > Accept-Encoding: gzip,deflate
-
-
-02:11:26.175 [main] DEBUG com.intuit.karate - response time in milliseconds: 124
-1 < 200
-1 < Content-Language: en
-1 < X-Paging-Limit: 10
-1 < X-Paging-Offset: 0
-1 < X-Total-Count: 1
-1 < Date: Wed, 18 Aug 2021 06:11:26 GMT
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-[{"addresses":[{"temporary":false,"city":"Test","postalCode":"10928","latitude":null,"countryCd":"US","county":null,"accuracy":null,"contactType":"residence","referenceId":null,"effectiveTo":null,"duration":null,"subdivision":null,"extensionFields":{},"validationIndicator":null,"stateProvCd":"GA","addressLine1":"test lane","addressLine2":"","id":30641766,"addressLine3":"","contactMethod":"ADDRESS","longitude":null,"inCareOf":null,"preferredInd":null,"communicationPreferences":[],"attention":null,"comment":null,"doNotSolicitInd":null,"effectiveFrom":null}],"preferredSpokenLanguageCd":"ENGLISH","registeredOnline":false,"individualDetails":{"lastName":"Miller","associateEmployments":false,"designationDescription":null,"deceased":false,"occupationDescription":null,"title":null,"suffix":null,"associateBusinessEntity":false,"extensionFields":{},"genderCd":"male","nickname":null,"deathDate":null,"associateProviders":false,"occupationCd":null,"designationCd":null,"birthDate":null,"firstName":"John","deathNotificationReceived":false,"disabilities":[],"maritalStatusCd":null,"taxId":"109-12-9289","citizenshipCd":null,"tobaccoCd":null,"middleName":"","interests":[]},"majorAccount":null,"lastUpdateDate":"2020-11-30T22:36:30.737Z","preferredCurrency":null,"phones":[],"sourceCd":"UNKNOWN","socialNets":[],"rateDatePayment":null,"businessCustomerAdditionalNames":null,"segments":[],"customerStatus":"CUSTOMER","emails":[],"webAddresses":[],"specialClaimReview":false,"archived":false,"customerType":"INDV","sourceOfExchangeRate":null,"extensionFields":{},"groupInfo":[],"preferredWrittenLanguageCd":"ENGLISH","customerEmployments":null,"paperless":false,"agencies":[],"indCustomerAdditionalNames":[],"businessDetails":null,"customerNumber":"510977","accountNumber":"610977","genericRelationships":[],"displayValue":"John Miller","ratingCd":"UNKNOWN","preferredContactMethod":null,"navigationLinks":[],"chats":[],"rateDateIntake":null,"brandCd":null,"providers":null}]
-02:11:26.178 [main] INFO  com.intuit.karate - [print] [
-  {
-    "addresses": [
-      {
-        "temporary": false,
-        "city": "Test",
-        "postalCode": "10928",
-        "latitude": null,
-        "countryCd": "US",
-        "county": null,
-        "accuracy": null,
-        "contactType": "residence",
-        "referenceId": null,
-        "effectiveTo": null,
-        "duration": null,
-        "subdivision": null,
-        "extensionFields": {
-        },
-        "validationIndicator": null,
-        "stateProvCd": "GA",
-        "addressLine1": "test lane",
-        "addressLine2": "",
-        "id": 30641766,
-        "addressLine3": "",
-        "contactMethod": "ADDRESS",
-        "longitude": null,
-        "inCareOf": null,
-        "preferredInd": null,
-        "communicationPreferences": [
-        ],
-        "attention": null,
-        "comment": null,
-        "doNotSolicitInd": null,
-        "effectiveFrom": null
-      }
-    ],
-    "preferredSpokenLanguageCd": "ENGLISH",
-    "registeredOnline": false,
-    "individualDetails": {
-      "lastName": "Miller",
-      "associateEmployments": false,
-      "designationDescription": null,
-      "deceased": false,
-      "occupationDescription": null,
-      "title": null,
-      "suffix": null,
-      "associateBusinessEntity": false,
-      "extensionFields": {
-      },
-      "genderCd": "male",
-      "nickname": null,
-      "deathDate": null,
-      "associateProviders": false,
-      "occupationCd": null,
-      "designationCd": null,
-      "birthDate": null,
-      "firstName": "John",
-      "deathNotificationReceived": false,
-      "disabilities": [
-      ],
-      "maritalStatusCd": null,
-      "taxId": "109-12-9289",
-      "citizenshipCd": null,
-      "tobaccoCd": null,
-      "middleName": "",
-      "interests": [
-      ]
-    },
-    "majorAccount": null,
-    "lastUpdateDate": "2020-11-30T22:36:30.737Z",
-    "preferredCurrency": null,
-    "phones": [
-    ],
-    "sourceCd": "UNKNOWN",
-    "socialNets": [
-    ],
-    "rateDatePayment": null,
-    "businessCustomerAdditionalNames": null,
-    "segments": [
-    ],
-    "customerStatus": "CUSTOMER",
-    "emails": [
-    ],
-    "webAddresses": [
-    ],
-    "specialClaimReview": false,
-    "archived": false,
-    "customerType": "INDV",
-    "sourceOfExchangeRate": null,
-    "extensionFields": {
-    },
-    "groupInfo": [
-    ],
-    "preferredWrittenLanguageCd": "ENGLISH",
-    "customerEmployments": null,
-    "paperless": false,
-    "agencies": [
-    ],
-    "indCustomerAdditionalNames": [
-    ],
-    "businessDetails": null,
-    "customerNumber": "510977",
-    "accountNumber": "610977",
-    "genericRelationships": [
-    ],
-    "displayValue": "John Miller",
-    "ratingCd": "UNKNOWN",
-    "preferredContactMethod": null,
-    "navigationLinks": [
-    ],
-    "chats": [
-    ],
-    "rateDateIntake": null,
-    "brandCd": null,
-    "providers": null
-  }
-]
- 
-02:11:26.180 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
-02:11:26.182 [main] ERROR com.intuit.karate - classpath:wflclaim/getCustomerNumber.feature:16
-* match response[0].customerType == 'CP0000863460'
-match failed: EQUALS
-  $ | not equal (STRING:STRING)
-  'INDV'
-  'CP0000863460'
-
-classpath:wflclaim/getCustomerNumber.feature:16
-02:11:26.360 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 2 (0 remaining) classpath:wflclaim/getCustomerNumber.feature
-02:11:26.383 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
-03:03:49.735 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: wflclaim/getCustomerNumber.feature - mismatched input 'S' expecting <EOF>
-03:04:50.905 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: wflclaim/getCustomerNumber.feature - mismatched input 'S' expecting <EOF>
-03:06:17.380 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: wflclaim/getCustomerNumber.feature - mismatched input 'S' expecting <EOF>
-03:06:59.129 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: wflclaim/getCustomerNumber.feature - mismatched input 'S' expecting <EOF>
-03:07:32.706 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-03:07:32.726 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1629356852721
-03:07:34.979 [main] DEBUG com.intuit.karate - request:
+05:46:05.799 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+05:46:05.875 [main] DEBUG com.intuit.karate - request:
 1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392
 1 > Authorization: Basic cWE6cWE=
 1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
@@ -607,1089 +124,248 @@ classpath:wflclaim/getCustomerNumber.feature:16
 1 > Accept-Encoding: gzip,deflate
 
 
-03:08:05.092 [main] ERROR com.intuit.karate - java.net.SocketTimeoutException: Read timed out, http call failed after 30715 milliseconds for url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392
-03:08:05.092 [main] ERROR com.intuit.karate - classpath:wflclaim/getClaim.feature:10
-When method GET
-http call failed after 30715 milliseconds for url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392
-classpath:wflclaim/getClaim.feature:10
-03:08:06.340 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) classpath:wflclaim/getClaim.feature
-03:08:06.386 [main] DEBUG com.intuit.karate - request:
-1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510377
-1 > Authorization: Basic cWE6cWE=
-1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
-1 > Accept-Encoding: gzip,deflate
-
-
-03:08:36.414 [main] ERROR com.intuit.karate - java.net.SocketTimeoutException: Read timed out, http call failed after 30030 milliseconds for url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510377
-03:08:36.415 [main] ERROR com.intuit.karate - classpath:wflclaim/getCustomerNumber.feature:10
-When method GET
-http call failed after 30030 milliseconds for url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510377
-classpath:wflclaim/getCustomerNumber.feature:10
-03:08:36.432 [main] DEBUG com.intuit.karate - request:
-1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510977
-1 > Authorization: Basic cWE6cWE=
-1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
-1 > Accept-Encoding: gzip,deflate
-
-
-03:09:06.499 [main] ERROR com.intuit.karate - java.net.SocketTimeoutException: Read timed out, http call failed after 30068 milliseconds for url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510977
-03:09:06.500 [main] ERROR com.intuit.karate - classpath:wflclaim/getCustomerNumber.feature:10
-When method GET
-http call failed after 30068 milliseconds for url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510977
-classpath:wflclaim/getCustomerNumber.feature:10
-03:09:06.760 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 2 (0 remaining) classpath:wflclaim/getCustomerNumber.feature
-03:09:06.782 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
-03:11:18.143 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-03:11:18.161 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1629357078155
-03:11:20.525 [main] DEBUG com.intuit.karate - request:
-1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392
-1 > Authorization: Basic cWE6cWE=
-1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
-1 > Accept-Encoding: gzip,deflate
-
-
-03:11:20.755 [main] DEBUG com.intuit.karate - response time in milliseconds: 189
+05:46:05.971 [main] DEBUG com.intuit.karate - response time in milliseconds: 94
 1 < 200
 1 < Content-Language: en
-1 < Date: Thu, 19 Aug 2021 07:11:20 GMT
+1 < Date: Fri, 20 Aug 2021 09:46:06 GMT
 1 < Content-Type: application/json;charset=UTF-8
 1 < Transfer-Encoding: chunked
 [{"addresses":null,"extension":{},"currencyCd":null,"policyNumber":"CP0000863460","lossDt":"2021-07-16T00:00:00Z","lossDesc":"test","typeOfResolution":"WITHDRAWN","productVersion":null,"selectedRiskItemOids":null,"knownTimeInd":null,"componentName":null,"causeOfLossCd":null,"lossLocationDesc":null,"claimNumber":"C1392","policy":{"termExpirationDate":"2022-01-01T00:00:00Z","policyLOB":"ACC","riskItems":null,"policyNumber":"CP0000863460","verified":null,"policyStatus":"ACTIVE","productVersion":null,"inceptionDate":null,"parties":[{"nameTypeCd":null,"lastName":"Test","addresses":null,"extension":{},"bankAccountInfo":null,"instanceName":null,"roles":null,"phones":null,"bankName":null,"oid":null,"type":null,"suffix":null,"relationShipToInsuredCd":null,"accountHolderName":null,"emails":null,"contactPreferenceCd":null,"preferredPaymentMethod":null,"companyNumber":null,"namePrefix":null,"bankBranchCd":null,"bankAccountNumber":null,"componentName":null,"bankTransitNumber":null,"birthDt":null,"externalId":null,"additionalNameInd":null,"externalPartyInd":false,"partyRoles":null,"displayValue":null,"firstName":"Test 22","bankAccountType":null,"bankCd":null,"middleName":null,"otherName":null,"partyNumber":null,"additionalName":null}],"termEffectiveDate":"2021-01-01T00:00:00Z","componentName":null,"reportedPolicyNumber":"CP0000863460","policyBLOB":null,"productCd":"GB_AC"},"reportingMethod":null,"reportedDt":"2021-07-16T18:31:00Z","totalIncurred":{"amount":0.0,"currencyCd":"USD"},"policyProductCd":"GB_AC","customerNumber":"520181","claimsPolicyStatus":null,"lineOfBusinessCd":"ACC","claimStatusCd":"CLOSED","claimSubStatusCd":null,"additionalClaimNumber":"OC1392","lossLocation":null,"parties":null,"secondaryLossCauseCd":null,"fileOwner":{"displayValue":"New Claims \u2013 Accident CI HI","typeCd":null,"refId":null},"policyProductVersion":null,"productCd":"CLAIM_ACC_HEALTH"}]
-03:11:20.772 [main] INFO  com.intuit.karate - [print] [
-  {
-    "addresses": null,
-    "extension": {
-    },
-    "currencyCd": null,
-    "policyNumber": "CP0000863460",
-    "lossDt": "2021-07-16T00:00:00Z",
-    "lossDesc": "test",
-    "typeOfResolution": "WITHDRAWN",
-    "productVersion": null,
-    "selectedRiskItemOids": null,
-    "knownTimeInd": null,
-    "componentName": null,
-    "causeOfLossCd": null,
-    "lossLocationDesc": null,
-    "claimNumber": "C1392",
-    "policy": {
-      "termExpirationDate": "2022-01-01T00:00:00Z",
-      "policyLOB": "ACC",
-      "riskItems": null,
-      "policyNumber": "CP0000863460",
-      "verified": null,
-      "policyStatus": "ACTIVE",
-      "productVersion": null,
-      "inceptionDate": null,
-      "parties": [
-        {
-          "nameTypeCd": null,
-          "lastName": "Test",
-          "addresses": null,
-          "extension": {
-          },
-          "bankAccountInfo": null,
-          "instanceName": null,
-          "roles": null,
-          "phones": null,
-          "bankName": null,
-          "oid": null,
-          "type": null,
-          "suffix": null,
-          "relationShipToInsuredCd": null,
-          "accountHolderName": null,
-          "emails": null,
-          "contactPreferenceCd": null,
-          "preferredPaymentMethod": null,
-          "companyNumber": null,
-          "namePrefix": null,
-          "bankBranchCd": null,
-          "bankAccountNumber": null,
-          "componentName": null,
-          "bankTransitNumber": null,
-          "birthDt": null,
-          "externalId": null,
-          "additionalNameInd": null,
-          "externalPartyInd": false,
-          "partyRoles": null,
-          "displayValue": null,
-          "firstName": "Test 22",
-          "bankAccountType": null,
-          "bankCd": null,
-          "middleName": null,
-          "otherName": null,
-          "partyNumber": null,
-          "additionalName": null
-        }
-      ],
-      "termEffectiveDate": "2021-01-01T00:00:00Z",
-      "componentName": null,
-      "reportedPolicyNumber": "CP0000863460",
-      "policyBLOB": null,
-      "productCd": "GB_AC"
-    },
-    "reportingMethod": null,
-    "reportedDt": "2021-07-16T18:31:00Z",
-    "totalIncurred": {
-      "amount": 0.0,
-      "currencyCd": "USD"
-    },
-    "policyProductCd": "GB_AC",
-    "customerNumber": "520181",
-    "claimsPolicyStatus": null,
-    "lineOfBusinessCd": "ACC",
-    "claimStatusCd": "CLOSED",
-    "claimSubStatusCd": null,
-    "additionalClaimNumber": "OC1392",
-    "lossLocation": null,
-    "parties": null,
-    "secondaryLossCauseCd": null,
-    "fileOwner": {
-      "displayValue": "New Claims \u2013 Accident CI HI",
-      "typeCd": null,
-      "refId": null
-    },
-    "policyProductVersion": null,
-    "productCd": "CLAIM_ACC_HEALTH"
-  }
-]
- 
-03:11:20.776 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
-03:11:21.893 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (0 remaining) classpath:wflclaim/getClaim.feature
-03:11:21.926 [main] DEBUG com.intuit.karate - request:
-1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510377
-1 > Authorization: Basic cWE6cWE=
-1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
-1 > Accept-Encoding: gzip,deflate
-
-
-03:11:22.109 [main] DEBUG com.intuit.karate - response time in milliseconds: 181
-1 < 200
-1 < Content-Language: en
-1 < X-Paging-Limit: 10
-1 < X-Paging-Offset: 0
-1 < X-Total-Count: 1
-1 < Date: Thu, 19 Aug 2021 07:11:22 GMT
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-[{"addresses":[{"temporary":false,"city":"Walnut Creek","postalCode":"94596","latitude":null,"countryCd":"US","county":null,"accuracy":null,"contactType":"residence","referenceId":null,"effectiveTo":null,"duration":null,"subdivision":null,"extensionFields":{},"validationIndicator":null,"stateProvCd":"CA","addressLine1":"Address97144281","addressLine2":"","id":7905231,"addressLine3":"","contactMethod":"ADDRESS","longitude":null,"inCareOf":null,"preferredInd":null,"communicationPreferences":[],"attention":null,"comment":null,"doNotSolicitInd":null,"effectiveFrom":null}],"preferredSpokenLanguageCd":"ENGLISH","registeredOnline":false,"individualDetails":{"lastName":"Smith09877373","associateEmployments":false,"designationDescription":null,"deceased":false,"occupationDescription":null,"title":null,"suffix":null,"associateBusinessEntity":false,"extensionFields":{},"genderCd":"male","nickname":null,"deathDate":null,"associateProviders":false,"occupationCd":null,"designationCd":null,"birthDate":"1995-09-02","firstName":"John87780675","deathNotificationReceived":false,"disabilities":[],"maritalStatusCd":null,"taxId":"046-42-2369","citizenshipCd":null,"tobaccoCd":"YES","middleName":"","interests":[]},"majorAccount":null,"lastUpdateDate":"2020-09-02T08:44:02.380Z","preferredCurrency":null,"phones":[],"sourceCd":"UNKNOWN","socialNets":[],"rateDatePayment":null,"businessCustomerAdditionalNames":null,"segments":[],"customerStatus":"CUSTOMER","emails":[],"webAddresses":[],"specialClaimReview":false,"archived":false,"customerType":"INDV","sourceOfExchangeRate":null,"extensionFields":{},"groupInfo":[],"preferredWrittenLanguageCd":"ENGLISH","customerEmployments":null,"paperless":false,"agencies":[],"indCustomerAdditionalNames":[],"businessDetails":null,"customerNumber":"510377","accountNumber":"610377","genericRelationships":[],"displayValue":"John87780675 Smith09877373","ratingCd":"UNKNOWN","preferredContactMethod":null,"navigationLinks":[],"chats":[],"rateDateIntake":null,"brandCd":null,"providers":null}]
-03:11:22.112 [main] INFO  com.intuit.karate - [print] [
-  {
-    "addresses": [
-      {
-        "temporary": false,
-        "city": "Walnut Creek",
-        "postalCode": "94596",
-        "latitude": null,
-        "countryCd": "US",
-        "county": null,
-        "accuracy": null,
-        "contactType": "residence",
-        "referenceId": null,
-        "effectiveTo": null,
-        "duration": null,
-        "subdivision": null,
-        "extensionFields": {
-        },
-        "validationIndicator": null,
-        "stateProvCd": "CA",
-        "addressLine1": "Address97144281",
-        "addressLine2": "",
-        "id": 7905231,
-        "addressLine3": "",
-        "contactMethod": "ADDRESS",
-        "longitude": null,
-        "inCareOf": null,
-        "preferredInd": null,
-        "communicationPreferences": [
-        ],
-        "attention": null,
-        "comment": null,
-        "doNotSolicitInd": null,
-        "effectiveFrom": null
-      }
-    ],
-    "preferredSpokenLanguageCd": "ENGLISH",
-    "registeredOnline": false,
-    "individualDetails": {
-      "lastName": "Smith09877373",
-      "associateEmployments": false,
-      "designationDescription": null,
-      "deceased": false,
-      "occupationDescription": null,
-      "title": null,
-      "suffix": null,
-      "associateBusinessEntity": false,
-      "extensionFields": {
-      },
-      "genderCd": "male",
-      "nickname": null,
-      "deathDate": null,
-      "associateProviders": false,
-      "occupationCd": null,
-      "designationCd": null,
-      "birthDate": "1995-09-02",
-      "firstName": "John87780675",
-      "deathNotificationReceived": false,
-      "disabilities": [
-      ],
-      "maritalStatusCd": null,
-      "taxId": "046-42-2369",
-      "citizenshipCd": null,
-      "tobaccoCd": "YES",
-      "middleName": "",
-      "interests": [
-      ]
-    },
-    "majorAccount": null,
-    "lastUpdateDate": "2020-09-02T08:44:02.380Z",
-    "preferredCurrency": null,
-    "phones": [
-    ],
-    "sourceCd": "UNKNOWN",
-    "socialNets": [
-    ],
-    "rateDatePayment": null,
-    "businessCustomerAdditionalNames": null,
-    "segments": [
-    ],
-    "customerStatus": "CUSTOMER",
-    "emails": [
-    ],
-    "webAddresses": [
-    ],
-    "specialClaimReview": false,
-    "archived": false,
-    "customerType": "INDV",
-    "sourceOfExchangeRate": null,
-    "extensionFields": {
-    },
-    "groupInfo": [
-    ],
-    "preferredWrittenLanguageCd": "ENGLISH",
-    "customerEmployments": null,
-    "paperless": false,
-    "agencies": [
-    ],
-    "indCustomerAdditionalNames": [
-    ],
-    "businessDetails": null,
-    "customerNumber": "510377",
-    "accountNumber": "610377",
-    "genericRelationships": [
-    ],
-    "displayValue": "John87780675 Smith09877373",
-    "ratingCd": "UNKNOWN",
-    "preferredContactMethod": null,
-    "navigationLinks": [
-    ],
-    "chats": [
-    ],
-    "rateDateIntake": null,
-    "brandCd": null,
-    "providers": null
-  }
-]
- 
-03:11:22.113 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
-03:11:22.134 [main] DEBUG com.intuit.karate - request:
-1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510977
-1 > Authorization: Basic cWE6cWE=
-1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
-1 > Accept-Encoding: gzip,deflate
-
-
-03:11:22.300 [main] DEBUG com.intuit.karate - response time in milliseconds: 165
-1 < 200
-1 < Content-Language: en
-1 < X-Paging-Limit: 10
-1 < X-Paging-Offset: 0
-1 < X-Total-Count: 1
-1 < Date: Thu, 19 Aug 2021 07:11:22 GMT
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-[{"addresses":[{"temporary":false,"city":"Test","postalCode":"10928","latitude":null,"countryCd":"US","county":null,"accuracy":null,"contactType":"residence","referenceId":null,"effectiveTo":null,"duration":null,"subdivision":null,"extensionFields":{},"validationIndicator":null,"stateProvCd":"GA","addressLine1":"test lane","addressLine2":"","id":30641766,"addressLine3":"","contactMethod":"ADDRESS","longitude":null,"inCareOf":null,"preferredInd":null,"communicationPreferences":[],"attention":null,"comment":null,"doNotSolicitInd":null,"effectiveFrom":null}],"preferredSpokenLanguageCd":"ENGLISH","registeredOnline":false,"individualDetails":{"lastName":"Miller","associateEmployments":false,"designationDescription":null,"deceased":false,"occupationDescription":null,"title":null,"suffix":null,"associateBusinessEntity":false,"extensionFields":{},"genderCd":"male","nickname":null,"deathDate":null,"associateProviders":false,"occupationCd":null,"designationCd":null,"birthDate":null,"firstName":"John","deathNotificationReceived":false,"disabilities":[],"maritalStatusCd":null,"taxId":"109-12-9289","citizenshipCd":null,"tobaccoCd":null,"middleName":"","interests":[]},"majorAccount":null,"lastUpdateDate":"2020-11-30T22:36:30.737Z","preferredCurrency":null,"phones":[],"sourceCd":"UNKNOWN","socialNets":[],"rateDatePayment":null,"businessCustomerAdditionalNames":null,"segments":[],"customerStatus":"CUSTOMER","emails":[],"webAddresses":[],"specialClaimReview":false,"archived":false,"customerType":"INDV","sourceOfExchangeRate":null,"extensionFields":{},"groupInfo":[],"preferredWrittenLanguageCd":"ENGLISH","customerEmployments":null,"paperless":false,"agencies":[],"indCustomerAdditionalNames":[],"businessDetails":null,"customerNumber":"510977","accountNumber":"610977","genericRelationships":[],"displayValue":"John Miller","ratingCd":"UNKNOWN","preferredContactMethod":null,"navigationLinks":[],"chats":[],"rateDateIntake":null,"brandCd":null,"providers":null}]
-03:11:22.302 [main] INFO  com.intuit.karate - [print] [
-  {
-    "addresses": [
-      {
-        "temporary": false,
-        "city": "Test",
-        "postalCode": "10928",
-        "latitude": null,
-        "countryCd": "US",
-        "county": null,
-        "accuracy": null,
-        "contactType": "residence",
-        "referenceId": null,
-        "effectiveTo": null,
-        "duration": null,
-        "subdivision": null,
-        "extensionFields": {
-        },
-        "validationIndicator": null,
-        "stateProvCd": "GA",
-        "addressLine1": "test lane",
-        "addressLine2": "",
-        "id": 30641766,
-        "addressLine3": "",
-        "contactMethod": "ADDRESS",
-        "longitude": null,
-        "inCareOf": null,
-        "preferredInd": null,
-        "communicationPreferences": [
-        ],
-        "attention": null,
-        "comment": null,
-        "doNotSolicitInd": null,
-        "effectiveFrom": null
-      }
-    ],
-    "preferredSpokenLanguageCd": "ENGLISH",
-    "registeredOnline": false,
-    "individualDetails": {
-      "lastName": "Miller",
-      "associateEmployments": false,
-      "designationDescription": null,
-      "deceased": false,
-      "occupationDescription": null,
-      "title": null,
-      "suffix": null,
-      "associateBusinessEntity": false,
-      "extensionFields": {
-      },
-      "genderCd": "male",
-      "nickname": null,
-      "deathDate": null,
-      "associateProviders": false,
-      "occupationCd": null,
-      "designationCd": null,
-      "birthDate": null,
-      "firstName": "John",
-      "deathNotificationReceived": false,
-      "disabilities": [
-      ],
-      "maritalStatusCd": null,
-      "taxId": "109-12-9289",
-      "citizenshipCd": null,
-      "tobaccoCd": null,
-      "middleName": "",
-      "interests": [
-      ]
-    },
-    "majorAccount": null,
-    "lastUpdateDate": "2020-11-30T22:36:30.737Z",
-    "preferredCurrency": null,
-    "phones": [
-    ],
-    "sourceCd": "UNKNOWN",
-    "socialNets": [
-    ],
-    "rateDatePayment": null,
-    "businessCustomerAdditionalNames": null,
-    "segments": [
-    ],
-    "customerStatus": "CUSTOMER",
-    "emails": [
-    ],
-    "webAddresses": [
-    ],
-    "specialClaimReview": false,
-    "archived": false,
-    "customerType": "INDV",
-    "sourceOfExchangeRate": null,
-    "extensionFields": {
-    },
-    "groupInfo": [
-    ],
-    "preferredWrittenLanguageCd": "ENGLISH",
-    "customerEmployments": null,
-    "paperless": false,
-    "agencies": [
-    ],
-    "indCustomerAdditionalNames": [
-    ],
-    "businessDetails": null,
-    "customerNumber": "510977",
-    "accountNumber": "610977",
-    "genericRelationships": [
-    ],
-    "displayValue": "John Miller",
-    "ratingCd": "UNKNOWN",
-    "preferredContactMethod": null,
-    "navigationLinks": [
-    ],
-    "chats": [
-    ],
-    "rateDateIntake": null,
-    "brandCd": null,
-    "providers": null
-  }
-]
- 
-03:11:22.303 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
-03:11:22.656 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:wflclaim/getCustomerNumber.feature
-03:11:22.666 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
-03:12:22.529 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-03:12:22.549 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1629357142542
-03:12:24.331 [main] DEBUG com.intuit.karate - request:
-1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392
-1 > Authorization: Basic cWE6cWE=
-1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
-1 > Accept-Encoding: gzip,deflate
-
-
-03:12:24.560 [main] DEBUG com.intuit.karate - response time in milliseconds: 188
-1 < 200
-1 < Content-Language: en
-1 < Date: Thu, 19 Aug 2021 07:12:24 GMT
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-[{"addresses":null,"extension":{},"currencyCd":null,"policyNumber":"CP0000863460","lossDt":"2021-07-16T00:00:00Z","lossDesc":"test","typeOfResolution":"WITHDRAWN","productVersion":null,"selectedRiskItemOids":null,"knownTimeInd":null,"componentName":null,"causeOfLossCd":null,"lossLocationDesc":null,"claimNumber":"C1392","policy":{"termExpirationDate":"2022-01-01T00:00:00Z","policyLOB":"ACC","riskItems":null,"policyNumber":"CP0000863460","verified":null,"policyStatus":"ACTIVE","productVersion":null,"inceptionDate":null,"parties":[{"nameTypeCd":null,"lastName":"Test","addresses":null,"extension":{},"bankAccountInfo":null,"instanceName":null,"roles":null,"phones":null,"bankName":null,"oid":null,"type":null,"suffix":null,"relationShipToInsuredCd":null,"accountHolderName":null,"emails":null,"contactPreferenceCd":null,"preferredPaymentMethod":null,"companyNumber":null,"namePrefix":null,"bankBranchCd":null,"bankAccountNumber":null,"componentName":null,"bankTransitNumber":null,"birthDt":null,"externalId":null,"additionalNameInd":null,"externalPartyInd":false,"partyRoles":null,"displayValue":null,"firstName":"Test 22","bankAccountType":null,"bankCd":null,"middleName":null,"otherName":null,"partyNumber":null,"additionalName":null}],"termEffectiveDate":"2021-01-01T00:00:00Z","componentName":null,"reportedPolicyNumber":"CP0000863460","policyBLOB":null,"productCd":"GB_AC"},"reportingMethod":null,"reportedDt":"2021-07-16T18:31:00Z","totalIncurred":{"amount":0.0,"currencyCd":"USD"},"policyProductCd":"GB_AC","customerNumber":"520181","claimsPolicyStatus":null,"lineOfBusinessCd":"ACC","claimStatusCd":"CLOSED","claimSubStatusCd":null,"additionalClaimNumber":"OC1392","lossLocation":null,"parties":null,"secondaryLossCauseCd":null,"fileOwner":{"displayValue":"New Claims \u2013 Accident CI HI","typeCd":null,"refId":null},"policyProductVersion":null,"productCd":"CLAIM_ACC_HEALTH"}]
-03:12:24.576 [main] INFO  com.intuit.karate - [print] [
-  {
-    "addresses": null,
-    "extension": {
-    },
-    "currencyCd": null,
-    "policyNumber": "CP0000863460",
-    "lossDt": "2021-07-16T00:00:00Z",
-    "lossDesc": "test",
-    "typeOfResolution": "WITHDRAWN",
-    "productVersion": null,
-    "selectedRiskItemOids": null,
-    "knownTimeInd": null,
-    "componentName": null,
-    "causeOfLossCd": null,
-    "lossLocationDesc": null,
-    "claimNumber": "C1392",
-    "policy": {
-      "termExpirationDate": "2022-01-01T00:00:00Z",
-      "policyLOB": "ACC",
-      "riskItems": null,
-      "policyNumber": "CP0000863460",
-      "verified": null,
-      "policyStatus": "ACTIVE",
-      "productVersion": null,
-      "inceptionDate": null,
-      "parties": [
-        {
-          "nameTypeCd": null,
-          "lastName": "Test",
-          "addresses": null,
-          "extension": {
-          },
-          "bankAccountInfo": null,
-          "instanceName": null,
-          "roles": null,
-          "phones": null,
-          "bankName": null,
-          "oid": null,
-          "type": null,
-          "suffix": null,
-          "relationShipToInsuredCd": null,
-          "accountHolderName": null,
-          "emails": null,
-          "contactPreferenceCd": null,
-          "preferredPaymentMethod": null,
-          "companyNumber": null,
-          "namePrefix": null,
-          "bankBranchCd": null,
-          "bankAccountNumber": null,
-          "componentName": null,
-          "bankTransitNumber": null,
-          "birthDt": null,
-          "externalId": null,
-          "additionalNameInd": null,
-          "externalPartyInd": false,
-          "partyRoles": null,
-          "displayValue": null,
-          "firstName": "Test 22",
-          "bankAccountType": null,
-          "bankCd": null,
-          "middleName": null,
-          "otherName": null,
-          "partyNumber": null,
-          "additionalName": null
-        }
-      ],
-      "termEffectiveDate": "2021-01-01T00:00:00Z",
-      "componentName": null,
-      "reportedPolicyNumber": "CP0000863460",
-      "policyBLOB": null,
-      "productCd": "GB_AC"
-    },
-    "reportingMethod": null,
-    "reportedDt": "2021-07-16T18:31:00Z",
-    "totalIncurred": {
-      "amount": 0.0,
-      "currencyCd": "USD"
-    },
-    "policyProductCd": "GB_AC",
-    "customerNumber": "520181",
-    "claimsPolicyStatus": null,
-    "lineOfBusinessCd": "ACC",
-    "claimStatusCd": "CLOSED",
-    "claimSubStatusCd": null,
-    "additionalClaimNumber": "OC1392",
-    "lossLocation": null,
-    "parties": null,
-    "secondaryLossCauseCd": null,
-    "fileOwner": {
-      "displayValue": "New Claims \u2013 Accident CI HI",
-      "typeCd": null,
-      "refId": null
-    },
-    "policyProductVersion": null,
-    "productCd": "CLAIM_ACC_HEALTH"
-  }
-]
- 
-03:12:24.579 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
-03:12:24.628 [main] DEBUG com.intuit.karate - request:
-1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392
-1 > Authorization: Basic cWE6cWE=
-1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
-1 > Accept-Encoding: gzip,deflate
-
-
-03:12:24.720 [main] DEBUG com.intuit.karate - response time in milliseconds: 90
-1 < 200
-1 < Content-Language: en
-1 < Date: Thu, 19 Aug 2021 07:12:24 GMT
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-[{"addresses":null,"extension":{},"currencyCd":null,"policyNumber":"CP0000863460","lossDt":"2021-07-16T00:00:00Z","lossDesc":"test","typeOfResolution":"WITHDRAWN","productVersion":null,"selectedRiskItemOids":null,"knownTimeInd":null,"componentName":null,"causeOfLossCd":null,"lossLocationDesc":null,"claimNumber":"C1392","policy":{"termExpirationDate":"2022-01-01T00:00:00Z","policyLOB":"ACC","riskItems":null,"policyNumber":"CP0000863460","verified":null,"policyStatus":"ACTIVE","productVersion":null,"inceptionDate":null,"parties":[{"nameTypeCd":null,"lastName":"Test","addresses":null,"extension":{},"bankAccountInfo":null,"instanceName":null,"roles":null,"phones":null,"bankName":null,"oid":null,"type":null,"suffix":null,"relationShipToInsuredCd":null,"accountHolderName":null,"emails":null,"contactPreferenceCd":null,"preferredPaymentMethod":null,"companyNumber":null,"namePrefix":null,"bankBranchCd":null,"bankAccountNumber":null,"componentName":null,"bankTransitNumber":null,"birthDt":null,"externalId":null,"additionalNameInd":null,"externalPartyInd":false,"partyRoles":null,"displayValue":null,"firstName":"Test 22","bankAccountType":null,"bankCd":null,"middleName":null,"otherName":null,"partyNumber":null,"additionalName":null}],"termEffectiveDate":"2021-01-01T00:00:00Z","componentName":null,"reportedPolicyNumber":"CP0000863460","policyBLOB":null,"productCd":"GB_AC"},"reportingMethod":null,"reportedDt":"2021-07-16T18:31:00Z","totalIncurred":{"amount":0.0,"currencyCd":"USD"},"policyProductCd":"GB_AC","customerNumber":"520181","claimsPolicyStatus":null,"lineOfBusinessCd":"ACC","claimStatusCd":"CLOSED","claimSubStatusCd":null,"additionalClaimNumber":"OC1392","lossLocation":null,"parties":null,"secondaryLossCauseCd":null,"fileOwner":{"displayValue":"New Claims \u2013 Accident CI HI","typeCd":null,"refId":null},"policyProductVersion":null,"productCd":"CLAIM_ACC_HEALTH"}]
-03:12:24.723 [main] INFO  com.intuit.karate - [print] [
-  {
-    "addresses": null,
-    "extension": {
-    },
-    "currencyCd": null,
-    "policyNumber": "CP0000863460",
-    "lossDt": "2021-07-16T00:00:00Z",
-    "lossDesc": "test",
-    "typeOfResolution": "WITHDRAWN",
-    "productVersion": null,
-    "selectedRiskItemOids": null,
-    "knownTimeInd": null,
-    "componentName": null,
-    "causeOfLossCd": null,
-    "lossLocationDesc": null,
-    "claimNumber": "C1392",
-    "policy": {
-      "termExpirationDate": "2022-01-01T00:00:00Z",
-      "policyLOB": "ACC",
-      "riskItems": null,
-      "policyNumber": "CP0000863460",
-      "verified": null,
-      "policyStatus": "ACTIVE",
-      "productVersion": null,
-      "inceptionDate": null,
-      "parties": [
-        {
-          "nameTypeCd": null,
-          "lastName": "Test",
-          "addresses": null,
-          "extension": {
-          },
-          "bankAccountInfo": null,
-          "instanceName": null,
-          "roles": null,
-          "phones": null,
-          "bankName": null,
-          "oid": null,
-          "type": null,
-          "suffix": null,
-          "relationShipToInsuredCd": null,
-          "accountHolderName": null,
-          "emails": null,
-          "contactPreferenceCd": null,
-          "preferredPaymentMethod": null,
-          "companyNumber": null,
-          "namePrefix": null,
-          "bankBranchCd": null,
-          "bankAccountNumber": null,
-          "componentName": null,
-          "bankTransitNumber": null,
-          "birthDt": null,
-          "externalId": null,
-          "additionalNameInd": null,
-          "externalPartyInd": false,
-          "partyRoles": null,
-          "displayValue": null,
-          "firstName": "Test 22",
-          "bankAccountType": null,
-          "bankCd": null,
-          "middleName": null,
-          "otherName": null,
-          "partyNumber": null,
-          "additionalName": null
-        }
-      ],
-      "termEffectiveDate": "2021-01-01T00:00:00Z",
-      "componentName": null,
-      "reportedPolicyNumber": "CP0000863460",
-      "policyBLOB": null,
-      "productCd": "GB_AC"
-    },
-    "reportingMethod": null,
-    "reportedDt": "2021-07-16T18:31:00Z",
-    "totalIncurred": {
-      "amount": 0.0,
-      "currencyCd": "USD"
-    },
-    "policyProductCd": "GB_AC",
-    "customerNumber": "520181",
-    "claimsPolicyStatus": null,
-    "lineOfBusinessCd": "ACC",
-    "claimStatusCd": "CLOSED",
-    "claimSubStatusCd": null,
-    "additionalClaimNumber": "OC1392",
-    "lossLocation": null,
-    "parties": null,
-    "secondaryLossCauseCd": null,
-    "fileOwner": {
-      "displayValue": "New Claims \u2013 Accident CI HI",
-      "typeCd": null,
-      "refId": null
-    },
-    "policyProductVersion": null,
-    "productCd": "CLAIM_ACC_HEALTH"
-  }
-]
- 
-03:12:24.724 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
-03:12:25.883 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (0 remaining) classpath:wflclaim/getClaim.feature
-03:12:25.934 [main] DEBUG com.intuit.karate - request:
-1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510377
-1 > Authorization: Basic cWE6cWE=
-1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
-1 > Accept-Encoding: gzip,deflate
-
-
-03:12:26.105 [main] DEBUG com.intuit.karate - response time in milliseconds: 169
-1 < 200
-1 < Content-Language: en
-1 < X-Paging-Limit: 10
-1 < X-Paging-Offset: 0
-1 < X-Total-Count: 1
-1 < Date: Thu, 19 Aug 2021 07:12:26 GMT
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-[{"addresses":[{"temporary":false,"city":"Walnut Creek","postalCode":"94596","latitude":null,"countryCd":"US","county":null,"accuracy":null,"contactType":"residence","referenceId":null,"effectiveTo":null,"duration":null,"subdivision":null,"extensionFields":{},"validationIndicator":null,"stateProvCd":"CA","addressLine1":"Address97144281","addressLine2":"","id":7905231,"addressLine3":"","contactMethod":"ADDRESS","longitude":null,"inCareOf":null,"preferredInd":null,"communicationPreferences":[],"attention":null,"comment":null,"doNotSolicitInd":null,"effectiveFrom":null}],"preferredSpokenLanguageCd":"ENGLISH","registeredOnline":false,"individualDetails":{"lastName":"Smith09877373","associateEmployments":false,"designationDescription":null,"deceased":false,"occupationDescription":null,"title":null,"suffix":null,"associateBusinessEntity":false,"extensionFields":{},"genderCd":"male","nickname":null,"deathDate":null,"associateProviders":false,"occupationCd":null,"designationCd":null,"birthDate":"1995-09-02","firstName":"John87780675","deathNotificationReceived":false,"disabilities":[],"maritalStatusCd":null,"taxId":"046-42-2369","citizenshipCd":null,"tobaccoCd":"YES","middleName":"","interests":[]},"majorAccount":null,"lastUpdateDate":"2020-09-02T08:44:02.380Z","preferredCurrency":null,"phones":[],"sourceCd":"UNKNOWN","socialNets":[],"rateDatePayment":null,"businessCustomerAdditionalNames":null,"segments":[],"customerStatus":"CUSTOMER","emails":[],"webAddresses":[],"specialClaimReview":false,"archived":false,"customerType":"INDV","sourceOfExchangeRate":null,"extensionFields":{},"groupInfo":[],"preferredWrittenLanguageCd":"ENGLISH","customerEmployments":null,"paperless":false,"agencies":[],"indCustomerAdditionalNames":[],"businessDetails":null,"customerNumber":"510377","accountNumber":"610377","genericRelationships":[],"displayValue":"John87780675 Smith09877373","ratingCd":"UNKNOWN","preferredContactMethod":null,"navigationLinks":[],"chats":[],"rateDateIntake":null,"brandCd":null,"providers":null}]
-03:12:26.107 [main] INFO  com.intuit.karate - [print] [
-  {
-    "addresses": [
-      {
-        "temporary": false,
-        "city": "Walnut Creek",
-        "postalCode": "94596",
-        "latitude": null,
-        "countryCd": "US",
-        "county": null,
-        "accuracy": null,
-        "contactType": "residence",
-        "referenceId": null,
-        "effectiveTo": null,
-        "duration": null,
-        "subdivision": null,
-        "extensionFields": {
-        },
-        "validationIndicator": null,
-        "stateProvCd": "CA",
-        "addressLine1": "Address97144281",
-        "addressLine2": "",
-        "id": 7905231,
-        "addressLine3": "",
-        "contactMethod": "ADDRESS",
-        "longitude": null,
-        "inCareOf": null,
-        "preferredInd": null,
-        "communicationPreferences": [
-        ],
-        "attention": null,
-        "comment": null,
-        "doNotSolicitInd": null,
-        "effectiveFrom": null
-      }
-    ],
-    "preferredSpokenLanguageCd": "ENGLISH",
-    "registeredOnline": false,
-    "individualDetails": {
-      "lastName": "Smith09877373",
-      "associateEmployments": false,
-      "designationDescription": null,
-      "deceased": false,
-      "occupationDescription": null,
-      "title": null,
-      "suffix": null,
-      "associateBusinessEntity": false,
-      "extensionFields": {
-      },
-      "genderCd": "male",
-      "nickname": null,
-      "deathDate": null,
-      "associateProviders": false,
-      "occupationCd": null,
-      "designationCd": null,
-      "birthDate": "1995-09-02",
-      "firstName": "John87780675",
-      "deathNotificationReceived": false,
-      "disabilities": [
-      ],
-      "maritalStatusCd": null,
-      "taxId": "046-42-2369",
-      "citizenshipCd": null,
-      "tobaccoCd": "YES",
-      "middleName": "",
-      "interests": [
-      ]
-    },
-    "majorAccount": null,
-    "lastUpdateDate": "2020-09-02T08:44:02.380Z",
-    "preferredCurrency": null,
-    "phones": [
-    ],
-    "sourceCd": "UNKNOWN",
-    "socialNets": [
-    ],
-    "rateDatePayment": null,
-    "businessCustomerAdditionalNames": null,
-    "segments": [
-    ],
-    "customerStatus": "CUSTOMER",
-    "emails": [
-    ],
-    "webAddresses": [
-    ],
-    "specialClaimReview": false,
-    "archived": false,
-    "customerType": "INDV",
-    "sourceOfExchangeRate": null,
-    "extensionFields": {
-    },
-    "groupInfo": [
-    ],
-    "preferredWrittenLanguageCd": "ENGLISH",
-    "customerEmployments": null,
-    "paperless": false,
-    "agencies": [
-    ],
-    "indCustomerAdditionalNames": [
-    ],
-    "businessDetails": null,
-    "customerNumber": "510377",
-    "accountNumber": "610377",
-    "genericRelationships": [
-    ],
-    "displayValue": "John87780675 Smith09877373",
-    "ratingCd": "UNKNOWN",
-    "preferredContactMethod": null,
-    "navigationLinks": [
-    ],
-    "chats": [
-    ],
-    "rateDateIntake": null,
-    "brandCd": null,
-    "providers": null
-  }
-]
- 
-03:12:26.109 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
-03:12:26.122 [main] DEBUG com.intuit.karate - request:
-1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510977
-1 > Authorization: Basic cWE6cWE=
-1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
-1 > Accept-Encoding: gzip,deflate
-
-
-03:12:26.274 [main] DEBUG com.intuit.karate - response time in milliseconds: 152
-1 < 200
-1 < Content-Language: en
-1 < X-Paging-Limit: 10
-1 < X-Paging-Offset: 0
-1 < X-Total-Count: 1
-1 < Date: Thu, 19 Aug 2021 07:12:26 GMT
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-[{"addresses":[{"temporary":false,"city":"Test","postalCode":"10928","latitude":null,"countryCd":"US","county":null,"accuracy":null,"contactType":"residence","referenceId":null,"effectiveTo":null,"duration":null,"subdivision":null,"extensionFields":{},"validationIndicator":null,"stateProvCd":"GA","addressLine1":"test lane","addressLine2":"","id":30641766,"addressLine3":"","contactMethod":"ADDRESS","longitude":null,"inCareOf":null,"preferredInd":null,"communicationPreferences":[],"attention":null,"comment":null,"doNotSolicitInd":null,"effectiveFrom":null}],"preferredSpokenLanguageCd":"ENGLISH","registeredOnline":false,"individualDetails":{"lastName":"Miller","associateEmployments":false,"designationDescription":null,"deceased":false,"occupationDescription":null,"title":null,"suffix":null,"associateBusinessEntity":false,"extensionFields":{},"genderCd":"male","nickname":null,"deathDate":null,"associateProviders":false,"occupationCd":null,"designationCd":null,"birthDate":null,"firstName":"John","deathNotificationReceived":false,"disabilities":[],"maritalStatusCd":null,"taxId":"109-12-9289","citizenshipCd":null,"tobaccoCd":null,"middleName":"","interests":[]},"majorAccount":null,"lastUpdateDate":"2020-11-30T22:36:30.737Z","preferredCurrency":null,"phones":[],"sourceCd":"UNKNOWN","socialNets":[],"rateDatePayment":null,"businessCustomerAdditionalNames":null,"segments":[],"customerStatus":"CUSTOMER","emails":[],"webAddresses":[],"specialClaimReview":false,"archived":false,"customerType":"INDV","sourceOfExchangeRate":null,"extensionFields":{},"groupInfo":[],"preferredWrittenLanguageCd":"ENGLISH","customerEmployments":null,"paperless":false,"agencies":[],"indCustomerAdditionalNames":[],"businessDetails":null,"customerNumber":"510977","accountNumber":"610977","genericRelationships":[],"displayValue":"John Miller","ratingCd":"UNKNOWN","preferredContactMethod":null,"navigationLinks":[],"chats":[],"rateDateIntake":null,"brandCd":null,"providers":null}]
-03:12:26.276 [main] INFO  com.intuit.karate - [print] [
-  {
-    "addresses": [
-      {
-        "temporary": false,
-        "city": "Test",
-        "postalCode": "10928",
-        "latitude": null,
-        "countryCd": "US",
-        "county": null,
-        "accuracy": null,
-        "contactType": "residence",
-        "referenceId": null,
-        "effectiveTo": null,
-        "duration": null,
-        "subdivision": null,
-        "extensionFields": {
-        },
-        "validationIndicator": null,
-        "stateProvCd": "GA",
-        "addressLine1": "test lane",
-        "addressLine2": "",
-        "id": 30641766,
-        "addressLine3": "",
-        "contactMethod": "ADDRESS",
-        "longitude": null,
-        "inCareOf": null,
-        "preferredInd": null,
-        "communicationPreferences": [
-        ],
-        "attention": null,
-        "comment": null,
-        "doNotSolicitInd": null,
-        "effectiveFrom": null
-      }
-    ],
-    "preferredSpokenLanguageCd": "ENGLISH",
-    "registeredOnline": false,
-    "individualDetails": {
-      "lastName": "Miller",
-      "associateEmployments": false,
-      "designationDescription": null,
-      "deceased": false,
-      "occupationDescription": null,
-      "title": null,
-      "suffix": null,
-      "associateBusinessEntity": false,
-      "extensionFields": {
-      },
-      "genderCd": "male",
-      "nickname": null,
-      "deathDate": null,
-      "associateProviders": false,
-      "occupationCd": null,
-      "designationCd": null,
-      "birthDate": null,
-      "firstName": "John",
-      "deathNotificationReceived": false,
-      "disabilities": [
-      ],
-      "maritalStatusCd": null,
-      "taxId": "109-12-9289",
-      "citizenshipCd": null,
-      "tobaccoCd": null,
-      "middleName": "",
-      "interests": [
-      ]
-    },
-    "majorAccount": null,
-    "lastUpdateDate": "2020-11-30T22:36:30.737Z",
-    "preferredCurrency": null,
-    "phones": [
-    ],
-    "sourceCd": "UNKNOWN",
-    "socialNets": [
-    ],
-    "rateDatePayment": null,
-    "businessCustomerAdditionalNames": null,
-    "segments": [
-    ],
-    "customerStatus": "CUSTOMER",
-    "emails": [
-    ],
-    "webAddresses": [
-    ],
-    "specialClaimReview": false,
-    "archived": false,
-    "customerType": "INDV",
-    "sourceOfExchangeRate": null,
-    "extensionFields": {
-    },
-    "groupInfo": [
-    ],
-    "preferredWrittenLanguageCd": "ENGLISH",
-    "customerEmployments": null,
-    "paperless": false,
-    "agencies": [
-    ],
-    "indCustomerAdditionalNames": [
-    ],
-    "businessDetails": null,
-    "customerNumber": "510977",
-    "accountNumber": "610977",
-    "genericRelationships": [
-    ],
-    "displayValue": "John Miller",
-    "ratingCd": "UNKNOWN",
-    "preferredContactMethod": null,
-    "navigationLinks": [
-    ],
-    "chats": [
-    ],
-    "rateDateIntake": null,
-    "brandCd": null,
-    "providers": null
-  }
-]
- 
-03:12:26.277 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
-03:12:26.575 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:wflclaim/getCustomerNumber.feature
-03:12:26.580 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
-03:17:09.148 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-03:17:09.170 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1629357429162
-03:17:11.068 [main] DEBUG com.intuit.karate - request:
-1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392
-1 > Authorization: Basic cWE6cWE=
-1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
-1 > Accept-Encoding: gzip,deflate
-
-
-03:17:11.399 [main] DEBUG com.intuit.karate - response time in milliseconds: 280
-1 < 200
-1 < Content-Language: en
-1 < Date: Thu, 19 Aug 2021 07:17:11 GMT
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-[{"addresses":null,"extension":{},"currencyCd":null,"policyNumber":"CP0000863460","lossDt":"2021-07-16T00:00:00Z","lossDesc":"test","typeOfResolution":"WITHDRAWN","productVersion":null,"selectedRiskItemOids":null,"knownTimeInd":null,"componentName":null,"causeOfLossCd":null,"lossLocationDesc":null,"claimNumber":"C1392","policy":{"termExpirationDate":"2022-01-01T00:00:00Z","policyLOB":"ACC","riskItems":null,"policyNumber":"CP0000863460","verified":null,"policyStatus":"ACTIVE","productVersion":null,"inceptionDate":null,"parties":[{"nameTypeCd":null,"lastName":"Test","addresses":null,"extension":{},"bankAccountInfo":null,"instanceName":null,"roles":null,"phones":null,"bankName":null,"oid":null,"type":null,"suffix":null,"relationShipToInsuredCd":null,"accountHolderName":null,"emails":null,"contactPreferenceCd":null,"preferredPaymentMethod":null,"companyNumber":null,"namePrefix":null,"bankBranchCd":null,"bankAccountNumber":null,"componentName":null,"bankTransitNumber":null,"birthDt":null,"externalId":null,"additionalNameInd":null,"externalPartyInd":false,"partyRoles":null,"displayValue":null,"firstName":"Test 22","bankAccountType":null,"bankCd":null,"middleName":null,"otherName":null,"partyNumber":null,"additionalName":null}],"termEffectiveDate":"2021-01-01T00:00:00Z","componentName":null,"reportedPolicyNumber":"CP0000863460","policyBLOB":null,"productCd":"GB_AC"},"reportingMethod":null,"reportedDt":"2021-07-16T18:31:00Z","totalIncurred":{"amount":0.0,"currencyCd":"USD"},"policyProductCd":"GB_AC","customerNumber":"520181","claimsPolicyStatus":null,"lineOfBusinessCd":"ACC","claimStatusCd":"CLOSED","claimSubStatusCd":null,"additionalClaimNumber":"OC1392","lossLocation":null,"parties":null,"secondaryLossCauseCd":null,"fileOwner":{"displayValue":"New Claims \u2013 Accident CI HI","typeCd":null,"refId":null},"policyProductVersion":null,"productCd":"CLAIM_ACC_HEALTH"}]
-03:17:11.417 [main] INFO  com.intuit.karate - [print] [
-  {
-    "addresses": null,
-    "extension": {
-    },
-    "currencyCd": null,
-    "policyNumber": "CP0000863460",
-    "lossDt": "2021-07-16T00:00:00Z",
-    "lossDesc": "test",
-    "typeOfResolution": "WITHDRAWN",
-    "productVersion": null,
-    "selectedRiskItemOids": null,
-    "knownTimeInd": null,
-    "componentName": null,
-    "causeOfLossCd": null,
-    "lossLocationDesc": null,
-    "claimNumber": "C1392",
-    "policy": {
-      "termExpirationDate": "2022-01-01T00:00:00Z",
-      "policyLOB": "ACC",
-      "riskItems": null,
-      "policyNumber": "CP0000863460",
-      "verified": null,
-      "policyStatus": "ACTIVE",
-      "productVersion": null,
-      "inceptionDate": null,
-      "parties": [
-        {
-          "nameTypeCd": null,
-          "lastName": "Test",
-          "addresses": null,
-          "extension": {
-          },
-          "bankAccountInfo": null,
-          "instanceName": null,
-          "roles": null,
-          "phones": null,
-          "bankName": null,
-          "oid": null,
-          "type": null,
-          "suffix": null,
-          "relationShipToInsuredCd": null,
-          "accountHolderName": null,
-          "emails": null,
-          "contactPreferenceCd": null,
-          "preferredPaymentMethod": null,
-          "companyNumber": null,
-          "namePrefix": null,
-          "bankBranchCd": null,
-          "bankAccountNumber": null,
-          "componentName": null,
-          "bankTransitNumber": null,
-          "birthDt": null,
-          "externalId": null,
-          "additionalNameInd": null,
-          "externalPartyInd": false,
-          "partyRoles": null,
-          "displayValue": null,
-          "firstName": "Test 22",
-          "bankAccountType": null,
-          "bankCd": null,
-          "middleName": null,
-          "otherName": null,
-          "partyNumber": null,
-          "additionalName": null
-        }
-      ],
-      "termEffectiveDate": "2021-01-01T00:00:00Z",
-      "componentName": null,
-      "reportedPolicyNumber": "CP0000863460",
-      "policyBLOB": null,
-      "productCd": "GB_AC"
-    },
-    "reportingMethod": null,
-    "reportedDt": "2021-07-16T18:31:00Z",
-    "totalIncurred": {
-      "amount": 0.0,
-      "currencyCd": "USD"
-    },
-    "policyProductCd": "GB_AC",
-    "customerNumber": "520181",
-    "claimsPolicyStatus": null,
-    "lineOfBusinessCd": "ACC",
-    "claimStatusCd": "CLOSED",
-    "claimSubStatusCd": null,
-    "additionalClaimNumber": "OC1392",
-    "lossLocation": null,
-    "parties": null,
-    "secondaryLossCauseCd": null,
-    "fileOwner": {
-      "displayValue": "New Claims \u2013 Accident CI HI",
-      "typeCd": null,
-      "refId": null
-    },
-    "policyProductVersion": null,
-    "productCd": "CLAIM_ACC_HEALTH"
-  }
-]
- 
-03:17:11.421 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
-03:17:11.481 [main] DEBUG com.intuit.karate - request:
-1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392
-1 > Authorization: Basic cWE6cWE=
-1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
-1 > Connection: Keep-Alive
-1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
-1 > Accept-Encoding: gzip,deflate
-
-
-03:17:11.573 [main] DEBUG com.intuit.karate - response time in milliseconds: 91
-1 < 200
-1 < Content-Language: en
-1 < Date: Thu, 19 Aug 2021 07:17:11 GMT
-1 < Content-Type: application/json;charset=UTF-8
-1 < Transfer-Encoding: chunked
-[{"addresses":null,"extension":{},"currencyCd":null,"policyNumber":"CP0000863460","lossDt":"2021-07-16T00:00:00Z","lossDesc":"test","typeOfResolution":"WITHDRAWN","productVersion":null,"selectedRiskItemOids":null,"knownTimeInd":null,"componentName":null,"causeOfLossCd":null,"lossLocationDesc":null,"claimNumber":"C1392","policy":{"termExpirationDate":"2022-01-01T00:00:00Z","policyLOB":"ACC","riskItems":null,"policyNumber":"CP0000863460","verified":null,"policyStatus":"ACTIVE","productVersion":null,"inceptionDate":null,"parties":[{"nameTypeCd":null,"lastName":"Test","addresses":null,"extension":{},"bankAccountInfo":null,"instanceName":null,"roles":null,"phones":null,"bankName":null,"oid":null,"type":null,"suffix":null,"relationShipToInsuredCd":null,"accountHolderName":null,"emails":null,"contactPreferenceCd":null,"preferredPaymentMethod":null,"companyNumber":null,"namePrefix":null,"bankBranchCd":null,"bankAccountNumber":null,"componentName":null,"bankTransitNumber":null,"birthDt":null,"externalId":null,"additionalNameInd":null,"externalPartyInd":false,"partyRoles":null,"displayValue":null,"firstName":"Test 22","bankAccountType":null,"bankCd":null,"middleName":null,"otherName":null,"partyNumber":null,"additionalName":null}],"termEffectiveDate":"2021-01-01T00:00:00Z","componentName":null,"reportedPolicyNumber":"CP0000863460","policyBLOB":null,"productCd":"GB_AC"},"reportingMethod":null,"reportedDt":"2021-07-16T18:31:00Z","totalIncurred":{"amount":0.0,"currencyCd":"USD"},"policyProductCd":"GB_AC","customerNumber":"520181","claimsPolicyStatus":null,"lineOfBusinessCd":"ACC","claimStatusCd":"CLOSED","claimSubStatusCd":null,"additionalClaimNumber":"OC1392","lossLocation":null,"parties":null,"secondaryLossCauseCd":null,"fileOwner":{"displayValue":"New Claims \u2013 Accident CI HI","typeCd":null,"refId":null},"policyProductVersion":null,"productCd":"CLAIM_ACC_HEALTH"}]
-03:17:11.575 [main] ERROR com.intuit.karate - classpath:wflclaim/getClaim.feature:30
+05:46:05.974 [main] ERROR com.intuit.karate - classpath:wflclaim/getClaim.feature:31
 Then status 400
-status code was: 200, expected: 400, response time in milliseconds: 91, url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392, response: 
+status code was: 200, expected: 400, response time in milliseconds: 94, url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392, response: 
+[ {
+  "claimSubStatusCd" : null,
+  "policy" : {
+    "termEffectiveDate" : "2021-01-01T00:00:00Z",
+    "termExpirationDate" : "2022-01-01T00:00:00Z",
+    "inceptionDate" : null,
+    "componentName" : null,
+    "riskItems" : null,
+    "parties" : [ {
+      "namePrefix" : null,
+      "firstName" : "Test 22",
+      "middleName" : null,
+      "lastName" : "Test",
+      "otherName" : null,
+      "nameTypeCd" : null,
+      "oid" : null,
+      "contactPreferenceCd" : null,
+      "displayValue" : null,
+      "relationShipToInsuredCd" : null,
+      "addresses" : null,
+      "componentName" : null,
+      "extension" : { },
+      "emails" : null,
+      "phones" : null,
+      "roles" : null,
+      "birthDt" : null,
+      "partyNumber" : null,
+      "companyNumber" : null,
+      "externalId" : null,
+      "preferredPaymentMethod" : null,
+      "bankAccountInfo" : null,
+      "bankName" : null,
+      "bankAccountNumber" : null,
+      "accountHolderName" : null,
+      "bankTransitNumber" : null,
+      "bankCd" : null,
+      "bankBranchCd" : null,
+      "bankAccountType" : null,
+      "additionalNameInd" : null,
+      "additionalName" : null,
+      "instanceName" : null,
+      "type" : null,
+      "partyRoles" : null,
+      "externalPartyInd" : false,
+      "suffix" : null
+    } ],
+    "policyNumber" : "CP0000863460",
+    "productCd" : "GB_AC",
+    "productVersion" : null,
+    "verified" : null,
+    "policyStatus" : "ACTIVE",
+    "policyLOB" : "ACC",
+    "policyBLOB" : null,
+    "reportedPolicyNumber" : "CP0000863460"
+  },
+  "claimNumber" : "C1392",
+  "additionalClaimNumber" : "OC1392",
+  "claimStatusCd" : "CLOSED",
+  "lossDt" : "2021-07-16T00:00:00Z",
+  "lossDesc" : "test",
+  "customerNumber" : "520181",
+  "reportedDt" : "2021-07-16T18:31:00Z",
+  "policyNumber" : "CP0000863460",
+  "policyProductCd" : "GB_AC",
+  "knownTimeInd" : null,
+  "lineOfBusinessCd" : "ACC",
+  "productVersion" : null,
+  "causeOfLossCd" : null,
+  "lossLocationDesc" : null,
+  "lossLocation" : null,
+  "secondaryLossCauseCd" : null,
+  "reportingMethod" : null,
+  "parties" : null,
+  "addresses" : null,
+  "componentName" : null,
+  "policyProductVersion" : null,
+  "totalIncurred" : {
+    "amount" : 0.00,
+    "currencyCd" : "USD"
+  },
+  "fileOwner" : {
+    "typeCd" : null,
+    "refId" : null,
+    "displayValue" : "New Claims – Accident CI HI"
+  },
+  "claimsPolicyStatus" : null,
+  "extension" : { },
+  "selectedRiskItemOids" : null,
+  "currencyCd" : null,
+  "typeOfResolution" : "WITHDRAWN",
+  "productCd" : "CLAIM_ACC_HEALTH"
+} ]
+classpath:wflclaim/getClaim.feature:31
+05:46:07.484 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) classpath:wflclaim/getClaim.feature
+05:46:07.502 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+07:13:46.206 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+07:13:46.228 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1629458026222
+07:13:48.941 [main] DEBUG com.intuit.karate - request:
+1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392
+1 > Authorization: Basic cWE6cWE=
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:13:49.314 [main] DEBUG com.intuit.karate - response time in milliseconds: 323
+1 < 200
+1 < Content-Language: en
+1 < Date: Fri, 20 Aug 2021 11:13:49 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+[{"addresses":null,"extension":{},"currencyCd":null,"policyNumber":"CP0000863460","lossDt":"2021-07-16T00:00:00Z","lossDesc":"test","typeOfResolution":"WITHDRAWN","productVersion":null,"selectedRiskItemOids":null,"knownTimeInd":null,"componentName":null,"causeOfLossCd":null,"lossLocationDesc":null,"claimNumber":"C1392","policy":{"termExpirationDate":"2022-01-01T00:00:00Z","policyLOB":"ACC","riskItems":null,"policyNumber":"CP0000863460","verified":null,"policyStatus":"ACTIVE","productVersion":null,"inceptionDate":null,"parties":[{"nameTypeCd":null,"lastName":"Test","addresses":null,"extension":{},"bankAccountInfo":null,"instanceName":null,"roles":null,"phones":null,"bankName":null,"oid":null,"type":null,"suffix":null,"relationShipToInsuredCd":null,"accountHolderName":null,"emails":null,"contactPreferenceCd":null,"preferredPaymentMethod":null,"companyNumber":null,"namePrefix":null,"bankBranchCd":null,"bankAccountNumber":null,"componentName":null,"bankTransitNumber":null,"birthDt":null,"externalId":null,"additionalNameInd":null,"externalPartyInd":false,"partyRoles":null,"displayValue":null,"firstName":"Test 22","bankAccountType":null,"bankCd":null,"middleName":null,"otherName":null,"partyNumber":null,"additionalName":null}],"termEffectiveDate":"2021-01-01T00:00:00Z","componentName":null,"reportedPolicyNumber":"CP0000863460","policyBLOB":null,"productCd":"GB_AC"},"reportingMethod":null,"reportedDt":"2021-07-16T18:31:00Z","totalIncurred":{"amount":0.0,"currencyCd":"USD"},"policyProductCd":"GB_AC","customerNumber":"520181","claimsPolicyStatus":null,"lineOfBusinessCd":"ACC","claimStatusCd":"CLOSED","claimSubStatusCd":null,"additionalClaimNumber":"OC1392","lossLocation":null,"parties":null,"secondaryLossCauseCd":null,"fileOwner":{"displayValue":"New Claims \u2013 Accident CI HI","typeCd":null,"refId":null},"policyProductVersion":null,"productCd":"CLAIM_ACC_HEALTH"}]
+07:13:49.332 [main] INFO  com.intuit.karate - [print] [
+  {
+    "addresses": null,
+    "extension": {
+    },
+    "currencyCd": null,
+    "policyNumber": "CP0000863460",
+    "lossDt": "2021-07-16T00:00:00Z",
+    "lossDesc": "test",
+    "typeOfResolution": "WITHDRAWN",
+    "productVersion": null,
+    "selectedRiskItemOids": null,
+    "knownTimeInd": null,
+    "componentName": null,
+    "causeOfLossCd": null,
+    "lossLocationDesc": null,
+    "claimNumber": "C1392",
+    "policy": {
+      "termExpirationDate": "2022-01-01T00:00:00Z",
+      "policyLOB": "ACC",
+      "riskItems": null,
+      "policyNumber": "CP0000863460",
+      "verified": null,
+      "policyStatus": "ACTIVE",
+      "productVersion": null,
+      "inceptionDate": null,
+      "parties": [
+        {
+          "nameTypeCd": null,
+          "lastName": "Test",
+          "addresses": null,
+          "extension": {
+          },
+          "bankAccountInfo": null,
+          "instanceName": null,
+          "roles": null,
+          "phones": null,
+          "bankName": null,
+          "oid": null,
+          "type": null,
+          "suffix": null,
+          "relationShipToInsuredCd": null,
+          "accountHolderName": null,
+          "emails": null,
+          "contactPreferenceCd": null,
+          "preferredPaymentMethod": null,
+          "companyNumber": null,
+          "namePrefix": null,
+          "bankBranchCd": null,
+          "bankAccountNumber": null,
+          "componentName": null,
+          "bankTransitNumber": null,
+          "birthDt": null,
+          "externalId": null,
+          "additionalNameInd": null,
+          "externalPartyInd": false,
+          "partyRoles": null,
+          "displayValue": null,
+          "firstName": "Test 22",
+          "bankAccountType": null,
+          "bankCd": null,
+          "middleName": null,
+          "otherName": null,
+          "partyNumber": null,
+          "additionalName": null
+        }
+      ],
+      "termEffectiveDate": "2021-01-01T00:00:00Z",
+      "componentName": null,
+      "reportedPolicyNumber": "CP0000863460",
+      "policyBLOB": null,
+      "productCd": "GB_AC"
+    },
+    "reportingMethod": null,
+    "reportedDt": "2021-07-16T18:31:00Z",
+    "totalIncurred": {
+      "amount": 0.0,
+      "currencyCd": "USD"
+    },
+    "policyProductCd": "GB_AC",
+    "customerNumber": "520181",
+    "claimsPolicyStatus": null,
+    "lineOfBusinessCd": "ACC",
+    "claimStatusCd": "CLOSED",
+    "claimSubStatusCd": null,
+    "additionalClaimNumber": "OC1392",
+    "lossLocation": null,
+    "parties": null,
+    "secondaryLossCauseCd": null,
+    "fileOwner": {
+      "displayValue": "New Claims \u2013 Accident CI HI",
+      "typeCd": null,
+      "refId": null
+    },
+    "policyProductVersion": null,
+    "productCd": "CLAIM_ACC_HEALTH"
+  }
+]
+ 
+07:13:49.337 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+07:13:49.400 [main] DEBUG com.intuit.karate - request:
+1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392
+1 > Authorization: Basic cWE6cWE=
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:13:49.488 [main] DEBUG com.intuit.karate - response time in milliseconds: 86
+1 < 200
+1 < Content-Language: en
+1 < Date: Fri, 20 Aug 2021 11:13:49 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+[{"addresses":null,"extension":{},"currencyCd":null,"policyNumber":"CP0000863460","lossDt":"2021-07-16T00:00:00Z","lossDesc":"test","typeOfResolution":"WITHDRAWN","productVersion":null,"selectedRiskItemOids":null,"knownTimeInd":null,"componentName":null,"causeOfLossCd":null,"lossLocationDesc":null,"claimNumber":"C1392","policy":{"termExpirationDate":"2022-01-01T00:00:00Z","policyLOB":"ACC","riskItems":null,"policyNumber":"CP0000863460","verified":null,"policyStatus":"ACTIVE","productVersion":null,"inceptionDate":null,"parties":[{"nameTypeCd":null,"lastName":"Test","addresses":null,"extension":{},"bankAccountInfo":null,"instanceName":null,"roles":null,"phones":null,"bankName":null,"oid":null,"type":null,"suffix":null,"relationShipToInsuredCd":null,"accountHolderName":null,"emails":null,"contactPreferenceCd":null,"preferredPaymentMethod":null,"companyNumber":null,"namePrefix":null,"bankBranchCd":null,"bankAccountNumber":null,"componentName":null,"bankTransitNumber":null,"birthDt":null,"externalId":null,"additionalNameInd":null,"externalPartyInd":false,"partyRoles":null,"displayValue":null,"firstName":"Test 22","bankAccountType":null,"bankCd":null,"middleName":null,"otherName":null,"partyNumber":null,"additionalName":null}],"termEffectiveDate":"2021-01-01T00:00:00Z","componentName":null,"reportedPolicyNumber":"CP0000863460","policyBLOB":null,"productCd":"GB_AC"},"reportingMethod":null,"reportedDt":"2021-07-16T18:31:00Z","totalIncurred":{"amount":0.0,"currencyCd":"USD"},"policyProductCd":"GB_AC","customerNumber":"520181","claimsPolicyStatus":null,"lineOfBusinessCd":"ACC","claimStatusCd":"CLOSED","claimSubStatusCd":null,"additionalClaimNumber":"OC1392","lossLocation":null,"parties":null,"secondaryLossCauseCd":null,"fileOwner":{"displayValue":"New Claims \u2013 Accident CI HI","typeCd":null,"refId":null},"policyProductVersion":null,"productCd":"CLAIM_ACC_HEALTH"}]
+07:13:49.492 [main] ERROR com.intuit.karate - classpath:wflclaim/getClaim.feature:31
+Then status 400
+status code was: 200, expected: 400, response time in milliseconds: 86, url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392, response: 
 [ {
   "claimSubStatusCd" : null,
   "policy" : {
@@ -1782,9 +458,9 @@ status code was: 200, expected: 400, response time in milliseconds: 91, url: htt
   "typeOfResolution" : "WITHDRAWN",
   "productCd" : "CLAIM_ACC_HEALTH"
 } ]
-classpath:wflclaim/getClaim.feature:30
-03:17:12.771 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) classpath:wflclaim/getClaim.feature
-03:17:12.799 [main] DEBUG com.intuit.karate - request:
+classpath:wflclaim/getClaim.feature:31
+07:13:50.924 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) classpath:wflclaim/getClaim.feature
+07:13:50.972 [main] DEBUG com.intuit.karate - request:
 1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510377
 1 > Authorization: Basic cWE6cWE=
 1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
@@ -1793,17 +469,17 @@ classpath:wflclaim/getClaim.feature:30
 1 > Accept-Encoding: gzip,deflate
 
 
-03:17:12.950 [main] DEBUG com.intuit.karate - response time in milliseconds: 149
+07:13:51.131 [main] DEBUG com.intuit.karate - response time in milliseconds: 158
 1 < 200
 1 < Content-Language: en
 1 < X-Paging-Limit: 10
 1 < X-Paging-Offset: 0
 1 < X-Total-Count: 1
-1 < Date: Thu, 19 Aug 2021 07:17:13 GMT
+1 < Date: Fri, 20 Aug 2021 11:13:51 GMT
 1 < Content-Type: application/json;charset=UTF-8
 1 < Transfer-Encoding: chunked
 [{"addresses":[{"temporary":false,"city":"Walnut Creek","postalCode":"94596","latitude":null,"countryCd":"US","county":null,"accuracy":null,"contactType":"residence","referenceId":null,"effectiveTo":null,"duration":null,"subdivision":null,"extensionFields":{},"validationIndicator":null,"stateProvCd":"CA","addressLine1":"Address97144281","addressLine2":"","id":7905231,"addressLine3":"","contactMethod":"ADDRESS","longitude":null,"inCareOf":null,"preferredInd":null,"communicationPreferences":[],"attention":null,"comment":null,"doNotSolicitInd":null,"effectiveFrom":null}],"preferredSpokenLanguageCd":"ENGLISH","registeredOnline":false,"individualDetails":{"lastName":"Smith09877373","associateEmployments":false,"designationDescription":null,"deceased":false,"occupationDescription":null,"title":null,"suffix":null,"associateBusinessEntity":false,"extensionFields":{},"genderCd":"male","nickname":null,"deathDate":null,"associateProviders":false,"occupationCd":null,"designationCd":null,"birthDate":"1995-09-02","firstName":"John87780675","deathNotificationReceived":false,"disabilities":[],"maritalStatusCd":null,"taxId":"046-42-2369","citizenshipCd":null,"tobaccoCd":"YES","middleName":"","interests":[]},"majorAccount":null,"lastUpdateDate":"2020-09-02T08:44:02.380Z","preferredCurrency":null,"phones":[],"sourceCd":"UNKNOWN","socialNets":[],"rateDatePayment":null,"businessCustomerAdditionalNames":null,"segments":[],"customerStatus":"CUSTOMER","emails":[],"webAddresses":[],"specialClaimReview":false,"archived":false,"customerType":"INDV","sourceOfExchangeRate":null,"extensionFields":{},"groupInfo":[],"preferredWrittenLanguageCd":"ENGLISH","customerEmployments":null,"paperless":false,"agencies":[],"indCustomerAdditionalNames":[],"businessDetails":null,"customerNumber":"510377","accountNumber":"610377","genericRelationships":[],"displayValue":"John87780675 Smith09877373","ratingCd":"UNKNOWN","preferredContactMethod":null,"navigationLinks":[],"chats":[],"rateDateIntake":null,"brandCd":null,"providers":null}]
-03:17:12.954 [main] INFO  com.intuit.karate - [print] [
+07:13:51.156 [main] INFO  com.intuit.karate - [print] [
   {
     "addresses": [
       {
@@ -1921,8 +597,8 @@ classpath:wflclaim/getClaim.feature:30
   }
 ]
  
-03:17:12.955 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
-03:17:12.980 [main] DEBUG com.intuit.karate - request:
+07:13:51.158 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+07:13:51.187 [main] DEBUG com.intuit.karate - request:
 1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510977
 1 > Authorization: Basic cWE6cWE=
 1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
@@ -1931,17 +607,17 @@ classpath:wflclaim/getClaim.feature:30
 1 > Accept-Encoding: gzip,deflate
 
 
-03:17:13.388 [main] DEBUG com.intuit.karate - response time in milliseconds: 407
+07:13:51.309 [main] DEBUG com.intuit.karate - response time in milliseconds: 120
 1 < 200
 1 < Content-Language: en
 1 < X-Paging-Limit: 10
 1 < X-Paging-Offset: 0
 1 < X-Total-Count: 1
-1 < Date: Thu, 19 Aug 2021 07:17:13 GMT
+1 < Date: Fri, 20 Aug 2021 11:13:51 GMT
 1 < Content-Type: application/json;charset=UTF-8
 1 < Transfer-Encoding: chunked
 [{"addresses":[{"temporary":false,"city":"Test","postalCode":"10928","latitude":null,"countryCd":"US","county":null,"accuracy":null,"contactType":"residence","referenceId":null,"effectiveTo":null,"duration":null,"subdivision":null,"extensionFields":{},"validationIndicator":null,"stateProvCd":"GA","addressLine1":"test lane","addressLine2":"","id":30641766,"addressLine3":"","contactMethod":"ADDRESS","longitude":null,"inCareOf":null,"preferredInd":null,"communicationPreferences":[],"attention":null,"comment":null,"doNotSolicitInd":null,"effectiveFrom":null}],"preferredSpokenLanguageCd":"ENGLISH","registeredOnline":false,"individualDetails":{"lastName":"Miller","associateEmployments":false,"designationDescription":null,"deceased":false,"occupationDescription":null,"title":null,"suffix":null,"associateBusinessEntity":false,"extensionFields":{},"genderCd":"male","nickname":null,"deathDate":null,"associateProviders":false,"occupationCd":null,"designationCd":null,"birthDate":null,"firstName":"John","deathNotificationReceived":false,"disabilities":[],"maritalStatusCd":null,"taxId":"109-12-9289","citizenshipCd":null,"tobaccoCd":null,"middleName":"","interests":[]},"majorAccount":null,"lastUpdateDate":"2020-11-30T22:36:30.737Z","preferredCurrency":null,"phones":[],"sourceCd":"UNKNOWN","socialNets":[],"rateDatePayment":null,"businessCustomerAdditionalNames":null,"segments":[],"customerStatus":"CUSTOMER","emails":[],"webAddresses":[],"specialClaimReview":false,"archived":false,"customerType":"INDV","sourceOfExchangeRate":null,"extensionFields":{},"groupInfo":[],"preferredWrittenLanguageCd":"ENGLISH","customerEmployments":null,"paperless":false,"agencies":[],"indCustomerAdditionalNames":[],"businessDetails":null,"customerNumber":"510977","accountNumber":"610977","genericRelationships":[],"displayValue":"John Miller","ratingCd":"UNKNOWN","preferredContactMethod":null,"navigationLinks":[],"chats":[],"rateDateIntake":null,"brandCd":null,"providers":null}]
-03:17:13.390 [main] INFO  com.intuit.karate - [print] [
+07:13:51.311 [main] INFO  com.intuit.karate - [print] [
   {
     "addresses": [
       {
@@ -2059,12 +735,12 @@ classpath:wflclaim/getClaim.feature:30
   }
 ]
  
-03:17:13.391 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
-03:17:13.755 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:wflclaim/getCustomerNumber.feature
-03:17:13.769 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
-03:19:12.981 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-03:19:13.004 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1629357552998
-03:19:14.901 [main] DEBUG com.intuit.karate - request:
+07:13:51.312 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+07:13:51.570 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:wflclaim/getCustomerNumber.feature
+07:13:51.593 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+07:28:55.721 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+07:28:55.740 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1629458935734
+07:28:57.784 [main] DEBUG com.intuit.karate - request:
 1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392
 1 > Authorization: Basic cWE6cWE=
 1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
@@ -2073,14 +749,14 @@ classpath:wflclaim/getClaim.feature:30
 1 > Accept-Encoding: gzip,deflate
 
 
-03:19:15.140 [main] DEBUG com.intuit.karate - response time in milliseconds: 196
+07:28:58.072 [main] DEBUG com.intuit.karate - response time in milliseconds: 239
 1 < 200
 1 < Content-Language: en
-1 < Date: Thu, 19 Aug 2021 07:19:15 GMT
+1 < Date: Fri, 20 Aug 2021 11:28:58 GMT
 1 < Content-Type: application/json;charset=UTF-8
 1 < Transfer-Encoding: chunked
 [{"addresses":null,"extension":{},"currencyCd":null,"policyNumber":"CP0000863460","lossDt":"2021-07-16T00:00:00Z","lossDesc":"test","typeOfResolution":"WITHDRAWN","productVersion":null,"selectedRiskItemOids":null,"knownTimeInd":null,"componentName":null,"causeOfLossCd":null,"lossLocationDesc":null,"claimNumber":"C1392","policy":{"termExpirationDate":"2022-01-01T00:00:00Z","policyLOB":"ACC","riskItems":null,"policyNumber":"CP0000863460","verified":null,"policyStatus":"ACTIVE","productVersion":null,"inceptionDate":null,"parties":[{"nameTypeCd":null,"lastName":"Test","addresses":null,"extension":{},"bankAccountInfo":null,"instanceName":null,"roles":null,"phones":null,"bankName":null,"oid":null,"type":null,"suffix":null,"relationShipToInsuredCd":null,"accountHolderName":null,"emails":null,"contactPreferenceCd":null,"preferredPaymentMethod":null,"companyNumber":null,"namePrefix":null,"bankBranchCd":null,"bankAccountNumber":null,"componentName":null,"bankTransitNumber":null,"birthDt":null,"externalId":null,"additionalNameInd":null,"externalPartyInd":false,"partyRoles":null,"displayValue":null,"firstName":"Test 22","bankAccountType":null,"bankCd":null,"middleName":null,"otherName":null,"partyNumber":null,"additionalName":null}],"termEffectiveDate":"2021-01-01T00:00:00Z","componentName":null,"reportedPolicyNumber":"CP0000863460","policyBLOB":null,"productCd":"GB_AC"},"reportingMethod":null,"reportedDt":"2021-07-16T18:31:00Z","totalIncurred":{"amount":0.0,"currencyCd":"USD"},"policyProductCd":"GB_AC","customerNumber":"520181","claimsPolicyStatus":null,"lineOfBusinessCd":"ACC","claimStatusCd":"CLOSED","claimSubStatusCd":null,"additionalClaimNumber":"OC1392","lossLocation":null,"parties":null,"secondaryLossCauseCd":null,"fileOwner":{"displayValue":"New Claims \u2013 Accident CI HI","typeCd":null,"refId":null},"policyProductVersion":null,"productCd":"CLAIM_ACC_HEALTH"}]
-03:19:15.159 [main] INFO  com.intuit.karate - [print] [
+07:28:58.092 [main] INFO  com.intuit.karate - [print] [
   {
     "addresses": null,
     "extension": {
@@ -2179,8 +855,8 @@ classpath:wflclaim/getClaim.feature:30
   }
 ]
  
-03:19:15.162 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
-03:19:15.211 [main] DEBUG com.intuit.karate - request:
+07:28:58.095 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+07:28:58.156 [main] DEBUG com.intuit.karate - request:
 1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392
 1 > Authorization: Basic cWE6cWE=
 1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
@@ -2189,16 +865,16 @@ classpath:wflclaim/getClaim.feature:30
 1 > Accept-Encoding: gzip,deflate
 
 
-03:19:15.312 [main] DEBUG com.intuit.karate - response time in milliseconds: 99
+07:28:58.246 [main] DEBUG com.intuit.karate - response time in milliseconds: 89
 1 < 200
 1 < Content-Language: en
-1 < Date: Thu, 19 Aug 2021 07:19:15 GMT
+1 < Date: Fri, 20 Aug 2021 11:28:58 GMT
 1 < Content-Type: application/json;charset=UTF-8
 1 < Transfer-Encoding: chunked
 [{"addresses":null,"extension":{},"currencyCd":null,"policyNumber":"CP0000863460","lossDt":"2021-07-16T00:00:00Z","lossDesc":"test","typeOfResolution":"WITHDRAWN","productVersion":null,"selectedRiskItemOids":null,"knownTimeInd":null,"componentName":null,"causeOfLossCd":null,"lossLocationDesc":null,"claimNumber":"C1392","policy":{"termExpirationDate":"2022-01-01T00:00:00Z","policyLOB":"ACC","riskItems":null,"policyNumber":"CP0000863460","verified":null,"policyStatus":"ACTIVE","productVersion":null,"inceptionDate":null,"parties":[{"nameTypeCd":null,"lastName":"Test","addresses":null,"extension":{},"bankAccountInfo":null,"instanceName":null,"roles":null,"phones":null,"bankName":null,"oid":null,"type":null,"suffix":null,"relationShipToInsuredCd":null,"accountHolderName":null,"emails":null,"contactPreferenceCd":null,"preferredPaymentMethod":null,"companyNumber":null,"namePrefix":null,"bankBranchCd":null,"bankAccountNumber":null,"componentName":null,"bankTransitNumber":null,"birthDt":null,"externalId":null,"additionalNameInd":null,"externalPartyInd":false,"partyRoles":null,"displayValue":null,"firstName":"Test 22","bankAccountType":null,"bankCd":null,"middleName":null,"otherName":null,"partyNumber":null,"additionalName":null}],"termEffectiveDate":"2021-01-01T00:00:00Z","componentName":null,"reportedPolicyNumber":"CP0000863460","policyBLOB":null,"productCd":"GB_AC"},"reportingMethod":null,"reportedDt":"2021-07-16T18:31:00Z","totalIncurred":{"amount":0.0,"currencyCd":"USD"},"policyProductCd":"GB_AC","customerNumber":"520181","claimsPolicyStatus":null,"lineOfBusinessCd":"ACC","claimStatusCd":"CLOSED","claimSubStatusCd":null,"additionalClaimNumber":"OC1392","lossLocation":null,"parties":null,"secondaryLossCauseCd":null,"fileOwner":{"displayValue":"New Claims \u2013 Accident CI HI","typeCd":null,"refId":null},"policyProductVersion":null,"productCd":"CLAIM_ACC_HEALTH"}]
-03:19:15.315 [main] ERROR com.intuit.karate - classpath:wflclaim/getClaim.feature:30
+07:28:58.250 [main] ERROR com.intuit.karate - classpath:wflclaim/getClaim.feature:31
 Then status 400
-status code was: 200, expected: 400, response time in milliseconds: 99, url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392, response: 
+status code was: 200, expected: 400, response time in milliseconds: 89, url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392, response: 
 [ {
   "claimSubStatusCd" : null,
   "policy" : {
@@ -2291,9 +967,9 @@ status code was: 200, expected: 400, response time in milliseconds: 99, url: htt
   "typeOfResolution" : "WITHDRAWN",
   "productCd" : "CLAIM_ACC_HEALTH"
 } ]
-classpath:wflclaim/getClaim.feature:30
-03:19:16.541 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) classpath:wflclaim/getClaim.feature
-03:19:16.587 [main] DEBUG com.intuit.karate - request:
+classpath:wflclaim/getClaim.feature:31
+07:28:59.594 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 2 (0 remaining) classpath:wflclaim/getClaim.feature
+07:28:59.628 [main] DEBUG com.intuit.karate - request:
 1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510377
 1 > Authorization: Basic cWE6cWE=
 1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
@@ -2302,17 +978,17 @@ classpath:wflclaim/getClaim.feature:30
 1 > Accept-Encoding: gzip,deflate
 
 
-03:19:16.732 [main] DEBUG com.intuit.karate - response time in milliseconds: 143
+07:28:59.759 [main] DEBUG com.intuit.karate - response time in milliseconds: 129
 1 < 200
 1 < Content-Language: en
 1 < X-Paging-Limit: 10
 1 < X-Paging-Offset: 0
 1 < X-Total-Count: 1
-1 < Date: Thu, 19 Aug 2021 07:19:16 GMT
+1 < Date: Fri, 20 Aug 2021 11:28:59 GMT
 1 < Content-Type: application/json;charset=UTF-8
 1 < Transfer-Encoding: chunked
 [{"addresses":[{"temporary":false,"city":"Walnut Creek","postalCode":"94596","latitude":null,"countryCd":"US","county":null,"accuracy":null,"contactType":"residence","referenceId":null,"effectiveTo":null,"duration":null,"subdivision":null,"extensionFields":{},"validationIndicator":null,"stateProvCd":"CA","addressLine1":"Address97144281","addressLine2":"","id":7905231,"addressLine3":"","contactMethod":"ADDRESS","longitude":null,"inCareOf":null,"preferredInd":null,"communicationPreferences":[],"attention":null,"comment":null,"doNotSolicitInd":null,"effectiveFrom":null}],"preferredSpokenLanguageCd":"ENGLISH","registeredOnline":false,"individualDetails":{"lastName":"Smith09877373","associateEmployments":false,"designationDescription":null,"deceased":false,"occupationDescription":null,"title":null,"suffix":null,"associateBusinessEntity":false,"extensionFields":{},"genderCd":"male","nickname":null,"deathDate":null,"associateProviders":false,"occupationCd":null,"designationCd":null,"birthDate":"1995-09-02","firstName":"John87780675","deathNotificationReceived":false,"disabilities":[],"maritalStatusCd":null,"taxId":"046-42-2369","citizenshipCd":null,"tobaccoCd":"YES","middleName":"","interests":[]},"majorAccount":null,"lastUpdateDate":"2020-09-02T08:44:02.380Z","preferredCurrency":null,"phones":[],"sourceCd":"UNKNOWN","socialNets":[],"rateDatePayment":null,"businessCustomerAdditionalNames":null,"segments":[],"customerStatus":"CUSTOMER","emails":[],"webAddresses":[],"specialClaimReview":false,"archived":false,"customerType":"INDV","sourceOfExchangeRate":null,"extensionFields":{},"groupInfo":[],"preferredWrittenLanguageCd":"ENGLISH","customerEmployments":null,"paperless":false,"agencies":[],"indCustomerAdditionalNames":[],"businessDetails":null,"customerNumber":"510377","accountNumber":"610377","genericRelationships":[],"displayValue":"John87780675 Smith09877373","ratingCd":"UNKNOWN","preferredContactMethod":null,"navigationLinks":[],"chats":[],"rateDateIntake":null,"brandCd":null,"providers":null}]
-03:19:16.735 [main] INFO  com.intuit.karate - [print] [
+07:28:59.761 [main] INFO  com.intuit.karate - [print] [
   {
     "addresses": [
       {
@@ -2430,8 +1106,8 @@ classpath:wflclaim/getClaim.feature:30
   }
 ]
  
-03:19:16.737 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
-03:19:16.750 [main] DEBUG com.intuit.karate - request:
+07:28:59.764 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+07:28:59.782 [main] DEBUG com.intuit.karate - request:
 1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510977
 1 > Authorization: Basic cWE6cWE=
 1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
@@ -2440,17 +1116,17 @@ classpath:wflclaim/getClaim.feature:30
 1 > Accept-Encoding: gzip,deflate
 
 
-03:19:16.896 [main] DEBUG com.intuit.karate - response time in milliseconds: 144
+07:28:59.909 [main] DEBUG com.intuit.karate - response time in milliseconds: 126
 1 < 200
 1 < Content-Language: en
 1 < X-Paging-Limit: 10
 1 < X-Paging-Offset: 0
 1 < X-Total-Count: 1
-1 < Date: Thu, 19 Aug 2021 07:19:17 GMT
+1 < Date: Fri, 20 Aug 2021 11:29:00 GMT
 1 < Content-Type: application/json;charset=UTF-8
 1 < Transfer-Encoding: chunked
 [{"addresses":[{"temporary":false,"city":"Test","postalCode":"10928","latitude":null,"countryCd":"US","county":null,"accuracy":null,"contactType":"residence","referenceId":null,"effectiveTo":null,"duration":null,"subdivision":null,"extensionFields":{},"validationIndicator":null,"stateProvCd":"GA","addressLine1":"test lane","addressLine2":"","id":30641766,"addressLine3":"","contactMethod":"ADDRESS","longitude":null,"inCareOf":null,"preferredInd":null,"communicationPreferences":[],"attention":null,"comment":null,"doNotSolicitInd":null,"effectiveFrom":null}],"preferredSpokenLanguageCd":"ENGLISH","registeredOnline":false,"individualDetails":{"lastName":"Miller","associateEmployments":false,"designationDescription":null,"deceased":false,"occupationDescription":null,"title":null,"suffix":null,"associateBusinessEntity":false,"extensionFields":{},"genderCd":"male","nickname":null,"deathDate":null,"associateProviders":false,"occupationCd":null,"designationCd":null,"birthDate":null,"firstName":"John","deathNotificationReceived":false,"disabilities":[],"maritalStatusCd":null,"taxId":"109-12-9289","citizenshipCd":null,"tobaccoCd":null,"middleName":"","interests":[]},"majorAccount":null,"lastUpdateDate":"2020-11-30T22:36:30.737Z","preferredCurrency":null,"phones":[],"sourceCd":"UNKNOWN","socialNets":[],"rateDatePayment":null,"businessCustomerAdditionalNames":null,"segments":[],"customerStatus":"CUSTOMER","emails":[],"webAddresses":[],"specialClaimReview":false,"archived":false,"customerType":"INDV","sourceOfExchangeRate":null,"extensionFields":{},"groupInfo":[],"preferredWrittenLanguageCd":"ENGLISH","customerEmployments":null,"paperless":false,"agencies":[],"indCustomerAdditionalNames":[],"businessDetails":null,"customerNumber":"510977","accountNumber":"610977","genericRelationships":[],"displayValue":"John Miller","ratingCd":"UNKNOWN","preferredContactMethod":null,"navigationLinks":[],"chats":[],"rateDateIntake":null,"brandCd":null,"providers":null}]
-03:19:16.899 [main] INFO  com.intuit.karate - [print] [
+07:28:59.911 [main] INFO  com.intuit.karate - [print] [
   {
     "addresses": [
       {
@@ -2568,6 +1244,126 @@ classpath:wflclaim/getClaim.feature:30
   }
 ]
  
-03:19:16.900 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
-03:19:17.078 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:wflclaim/getCustomerNumber.feature
-03:19:17.090 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+07:28:59.912 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+07:29:00.217 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:wflclaim/getCustomerNumber.feature
+07:29:00.222 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+07:30:12.575 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+07:30:12.602 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1629459012592
+07:30:14.370 [main] DEBUG com.intuit.karate - request:
+1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392
+1 > Authorization: Basic cWE6cWE=
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+07:30:14.600 [main] DEBUG com.intuit.karate - response time in milliseconds: 187
+1 < 200
+1 < Content-Language: en
+1 < Date: Fri, 20 Aug 2021 11:30:14 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+[{"addresses":null,"extension":{},"currencyCd":null,"policyNumber":"CP0000863460","lossDt":"2021-07-16T00:00:00Z","lossDesc":"test","typeOfResolution":"WITHDRAWN","productVersion":null,"selectedRiskItemOids":null,"knownTimeInd":null,"componentName":null,"causeOfLossCd":null,"lossLocationDesc":null,"claimNumber":"C1392","policy":{"termExpirationDate":"2022-01-01T00:00:00Z","policyLOB":"ACC","riskItems":null,"policyNumber":"CP0000863460","verified":null,"policyStatus":"ACTIVE","productVersion":null,"inceptionDate":null,"parties":[{"nameTypeCd":null,"lastName":"Test","addresses":null,"extension":{},"bankAccountInfo":null,"instanceName":null,"roles":null,"phones":null,"bankName":null,"oid":null,"type":null,"suffix":null,"relationShipToInsuredCd":null,"accountHolderName":null,"emails":null,"contactPreferenceCd":null,"preferredPaymentMethod":null,"companyNumber":null,"namePrefix":null,"bankBranchCd":null,"bankAccountNumber":null,"componentName":null,"bankTransitNumber":null,"birthDt":null,"externalId":null,"additionalNameInd":null,"externalPartyInd":false,"partyRoles":null,"displayValue":null,"firstName":"Test 22","bankAccountType":null,"bankCd":null,"middleName":null,"otherName":null,"partyNumber":null,"additionalName":null}],"termEffectiveDate":"2021-01-01T00:00:00Z","componentName":null,"reportedPolicyNumber":"CP0000863460","policyBLOB":null,"productCd":"GB_AC"},"reportingMethod":null,"reportedDt":"2021-07-16T18:31:00Z","totalIncurred":{"amount":0.0,"currencyCd":"USD"},"policyProductCd":"GB_AC","customerNumber":"520181","claimsPolicyStatus":null,"lineOfBusinessCd":"ACC","claimStatusCd":"CLOSED","claimSubStatusCd":null,"additionalClaimNumber":"OC1392","lossLocation":null,"parties":null,"secondaryLossCauseCd":null,"fileOwner":{"displayValue":"New Claims \u2013 Accident CI HI","typeCd":null,"refId":null},"policyProductVersion":null,"productCd":"CLAIM_ACC_HEALTH"}]
+07:30:14.617 [main] INFO  com.intuit.karate - [print] [
+  {
+    "addresses": null,
+    "extension": {
+    },
+    "currencyCd": null,
+    "policyNumber": "CP0000863460",
+    "lossDt": "2021-07-16T00:00:00Z",
+    "lossDesc": "test",
+    "typeOfResolution": "WITHDRAWN",
+    "productVersion": null,
+    "selectedRiskItemOids": null,
+    "knownTimeInd": null,
+    "componentName": null,
+    "causeOfLossCd": null,
+    "lossLocationDesc": null,
+    "claimNumber": "C1392",
+    "policy": {
+      "termExpirationDate": "2022-01-01T00:00:00Z",
+      "policyLOB": "ACC",
+      "riskItems": null,
+      "policyNumber": "CP0000863460",
+      "verified": null,
+      "policyStatus": "ACTIVE",
+      "productVersion": null,
+      "inceptionDate": null,
+      "parties": [
+        {
+          "nameTypeCd": null,
+          "lastName": "Test",
+          "addresses": null,
+          "extension": {
+          },
+          "bankAccountInfo": null,
+          "instanceName": null,
+          "roles": null,
+          "phones": null,
+          "bankName": null,
+          "oid": null,
+          "type": null,
+          "suffix": null,
+          "relationShipToInsuredCd": null,
+          "accountHolderName": null,
+          "emails": null,
+          "contactPreferenceCd": null,
+          "preferredPaymentMethod": null,
+          "companyNumber": null,
+          "namePrefix": null,
+          "bankBranchCd": null,
+          "bankAccountNumber": null,
+          "componentName": null,
+          "bankTransitNumber": null,
+          "birthDt": null,
+          "externalId": null,
+          "additionalNameInd": null,
+          "externalPartyInd": false,
+          "partyRoles": null,
+          "displayValue": null,
+          "firstName": "Test 22",
+          "bankAccountType": null,
+          "bankCd": null,
+          "middleName": null,
+          "otherName": null,
+          "partyNumber": null,
+          "additionalName": null
+        }
+      ],
+      "termEffectiveDate": "2021-01-01T00:00:00Z",
+      "componentName": null,
+      "reportedPolicyNumber": "CP0000863460",
+      "policyBLOB": null,
+      "productCd": "GB_AC"
+    },
+    "reportingMethod": null,
+    "reportedDt": "2021-07-16T18:31:00Z",
+    "totalIncurred": {
+      "amount": 0.0,
+      "currencyCd": "USD"
+    },
+    "policyProductCd": "GB_AC",
+    "customerNumber": "520181",
+    "claimsPolicyStatus": null,
+    "lineOfBusinessCd": "ACC",
+    "claimStatusCd": "CLOSED",
+    "claimSubStatusCd": null,
+    "additionalClaimNumber": "OC1392",
+    "lossLocation": null,
+    "parties": null,
+    "secondaryLossCauseCd": null,
+    "fileOwner": {
+      "displayValue": "New Claims \u2013 Accident CI HI",
+      "typeCd": null,
+      "refId": null
+    },
+    "policyProductVersion": null,
+    "productCd": "CLAIM_ACC_HEALTH"
+  }
+]
+ 
+07:30:14.621 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+07:30:15.755 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (0 remaining) classpath:wflclaim/getClaim.feature
+07:30:15.770 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete

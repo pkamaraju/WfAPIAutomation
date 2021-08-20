@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 
   
-<title>Cucumber Reports  - Feature: wflclaim/getCustomerNumber.feature</title>
+<title>Cucumber Reports  - Tag: @reg</title>
 
 </head>
 <body>
@@ -88,7 +88,7 @@ $(document).ready(function() {
 
 <div id="report-lead" class="container-fluid">
   <div class="col-md-10 col-md-offset-1">
-    <h2>Feature Report</h2>
+    <h2>Tag Report</h2>
       </div>
 </div>
 
@@ -107,7 +107,7 @@ $(document).ready(function() {
     <th colspan="2">Features</th>
   </tr>
   <tr>
-    <th>Feature</th>
+    <th>Tag</th>
         <th class="passed">Passed</th>
     <th class="failed">Failed</th>
     <th class="skipped">Skipped</th>
@@ -127,20 +127,20 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">wflclaim/getCustomerNumber.feature</td>
-                    <td      class="passed"    >22</td>
+          <td class="tagname">@reg</td>
+                    <td      class="passed"    >20</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td class="total">22</td>
+          <td class="total">21</td>
 
           <td  class="passed"    >2</td>
-          <td >0</td>
-          <td class="total">2</td>
+          <td  class="failed"    >1</td>
+          <td class="total">3</td>
 
-          <td class="duration" data-value="289412300">289ms</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="372753600">372ms</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -166,38 +166,30 @@ $(document).ready(function() {
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <div class="feature">
-        
-<div class="tags indention">
-  </div>
+      <div class="elements">
 
-        
-<div class="brief passed">
-  <span class="keyword indention">Feature</span>
-  <span class="name">wflclaim/getCustomerNumber.feature</span>
-  
-
-  </div>
-
-        <div class="description indention">Fetching Customer details through GET call in wfl-claims-rs Core Services</div>
-
-        <div class="elements inner-level">
-                      
+                  
 <div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_wflclaim-getClaim-feature.html">wflclaim/getClaim.feature</a>
+    </div>
   
   
 <div class="tags indention">
-  </div>
+      <b>Tags:</b>
+           <a href="report-tag_reg.html">@reg</a>
+      </div>
 
   
-  <span class="lead-duration duration">010ms</span>
+  <span class="lead-duration duration">095ms</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Validate get claim responde code 400 for given Claim ID : C1392</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -206,15 +198,15 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -224,12 +216,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">*</span>
-  <span class="name">url baseUrl</span>
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'wfl-claims-rs/v1/claims?claimNumber=C1392'</span>
   
   <span class="lead-duration duration">000ms</span>
 
@@ -249,10 +241,10 @@ $(document).ready(function() {
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">*</span>
-  <span class="name">header Authorization = call read('basic-auth.js')</span>
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
   
-  <span class="lead-duration duration">010ms</span>
+  <span class="lead-duration duration">094ms</span>
 
   </div>
 
@@ -261,6 +253,263 @@ $(document).ready(function() {
 
         
         
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>07:28:58.156 request:
+1 &gt; GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392
+1 &gt; Authorization: Basic cWE6cWE=
+1 &gt; Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+07:28:58.246 response time in milliseconds: 89
+1 &lt; 200
+1 &lt; Content-Language: en
+1 &lt; Date: Fri, 20 Aug 2021 11:28:58 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+[{&quot;addresses&quot;:null,&quot;extension&quot;:{},&quot;currencyCd&quot;:null,&quot;policyNumber&quot;:&quot;CP0000863460&quot;,&quot;lossDt&quot;:&quot;2021-07-16T00:00:00Z&quot;,&quot;lossDesc&quot;:&quot;test&quot;,&quot;typeOfResolution&quot;:&quot;WITHDRAWN&quot;,&quot;productVersion&quot;:null,&quot;selectedRiskItemOids&quot;:null,&quot;knownTimeInd&quot;:null,&quot;componentName&quot;:null,&quot;causeOfLossCd&quot;:null,&quot;lossLocationDesc&quot;:null,&quot;claimNumber&quot;:&quot;C1392&quot;,&quot;policy&quot;:{&quot;termExpirationDate&quot;:&quot;2022-01-01T00:00:00Z&quot;,&quot;policyLOB&quot;:&quot;ACC&quot;,&quot;riskItems&quot;:null,&quot;policyNumber&quot;:&quot;CP0000863460&quot;,&quot;verified&quot;:null,&quot;policyStatus&quot;:&quot;ACTIVE&quot;,&quot;productVersion&quot;:null,&quot;inceptionDate&quot;:null,&quot;parties&quot;:[{&quot;nameTypeCd&quot;:null,&quot;lastName&quot;:&quot;Test&quot;,&quot;addresses&quot;:null,&quot;extension&quot;:{},&quot;bankAccountInfo&quot;:null,&quot;instanceName&quot;:null,&quot;roles&quot;:null,&quot;phones&quot;:null,&quot;bankName&quot;:null,&quot;oid&quot;:null,&quot;type&quot;:null,&quot;suffix&quot;:null,&quot;relationShipToInsuredCd&quot;:null,&quot;accountHolderName&quot;:null,&quot;emails&quot;:null,&quot;contactPreferenceCd&quot;:null,&quot;preferredPaymentMethod&quot;:null,&quot;companyNumber&quot;:null,&quot;namePrefix&quot;:null,&quot;bankBranchCd&quot;:null,&quot;bankAccountNumber&quot;:null,&quot;componentName&quot;:null,&quot;bankTransitNumber&quot;:null,&quot;birthDt&quot;:null,&quot;externalId&quot;:null,&quot;additionalNameInd&quot;:null,&quot;externalPartyInd&quot;:false,&quot;partyRoles&quot;:null,&quot;displayValue&quot;:null,&quot;firstName&quot;:&quot;Test 22&quot;,&quot;bankAccountType&quot;:null,&quot;bankCd&quot;:null,&quot;middleName&quot;:null,&quot;otherName&quot;:null,&quot;partyNumber&quot;:null,&quot;additionalName&quot;:null}],&quot;termEffectiveDate&quot;:&quot;2021-01-01T00:00:00Z&quot;,&quot;componentName&quot;:null,&quot;reportedPolicyNumber&quot;:&quot;CP0000863460&quot;,&quot;policyBLOB&quot;:null,&quot;productCd&quot;:&quot;GB_AC&quot;},&quot;reportingMethod&quot;:null,&quot;reportedDt&quot;:&quot;2021-07-16T18:31:00Z&quot;,&quot;totalIncurred&quot;:{&quot;amount&quot;:0.0,&quot;currencyCd&quot;:&quot;USD&quot;},&quot;policyProductCd&quot;:&quot;GB_AC&quot;,&quot;customerNumber&quot;:&quot;520181&quot;,&quot;claimsPolicyStatus&quot;:null,&quot;lineOfBusinessCd&quot;:&quot;ACC&quot;,&quot;claimStatusCd&quot;:&quot;CLOSED&quot;,&quot;claimSubStatusCd&quot;:null,&quot;additionalClaimNumber&quot;:&quot;OC1392&quot;,&quot;lossLocation&quot;:null,&quot;parties&quot;:null,&quot;secondaryLossCauseCd&quot;:null,&quot;fileOwner&quot;:{&quot;displayValue&quot;:&quot;New Claims \u2013 Accident CI HI&quot;,&quot;typeCd&quot;:null,&quot;refId&quot;:null},&quot;policyProductVersion&quot;:null,&quot;productCd&quot;:&quot;CLAIM_ACC_HEALTH&quot;}]
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 400</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>status code was: 200, expected: 400, response time in milliseconds: 89, url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392, response: </a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>status code was: 200, expected: 400, response time in milliseconds: 89, url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392, response: 
+[ {
+  &quot;claimSubStatusCd&quot; : null,
+  &quot;policy&quot; : {
+    &quot;termEffectiveDate&quot; : &quot;2021-01-01T00:00:00Z&quot;,
+    &quot;termExpirationDate&quot; : &quot;2022-01-01T00:00:00Z&quot;,
+    &quot;inceptionDate&quot; : null,
+    &quot;componentName&quot; : null,
+    &quot;riskItems&quot; : null,
+    &quot;parties&quot; : [ {
+      &quot;namePrefix&quot; : null,
+      &quot;firstName&quot; : &quot;Test 22&quot;,
+      &quot;middleName&quot; : null,
+      &quot;lastName&quot; : &quot;Test&quot;,
+      &quot;otherName&quot; : null,
+      &quot;nameTypeCd&quot; : null,
+      &quot;oid&quot; : null,
+      &quot;contactPreferenceCd&quot; : null,
+      &quot;displayValue&quot; : null,
+      &quot;relationShipToInsuredCd&quot; : null,
+      &quot;addresses&quot; : null,
+      &quot;componentName&quot; : null,
+      &quot;extension&quot; : { },
+      &quot;emails&quot; : null,
+      &quot;phones&quot; : null,
+      &quot;roles&quot; : null,
+      &quot;birthDt&quot; : null,
+      &quot;partyNumber&quot; : null,
+      &quot;companyNumber&quot; : null,
+      &quot;externalId&quot; : null,
+      &quot;preferredPaymentMethod&quot; : null,
+      &quot;bankAccountInfo&quot; : null,
+      &quot;bankName&quot; : null,
+      &quot;bankAccountNumber&quot; : null,
+      &quot;accountHolderName&quot; : null,
+      &quot;bankTransitNumber&quot; : null,
+      &quot;bankCd&quot; : null,
+      &quot;bankBranchCd&quot; : null,
+      &quot;bankAccountType&quot; : null,
+      &quot;additionalNameInd&quot; : null,
+      &quot;additionalName&quot; : null,
+      &quot;instanceName&quot; : null,
+      &quot;type&quot; : null,
+      &quot;partyRoles&quot; : null,
+      &quot;externalPartyInd&quot; : false,
+      &quot;suffix&quot; : null
+    } ],
+    &quot;policyNumber&quot; : &quot;CP0000863460&quot;,
+    &quot;productCd&quot; : &quot;GB_AC&quot;,
+    &quot;productVersion&quot; : null,
+    &quot;verified&quot; : null,
+    &quot;policyStatus&quot; : &quot;ACTIVE&quot;,
+    &quot;policyLOB&quot; : &quot;ACC&quot;,
+    &quot;policyBLOB&quot; : null,
+    &quot;reportedPolicyNumber&quot; : &quot;CP0000863460&quot;
+  },
+  &quot;claimNumber&quot; : &quot;C1392&quot;,
+  &quot;additionalClaimNumber&quot; : &quot;OC1392&quot;,
+  &quot;claimStatusCd&quot; : &quot;CLOSED&quot;,
+  &quot;lossDt&quot; : &quot;2021-07-16T00:00:00Z&quot;,
+  &quot;lossDesc&quot; : &quot;test&quot;,
+  &quot;customerNumber&quot; : &quot;520181&quot;,
+  &quot;reportedDt&quot; : &quot;2021-07-16T18:31:00Z&quot;,
+  &quot;policyNumber&quot; : &quot;CP0000863460&quot;,
+  &quot;policyProductCd&quot; : &quot;GB_AC&quot;,
+  &quot;knownTimeInd&quot; : null,
+  &quot;lineOfBusinessCd&quot; : &quot;ACC&quot;,
+  &quot;productVersion&quot; : null,
+  &quot;causeOfLossCd&quot; : null,
+  &quot;lossLocationDesc&quot; : null,
+  &quot;lossLocation&quot; : null,
+  &quot;secondaryLossCauseCd&quot; : null,
+  &quot;reportingMethod&quot; : null,
+  &quot;parties&quot; : null,
+  &quot;addresses&quot; : null,
+  &quot;componentName&quot; : null,
+  &quot;policyProductVersion&quot; : null,
+  &quot;totalIncurred&quot; : {
+    &quot;amount&quot; : 0.00,
+    &quot;currencyCd&quot; : &quot;USD&quot;
+  },
+  &quot;fileOwner&quot; : {
+    &quot;typeCd&quot; : null,
+    &quot;refId&quot; : null,
+    &quot;displayValue&quot; : &quot;New Claims &ndash; Accident CI HI&quot;
+  },
+  &quot;claimsPolicyStatus&quot; : null,
+  &quot;extension&quot; : { },
+  &quot;selectedRiskItemOids&quot; : null,
+  &quot;currencyCd&quot; : null,
+  &quot;typeOfResolution&quot; : &quot;WITHDRAWN&quot;,
+  &quot;productCd&quot; : &quot;CLAIM_ACC_HEALTH&quot;
+} ]
+classpath:wflclaim/getClaim.feature:31</pre>
+      </div>
+    </div>
+  </div>
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>07:28:58.252 classpath:wflclaim/getClaim.feature:31
+Then status 400
+status code was: 200, expected: 400, response time in milliseconds: 89, url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392, response: 
+[ {
+  &quot;claimSubStatusCd&quot; : null,
+  &quot;policy&quot; : {
+    &quot;termEffectiveDate&quot; : &quot;2021-01-01T00:00:00Z&quot;,
+    &quot;termExpirationDate&quot; : &quot;2022-01-01T00:00:00Z&quot;,
+    &quot;inceptionDate&quot; : null,
+    &quot;componentName&quot; : null,
+    &quot;riskItems&quot; : null,
+    &quot;parties&quot; : [ {
+      &quot;namePrefix&quot; : null,
+      &quot;firstName&quot; : &quot;Test 22&quot;,
+      &quot;middleName&quot; : null,
+      &quot;lastName&quot; : &quot;Test&quot;,
+      &quot;otherName&quot; : null,
+      &quot;nameTypeCd&quot; : null,
+      &quot;oid&quot; : null,
+      &quot;contactPreferenceCd&quot; : null,
+      &quot;displayValue&quot; : null,
+      &quot;relationShipToInsuredCd&quot; : null,
+      &quot;addresses&quot; : null,
+      &quot;componentName&quot; : null,
+      &quot;extension&quot; : { },
+      &quot;emails&quot; : null,
+      &quot;phones&quot; : null,
+      &quot;roles&quot; : null,
+      &quot;birthDt&quot; : null,
+      &quot;partyNumber&quot; : null,
+      &quot;companyNumber&quot; : null,
+      &quot;externalId&quot; : null,
+      &quot;preferredPaymentMethod&quot; : null,
+      &quot;bankAccountInfo&quot; : null,
+      &quot;bankName&quot; : null,
+      &quot;bankAccountNumber&quot; : null,
+      &quot;accountHolderName&quot; : null,
+      &quot;bankTransitNumber&quot; : null,
+      &quot;bankCd&quot; : null,
+      &quot;bankBranchCd&quot; : null,
+      &quot;bankAccountType&quot; : null,
+      &quot;additionalNameInd&quot; : null,
+      &quot;additionalName&quot; : null,
+      &quot;instanceName&quot; : null,
+      &quot;type&quot; : null,
+      &quot;partyRoles&quot; : null,
+      &quot;externalPartyInd&quot; : false,
+      &quot;suffix&quot; : null
+    } ],
+    &quot;policyNumber&quot; : &quot;CP0000863460&quot;,
+    &quot;productCd&quot; : &quot;GB_AC&quot;,
+    &quot;productVersion&quot; : null,
+    &quot;verified&quot; : null,
+    &quot;policyStatus&quot; : &quot;ACTIVE&quot;,
+    &quot;policyLOB&quot; : &quot;ACC&quot;,
+    &quot;policyBLOB&quot; : null,
+    &quot;reportedPolicyNumber&quot; : &quot;CP0000863460&quot;
+  },
+  &quot;claimNumber&quot; : &quot;C1392&quot;,
+  &quot;additionalClaimNumber&quot; : &quot;OC1392&quot;,
+  &quot;claimStatusCd&quot; : &quot;CLOSED&quot;,
+  &quot;lossDt&quot; : &quot;2021-07-16T00:00:00Z&quot;,
+  &quot;lossDesc&quot; : &quot;test&quot;,
+  &quot;customerNumber&quot; : &quot;520181&quot;,
+  &quot;reportedDt&quot; : &quot;2021-07-16T18:31:00Z&quot;,
+  &quot;policyNumber&quot; : &quot;CP0000863460&quot;,
+  &quot;policyProductCd&quot; : &quot;GB_AC&quot;,
+  &quot;knownTimeInd&quot; : null,
+  &quot;lineOfBusinessCd&quot; : &quot;ACC&quot;,
+  &quot;productVersion&quot; : null,
+  &quot;causeOfLossCd&quot; : null,
+  &quot;lossLocationDesc&quot; : null,
+  &quot;lossLocation&quot; : null,
+  &quot;secondaryLossCauseCd&quot; : null,
+  &quot;reportingMethod&quot; : null,
+  &quot;parties&quot; : null,
+  &quot;addresses&quot; : null,
+  &quot;componentName&quot; : null,
+  &quot;policyProductVersion&quot; : null,
+  &quot;totalIncurred&quot; : {
+    &quot;amount&quot; : 0.00,
+    &quot;currencyCd&quot; : &quot;USD&quot;
+  },
+  &quot;fileOwner&quot; : {
+    &quot;typeCd&quot; : null,
+    &quot;refId&quot; : null,
+    &quot;displayValue&quot; : &quot;New Claims &ndash; Accident CI HI&quot;
+  },
+  &quot;claimsPolicyStatus&quot; : null,
+  &quot;extension&quot; : { },
+  &quot;selectedRiskItemOids&quot; : null,
+  &quot;currencyCd&quot; : null,
+  &quot;typeOfResolution&quot; : &quot;WITHDRAWN&quot;,
+  &quot;productCd&quot; : &quot;CLAIM_ACC_HEALTH&quot;
+} ]
+classpath:wflclaim/getClaim.feature:31
+</pre>
+      </div>
+    </div>
+  </div>
 
         
 
@@ -276,8 +525,12 @@ $(document).ready(function() {
   </div>
 </div>
 
-                      
+                  
 <div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_wflclaim-getCustomerNumber-feature_1.html">wflclaim/getCustomerNumber.feature</a>
+    </div>
   
   
 <div class="tags indention">
@@ -289,7 +542,7 @@ $(document).ready(function() {
   <span class="lead-duration duration">141ms</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -302,13 +555,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details ">
+  <div id="element-6" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -320,7 +573,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-4" class="inner-level collapse collapsable-details ">
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
@@ -359,10 +612,10 @@ $(document).ready(function() {
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
           <a>Doc string</a>
       </div>
-      <div id="msg-5" class="collapse collapsable-details">
+      <div id="msg-8" class="collapse collapsable-details">
         <pre>07:28:59.629 request:
 1 &gt; GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510377
 1 &gt; Authorization: Basic cWE6cWE=
@@ -430,10 +683,10 @@ $(document).ready(function() {
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
           <a>Doc string</a>
       </div>
-      <div id="msg-6" class="collapse collapsable-details">
+      <div id="msg-9" class="collapse collapsable-details">
         <pre>07:28:59.762 [print] [
   {
     &quot;addresses&quot;: [
@@ -579,10 +832,10 @@ $(document).ready(function() {
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
           <a>Doc string</a>
       </div>
-      <div id="msg-7" class="collapse collapsable-details">
+      <div id="msg-10" class="collapse collapsable-details">
         <pre>07:28:59.764 [print] =========Validating field values in response================= : 
 </pre>
       </div>
@@ -687,102 +940,12 @@ $(document).ready(function() {
   </div>
 </div>
 
-                      
+                  
 <div class="element">
-  
-  
-<div class="tags indention">
-  </div>
-
-  
-  <span class="lead-duration duration">001ms</span>
-
-
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
-    
-<div class="brief passed">
-  <span class="keyword indention">Background</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-8" class="collapse collapsable-details ">
-    
-
-
-    
-<div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
-    
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-  
-
-       <i class="chevron fa fa-fw"></i>
-  </div>
-
-  </div>
-
-  <div id="steps-9" class="inner-level collapse collapsable-details ">
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">*</span>
-  <span class="name">url baseUrl</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">*</span>
-  <span class="name">header Authorization = call read('basic-auth.js')</span>
-  
-  <span class="lead-duration duration">001ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-  
-      </div>
-      </div>
-</div>
-
-
-    
-
-  </div>
-</div>
-
-                      
-<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_wflclaim-getCustomerNumber-feature_1.html">wflclaim/getCustomerNumber.feature</a>
+    </div>
   
   
 <div class="tags indention">
@@ -794,7 +957,7 @@ $(document).ready(function() {
   <span class="lead-duration duration">135ms</span>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
     
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -807,13 +970,13 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-10" class="collapse collapsable-details ">
+  <div id="element-11" class="collapse collapsable-details ">
     
 
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
     
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -825,7 +988,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-11" class="inner-level collapse collapsable-details ">
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
@@ -864,10 +1027,10 @@ $(document).ready(function() {
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
           <a>Doc string</a>
       </div>
-      <div id="msg-12" class="collapse collapsable-details">
+      <div id="msg-13" class="collapse collapsable-details">
         <pre>07:28:59.782 request:
 1 &gt; GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510977
 1 &gt; Authorization: Basic cWE6cWE=
@@ -935,10 +1098,10 @@ $(document).ready(function() {
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
           <a>Doc string</a>
       </div>
-      <div id="msg-13" class="collapse collapsable-details">
+      <div id="msg-14" class="collapse collapsable-details">
         <pre>07:28:59.912 [print] [
   {
     &quot;addresses&quot;: [
@@ -1084,10 +1247,10 @@ $(document).ready(function() {
         
   <div class="inner-level">
     <div class="docstring indention">
-            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
           <a>Doc string</a>
       </div>
-      <div id="msg-14" class="collapse collapsable-details">
+      <div id="msg-15" class="collapse collapsable-details">
         <pre>07:28:59.913 [print] =========Validating field values in response================= : 
 </pre>
       </div>
@@ -1192,8 +1355,7 @@ $(document).ready(function() {
   </div>
 </div>
 
-                  </div>
-
+        
       </div>
     </div>
   </div>

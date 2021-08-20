@@ -1,0 +1,102 @@
+-------------------------------------------------------------------------------
+Test set: wflclaim.SmokeTestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.167 s <<< FAILURE! - in wflclaim.SmokeTestRunner
+wflSmokeTest  Time elapsed: 8.152 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+status code was: 200, expected: 400, response time in milliseconds: 94, url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392, response: 
+[ {
+  "claimSubStatusCd" : null,
+  "policy" : {
+    "termEffectiveDate" : "2021-01-01T00:00:00Z",
+    "termExpirationDate" : "2022-01-01T00:00:00Z",
+    "inceptionDate" : null,
+    "componentName" : null,
+    "riskItems" : null,
+    "parties" : [ {
+      "namePrefix" : null,
+      "firstName" : "Test 22",
+      "middleName" : null,
+      "lastName" : "Test",
+      "otherName" : null,
+      "nameTypeCd" : null,
+      "oid" : null,
+      "contactPreferenceCd" : null,
+      "displayValue" : null,
+      "relationShipToInsuredCd" : null,
+      "addresses" : null,
+      "componentName" : null,
+      "extension" : { },
+      "emails" : null,
+      "phones" : null,
+      "roles" : null,
+      "birthDt" : null,
+      "partyNumber" : null,
+      "companyNumber" : null,
+      "externalId" : null,
+      "preferredPaymentMethod" : null,
+      "bankAccountInfo" : null,
+      "bankName" : null,
+      "bankAccountNumber" : null,
+      "accountHolderName" : null,
+      "bankTransitNumber" : null,
+      "bankCd" : null,
+      "bankBranchCd" : null,
+      "bankAccountType" : null,
+      "additionalNameInd" : null,
+      "additionalName" : null,
+      "instanceName" : null,
+      "type" : null,
+      "partyRoles" : null,
+      "externalPartyInd" : false,
+      "suffix" : null
+    } ],
+    "policyNumber" : "CP0000863460",
+    "productCd" : "GB_AC",
+    "productVersion" : null,
+    "verified" : null,
+    "policyStatus" : "ACTIVE",
+    "policyLOB" : "ACC",
+    "policyBLOB" : null,
+    "reportedPolicyNumber" : "CP0000863460"
+  },
+  "claimNumber" : "C1392",
+  "additionalClaimNumber" : "OC1392",
+  "claimStatusCd" : "CLOSED",
+  "lossDt" : "2021-07-16T00:00:00Z",
+  "lossDesc" : "test",
+  "customerNumber" : "520181",
+  "reportedDt" : "2021-07-16T18:31:00Z",
+  "policyNumber" : "CP0000863460",
+  "policyProductCd" : "GB_AC",
+  "knownTimeInd" : null,
+  "lineOfBusinessCd" : "ACC",
+  "productVersion" : null,
+  "causeOfLossCd" : null,
+  "lossLocationDesc" : null,
+  "lossLocation" : null,
+  "secondaryLossCauseCd" : null,
+  "reportingMethod" : null,
+  "parties" : null,
+  "addresses" : null,
+  "componentName" : null,
+  "policyProductVersion" : null,
+  "totalIncurred" : {
+    "amount" : 0.00,
+    "currencyCd" : "USD"
+  },
+  "fileOwner" : {
+    "typeCd" : null,
+    "refId" : null,
+    "displayValue" : "New Claims – Accident CI HI"
+  },
+  "claimsPolicyStatus" : null,
+  "extension" : { },
+  "selectedRiskItemOids" : null,
+  "currencyCd" : null,
+  "typeOfResolution" : "WITHDRAWN",
+  "productCd" : "CLAIM_ACC_HEALTH"
+} ]
+classpath:wflclaim/getClaim.feature:31 ==> expected: <0> but was: <1>
+	at wflclaim.SmokeTestRunner.wflSmokeTest(SmokeTestRunner.java:15)
+
