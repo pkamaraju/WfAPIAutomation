@@ -22,10 +22,7 @@ public class TestRunner {
 //    Karate testGetClaim() {
 //       return Karate.run("getClaim").relativeTo(getClass());
 //   }
-//   @Karate.Test
-//   Karate testGetCustomer() {
-//      return Karate.run("getCustomerNumber").relativeTo(getClass());
-//    }
+
     @Test
     void test1() {
         Results results = Runner.path("classpath:wflclaim").tags("~@ignore").outputCucumberJson(true).parallel(1);
