@@ -30777,3 +30777,88 @@ match failed: EQUALS
 
 src/test/java/wf/systemAPI/getMasterCertificatePolicy.feature:16
 01:38:40.468 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/wf/systemAPI/getMasterCertificatePolicy.feature
+01:48:08.859 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+01:48:08.879 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1630043288871
+01:48:08.921 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 21 - ^Validate get master certificate policy details for given Policy number \: .*$
+01:48:10.773 [main] DEBUG com.intuit.karate - request:
+1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/master-policies/MP0001002000/certificates?offset=0&limit=20
+1 > Authorization: Basic cWE6cWE=
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+01:48:11.031 [main] DEBUG com.intuit.karate - response time in milliseconds: 213
+1 < 200
+1 < Content-Language: en
+1 < Date: Fri, 27 Aug 2021 05:48:11 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"certificateDtoList":[{"primaryParticipantName":"Accident HS","currentRevisionInd":true,"issueState":"TX","policyNumber":"CP0001002025","renewalDate":"2022-01-01T00:00:00Z","customerNumber":"520787","timedPolicyStatusCd":"inForce","transactionTypeCd":"policy","policyStatusCd":"issued","anniversaryDate":"2022-01-01T00:00:00Z","transactionEffectiveDate":"2021-01-01T00:00:00Z","primaryParticipantTaxId":"124-85-1234","issueCountry":"US","revisionNo":1,"effectiveDate":"2021-01-01T00:00:00Z","expirationDate":"2022-01-01T00:00:00Z","cancellationDate":null},{"primaryParticipantName":"portal all","currentRevisionInd":false,"issueState":"TX","policyNumber":"CP0001003505","renewalDate":"2022-01-01T00:00:00Z","customerNumber":"520791","timedPolicyStatusCd":"inForce","transactionTypeCd":"policy","policyStatusCd":"issued","anniversaryDate":"2022-01-01T00:00:00Z","transactionEffectiveDate":"2021-01-01T00:00:00Z","primaryParticipantTaxId":"152-66-1234","issueCountry":"US","revisionNo":1,"effectiveDate":"2021-01-01T00:00:00Z","expirationDate":"2022-01-01T00:00:00Z","cancellationDate":null},{"primaryParticipantName":"portal all","currentRevisionInd":true,"issueState":"TX","policyNumber":"CP0001003505","renewalDate":"2022-01-01T00:00:00Z","customerNumber":"520791","timedPolicyStatusCd":"inForce","transactionTypeCd":"endorsement","policyStatusCd":"issued","anniversaryDate":"2022-01-01T00:00:00Z","transactionEffectiveDate":"2021-07-22T00:00:00Z","primaryParticipantTaxId":"152-66-1234","issueCountry":"US","revisionNo":2,"effectiveDate":"2021-01-01T00:00:00Z","expirationDate":"2022-01-01T00:00:00Z","cancellationDate":null}],"masterPolicyNumber":"MP0001002000","masterPolicyEffectiveDate":"2021-01-01T00:00:00Z"}
+01:48:11.045 [main] INFO  com.intuit.karate - [print] {
+  "certificateDtoList": [
+    {
+      "primaryParticipantName": "Accident HS",
+      "currentRevisionInd": true,
+      "issueState": "TX",
+      "policyNumber": "CP0001002025",
+      "renewalDate": "2022-01-01T00:00:00Z",
+      "customerNumber": "520787",
+      "timedPolicyStatusCd": "inForce",
+      "transactionTypeCd": "policy",
+      "policyStatusCd": "issued",
+      "anniversaryDate": "2022-01-01T00:00:00Z",
+      "transactionEffectiveDate": "2021-01-01T00:00:00Z",
+      "primaryParticipantTaxId": "124-85-1234",
+      "issueCountry": "US",
+      "revisionNo": 1,
+      "effectiveDate": "2021-01-01T00:00:00Z",
+      "expirationDate": "2022-01-01T00:00:00Z",
+      "cancellationDate": null
+    },
+    {
+      "primaryParticipantName": "portal all",
+      "currentRevisionInd": false,
+      "issueState": "TX",
+      "policyNumber": "CP0001003505",
+      "renewalDate": "2022-01-01T00:00:00Z",
+      "customerNumber": "520791",
+      "timedPolicyStatusCd": "inForce",
+      "transactionTypeCd": "policy",
+      "policyStatusCd": "issued",
+      "anniversaryDate": "2022-01-01T00:00:00Z",
+      "transactionEffectiveDate": "2021-01-01T00:00:00Z",
+      "primaryParticipantTaxId": "152-66-1234",
+      "issueCountry": "US",
+      "revisionNo": 1,
+      "effectiveDate": "2021-01-01T00:00:00Z",
+      "expirationDate": "2022-01-01T00:00:00Z",
+      "cancellationDate": null
+    },
+    {
+      "primaryParticipantName": "portal all",
+      "currentRevisionInd": true,
+      "issueState": "TX",
+      "policyNumber": "CP0001003505",
+      "renewalDate": "2022-01-01T00:00:00Z",
+      "customerNumber": "520791",
+      "timedPolicyStatusCd": "inForce",
+      "transactionTypeCd": "endorsement",
+      "policyStatusCd": "issued",
+      "anniversaryDate": "2022-01-01T00:00:00Z",
+      "transactionEffectiveDate": "2021-07-22T00:00:00Z",
+      "primaryParticipantTaxId": "152-66-1234",
+      "issueCountry": "US",
+      "revisionNo": 2,
+      "effectiveDate": "2021-01-01T00:00:00Z",
+      "expirationDate": "2022-01-01T00:00:00Z",
+      "cancellationDate": null
+    }
+  ],
+  "masterPolicyNumber": "MP0001002000",
+  "masterPolicyEffectiveDate": "2021-01-01T00:00:00Z"
+}
+ 
+01:48:11.049 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+01:48:12.106 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/wf/systemAPI/getMasterCertificatePolicy.feature

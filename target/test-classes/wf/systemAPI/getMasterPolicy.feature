@@ -1,4 +1,4 @@
-Feature: Fetching Customer details through GET call in wfl-claims-rs Core Services
+Feature: Fetching master policy details through GET call in policy-group-rs
 
   Background:
     * url baseUrl
