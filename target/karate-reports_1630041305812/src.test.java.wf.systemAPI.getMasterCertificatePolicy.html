@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.wf.systemAPI.getMasterCertificatePolicy</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-08-27 01:09:44 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:21]"><span>[1.1:21]</span> <span>Validate get master policy details for given Claim ID : MP0001002000</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/wf/systemAPI/getMasterCertificatePolicy.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Fetching Customer details through GET call in wfl-claims-rs Core Services</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:21]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">reg</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:21]</span>
+                <span class="scenario-name">Validate get master policy details for given Claim ID : MP0001002000</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>828</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:21]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">119</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;policy-group-rs/v1/master-policies/MP0001002000/certificates?offset=0&amp;limit=3&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">653</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.10">01:09:44.214 request:
+1 &gt; GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/master-policies/MP0001002000/certificates?offset=0&amp;limit=3
+1 &gt; Authorization: Basic cWE6cWE=
+1 &gt; Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+01:09:44.434 response time in milliseconds: 178
+1 &lt; 200
+1 &lt; Content-Language: en
+1 &lt; Date: Fri, 27 Aug 2021 05:09:44 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+{&quot;certificateDtoList&quot;:[{&quot;primaryParticipantName&quot;:&quot;Accident HS&quot;,&quot;currentRevisionInd&quot;:true,&quot;issueState&quot;:&quot;TX&quot;,&quot;policyNumber&quot;:&quot;CP0001002025&quot;,&quot;renewalDate&quot;:&quot;2022-01-01T00:00:00Z&quot;,&quot;customerNumber&quot;:&quot;520787&quot;,&quot;timedPolicyStatusCd&quot;:&quot;inForce&quot;,&quot;transactionTypeCd&quot;:&quot;policy&quot;,&quot;policyStatusCd&quot;:&quot;issued&quot;,&quot;anniversaryDate&quot;:&quot;2022-01-01T00:00:00Z&quot;,&quot;transactionEffectiveDate&quot;:&quot;2021-01-01T00:00:00Z&quot;,&quot;primaryParticipantTaxId&quot;:&quot;124-85-1234&quot;,&quot;issueCountry&quot;:&quot;US&quot;,&quot;revisionNo&quot;:1,&quot;effectiveDate&quot;:&quot;2021-01-01T00:00:00Z&quot;,&quot;expirationDate&quot;:&quot;2022-01-01T00:00:00Z&quot;,&quot;cancellationDate&quot;:null},{&quot;primaryParticipantName&quot;:&quot;portal all&quot;,&quot;currentRevisionInd&quot;:false,&quot;issueState&quot;:&quot;TX&quot;,&quot;policyNumber&quot;:&quot;CP0001003505&quot;,&quot;renewalDate&quot;:&quot;2022-01-01T00:00:00Z&quot;,&quot;customerNumber&quot;:&quot;520791&quot;,&quot;timedPolicyStatusCd&quot;:&quot;inForce&quot;,&quot;transactionTypeCd&quot;:&quot;policy&quot;,&quot;policyStatusCd&quot;:&quot;issued&quot;,&quot;anniversaryDate&quot;:&quot;2022-01-01T00:00:00Z&quot;,&quot;transactionEffectiveDate&quot;:&quot;2021-01-01T00:00:00Z&quot;,&quot;primaryParticipantTaxId&quot;:&quot;152-66-1234&quot;,&quot;issueCountry&quot;:&quot;US&quot;,&quot;revisionNo&quot;:1,&quot;effectiveDate&quot;:&quot;2021-01-01T00:00:00Z&quot;,&quot;expirationDate&quot;:&quot;2022-01-01T00:00:00Z&quot;,&quot;cancellationDate&quot;:null},{&quot;primaryParticipantName&quot;:&quot;portal all&quot;,&quot;currentRevisionInd&quot;:true,&quot;issueState&quot;:&quot;TX&quot;,&quot;policyNumber&quot;:&quot;CP0001003505&quot;,&quot;renewalDate&quot;:&quot;2022-01-01T00:00:00Z&quot;,&quot;customerNumber&quot;:&quot;520791&quot;,&quot;timedPolicyStatusCd&quot;:&quot;inForce&quot;,&quot;transactionTypeCd&quot;:&quot;endorsement&quot;,&quot;policyStatusCd&quot;:&quot;issued&quot;,&quot;anniversaryDate&quot;:&quot;2022-01-01T00:00:00Z&quot;,&quot;transactionEffectiveDate&quot;:&quot;2021-07-22T00:00:00Z&quot;,&quot;primaryParticipantTaxId&quot;:&quot;152-66-1234&quot;,&quot;issueCountry&quot;:&quot;US&quot;,&quot;revisionNo&quot;:2,&quot;effectiveDate&quot;:&quot;2021-01-01T00:00:00Z&quot;,&quot;expirationDate&quot;:&quot;2022-01-01T00:00:00Z&quot;,&quot;cancellationDate&quot;:null}],&quot;masterPolicyNumber&quot;:&quot;MP0001002000&quot;,&quot;masterPolicyEffectiveDate&quot;:&quot;2021-01-01T00:00:00Z&quot;}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.12">01:09:44.451 [print] {
+  &quot;certificateDtoList&quot;: [
+    {
+      &quot;primaryParticipantName&quot;: &quot;Accident HS&quot;,
+      &quot;currentRevisionInd&quot;: true,
+      &quot;issueState&quot;: &quot;TX&quot;,
+      &quot;policyNumber&quot;: &quot;CP0001002025&quot;,
+      &quot;renewalDate&quot;: &quot;2022-01-01T00:00:00Z&quot;,
+      &quot;customerNumber&quot;: &quot;520787&quot;,
+      &quot;timedPolicyStatusCd&quot;: &quot;inForce&quot;,
+      &quot;transactionTypeCd&quot;: &quot;policy&quot;,
+      &quot;policyStatusCd&quot;: &quot;issued&quot;,
+      &quot;anniversaryDate&quot;: &quot;2022-01-01T00:00:00Z&quot;,
+      &quot;transactionEffectiveDate&quot;: &quot;2021-01-01T00:00:00Z&quot;,
+      &quot;primaryParticipantTaxId&quot;: &quot;124-85-1234&quot;,
+      &quot;issueCountry&quot;: &quot;US&quot;,
+      &quot;revisionNo&quot;: 1,
+      &quot;effectiveDate&quot;: &quot;2021-01-01T00:00:00Z&quot;,
+      &quot;expirationDate&quot;: &quot;2022-01-01T00:00:00Z&quot;,
+      &quot;cancellationDate&quot;: null
+    },
+    {
+      &quot;primaryParticipantName&quot;: &quot;portal all&quot;,
+      &quot;currentRevisionInd&quot;: false,
+      &quot;issueState&quot;: &quot;TX&quot;,
+      &quot;policyNumber&quot;: &quot;CP0001003505&quot;,
+      &quot;renewalDate&quot;: &quot;2022-01-01T00:00:00Z&quot;,
+      &quot;customerNumber&quot;: &quot;520791&quot;,
+      &quot;timedPolicyStatusCd&quot;: &quot;inForce&quot;,
+      &quot;transactionTypeCd&quot;: &quot;policy&quot;,
+      &quot;policyStatusCd&quot;: &quot;issued&quot;,
+      &quot;anniversaryDate&quot;: &quot;2022-01-01T00:00:00Z&quot;,
+      &quot;transactionEffectiveDate&quot;: &quot;2021-01-01T00:00:00Z&quot;,
+      &quot;primaryParticipantTaxId&quot;: &quot;152-66-1234&quot;,
+      &quot;issueCountry&quot;: &quot;US&quot;,
+      &quot;revisionNo&quot;: 1,
+      &quot;effectiveDate&quot;: &quot;2021-01-01T00:00:00Z&quot;,
+      &quot;expirationDate&quot;: &quot;2022-01-01T00:00:00Z&quot;,
+      &quot;cancellationDate&quot;: null
+    },
+    {
+      &quot;primaryParticipantName&quot;: &quot;portal all&quot;,
+      &quot;currentRevisionInd&quot;: true,
+      &quot;issueState&quot;: &quot;TX&quot;,
+      &quot;policyNumber&quot;: &quot;CP0001003505&quot;,
+      &quot;renewalDate&quot;: &quot;2022-01-01T00:00:00Z&quot;,
+      &quot;customerNumber&quot;: &quot;520791&quot;,
+      &quot;timedPolicyStatusCd&quot;: &quot;inForce&quot;,
+      &quot;transactionTypeCd&quot;: &quot;endorsement&quot;,
+      &quot;policyStatusCd&quot;: &quot;issued&quot;,
+      &quot;anniversaryDate&quot;: &quot;2022-01-01T00:00:00Z&quot;,
+      &quot;transactionEffectiveDate&quot;: &quot;2021-07-22T00:00:00Z&quot;,
+      &quot;primaryParticipantTaxId&quot;: &quot;152-66-1234&quot;,
+      &quot;issueCountry&quot;: &quot;US&quot;,
+      &quot;revisionNo&quot;: 2,
+      &quot;effectiveDate&quot;: &quot;2021-01-01T00:00:00Z&quot;,
+      &quot;expirationDate&quot;: &quot;2022-01-01T00:00:00Z&quot;,
+      &quot;cancellationDate&quot;: null
+    }
+  ],
+  &quot;masterPolicyNumber&quot;: &quot;MP0001002000&quot;,
+  &quot;masterPolicyEffectiveDate&quot;: &quot;2021-01-01T00:00:00Z&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;=========Validating field values in response================= :&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.13">01:09:44.453 [print] =========Validating field values in response================= : 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.masterPolicyNumber == &#39;MP0001002000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">28</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.certificateDtoList[*] == &#39;#array&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.certificateDtoList[*].customerNumber == [&quot;520787&quot;,&quot;520791&quot;,&quot;520791&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.certificateDtoList[*].policyNumber == [&quot;CP0001002025&quot;,&quot;CP0001003505&quot;,&quot;CP0001003505&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.certificateDtoList[*].primaryParticipantName == [&quot;Accident HS&quot;,&quot;portal all&quot;,&quot;portal all&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"wf\/systemAPI\/getMasterPolicy[1.1:22]","start":1629889864125,"end":1629889865415,"title":"wf\/systemAPI\/getMasterPolicy[1.1:22] 07:11:04.125-07:11:05.415 Validate get master policy details for given Claim ID : MP0001002000"},{"id":2,"group":1,"content":"wf\/systemAPI\/getMasterPolicy[1.2:23]","start":1629889865428,"end":1629889865888,"title":"wf\/systemAPI\/getMasterPolicy[1.2:23] 07:11:05.428-07:11:05.888 Validate get master policy details for given Claim ID : MP0000700583"},{"id":3,"group":1,"content":"wf\/systemAPI\/getMasterPolicy[1.3:24]","start":1629889865899,"end":1629889866407,"title":"wf\/systemAPI\/getMasterPolicy[1.3:24] 07:11:05.899-07:11:06.407 Validate get master policy details for given Claim ID : MP0000707203"},{"id":4,"group":1,"content":"wf\/systemAPI\/getMasterPolicy[1.4:25]","start":1629889866414,"end":1629889866934,"title":"wf\/systemAPI\/getMasterPolicy[1.4:25] 07:11:06.414-07:11:06.934 Validate get master policy details for given Claim ID : MP0000700575"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

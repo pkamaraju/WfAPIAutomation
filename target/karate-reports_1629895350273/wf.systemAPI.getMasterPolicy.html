@@ -1,0 +1,2497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>wf.systemAPI.getMasterPolicy</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-08-25 07:11:06 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:22]"><span>[1.1:22]</span> <span>Validate get master policy details for given Claim ID : MP0001002000</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.2:23]"><span>[1.2:23]</span> <span>Validate get master policy details for given Claim ID : MP0000700583</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.3:24]"><span>[1.3:24]</span> <span>Validate get master policy details for given Claim ID : MP0000707203</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[1.4:25]"><span>[1.4:25]</span> <span>Validate get master policy details for given Claim ID : MP0000700575</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">wf/systemAPI/getMasterPolicy.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Fetching Customer details through GET call in wfl-claims-rs Core Services</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">reg</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:22]</span>
+                <span class="scenario-name">Validate get master policy details for given Claim ID : MP0001002000</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1217</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:22]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">73</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;policy-group-rs/v1/master-policies/MP0001002000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1084</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.10">07:11:04.674 request:
+1 &gt; GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/master-policies/MP0001002000
+1 &gt; Authorization: Basic cWE6cWE=
+1 &gt; Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+07:11:05.361 response time in milliseconds: 637
+1 &lt; 200
+1 &lt; Content-Language: en
+1 &lt; Date: Wed, 25 Aug 2021 11:11:05 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+{&quot;benefits&quot;:[{&quot;code&quot;:&quot;HEALTH_SCR_RIDER&quot;,&quot;applied&quot;:true,&quot;name&quot;:&quot;Health Screening Benefit Rider&quot;,&quot;maxBenefitAmount&quot;:null,&quot;underwritingApproach&quot;:null},{&quot;code&quot;:&quot;ORG_ATHL_ACT_RIDER&quot;,&quot;applied&quot;:false,&quot;name&quot;:&quot;Organized Athletic Activity Rider&quot;,&quot;maxBenefitAmount&quot;:null,&quot;underwritingApproach&quot;:null},{&quot;code&quot;:&quot;EMERG_SICK_RIDER&quot;,&quot;applied&quot;:false,&quot;name&quot;:&quot;Emergency Sickness Rider&quot;,&quot;maxBenefitAmount&quot;:null,&quot;underwritingApproach&quot;:null},{&quot;code&quot;:&quot;HEALTH_SYS_BNF_RIDER&quot;,&quot;applied&quot;:false,&quot;name&quot;:&quot;Health System Benefit Rider&quot;,&quot;maxBenefitAmount&quot;:null,&quot;underwritingApproach&quot;:null},{&quot;code&quot;:&quot;CG_RIDER&quot;,&quot;applied&quot;:false,&quot;name&quot;:&quot;Caregiver Rider&quot;,&quot;maxBenefitAmount&quot;:null,&quot;underwritingApproach&quot;:null}],&quot;sponsor&quot;:0,&quot;renewalFrequency&quot;:&quot;99&quot;,&quot;minNumberOfParticipants&quot;:5,&quot;revisionNumber&quot;:2,&quot;currentRevisionInd&quot;:true,&quot;maxNumberOfParticipants&quot;:null,&quot;policyNumber&quot;:&quot;MP0001002000&quot;,&quot;coverages&quot;:[{&quot;minAmount&quot;:null,&quot;memberPaymentModes&quot;:[&quot;12&quot;],&quot;annualEnrollmentUnderwritingOffer&quot;:null,&quot;benefitType&quot;:null,&quot;directBilled&quot;:false,&quot;oid&quot;:&quot;sOtlFgYafnsKuc8c6YVNDA&quot;,&quot;sponsorPaymentMode&quot;:null,&quot;benefitStructure&quot;:[{&quot;eliminationPeriod&quot;:null,&quot;continuouslyInsuredPeriod&quot;:null,&quot;lookBackPeriod&quot;:null,&quot;amountOptions&quot;:null,&quot;maxBenefitPeriod&quot;:null,&quot;eliminationPeriodSickness&quot;:null,&quot;preExistingConditions&quot;:null}],&quot;flatRate&quot;:null,&quot;planCd&quot;:&quot;PLAN_1&quot;,&quot;rateBasisCd&quot;:&quot;PEMPL&quot;,&quot;amountOptions&quot;:null,&quot;maxAmount&quot;:null,&quot;sponsorContribution&quot;:[0.0],&quot;underwritingOfferLifeEvent&quot;:null,&quot;minParticipantCount&quot;:null,&quot;classificationGroupCoverageRelationships&quot;:[{&quot;classificationGroupName&quot;:&quot;All Eligible Employees&quot;,&quot;amountOptions&quot;:null,&quot;customizeCoverage&quot;:false,&quot;rate&quot;:1206.88,&quot;classificationGroupCode&quot;:&quot;1&quot;,&quot;classificationGroupOid&quot;:&quot;lvrLF8xoTLtO5HTd1zJKuw&quot;,&quot;useSubgroups&quot;:false,&quot;classificationSubgroupRatings&quot;:[{&quot;classificationSubgroupName&quot;:&quot;DEFAULT&quot;,&quot;tier&quot;:null,&quot;rate&quot;:null,&quot;estimatedParticipantCount&quot;:null,&quot;tierRatings&quot;:[{&quot;classificationSubgroupName&quot;:null,&quot;tier&quot;:&quot;EEO&quot;,&quot;rate&quot;:170.21,&quot;estimatedParticipantCount&quot;:100,&quot;tierRatings&quot;:null,&quot;estimatedVolume&quot;:0.0,&quot;classificationSubgroupOid&quot;:null},{&quot;classificationSubgroupName&quot;:null,&quot;tier&quot;:&quot;EES&quot;,&quot;rate&quot;:295.47,&quot;estimatedParticipantCount&quot;:0,&quot;tierRatings&quot;:null,&quot;estimatedVolume&quot;:0.0,&quot;classificationSubgroupOid&quot;:null},{&quot;classificationSubgroupName&quot;:null,&quot;tier&quot;:&quot;EEC&quot;,&quot;rate&quot;:307.98,&quot;estimatedParticipantCount&quot;:0,&quot;tierRatings&quot;:null,&quot;estimatedVolume&quot;:0.0,&quot;classificationSubgroupOid&quot;:null},{&quot;classificationSubgroupName&quot;:null,&quot;tier&quot;:&quot;EEF&quot;,&quot;rate&quot;:433.22,&quot;estimatedParticipantCount&quot;:0,&quot;tierRatings&quot;:null,&quot;estimatedVolume&quot;:0.0,&quot;classificationSubgroupOid&quot;:null}],&quot;estimatedVolume&quot;:null,&quot;classificationSubgroupOid&quot;:&quot;jIMkCtuMWbTBK4Qjt89Esg&quot;}]}],&quot;eligibilityWaitingPeriod&quot;:null,&quot;coverageTiers&quot;:[&quot;EEC&quot;,&quot;EEF&quot;,&quot;EEO&quot;,&quot;EES&quot;],&quot;requiredParticipationPercentage&quot;:0.0,&quot;waitingPeriod&quot;:&quot;FirstOfMonthFollowingDateOfHire&quot;,&quot;initialEnrollmentUnderwritingOffer&quot;:null,&quot;PreconfigGroupBAORangeValue.minAmount&quot;:0,&quot;taxability&quot;:&quot;PPPreBTax&quot;,&quot;coverageCd&quot;:&quot;ACCIDENT_1&quot;,&quot;tierRatings&quot;:&quot;4&quot;,&quot;selfAdministered&quot;:false,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;participantContributionPercentage&quot;:100.0,&quot;waitingPeriodMode&quot;:null,&quot;minHourlyReq&quot;:[30.0],&quot;PreconfigGroupBAORangeValue.maxAmount&quot;:0,&quot;rateGuarantee&quot;:2}],&quot;policyStatusCd&quot;:&quot;issued&quot;,&quot;quoteCreationDate&quot;:&quot;2021-07-19&quot;,&quot;productVersion&quot;:1.0,&quot;subProducerCd&quot;:&quot;5&quot;,&quot;priorClaimsRetroactiveEffectiveDate&quot;:null,&quot;member&quot;:340.42,&quot;shortTermInd&quot;:false,&quot;issueDate&quot;:&quot;2021-07-16&quot;,&quot;expirationDate&quot;:&quot;2022-01-01&quot;,&quot;cancellationDate&quot;:null,&quot;situsState&quot;:&quot;TX&quot;,&quot;priorClaimsAllowed&quot;:false,&quot;durationInMonths&quot;:1188,&quot;producerCd&quot;:&quot;QAG&quot;,&quot;premiums&quot;:[{&quot;numberOfParticipants&quot;:2,&quot;volume&quot;:0.0,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;annualPremium&quot;:340.4200000000000000,&quot;payor&quot;:&quot;MEMBER&quot;,&quot;planCd&quot;:&quot;PLAN_1&quot;,&quot;paymentMode&quot;:&quot;12&quot;,&quot;byPayor&quot;:[{&quot;numberOfParticipants&quot;:2,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;annualPremium&quot;:340.42,&quot;payor&quot;:&quot;MEMBER&quot;,&quot;planCd&quot;:&quot;PLAN_1&quot;,&quot;byClassificationGroup&quot;:[{&quot;numberOfParticipants&quot;:2,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;annualPremium&quot;:340.42,&quot;payor&quot;:&quot;MEMBER&quot;,&quot;paymentMode&quot;:&quot;12&quot;,&quot;byClassificationSubGroup&quot;:null,&quot;useSubGroups&quot;:false,&quot;className&quot;:&quot;All Eligible Employees&quot;,&quot;contributionPercentage&quot;:100.0,&quot;byClassificationGroupTier&quot;:[{&quot;numberOfParticipants&quot;:2,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;annualPremium&quot;:340.42,&quot;payor&quot;:&quot;MEMBER&quot;,&quot;paymentMode&quot;:&quot;12&quot;,&quot;contributionPercentage&quot;:100.0,&quot;coverageTierCd&quot;:&quot;EEO&quot;,&quot;modalPremium&quot;:28.36}],&quot;modalPremium&quot;:28.36}],&quot;paymentMode&quot;:&quot;12&quot;,&quot;contributionPercentage&quot;:100.0,&quot;coverageCd&quot;:&quot;ACCIDENT_1&quot;,&quot;modalPremium&quot;:28.36}],&quot;coverageCd&quot;:&quot;ACCIDENT_1&quot;,&quot;modalPremium&quot;:28.36}],&quot;deliveryModelCd&quot;:&quot;GROUP&quot;,&quot;takeOver&quot;:false,&quot;customerNumber&quot;:&quot;510005&quot;,&quot;timedPolicyStatusCd&quot;:&quot;inForce&quot;,&quot;eligibleLives&quot;:[5],&quot;otherParticipationMin&quot;:null,&quot;transactionTypeCd&quot;:&quot;endorsement&quot;,&quot;anniversaryDate&quot;:&quot;2022-01-01&quot;,&quot;productCode&quot;:&quot;GB_AC&quot;,&quot;priorCarrierName&quot;:&quot;&quot;,&quot;transactionEffectiveDate&quot;:&quot;2021-07-01&quot;,&quot;priorCarrierPolicyNumber&quot;:&quot;&quot;,&quot;enrollmentDetails&quot;:{&quot;enrollmentStartDate&quot;:&quot;2020-12-01&quot;,&quot;enrollmentUnderwritingOffer&quot;:null,&quot;enrollmentSolutionUsed&quot;:&quot;Online&quot;,&quot;enrollmentEndDate&quot;:&quot;2020-12-31&quot;},&quot;totalAnnualPremium&quot;:340.42,&quot;effectiveDate&quot;:&quot;2021-01-01&quot;,&quot;minParticipationPercentage&quot;:null}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">19</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.12">07:11:05.382 [print] {
+  &quot;benefits&quot;: [
+    {
+      &quot;code&quot;: &quot;HEALTH_SCR_RIDER&quot;,
+      &quot;applied&quot;: true,
+      &quot;name&quot;: &quot;Health Screening Benefit Rider&quot;,
+      &quot;maxBenefitAmount&quot;: null,
+      &quot;underwritingApproach&quot;: null
+    },
+    {
+      &quot;code&quot;: &quot;ORG_ATHL_ACT_RIDER&quot;,
+      &quot;applied&quot;: false,
+      &quot;name&quot;: &quot;Organized Athletic Activity Rider&quot;,
+      &quot;maxBenefitAmount&quot;: null,
+      &quot;underwritingApproach&quot;: null
+    },
+    {
+      &quot;code&quot;: &quot;EMERG_SICK_RIDER&quot;,
+      &quot;applied&quot;: false,
+      &quot;name&quot;: &quot;Emergency Sickness Rider&quot;,
+      &quot;maxBenefitAmount&quot;: null,
+      &quot;underwritingApproach&quot;: null
+    },
+    {
+      &quot;code&quot;: &quot;HEALTH_SYS_BNF_RIDER&quot;,
+      &quot;applied&quot;: false,
+      &quot;name&quot;: &quot;Health System Benefit Rider&quot;,
+      &quot;maxBenefitAmount&quot;: null,
+      &quot;underwritingApproach&quot;: null
+    },
+    {
+      &quot;code&quot;: &quot;CG_RIDER&quot;,
+      &quot;applied&quot;: false,
+      &quot;name&quot;: &quot;Caregiver Rider&quot;,
+      &quot;maxBenefitAmount&quot;: null,
+      &quot;underwritingApproach&quot;: null
+    }
+  ],
+  &quot;sponsor&quot;: 0,
+  &quot;renewalFrequency&quot;: &quot;99&quot;,
+  &quot;minNumberOfParticipants&quot;: 5,
+  &quot;revisionNumber&quot;: 2,
+  &quot;currentRevisionInd&quot;: true,
+  &quot;maxNumberOfParticipants&quot;: null,
+  &quot;policyNumber&quot;: &quot;MP0001002000&quot;,
+  &quot;coverages&quot;: [
+    {
+      &quot;minAmount&quot;: null,
+      &quot;memberPaymentModes&quot;: [
+        &quot;12&quot;
+      ],
+      &quot;annualEnrollmentUnderwritingOffer&quot;: null,
+      &quot;benefitType&quot;: null,
+      &quot;directBilled&quot;: false,
+      &quot;oid&quot;: &quot;sOtlFgYafnsKuc8c6YVNDA&quot;,
+      &quot;sponsorPaymentMode&quot;: null,
+      &quot;benefitStructure&quot;: [
+        {
+          &quot;eliminationPeriod&quot;: null,
+          &quot;continuouslyInsuredPeriod&quot;: null,
+          &quot;lookBackPeriod&quot;: null,
+          &quot;amountOptions&quot;: null,
+          &quot;maxBenefitPeriod&quot;: null,
+          &quot;eliminationPeriodSickness&quot;: null,
+          &quot;preExistingConditions&quot;: null
+        }
+      ],
+      &quot;flatRate&quot;: null,
+      &quot;planCd&quot;: &quot;PLAN_1&quot;,
+      &quot;rateBasisCd&quot;: &quot;PEMPL&quot;,
+      &quot;amountOptions&quot;: null,
+      &quot;maxAmount&quot;: null,
+      &quot;sponsorContribution&quot;: [
+        0.0
+      ],
+      &quot;underwritingOfferLifeEvent&quot;: null,
+      &quot;minParticipantCount&quot;: null,
+      &quot;classificationGroupCoverageRelationships&quot;: [
+        {
+          &quot;classificationGroupName&quot;: &quot;All Eligible Employees&quot;,
+          &quot;amountOptions&quot;: null,
+          &quot;customizeCoverage&quot;: false,
+          &quot;rate&quot;: 1206.88,
+          &quot;classificationGroupCode&quot;: &quot;1&quot;,
+          &quot;classificationGroupOid&quot;: &quot;lvrLF8xoTLtO5HTd1zJKuw&quot;,
+          &quot;useSubgroups&quot;: false,
+          &quot;classificationSubgroupRatings&quot;: [
+            {
+              &quot;classificationSubgroupName&quot;: &quot;DEFAULT&quot;,
+              &quot;tier&quot;: null,
+              &quot;rate&quot;: null,
+              &quot;estimatedParticipantCount&quot;: null,
+              &quot;tierRatings&quot;: [
+                {
+                  &quot;classificationSubgroupName&quot;: null,
+                  &quot;tier&quot;: &quot;EEO&quot;,
+                  &quot;rate&quot;: 170.21,
+                  &quot;estimatedParticipantCount&quot;: 100,
+                  &quot;tierRatings&quot;: null,
+                  &quot;estimatedVolume&quot;: 0.0,
+                  &quot;classificationSubgroupOid&quot;: null
+                },
+                {
+                  &quot;classificationSubgroupName&quot;: null,
+                  &quot;tier&quot;: &quot;EES&quot;,
+                  &quot;rate&quot;: 295.47,
+                  &quot;estimatedParticipantCount&quot;: 0,
+                  &quot;tierRatings&quot;: null,
+                  &quot;estimatedVolume&quot;: 0.0,
+                  &quot;classificationSubgroupOid&quot;: null
+                },
+                {
+                  &quot;classificationSubgroupName&quot;: null,
+                  &quot;tier&quot;: &quot;EEC&quot;,
+                  &quot;rate&quot;: 307.98,
+                  &quot;estimatedParticipantCount&quot;: 0,
+                  &quot;tierRatings&quot;: null,
+                  &quot;estimatedVolume&quot;: 0.0,
+                  &quot;classificationSubgroupOid&quot;: null
+                },
+                {
+                  &quot;classificationSubgroupName&quot;: null,
+                  &quot;tier&quot;: &quot;EEF&quot;,
+                  &quot;rate&quot;: 433.22,
+                  &quot;estimatedParticipantCount&quot;: 0,
+                  &quot;tierRatings&quot;: null,
+                  &quot;estimatedVolume&quot;: 0.0,
+                  &quot;classificationSubgroupOid&quot;: null
+                }
+              ],
+              &quot;estimatedVolume&quot;: null,
+              &quot;classificationSubgroupOid&quot;: &quot;jIMkCtuMWbTBK4Qjt89Esg&quot;
+            }
+          ]
+        }
+      ],
+      &quot;eligibilityWaitingPeriod&quot;: null,
+      &quot;coverageTiers&quot;: [
+        &quot;EEC&quot;,
+        &quot;EEF&quot;,
+        &quot;EEO&quot;,
+        &quot;EES&quot;
+      ],
+      &quot;requiredParticipationPercentage&quot;: 0.0,
+      &quot;waitingPeriod&quot;: &quot;FirstOfMonthFollowingDateOfHire&quot;,
+      &quot;initialEnrollmentUnderwritingOffer&quot;: null,
+      &quot;PreconfigGroupBAORangeValue.minAmount&quot;: 0,
+      &quot;taxability&quot;: &quot;PPPreBTax&quot;,
+      &quot;coverageCd&quot;: &quot;ACCIDENT_1&quot;,
+      &quot;tierRatings&quot;: &quot;4&quot;,
+      &quot;selfAdministered&quot;: false,
+      &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+      &quot;participantContributionPercentage&quot;: 100.0,
+      &quot;waitingPeriodMode&quot;: null,
+      &quot;minHourlyReq&quot;: [
+        30.0
+      ],
+      &quot;PreconfigGroupBAORangeValue.maxAmount&quot;: 0,
+      &quot;rateGuarantee&quot;: 2
+    }
+  ],
+  &quot;policyStatusCd&quot;: &quot;issued&quot;,
+  &quot;quoteCreationDate&quot;: &quot;2021-07-19&quot;,
+  &quot;productVersion&quot;: 1.0,
+  &quot;subProducerCd&quot;: &quot;5&quot;,
+  &quot;priorClaimsRetroactiveEffectiveDate&quot;: null,
+  &quot;member&quot;: 340.42,
+  &quot;shortTermInd&quot;: false,
+  &quot;issueDate&quot;: &quot;2021-07-16&quot;,
+  &quot;expirationDate&quot;: &quot;2022-01-01&quot;,
+  &quot;cancellationDate&quot;: null,
+  &quot;situsState&quot;: &quot;TX&quot;,
+  &quot;priorClaimsAllowed&quot;: false,
+  &quot;durationInMonths&quot;: 1188,
+  &quot;producerCd&quot;: &quot;QAG&quot;,
+  &quot;premiums&quot;: [
+    {
+      &quot;numberOfParticipants&quot;: 2,
+      &quot;volume&quot;: 0.0,
+      &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+      &quot;annualPremium&quot;: 340.4200000000000000,
+      &quot;payor&quot;: &quot;MEMBER&quot;,
+      &quot;planCd&quot;: &quot;PLAN_1&quot;,
+      &quot;paymentMode&quot;: &quot;12&quot;,
+      &quot;byPayor&quot;: [
+        {
+          &quot;numberOfParticipants&quot;: 2,
+          &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+          &quot;annualPremium&quot;: 340.42,
+          &quot;payor&quot;: &quot;MEMBER&quot;,
+          &quot;planCd&quot;: &quot;PLAN_1&quot;,
+          &quot;byClassificationGroup&quot;: [
+            {
+              &quot;numberOfParticipants&quot;: 2,
+              &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+              &quot;annualPremium&quot;: 340.42,
+              &quot;payor&quot;: &quot;MEMBER&quot;,
+              &quot;paymentMode&quot;: &quot;12&quot;,
+              &quot;byClassificationSubGroup&quot;: null,
+              &quot;useSubGroups&quot;: false,
+              &quot;className&quot;: &quot;All Eligible Employees&quot;,
+              &quot;contributionPercentage&quot;: 100.0,
+              &quot;byClassificationGroupTier&quot;: [
+                {
+                  &quot;numberOfParticipants&quot;: 2,
+                  &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+                  &quot;annualPremium&quot;: 340.42,
+                  &quot;payor&quot;: &quot;MEMBER&quot;,
+                  &quot;paymentMode&quot;: &quot;12&quot;,
+                  &quot;contributionPercentage&quot;: 100.0,
+                  &quot;coverageTierCd&quot;: &quot;EEO&quot;,
+                  &quot;modalPremium&quot;: 28.36
+                }
+              ],
+              &quot;modalPremium&quot;: 28.36
+            }
+          ],
+          &quot;paymentMode&quot;: &quot;12&quot;,
+          &quot;contributionPercentage&quot;: 100.0,
+          &quot;coverageCd&quot;: &quot;ACCIDENT_1&quot;,
+          &quot;modalPremium&quot;: 28.36
+        }
+      ],
+      &quot;coverageCd&quot;: &quot;ACCIDENT_1&quot;,
+      &quot;modalPremium&quot;: 28.36
+    }
+  ],
+  &quot;deliveryModelCd&quot;: &quot;GROUP&quot;,
+  &quot;takeOver&quot;: false,
+  &quot;customerNumber&quot;: &quot;510005&quot;,
+  &quot;timedPolicyStatusCd&quot;: &quot;inForce&quot;,
+  &quot;eligibleLives&quot;: [
+    5
+  ],
+  &quot;otherParticipationMin&quot;: null,
+  &quot;transactionTypeCd&quot;: &quot;endorsement&quot;,
+  &quot;anniversaryDate&quot;: &quot;2022-01-01&quot;,
+  &quot;productCode&quot;: &quot;GB_AC&quot;,
+  &quot;priorCarrierName&quot;: &quot;&quot;,
+  &quot;transactionEffectiveDate&quot;: &quot;2021-07-01&quot;,
+  &quot;priorCarrierPolicyNumber&quot;: &quot;&quot;,
+  &quot;enrollmentDetails&quot;: {
+    &quot;enrollmentStartDate&quot;: &quot;2020-12-01&quot;,
+    &quot;enrollmentUnderwritingOffer&quot;: null,
+    &quot;enrollmentSolutionUsed&quot;: &quot;Online&quot;,
+    &quot;enrollmentEndDate&quot;: &quot;2020-12-31&quot;
+  },
+  &quot;totalAnnualPremium&quot;: 340.42,
+  &quot;effectiveDate&quot;: &quot;2021-01-01&quot;,
+  &quot;minParticipationPercentage&quot;: null
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;=========Validating field values in response================= :&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.14">07:11:05.385 [print] =========Validating field values in response================= : 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.policyNumber == &#39;MP0001002000&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">27</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.customerNumber == &#39;510005&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.policyStatusCd == &#39;issued&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.coverages[0].coverageCd == &#39;ACCIDENT_1&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:23]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">reg</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:23]</span>
+                <span class="scenario-name">Validate get master policy details for given Claim ID : MP0000700583</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>459</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:23]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;policy-group-rs/v1/master-policies/MP0000700583&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">449</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.10">07:11:05.433 request:
+1 &gt; GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/master-policies/MP0000700583
+1 &gt; Authorization: Basic cWE6cWE=
+1 &gt; Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+07:11:05.879 response time in milliseconds: 441
+1 &lt; 200
+1 &lt; Content-Language: en
+1 &lt; Date: Wed, 25 Aug 2021 11:11:06 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+{&quot;benefits&quot;:[{&quot;code&quot;:null,&quot;applied&quot;:null,&quot;name&quot;:&quot;Guaranteed Issue&quot;,&quot;maxBenefitAmount&quot;:[5000.0],&quot;underwritingApproach&quot;:&quot;GUARANTEED&quot;},{&quot;code&quot;:&quot;BUILDING_BENEFIT_RIDER&quot;,&quot;applied&quot;:true,&quot;name&quot;:&quot;Riders&quot;,&quot;maxBenefitAmount&quot;:null,&quot;underwritingApproach&quot;:null},{&quot;code&quot;:&quot;LEAVE_OF_ABSENCE_RIDER&quot;,&quot;applied&quot;:false,&quot;name&quot;:&quot;Riders&quot;,&quot;maxBenefitAmount&quot;:null,&quot;underwritingApproach&quot;:null},{&quot;code&quot;:&quot;MED_PREM_RIDER&quot;,&quot;applied&quot;:false,&quot;name&quot;:&quot;Riders&quot;,&quot;maxBenefitAmount&quot;:null,&quot;underwritingApproach&quot;:null}],&quot;sponsor&quot;:0,&quot;renewalFrequency&quot;:&quot;99&quot;,&quot;minNumberOfParticipants&quot;:10,&quot;revisionNumber&quot;:2,&quot;currentRevisionInd&quot;:true,&quot;maxNumberOfParticipants&quot;:null,&quot;policyNumber&quot;:&quot;MP0000700583&quot;,&quot;coverages&quot;:[{&quot;minAmount&quot;:92.36878,&quot;memberPaymentModes&quot;:[&quot;12&quot;],&quot;annualEnrollmentUnderwritingOffer&quot;:null,&quot;benefitType&quot;:&quot;FLAT_VALUE&quot;,&quot;directBilled&quot;:false,&quot;oid&quot;:&quot;s3i0h2NOudIJXF1E7kpNFw&quot;,&quot;sponsorPaymentMode&quot;:null,&quot;benefitStructure&quot;:[{&quot;eliminationPeriod&quot;:&quot;7&quot;,&quot;continuouslyInsuredPeriod&quot;:&quot;12&quot;,&quot;lookBackPeriod&quot;:&quot;12&quot;,&quot;amountOptions&quot;:{&quot;minAmount&quot;:null,&quot;maxAmount&quot;:null},&quot;maxBenefitPeriod&quot;:&quot;6&quot;,&quot;eliminationPeriodSickness&quot;:&quot;7&quot;,&quot;preExistingConditions&quot;:&quot;I&quot;}],&quot;flatRate&quot;:0.0,&quot;planCd&quot;:&quot;Scenario 1&quot;,&quot;rateBasisCd&quot;:&quot;PMNTH&quot;,&quot;amountOptions&quot;:null,&quot;maxAmount&quot;:92.36878,&quot;sponsorContribution&quot;:[0.0],&quot;underwritingOfferLifeEvent&quot;:null,&quot;minParticipantCount&quot;:null,&quot;classificationGroupCoverageRelationships&quot;:[{&quot;classificationGroupName&quot;:&quot;All Eligible Employees&quot;,&quot;amountOptions&quot;:null,&quot;customizeCoverage&quot;:false,&quot;rate&quot;:938.54096,&quot;classificationGroupCode&quot;:&quot;1&quot;,&quot;classificationGroupOid&quot;:&quot;lvrLF8xoTLtO5HTd1zJKuw&quot;,&quot;useSubgroups&quot;:true,&quot;classificationSubgroupRatings&quot;:[{&quot;classificationSubgroupName&quot;:&quot;18 - 49&quot;,&quot;tier&quot;:null,&quot;rate&quot;:92.36878,&quot;estimatedParticipantCount&quot;:7,&quot;tierRatings&quot;:[],&quot;estimatedVolume&quot;:0.0,&quot;classificationSubgroupOid&quot;:&quot;taySjtFcgnn0FQ-W0F9ICg&quot;},{&quot;classificationSubgroupName&quot;:&quot;50 - 59&quot;,&quot;tier&quot;:null,&quot;rate&quot;:124.8555,&quot;estimatedParticipantCount&quot;:2,&quot;tierRatings&quot;:[],&quot;estimatedVolume&quot;:0.0,&quot;classificationSubgroupOid&quot;:&quot;gvhALVrL-t8JzdabrfpKag&quot;},{&quot;classificationSubgroupName&quot;:&quot;60 - 64&quot;,&quot;tier&quot;:null,&quot;rate&quot;:174.33556,&quot;estimatedParticipantCount&quot;:0,&quot;tierRatings&quot;:[],&quot;estimatedVolume&quot;:0.0,&quot;classificationSubgroupOid&quot;:&quot;qAGb5e-Tw69lE3r2INlC9A&quot;},{&quot;classificationSubgroupName&quot;:&quot;65 - 69&quot;,&quot;tier&quot;:null,&quot;rate&quot;:224.42686,&quot;estimatedParticipantCount&quot;:0,&quot;tierRatings&quot;:[],&quot;estimatedVolume&quot;:0.0,&quot;classificationSubgroupOid&quot;:&quot;ozA9CwY3AXNFiuM9KSlOhA&quot;},{&quot;classificationSubgroupName&quot;:&quot;70+&quot;,&quot;tier&quot;:null,&quot;rate&quot;:322.55426,&quot;estimatedParticipantCount&quot;:0,&quot;tierRatings&quot;:[],&quot;estimatedVolume&quot;:0.0,&quot;classificationSubgroupOid&quot;:&quot;tVbf12M-W657K7Jh7whPBw&quot;}]}],&quot;eligibilityWaitingPeriod&quot;:null,&quot;coverageTiers&quot;:[],&quot;requiredParticipationPercentage&quot;:0.0,&quot;waitingPeriod&quot;:&quot;FirstMonthDate&quot;,&quot;initialEnrollmentUnderwritingOffer&quot;:null,&quot;PreconfigGroupBAORangeValue.minAmount&quot;:null,&quot;taxability&quot;:&quot;PPPreBTax&quot;,&quot;coverageCd&quot;:&quot;STD&quot;,&quot;tierRatings&quot;:null,&quot;selfAdministered&quot;:false,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;participantContributionPercentage&quot;:100.0,&quot;waitingPeriodMode&quot;:null,&quot;minHourlyReq&quot;:[30.0],&quot;PreconfigGroupBAORangeValue.maxAmount&quot;:5000.0,&quot;rateGuarantee&quot;:2}],&quot;policyStatusCd&quot;:&quot;issued&quot;,&quot;quoteCreationDate&quot;:&quot;2020-08-17&quot;,&quot;productVersion&quot;:1.0,&quot;subProducerCd&quot;:&quot;code46&quot;,&quot;priorClaimsRetroactiveEffectiveDate&quot;:null,&quot;member&quot;:7652.02,&quot;shortTermInd&quot;:false,&quot;issueDate&quot;:&quot;2020-08-12&quot;,&quot;expirationDate&quot;:&quot;2021-08-10&quot;,&quot;cancellationDate&quot;:null,&quot;situsState&quot;:&quot;TX&quot;,&quot;priorClaimsAllowed&quot;:false,&quot;durationInMonths&quot;:1188,&quot;producerCd&quot;:&quot;QAG&quot;,&quot;premiums&quot;:[{&quot;numberOfParticipants&quot;:3,&quot;volume&quot;:6400.0,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;annualPremium&quot;:7652.0200000000000000,&quot;payor&quot;:&quot;MEMBER&quot;,&quot;planCd&quot;:&quot;Scenario 1&quot;,&quot;paymentMode&quot;:&quot;12&quot;,&quot;byPayor&quot;:[{&quot;numberOfParticipants&quot;:3,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;annualPremium&quot;:7652.02,&quot;payor&quot;:&quot;MEMBER&quot;,&quot;planCd&quot;:&quot;Scenario 1&quot;,&quot;byClassificationGroup&quot;:[{&quot;numberOfParticipants&quot;:3,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;annualPremium&quot;:7652.02,&quot;payor&quot;:&quot;MEMBER&quot;,&quot;paymentMode&quot;:&quot;12&quot;,&quot;byClassificationSubGroup&quot;:[{&quot;numberOfParticipants&quot;:1,&quot;subGroupName&quot;:&quot;18 - 49&quot;,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;annualPremium&quot;:4618.44,&quot;payor&quot;:&quot;MEMBER&quot;,&quot;paymentMode&quot;:&quot;12&quot;,&quot;subGroupType&quot;:&quot;RATING_GROUP&quot;,&quot;contributionPercentage&quot;:100.0,&quot;byClassificationSubGroupTier&quot;:null,&quot;modalPremium&quot;:384.87},{&quot;numberOfParticipants&quot;:1,&quot;subGroupName&quot;:&quot;60 - 64&quot;,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;annualPremium&quot;:1743.36,&quot;payor&quot;:&quot;MEMBER&quot;,&quot;paymentMode&quot;:&quot;12&quot;,&quot;subGroupType&quot;:&quot;RATING_GROUP&quot;,&quot;contributionPercentage&quot;:100.0,&quot;byClassificationSubGroupTier&quot;:null,&quot;modalPremium&quot;:145.28},{&quot;numberOfParticipants&quot;:1,&quot;subGroupName&quot;:&quot;70+&quot;,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;annualPremium&quot;:1290.22,&quot;payor&quot;:&quot;MEMBER&quot;,&quot;paymentMode&quot;:&quot;12&quot;,&quot;subGroupType&quot;:&quot;RATING_GROUP&quot;,&quot;contributionPercentage&quot;:100.0,&quot;byClassificationSubGroupTier&quot;:null,&quot;modalPremium&quot;:107.52}],&quot;useSubGroups&quot;:true,&quot;className&quot;:&quot;All Eligible Employees&quot;,&quot;contributionPercentage&quot;:100.0,&quot;byClassificationGroupTier&quot;:null,&quot;modalPremium&quot;:637.67}],&quot;paymentMode&quot;:&quot;12&quot;,&quot;contributionPercentage&quot;:100.0,&quot;coverageCd&quot;:&quot;STD&quot;,&quot;modalPremium&quot;:637.67}],&quot;coverageCd&quot;:&quot;STD&quot;,&quot;modalPremium&quot;:637.67}],&quot;deliveryModelCd&quot;:&quot;GROUP&quot;,&quot;takeOver&quot;:false,&quot;customerNumber&quot;:&quot;510005&quot;,&quot;timedPolicyStatusCd&quot;:&quot;inForce&quot;,&quot;eligibleLives&quot;:[100],&quot;otherParticipationMin&quot;:null,&quot;transactionTypeCd&quot;:&quot;endorsement&quot;,&quot;anniversaryDate&quot;:&quot;2021-08-10&quot;,&quot;productCode&quot;:&quot;GB_DI_STD&quot;,&quot;priorCarrierName&quot;:&quot;&quot;,&quot;transactionEffectiveDate&quot;:&quot;2020-08-10&quot;,&quot;priorCarrierPolicyNumber&quot;:&quot;&quot;,&quot;enrollmentDetails&quot;:{&quot;enrollmentStartDate&quot;:&quot;2020-07-10&quot;,&quot;enrollmentUnderwritingOffer&quot;:&quot;GI&quot;,&quot;enrollmentSolutionUsed&quot;:&quot;Online&quot;,&quot;enrollmentEndDate&quot;:&quot;2020-08-09&quot;},&quot;totalAnnualPremium&quot;:7652.02,&quot;effectiveDate&quot;:&quot;2020-08-10&quot;,&quot;minParticipationPercentage&quot;:10}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.12">07:11:05.884 [print] {
+  &quot;benefits&quot;: [
+    {
+      &quot;code&quot;: null,
+      &quot;applied&quot;: null,
+      &quot;name&quot;: &quot;Guaranteed Issue&quot;,
+      &quot;maxBenefitAmount&quot;: [
+        5000.0
+      ],
+      &quot;underwritingApproach&quot;: &quot;GUARANTEED&quot;
+    },
+    {
+      &quot;code&quot;: &quot;BUILDING_BENEFIT_RIDER&quot;,
+      &quot;applied&quot;: true,
+      &quot;name&quot;: &quot;Riders&quot;,
+      &quot;maxBenefitAmount&quot;: null,
+      &quot;underwritingApproach&quot;: null
+    },
+    {
+      &quot;code&quot;: &quot;LEAVE_OF_ABSENCE_RIDER&quot;,
+      &quot;applied&quot;: false,
+      &quot;name&quot;: &quot;Riders&quot;,
+      &quot;maxBenefitAmount&quot;: null,
+      &quot;underwritingApproach&quot;: null
+    },
+    {
+      &quot;code&quot;: &quot;MED_PREM_RIDER&quot;,
+      &quot;applied&quot;: false,
+      &quot;name&quot;: &quot;Riders&quot;,
+      &quot;maxBenefitAmount&quot;: null,
+      &quot;underwritingApproach&quot;: null
+    }
+  ],
+  &quot;sponsor&quot;: 0,
+  &quot;renewalFrequency&quot;: &quot;99&quot;,
+  &quot;minNumberOfParticipants&quot;: 10,
+  &quot;revisionNumber&quot;: 2,
+  &quot;currentRevisionInd&quot;: true,
+  &quot;maxNumberOfParticipants&quot;: null,
+  &quot;policyNumber&quot;: &quot;MP0000700583&quot;,
+  &quot;coverages&quot;: [
+    {
+      &quot;minAmount&quot;: 92.36878,
+      &quot;memberPaymentModes&quot;: [
+        &quot;12&quot;
+      ],
+      &quot;annualEnrollmentUnderwritingOffer&quot;: null,
+      &quot;benefitType&quot;: &quot;FLAT_VALUE&quot;,
+      &quot;directBilled&quot;: false,
+      &quot;oid&quot;: &quot;s3i0h2NOudIJXF1E7kpNFw&quot;,
+      &quot;sponsorPaymentMode&quot;: null,
+      &quot;benefitStructure&quot;: [
+        {
+          &quot;eliminationPeriod&quot;: &quot;7&quot;,
+          &quot;continuouslyInsuredPeriod&quot;: &quot;12&quot;,
+          &quot;lookBackPeriod&quot;: &quot;12&quot;,
+          &quot;amountOptions&quot;: {
+            &quot;minAmount&quot;: null,
+            &quot;maxAmount&quot;: null
+          },
+          &quot;maxBenefitPeriod&quot;: &quot;6&quot;,
+          &quot;eliminationPeriodSickness&quot;: &quot;7&quot;,
+          &quot;preExistingConditions&quot;: &quot;I&quot;
+        }
+      ],
+      &quot;flatRate&quot;: 0.0,
+      &quot;planCd&quot;: &quot;Scenario 1&quot;,
+      &quot;rateBasisCd&quot;: &quot;PMNTH&quot;,
+      &quot;amountOptions&quot;: null,
+      &quot;maxAmount&quot;: 92.36878,
+      &quot;sponsorContribution&quot;: [
+        0.0
+      ],
+      &quot;underwritingOfferLifeEvent&quot;: null,
+      &quot;minParticipantCount&quot;: null,
+      &quot;classificationGroupCoverageRelationships&quot;: [
+        {
+          &quot;classificationGroupName&quot;: &quot;All Eligible Employees&quot;,
+          &quot;amountOptions&quot;: null,
+          &quot;customizeCoverage&quot;: false,
+          &quot;rate&quot;: 938.54096,
+          &quot;classificationGroupCode&quot;: &quot;1&quot;,
+          &quot;classificationGroupOid&quot;: &quot;lvrLF8xoTLtO5HTd1zJKuw&quot;,
+          &quot;useSubgroups&quot;: true,
+          &quot;classificationSubgroupRatings&quot;: [
+            {
+              &quot;classificationSubgroupName&quot;: &quot;18 - 49&quot;,
+              &quot;tier&quot;: null,
+              &quot;rate&quot;: 92.36878,
+              &quot;estimatedParticipantCount&quot;: 7,
+              &quot;tierRatings&quot;: [
+              ],
+              &quot;estimatedVolume&quot;: 0.0,
+              &quot;classificationSubgroupOid&quot;: &quot;taySjtFcgnn0FQ-W0F9ICg&quot;
+            },
+            {
+              &quot;classificationSubgroupName&quot;: &quot;50 - 59&quot;,
+              &quot;tier&quot;: null,
+              &quot;rate&quot;: 124.8555,
+              &quot;estimatedParticipantCount&quot;: 2,
+              &quot;tierRatings&quot;: [
+              ],
+              &quot;estimatedVolume&quot;: 0.0,
+              &quot;classificationSubgroupOid&quot;: &quot;gvhALVrL-t8JzdabrfpKag&quot;
+            },
+            {
+              &quot;classificationSubgroupName&quot;: &quot;60 - 64&quot;,
+              &quot;tier&quot;: null,
+              &quot;rate&quot;: 174.33556,
+              &quot;estimatedParticipantCount&quot;: 0,
+              &quot;tierRatings&quot;: [
+              ],
+              &quot;estimatedVolume&quot;: 0.0,
+              &quot;classificationSubgroupOid&quot;: &quot;qAGb5e-Tw69lE3r2INlC9A&quot;
+            },
+            {
+              &quot;classificationSubgroupName&quot;: &quot;65 - 69&quot;,
+              &quot;tier&quot;: null,
+              &quot;rate&quot;: 224.42686,
+              &quot;estimatedParticipantCount&quot;: 0,
+              &quot;tierRatings&quot;: [
+              ],
+              &quot;estimatedVolume&quot;: 0.0,
+              &quot;classificationSubgroupOid&quot;: &quot;ozA9CwY3AXNFiuM9KSlOhA&quot;
+            },
+            {
+              &quot;classificationSubgroupName&quot;: &quot;70+&quot;,
+              &quot;tier&quot;: null,
+              &quot;rate&quot;: 322.55426,
+              &quot;estimatedParticipantCount&quot;: 0,
+              &quot;tierRatings&quot;: [
+              ],
+              &quot;estimatedVolume&quot;: 0.0,
+              &quot;classificationSubgroupOid&quot;: &quot;tVbf12M-W657K7Jh7whPBw&quot;
+            }
+          ]
+        }
+      ],
+      &quot;eligibilityWaitingPeriod&quot;: null,
+      &quot;coverageTiers&quot;: [
+      ],
+      &quot;requiredParticipationPercentage&quot;: 0.0,
+      &quot;waitingPeriod&quot;: &quot;FirstMonthDate&quot;,
+      &quot;initialEnrollmentUnderwritingOffer&quot;: null,
+      &quot;PreconfigGroupBAORangeValue.minAmount&quot;: null,
+      &quot;taxability&quot;: &quot;PPPreBTax&quot;,
+      &quot;coverageCd&quot;: &quot;STD&quot;,
+      &quot;tierRatings&quot;: null,
+      &quot;selfAdministered&quot;: false,
+      &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+      &quot;participantContributionPercentage&quot;: 100.0,
+      &quot;waitingPeriodMode&quot;: null,
+      &quot;minHourlyReq&quot;: [
+        30.0
+      ],
+      &quot;PreconfigGroupBAORangeValue.maxAmount&quot;: 5000.0,
+      &quot;rateGuarantee&quot;: 2
+    }
+  ],
+  &quot;policyStatusCd&quot;: &quot;issued&quot;,
+  &quot;quoteCreationDate&quot;: &quot;2020-08-17&quot;,
+  &quot;productVersion&quot;: 1.0,
+  &quot;subProducerCd&quot;: &quot;code46&quot;,
+  &quot;priorClaimsRetroactiveEffectiveDate&quot;: null,
+  &quot;member&quot;: 7652.02,
+  &quot;shortTermInd&quot;: false,
+  &quot;issueDate&quot;: &quot;2020-08-12&quot;,
+  &quot;expirationDate&quot;: &quot;2021-08-10&quot;,
+  &quot;cancellationDate&quot;: null,
+  &quot;situsState&quot;: &quot;TX&quot;,
+  &quot;priorClaimsAllowed&quot;: false,
+  &quot;durationInMonths&quot;: 1188,
+  &quot;producerCd&quot;: &quot;QAG&quot;,
+  &quot;premiums&quot;: [
+    {
+      &quot;numberOfParticipants&quot;: 3,
+      &quot;volume&quot;: 6400.0,
+      &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+      &quot;annualPremium&quot;: 7652.0200000000000000,
+      &quot;payor&quot;: &quot;MEMBER&quot;,
+      &quot;planCd&quot;: &quot;Scenario 1&quot;,
+      &quot;paymentMode&quot;: &quot;12&quot;,
+      &quot;byPayor&quot;: [
+        {
+          &quot;numberOfParticipants&quot;: 3,
+          &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+          &quot;annualPremium&quot;: 7652.02,
+          &quot;payor&quot;: &quot;MEMBER&quot;,
+          &quot;planCd&quot;: &quot;Scenario 1&quot;,
+          &quot;byClassificationGroup&quot;: [
+            {
+              &quot;numberOfParticipants&quot;: 3,
+              &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+              &quot;annualPremium&quot;: 7652.02,
+              &quot;payor&quot;: &quot;MEMBER&quot;,
+              &quot;paymentMode&quot;: &quot;12&quot;,
+              &quot;byClassificationSubGroup&quot;: [
+                {
+                  &quot;numberOfParticipants&quot;: 1,
+                  &quot;subGroupName&quot;: &quot;18 - 49&quot;,
+                  &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+                  &quot;annualPremium&quot;: 4618.44,
+                  &quot;payor&quot;: &quot;MEMBER&quot;,
+                  &quot;paymentMode&quot;: &quot;12&quot;,
+                  &quot;subGroupType&quot;: &quot;RATING_GROUP&quot;,
+                  &quot;contributionPercentage&quot;: 100.0,
+                  &quot;byClassificationSubGroupTier&quot;: null,
+                  &quot;modalPremium&quot;: 384.87
+                },
+                {
+                  &quot;numberOfParticipants&quot;: 1,
+                  &quot;subGroupName&quot;: &quot;60 - 64&quot;,
+                  &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+                  &quot;annualPremium&quot;: 1743.36,
+                  &quot;payor&quot;: &quot;MEMBER&quot;,
+                  &quot;paymentMode&quot;: &quot;12&quot;,
+                  &quot;subGroupType&quot;: &quot;RATING_GROUP&quot;,
+                  &quot;contributionPercentage&quot;: 100.0,
+                  &quot;byClassificationSubGroupTier&quot;: null,
+                  &quot;modalPremium&quot;: 145.28
+                },
+                {
+                  &quot;numberOfParticipants&quot;: 1,
+                  &quot;subGroupName&quot;: &quot;70+&quot;,
+                  &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+                  &quot;annualPremium&quot;: 1290.22,
+                  &quot;payor&quot;: &quot;MEMBER&quot;,
+                  &quot;paymentMode&quot;: &quot;12&quot;,
+                  &quot;subGroupType&quot;: &quot;RATING_GROUP&quot;,
+                  &quot;contributionPercentage&quot;: 100.0,
+                  &quot;byClassificationSubGroupTier&quot;: null,
+                  &quot;modalPremium&quot;: 107.52
+                }
+              ],
+              &quot;useSubGroups&quot;: true,
+              &quot;className&quot;: &quot;All Eligible Employees&quot;,
+              &quot;contributionPercentage&quot;: 100.0,
+              &quot;byClassificationGroupTier&quot;: null,
+              &quot;modalPremium&quot;: 637.67
+            }
+          ],
+          &quot;paymentMode&quot;: &quot;12&quot;,
+          &quot;contributionPercentage&quot;: 100.0,
+          &quot;coverageCd&quot;: &quot;STD&quot;,
+          &quot;modalPremium&quot;: 637.67
+        }
+      ],
+      &quot;coverageCd&quot;: &quot;STD&quot;,
+      &quot;modalPremium&quot;: 637.67
+    }
+  ],
+  &quot;deliveryModelCd&quot;: &quot;GROUP&quot;,
+  &quot;takeOver&quot;: false,
+  &quot;customerNumber&quot;: &quot;510005&quot;,
+  &quot;timedPolicyStatusCd&quot;: &quot;inForce&quot;,
+  &quot;eligibleLives&quot;: [
+    100
+  ],
+  &quot;otherParticipationMin&quot;: null,
+  &quot;transactionTypeCd&quot;: &quot;endorsement&quot;,
+  &quot;anniversaryDate&quot;: &quot;2021-08-10&quot;,
+  &quot;productCode&quot;: &quot;GB_DI_STD&quot;,
+  &quot;priorCarrierName&quot;: &quot;&quot;,
+  &quot;transactionEffectiveDate&quot;: &quot;2020-08-10&quot;,
+  &quot;priorCarrierPolicyNumber&quot;: &quot;&quot;,
+  &quot;enrollmentDetails&quot;: {
+    &quot;enrollmentStartDate&quot;: &quot;2020-07-10&quot;,
+    &quot;enrollmentUnderwritingOffer&quot;: &quot;GI&quot;,
+    &quot;enrollmentSolutionUsed&quot;: &quot;Online&quot;,
+    &quot;enrollmentEndDate&quot;: &quot;2020-08-09&quot;
+  },
+  &quot;totalAnnualPremium&quot;: 7652.02,
+  &quot;effectiveDate&quot;: &quot;2020-08-10&quot;,
+  &quot;minParticipationPercentage&quot;: 10
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;=========Validating field values in response================= :&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.14">07:11:05.885 [print] =========Validating field values in response================= : 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.policyNumber == &#39;MP0000700583&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.customerNumber == &#39;510005&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.policyStatusCd == &#39;issued&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.coverages[0].coverageCd == &#39;STD&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.3:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">reg</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.3:24]</span>
+                <span class="scenario-name">Validate get master policy details for given Claim ID : MP0000707203</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>507</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.3:24]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.3:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.3:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;policy-group-rs/v1/master-policies/MP0000707203&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">500</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.10">07:11:05.905 request:
+1 &gt; GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/master-policies/MP0000707203
+1 &gt; Authorization: Basic cWE6cWE=
+1 &gt; Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+07:11:06.401 response time in milliseconds: 494
+1 &lt; 200
+1 &lt; Content-Language: en
+1 &lt; Date: Wed, 25 Aug 2021 11:11:06 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+{&quot;benefits&quot;:[{&quot;code&quot;:&quot;CRTCL_ILLNS_ENHC_BNFT&quot;,&quot;applied&quot;:false,&quot;name&quot;:&quot;Critical Illness Enhancement Rider&quot;,&quot;maxBenefitAmount&quot;:null,&quot;underwritingApproach&quot;:null},{&quot;code&quot;:&quot;HEALTH_SCR_BNF_RIDER&quot;,&quot;applied&quot;:false,&quot;name&quot;:&quot;Health Screening Benefit Rider&quot;,&quot;maxBenefitAmount&quot;:null,&quot;underwritingApproach&quot;:null},{&quot;code&quot;:&quot;ACC_ENH_BNF&quot;,&quot;applied&quot;:false,&quot;name&quot;:&quot;Accident Enhancement Benefit Rider&quot;,&quot;maxBenefitAmount&quot;:null,&quot;underwritingApproach&quot;:null},{&quot;code&quot;:&quot;VALUE_GUARD_RIDER&quot;,&quot;applied&quot;:false,&quot;name&quot;:&quot;Value Guard Rider&quot;,&quot;maxBenefitAmount&quot;:null,&quot;underwritingApproach&quot;:null},{&quot;code&quot;:&quot;HEALTH_SYS_BNF_RIDER&quot;,&quot;applied&quot;:false,&quot;name&quot;:&quot;Health System Benefit Rider&quot;,&quot;maxBenefitAmount&quot;:null,&quot;underwritingApproach&quot;:null}],&quot;sponsor&quot;:0,&quot;renewalFrequency&quot;:&quot;99&quot;,&quot;minNumberOfParticipants&quot;:5,&quot;revisionNumber&quot;:1,&quot;currentRevisionInd&quot;:true,&quot;maxNumberOfParticipants&quot;:null,&quot;policyNumber&quot;:&quot;MP0000707203&quot;,&quot;coverages&quot;:[{&quot;minAmount&quot;:null,&quot;memberPaymentModes&quot;:[&quot;12&quot;],&quot;annualEnrollmentUnderwritingOffer&quot;:null,&quot;benefitType&quot;:null,&quot;directBilled&quot;:false,&quot;oid&quot;:&quot;piDhY7uKivEHbq3SpNVKlA&quot;,&quot;sponsorPaymentMode&quot;:null,&quot;benefitStructure&quot;:[{&quot;eliminationPeriod&quot;:null,&quot;continuouslyInsuredPeriod&quot;:null,&quot;lookBackPeriod&quot;:null,&quot;amountOptions&quot;:null,&quot;maxBenefitPeriod&quot;:null,&quot;eliminationPeriodSickness&quot;:null,&quot;preExistingConditions&quot;:null}],&quot;flatRate&quot;:null,&quot;planCd&quot;:&quot;COMPOSITE_1&quot;,&quot;rateBasisCd&quot;:&quot;PINSR&quot;,&quot;amountOptions&quot;:null,&quot;maxAmount&quot;:83.75,&quot;sponsorContribution&quot;:[0.0],&quot;underwritingOfferLifeEvent&quot;:null,&quot;minParticipantCount&quot;:null,&quot;classificationGroupCoverageRelationships&quot;:[{&quot;classificationGroupName&quot;:&quot;All Eligible Employees&quot;,&quot;amountOptions&quot;:null,&quot;customizeCoverage&quot;:false,&quot;rate&quot;:83.75,&quot;classificationGroupCode&quot;:&quot;1&quot;,&quot;classificationGroupOid&quot;:&quot;rNTu30t4ERpdK_jGqYVDFg&quot;,&quot;useSubgroups&quot;:false,&quot;classificationSubgroupRatings&quot;:[{&quot;classificationSubgroupName&quot;:&quot;DEFAULT&quot;,&quot;tier&quot;:null,&quot;rate&quot;:null,&quot;estimatedParticipantCount&quot;:null,&quot;tierRatings&quot;:[{&quot;classificationSubgroupName&quot;:null,&quot;tier&quot;:&quot;EEO&quot;,&quot;rate&quot;:11.06,&quot;estimatedParticipantCount&quot;:0,&quot;tierRatings&quot;:null,&quot;estimatedVolume&quot;:0.0,&quot;classificationSubgroupOid&quot;:null},{&quot;classificationSubgroupName&quot;:null,&quot;tier&quot;:&quot;EES&quot;,&quot;rate&quot;:25.15,&quot;estimatedParticipantCount&quot;:0,&quot;tierRatings&quot;:null,&quot;estimatedVolume&quot;:0.0,&quot;classificationSubgroupOid&quot;:null},{&quot;classificationSubgroupName&quot;:null,&quot;tier&quot;:&quot;EEC&quot;,&quot;rate&quot;:16.24,&quot;estimatedParticipantCount&quot;:0,&quot;tierRatings&quot;:null,&quot;estimatedVolume&quot;:0.0,&quot;classificationSubgroupOid&quot;:null},{&quot;classificationSubgroupName&quot;:null,&quot;tier&quot;:&quot;EEF&quot;,&quot;rate&quot;:31.3,&quot;estimatedParticipantCount&quot;:0,&quot;tierRatings&quot;:null,&quot;estimatedVolume&quot;:0.0,&quot;classificationSubgroupOid&quot;:null}],&quot;estimatedVolume&quot;:null,&quot;classificationSubgroupOid&quot;:&quot;p8feT1VLRH0JAPK0bQBKRg&quot;}]}],&quot;eligibilityWaitingPeriod&quot;:10,&quot;coverageTiers&quot;:[&quot;EEC&quot;,&quot;EEF&quot;,&quot;EEO&quot;,&quot;EES&quot;],&quot;requiredParticipationPercentage&quot;:0.0,&quot;waitingPeriod&quot;:&quot;AmountAndModeOnly&quot;,&quot;initialEnrollmentUnderwritingOffer&quot;:null,&quot;PreconfigGroupBAORangeValue.minAmount&quot;:0,&quot;taxability&quot;:&quot;PPPTBT&quot;,&quot;coverageCd&quot;:&quot;HOSPITAL_INDEMNITY_3&quot;,&quot;tierRatings&quot;:&quot;4&quot;,&quot;selfAdministered&quot;:false,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;participantContributionPercentage&quot;:100.0,&quot;waitingPeriodMode&quot;:&quot;DAYS&quot;,&quot;minHourlyReq&quot;:[30.0],&quot;PreconfigGroupBAORangeValue.maxAmount&quot;:0,&quot;rateGuarantee&quot;:2}],&quot;policyStatusCd&quot;:&quot;issued&quot;,&quot;quoteCreationDate&quot;:&quot;2020-12-16&quot;,&quot;productVersion&quot;:1.0,&quot;subProducerCd&quot;:&quot;009900&quot;,&quot;priorClaimsRetroactiveEffectiveDate&quot;:null,&quot;member&quot;:47.27,&quot;shortTermInd&quot;:false,&quot;issueDate&quot;:&quot;2020-12-16&quot;,&quot;expirationDate&quot;:&quot;2021-12-16&quot;,&quot;cancellationDate&quot;:null,&quot;situsState&quot;:&quot;TN&quot;,&quot;priorClaimsAllowed&quot;:false,&quot;durationInMonths&quot;:1188,&quot;producerCd&quot;:&quot;QAG&quot;,&quot;premiums&quot;:[{&quot;numberOfParticipants&quot;:3,&quot;volume&quot;:0.0,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;annualPremium&quot;:47.2700000000000000,&quot;payor&quot;:&quot;MEMBER&quot;,&quot;planCd&quot;:&quot;COMPOSITE_1&quot;,&quot;paymentMode&quot;:&quot;12&quot;,&quot;byPayor&quot;:[{&quot;numberOfParticipants&quot;:3,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;annualPremium&quot;:47.27,&quot;payor&quot;:&quot;MEMBER&quot;,&quot;planCd&quot;:&quot;COMPOSITE_1&quot;,&quot;byClassificationGroup&quot;:[{&quot;numberOfParticipants&quot;:3,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;annualPremium&quot;:47.27,&quot;payor&quot;:&quot;MEMBER&quot;,&quot;paymentMode&quot;:&quot;12&quot;,&quot;byClassificationSubGroup&quot;:null,&quot;useSubGroups&quot;:false,&quot;className&quot;:&quot;All Eligible Employees&quot;,&quot;contributionPercentage&quot;:100.0,&quot;byClassificationGroupTier&quot;:[{&quot;numberOfParticipants&quot;:2,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;annualPremium&quot;:22.12,&quot;payor&quot;:&quot;MEMBER&quot;,&quot;paymentMode&quot;:&quot;12&quot;,&quot;contributionPercentage&quot;:100.0,&quot;coverageTierCd&quot;:&quot;EEO&quot;,&quot;modalPremium&quot;:1.84},{&quot;numberOfParticipants&quot;:1,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;annualPremium&quot;:25.15,&quot;payor&quot;:&quot;MEMBER&quot;,&quot;paymentMode&quot;:&quot;12&quot;,&quot;contributionPercentage&quot;:100.0,&quot;coverageTierCd&quot;:&quot;EES&quot;,&quot;modalPremium&quot;:2.1}],&quot;modalPremium&quot;:3.94}],&quot;paymentMode&quot;:&quot;12&quot;,&quot;contributionPercentage&quot;:100.0,&quot;coverageCd&quot;:&quot;HOSPITAL_INDEMNITY_3&quot;,&quot;modalPremium&quot;:3.94}],&quot;coverageCd&quot;:&quot;HOSPITAL_INDEMNITY_3&quot;,&quot;modalPremium&quot;:3.94}],&quot;deliveryModelCd&quot;:&quot;GROUP&quot;,&quot;takeOver&quot;:true,&quot;customerNumber&quot;:&quot;510005&quot;,&quot;timedPolicyStatusCd&quot;:&quot;inForce&quot;,&quot;eligibleLives&quot;:[100],&quot;otherParticipationMin&quot;:null,&quot;transactionTypeCd&quot;:&quot;policy&quot;,&quot;anniversaryDate&quot;:&quot;2021-12-16&quot;,&quot;productCode&quot;:&quot;GB_HI&quot;,&quot;priorCarrierName&quot;:&quot;&quot;,&quot;transactionEffectiveDate&quot;:&quot;2020-12-16&quot;,&quot;priorCarrierPolicyNumber&quot;:&quot;&quot;,&quot;enrollmentDetails&quot;:{&quot;enrollmentStartDate&quot;:&quot;2020-11-16&quot;,&quot;enrollmentUnderwritingOffer&quot;:null,&quot;enrollmentSolutionUsed&quot;:&quot;Online&quot;,&quot;enrollmentEndDate&quot;:&quot;2020-12-15&quot;},&quot;totalAnnualPremium&quot;:47.27,&quot;effectiveDate&quot;:&quot;2020-12-16&quot;,&quot;minParticipationPercentage&quot;:100}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.12">07:11:06.404 [print] {
+  &quot;benefits&quot;: [
+    {
+      &quot;code&quot;: &quot;CRTCL_ILLNS_ENHC_BNFT&quot;,
+      &quot;applied&quot;: false,
+      &quot;name&quot;: &quot;Critical Illness Enhancement Rider&quot;,
+      &quot;maxBenefitAmount&quot;: null,
+      &quot;underwritingApproach&quot;: null
+    },
+    {
+      &quot;code&quot;: &quot;HEALTH_SCR_BNF_RIDER&quot;,
+      &quot;applied&quot;: false,
+      &quot;name&quot;: &quot;Health Screening Benefit Rider&quot;,
+      &quot;maxBenefitAmount&quot;: null,
+      &quot;underwritingApproach&quot;: null
+    },
+    {
+      &quot;code&quot;: &quot;ACC_ENH_BNF&quot;,
+      &quot;applied&quot;: false,
+      &quot;name&quot;: &quot;Accident Enhancement Benefit Rider&quot;,
+      &quot;maxBenefitAmount&quot;: null,
+      &quot;underwritingApproach&quot;: null
+    },
+    {
+      &quot;code&quot;: &quot;VALUE_GUARD_RIDER&quot;,
+      &quot;applied&quot;: false,
+      &quot;name&quot;: &quot;Value Guard Rider&quot;,
+      &quot;maxBenefitAmount&quot;: null,
+      &quot;underwritingApproach&quot;: null
+    },
+    {
+      &quot;code&quot;: &quot;HEALTH_SYS_BNF_RIDER&quot;,
+      &quot;applied&quot;: false,
+      &quot;name&quot;: &quot;Health System Benefit Rider&quot;,
+      &quot;maxBenefitAmount&quot;: null,
+      &quot;underwritingApproach&quot;: null
+    }
+  ],
+  &quot;sponsor&quot;: 0,
+  &quot;renewalFrequency&quot;: &quot;99&quot;,
+  &quot;minNumberOfParticipants&quot;: 5,
+  &quot;revisionNumber&quot;: 1,
+  &quot;currentRevisionInd&quot;: true,
+  &quot;maxNumberOfParticipants&quot;: null,
+  &quot;policyNumber&quot;: &quot;MP0000707203&quot;,
+  &quot;coverages&quot;: [
+    {
+      &quot;minAmount&quot;: null,
+      &quot;memberPaymentModes&quot;: [
+        &quot;12&quot;
+      ],
+      &quot;annualEnrollmentUnderwritingOffer&quot;: null,
+      &quot;benefitType&quot;: null,
+      &quot;directBilled&quot;: false,
+      &quot;oid&quot;: &quot;piDhY7uKivEHbq3SpNVKlA&quot;,
+      &quot;sponsorPaymentMode&quot;: null,
+      &quot;benefitStructure&quot;: [
+        {
+          &quot;eliminationPeriod&quot;: null,
+          &quot;continuouslyInsuredPeriod&quot;: null,
+          &quot;lookBackPeriod&quot;: null,
+          &quot;amountOptions&quot;: null,
+          &quot;maxBenefitPeriod&quot;: null,
+          &quot;eliminationPeriodSickness&quot;: null,
+          &quot;preExistingConditions&quot;: null
+        }
+      ],
+      &quot;flatRate&quot;: null,
+      &quot;planCd&quot;: &quot;COMPOSITE_1&quot;,
+      &quot;rateBasisCd&quot;: &quot;PINSR&quot;,
+      &quot;amountOptions&quot;: null,
+      &quot;maxAmount&quot;: 83.75,
+      &quot;sponsorContribution&quot;: [
+        0.0
+      ],
+      &quot;underwritingOfferLifeEvent&quot;: null,
+      &quot;minParticipantCount&quot;: null,
+      &quot;classificationGroupCoverageRelationships&quot;: [
+        {
+          &quot;classificationGroupName&quot;: &quot;All Eligible Employees&quot;,
+          &quot;amountOptions&quot;: null,
+          &quot;customizeCoverage&quot;: false,
+          &quot;rate&quot;: 83.75,
+          &quot;classificationGroupCode&quot;: &quot;1&quot;,
+          &quot;classificationGroupOid&quot;: &quot;rNTu30t4ERpdK_jGqYVDFg&quot;,
+          &quot;useSubgroups&quot;: false,
+          &quot;classificationSubgroupRatings&quot;: [
+            {
+              &quot;classificationSubgroupName&quot;: &quot;DEFAULT&quot;,
+              &quot;tier&quot;: null,
+              &quot;rate&quot;: null,
+              &quot;estimatedParticipantCount&quot;: null,
+              &quot;tierRatings&quot;: [
+                {
+                  &quot;classificationSubgroupName&quot;: null,
+                  &quot;tier&quot;: &quot;EEO&quot;,
+                  &quot;rate&quot;: 11.06,
+                  &quot;estimatedParticipantCount&quot;: 0,
+                  &quot;tierRatings&quot;: null,
+                  &quot;estimatedVolume&quot;: 0.0,
+                  &quot;classificationSubgroupOid&quot;: null
+                },
+                {
+                  &quot;classificationSubgroupName&quot;: null,
+                  &quot;tier&quot;: &quot;EES&quot;,
+                  &quot;rate&quot;: 25.15,
+                  &quot;estimatedParticipantCount&quot;: 0,
+                  &quot;tierRatings&quot;: null,
+                  &quot;estimatedVolume&quot;: 0.0,
+                  &quot;classificationSubgroupOid&quot;: null
+                },
+                {
+                  &quot;classificationSubgroupName&quot;: null,
+                  &quot;tier&quot;: &quot;EEC&quot;,
+                  &quot;rate&quot;: 16.24,
+                  &quot;estimatedParticipantCount&quot;: 0,
+                  &quot;tierRatings&quot;: null,
+                  &quot;estimatedVolume&quot;: 0.0,
+                  &quot;classificationSubgroupOid&quot;: null
+                },
+                {
+                  &quot;classificationSubgroupName&quot;: null,
+                  &quot;tier&quot;: &quot;EEF&quot;,
+                  &quot;rate&quot;: 31.3,
+                  &quot;estimatedParticipantCount&quot;: 0,
+                  &quot;tierRatings&quot;: null,
+                  &quot;estimatedVolume&quot;: 0.0,
+                  &quot;classificationSubgroupOid&quot;: null
+                }
+              ],
+              &quot;estimatedVolume&quot;: null,
+              &quot;classificationSubgroupOid&quot;: &quot;p8feT1VLRH0JAPK0bQBKRg&quot;
+            }
+          ]
+        }
+      ],
+      &quot;eligibilityWaitingPeriod&quot;: 10,
+      &quot;coverageTiers&quot;: [
+        &quot;EEC&quot;,
+        &quot;EEF&quot;,
+        &quot;EEO&quot;,
+        &quot;EES&quot;
+      ],
+      &quot;requiredParticipationPercentage&quot;: 0.0,
+      &quot;waitingPeriod&quot;: &quot;AmountAndModeOnly&quot;,
+      &quot;initialEnrollmentUnderwritingOffer&quot;: null,
+      &quot;PreconfigGroupBAORangeValue.minAmount&quot;: 0,
+      &quot;taxability&quot;: &quot;PPPTBT&quot;,
+      &quot;coverageCd&quot;: &quot;HOSPITAL_INDEMNITY_3&quot;,
+      &quot;tierRatings&quot;: &quot;4&quot;,
+      &quot;selfAdministered&quot;: false,
+      &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+      &quot;participantContributionPercentage&quot;: 100.0,
+      &quot;waitingPeriodMode&quot;: &quot;DAYS&quot;,
+      &quot;minHourlyReq&quot;: [
+        30.0
+      ],
+      &quot;PreconfigGroupBAORangeValue.maxAmount&quot;: 0,
+      &quot;rateGuarantee&quot;: 2
+    }
+  ],
+  &quot;policyStatusCd&quot;: &quot;issued&quot;,
+  &quot;quoteCreationDate&quot;: &quot;2020-12-16&quot;,
+  &quot;productVersion&quot;: 1.0,
+  &quot;subProducerCd&quot;: &quot;009900&quot;,
+  &quot;priorClaimsRetroactiveEffectiveDate&quot;: null,
+  &quot;member&quot;: 47.27,
+  &quot;shortTermInd&quot;: false,
+  &quot;issueDate&quot;: &quot;2020-12-16&quot;,
+  &quot;expirationDate&quot;: &quot;2021-12-16&quot;,
+  &quot;cancellationDate&quot;: null,
+  &quot;situsState&quot;: &quot;TN&quot;,
+  &quot;priorClaimsAllowed&quot;: false,
+  &quot;durationInMonths&quot;: 1188,
+  &quot;producerCd&quot;: &quot;QAG&quot;,
+  &quot;premiums&quot;: [
+    {
+      &quot;numberOfParticipants&quot;: 3,
+      &quot;volume&quot;: 0.0,
+      &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+      &quot;annualPremium&quot;: 47.2700000000000000,
+      &quot;payor&quot;: &quot;MEMBER&quot;,
+      &quot;planCd&quot;: &quot;COMPOSITE_1&quot;,
+      &quot;paymentMode&quot;: &quot;12&quot;,
+      &quot;byPayor&quot;: [
+        {
+          &quot;numberOfParticipants&quot;: 3,
+          &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+          &quot;annualPremium&quot;: 47.27,
+          &quot;payor&quot;: &quot;MEMBER&quot;,
+          &quot;planCd&quot;: &quot;COMPOSITE_1&quot;,
+          &quot;byClassificationGroup&quot;: [
+            {
+              &quot;numberOfParticipants&quot;: 3,
+              &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+              &quot;annualPremium&quot;: 47.27,
+              &quot;payor&quot;: &quot;MEMBER&quot;,
+              &quot;paymentMode&quot;: &quot;12&quot;,
+              &quot;byClassificationSubGroup&quot;: null,
+              &quot;useSubGroups&quot;: false,
+              &quot;className&quot;: &quot;All Eligible Employees&quot;,
+              &quot;contributionPercentage&quot;: 100.0,
+              &quot;byClassificationGroupTier&quot;: [
+                {
+                  &quot;numberOfParticipants&quot;: 2,
+                  &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+                  &quot;annualPremium&quot;: 22.12,
+                  &quot;payor&quot;: &quot;MEMBER&quot;,
+                  &quot;paymentMode&quot;: &quot;12&quot;,
+                  &quot;contributionPercentage&quot;: 100.0,
+                  &quot;coverageTierCd&quot;: &quot;EEO&quot;,
+                  &quot;modalPremium&quot;: 1.84
+                },
+                {
+                  &quot;numberOfParticipants&quot;: 1,
+                  &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+                  &quot;annualPremium&quot;: 25.15,
+                  &quot;payor&quot;: &quot;MEMBER&quot;,
+                  &quot;paymentMode&quot;: &quot;12&quot;,
+                  &quot;contributionPercentage&quot;: 100.0,
+                  &quot;coverageTierCd&quot;: &quot;EES&quot;,
+                  &quot;modalPremium&quot;: 2.1
+                }
+              ],
+              &quot;modalPremium&quot;: 3.94
+            }
+          ],
+          &quot;paymentMode&quot;: &quot;12&quot;,
+          &quot;contributionPercentage&quot;: 100.0,
+          &quot;coverageCd&quot;: &quot;HOSPITAL_INDEMNITY_3&quot;,
+          &quot;modalPremium&quot;: 3.94
+        }
+      ],
+      &quot;coverageCd&quot;: &quot;HOSPITAL_INDEMNITY_3&quot;,
+      &quot;modalPremium&quot;: 3.94
+    }
+  ],
+  &quot;deliveryModelCd&quot;: &quot;GROUP&quot;,
+  &quot;takeOver&quot;: true,
+  &quot;customerNumber&quot;: &quot;510005&quot;,
+  &quot;timedPolicyStatusCd&quot;: &quot;inForce&quot;,
+  &quot;eligibleLives&quot;: [
+    100
+  ],
+  &quot;otherParticipationMin&quot;: null,
+  &quot;transactionTypeCd&quot;: &quot;policy&quot;,
+  &quot;anniversaryDate&quot;: &quot;2021-12-16&quot;,
+  &quot;productCode&quot;: &quot;GB_HI&quot;,
+  &quot;priorCarrierName&quot;: &quot;&quot;,
+  &quot;transactionEffectiveDate&quot;: &quot;2020-12-16&quot;,
+  &quot;priorCarrierPolicyNumber&quot;: &quot;&quot;,
+  &quot;enrollmentDetails&quot;: {
+    &quot;enrollmentStartDate&quot;: &quot;2020-11-16&quot;,
+    &quot;enrollmentUnderwritingOffer&quot;: null,
+    &quot;enrollmentSolutionUsed&quot;: &quot;Online&quot;,
+    &quot;enrollmentEndDate&quot;: &quot;2020-12-15&quot;
+  },
+  &quot;totalAnnualPremium&quot;: 47.27,
+  &quot;effectiveDate&quot;: &quot;2020-12-16&quot;,
+  &quot;minParticipationPercentage&quot;: 100
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;=========Validating field values in response================= :&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.14">07:11:06.405 [print] =========Validating field values in response================= : 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.policyNumber == &#39;MP0000707203&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.customerNumber == &#39;510005&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.policyStatusCd == &#39;issued&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.coverages[0].coverageCd == &#39;HOSPITAL_INDEMNITY_3&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.4:25]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">reg</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.4:25]</span>
+                <span class="scenario-name">Validate get master policy details for given Claim ID : MP0000700575</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>516</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.4:25]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.4:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.4:25]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;policy-group-rs/v1/master-policies/MP0000700575&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">505</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.10">07:11:06.426 request:
+1 &gt; GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/master-policies/MP0000700575
+1 &gt; Authorization: Basic cWE6cWE=
+1 &gt; Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+07:11:06.927 response time in milliseconds: 499
+1 &lt; 200
+1 &lt; Content-Language: en
+1 &lt; Date: Wed, 25 Aug 2021 11:11:07 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+{&quot;benefits&quot;:[{&quot;code&quot;:&quot;HEALTH_SCR_RIDER&quot;,&quot;applied&quot;:false,&quot;name&quot;:&quot;Riders&quot;,&quot;maxBenefitAmount&quot;:null,&quot;underwritingApproach&quot;:null},{&quot;code&quot;:&quot;ENHANCED_RIDER&quot;,&quot;applied&quot;:false,&quot;name&quot;:&quot;Wfl Group CI Benefit Rider&quot;,&quot;maxBenefitAmount&quot;:null,&quot;underwritingApproach&quot;:null},{&quot;code&quot;:&quot;CAREGIVER_BENEFIT_RIDER&quot;,&quot;applied&quot;:false,&quot;name&quot;:&quot;Riders&quot;,&quot;maxBenefitAmount&quot;:null,&quot;underwritingApproach&quot;:null},{&quot;code&quot;:null,&quot;applied&quot;:null,&quot;name&quot;:&quot;Guaranteed Issue&quot;,&quot;maxBenefitAmount&quot;:[],&quot;underwritingApproach&quot;:&quot;SIMPLIFIED&quot;}],&quot;sponsor&quot;:0,&quot;renewalFrequency&quot;:&quot;99&quot;,&quot;minNumberOfParticipants&quot;:5,&quot;revisionNumber&quot;:1,&quot;currentRevisionInd&quot;:true,&quot;maxNumberOfParticipants&quot;:null,&quot;policyNumber&quot;:&quot;MP0000700575&quot;,&quot;coverages&quot;:[{&quot;minAmount&quot;:null,&quot;memberPaymentModes&quot;:[&quot;12&quot;],&quot;annualEnrollmentUnderwritingOffer&quot;:null,&quot;benefitType&quot;:&quot;INC_VALUE_RANGE&quot;,&quot;directBilled&quot;:false,&quot;oid&quot;:&quot;tQWXQXBMvFHFiQLWNcBLrw&quot;,&quot;sponsorPaymentMode&quot;:null,&quot;benefitStructure&quot;:[{&quot;eliminationPeriod&quot;:null,&quot;continuouslyInsuredPeriod&quot;:null,&quot;lookBackPeriod&quot;:null,&quot;amountOptions&quot;:null,&quot;maxBenefitPeriod&quot;:null,&quot;eliminationPeriodSickness&quot;:null,&quot;preExistingConditions&quot;:null}],&quot;flatRate&quot;:null,&quot;planCd&quot;:&quot;10YEARS_1&quot;,&quot;rateBasisCd&quot;:&quot;PEMP&quot;,&quot;amountOptions&quot;:null,&quot;maxAmount&quot;:68.89871308,&quot;sponsorContribution&quot;:[0.0],&quot;underwritingOfferLifeEvent&quot;:null,&quot;minParticipantCount&quot;:null,&quot;classificationGroupCoverageRelationships&quot;:[{&quot;classificationGroupName&quot;:&quot;All Eligible Employees&quot;,&quot;amountOptions&quot;:null,&quot;customizeCoverage&quot;:false,&quot;rate&quot;:68.89871308,&quot;classificationGroupCode&quot;:&quot;1&quot;,&quot;classificationGroupOid&quot;:&quot;lvrLF8xoTLtO5HTd1zJKuw&quot;,&quot;useSubgroups&quot;:false,&quot;classificationSubgroupRatings&quot;:[{&quot;classificationSubgroupName&quot;:&quot;DEFAULT&quot;,&quot;tier&quot;:null,&quot;rate&quot;:null,&quot;estimatedParticipantCount&quot;:null,&quot;tierRatings&quot;:[{&quot;classificationSubgroupName&quot;:null,&quot;tier&quot;:&quot;EEO&quot;,&quot;rate&quot;:11.88108411,&quot;estimatedParticipantCount&quot;:30,&quot;tierRatings&quot;:null,&quot;estimatedVolume&quot;:0.0,&quot;classificationSubgroupOid&quot;:null},{&quot;classificationSubgroupName&quot;:null,&quot;tier&quot;:&quot;EES&quot;,&quot;rate&quot;:17.82162617,&quot;estimatedParticipantCount&quot;:20,&quot;tierRatings&quot;:null,&quot;estimatedVolume&quot;:0.0,&quot;classificationSubgroupOid&quot;:null},{&quot;classificationSubgroupName&quot;:null,&quot;tier&quot;:&quot;EEC&quot;,&quot;rate&quot;:16.62773037,&quot;estimatedParticipantCount&quot;:40,&quot;tierRatings&quot;:null,&quot;estimatedVolume&quot;:0.0,&quot;classificationSubgroupOid&quot;:null},{&quot;classificationSubgroupName&quot;:null,&quot;tier&quot;:&quot;EEF&quot;,&quot;rate&quot;:22.56827243,&quot;estimatedParticipantCount&quot;:10,&quot;tierRatings&quot;:null,&quot;estimatedVolume&quot;:0.0,&quot;classificationSubgroupOid&quot;:null}],&quot;estimatedVolume&quot;:null,&quot;classificationSubgroupOid&quot;:&quot;jIMkCtuMWbTBK4Qjt89Esg&quot;}]}],&quot;eligibilityWaitingPeriod&quot;:null,&quot;coverageTiers&quot;:[&quot;EEC&quot;,&quot;EEF&quot;,&quot;EEO&quot;,&quot;EES&quot;],&quot;requiredParticipationPercentage&quot;:0.0,&quot;waitingPeriod&quot;:&quot;FirstMonthDate&quot;,&quot;initialEnrollmentUnderwritingOffer&quot;:null,&quot;PreconfigGroupBAORangeValue.minAmount&quot;:10000.0,&quot;taxability&quot;:&quot;PPPreBTax&quot;,&quot;coverageCd&quot;:&quot;BASIC_10&quot;,&quot;tierRatings&quot;:&quot;4&quot;,&quot;selfAdministered&quot;:false,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;participantContributionPercentage&quot;:100.0,&quot;waitingPeriodMode&quot;:null,&quot;minHourlyReq&quot;:[30.0],&quot;PreconfigGroupBAORangeValue.maxAmount&quot;:20000.0,&quot;rateGuarantee&quot;:2}],&quot;policyStatusCd&quot;:&quot;issued&quot;,&quot;quoteCreationDate&quot;:&quot;2020-08-10&quot;,&quot;productVersion&quot;:1.0,&quot;subProducerCd&quot;:&quot;2&quot;,&quot;priorClaimsRetroactiveEffectiveDate&quot;:null,&quot;member&quot;:720.66,&quot;shortTermInd&quot;:false,&quot;issueDate&quot;:&quot;2020-08-10&quot;,&quot;expirationDate&quot;:&quot;2021-08-10&quot;,&quot;cancellationDate&quot;:null,&quot;situsState&quot;:&quot;TX&quot;,&quot;priorClaimsAllowed&quot;:false,&quot;durationInMonths&quot;:1188,&quot;producerCd&quot;:&quot;QAG&quot;,&quot;premiums&quot;:[{&quot;numberOfParticipants&quot;:6,&quot;volume&quot;:60000.0,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;annualPremium&quot;:720.6600000000000000,&quot;payor&quot;:&quot;MEMBER&quot;,&quot;planCd&quot;:&quot;10YEARS_1&quot;,&quot;paymentMode&quot;:&quot;12&quot;,&quot;byPayor&quot;:[{&quot;numberOfParticipants&quot;:6,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;annualPremium&quot;:720.66,&quot;payor&quot;:&quot;MEMBER&quot;,&quot;planCd&quot;:&quot;10YEARS_1&quot;,&quot;byClassificationGroup&quot;:[{&quot;numberOfParticipants&quot;:6,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;annualPremium&quot;:720.66,&quot;payor&quot;:&quot;MEMBER&quot;,&quot;paymentMode&quot;:&quot;12&quot;,&quot;byClassificationSubGroup&quot;:null,&quot;useSubGroups&quot;:false,&quot;className&quot;:&quot;All Eligible Employees&quot;,&quot;contributionPercentage&quot;:100.0,&quot;byClassificationGroupTier&quot;:[{&quot;numberOfParticipants&quot;:6,&quot;contributionType&quot;:&quot;VOLUNTARY&quot;,&quot;annualPremium&quot;:720.66,&quot;payor&quot;:&quot;MEMBER&quot;,&quot;paymentMode&quot;:&quot;12&quot;,&quot;contributionPercentage&quot;:100.0,&quot;coverageTierCd&quot;:&quot;EEO&quot;,&quot;modalPremium&quot;:60.06}],&quot;modalPremium&quot;:60.06}],&quot;paymentMode&quot;:&quot;12&quot;,&quot;contributionPercentage&quot;:100.0,&quot;coverageCd&quot;:&quot;BASIC_10&quot;,&quot;modalPremium&quot;:60.06}],&quot;coverageCd&quot;:&quot;BASIC_10&quot;,&quot;modalPremium&quot;:60.06}],&quot;deliveryModelCd&quot;:&quot;GROUP&quot;,&quot;takeOver&quot;:false,&quot;customerNumber&quot;:&quot;510005&quot;,&quot;timedPolicyStatusCd&quot;:&quot;inForce&quot;,&quot;eligibleLives&quot;:[100],&quot;otherParticipationMin&quot;:null,&quot;transactionTypeCd&quot;:&quot;policy&quot;,&quot;anniversaryDate&quot;:&quot;2022-08-10&quot;,&quot;productCode&quot;:&quot;GB_CI&quot;,&quot;priorCarrierName&quot;:&quot;&quot;,&quot;transactionEffectiveDate&quot;:&quot;2020-08-10&quot;,&quot;priorCarrierPolicyNumber&quot;:&quot;&quot;,&quot;enrollmentDetails&quot;:{&quot;enrollmentStartDate&quot;:&quot;2020-07-10&quot;,&quot;enrollmentUnderwritingOffer&quot;:&quot;GI&quot;,&quot;enrollmentSolutionUsed&quot;:&quot;Online&quot;,&quot;enrollmentEndDate&quot;:&quot;2020-08-09&quot;},&quot;totalAnnualPremium&quot;:720.66,&quot;effectiveDate&quot;:&quot;2020-08-10&quot;,&quot;minParticipationPercentage&quot;:100}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.12">07:11:06.931 [print] {
+  &quot;benefits&quot;: [
+    {
+      &quot;code&quot;: &quot;HEALTH_SCR_RIDER&quot;,
+      &quot;applied&quot;: false,
+      &quot;name&quot;: &quot;Riders&quot;,
+      &quot;maxBenefitAmount&quot;: null,
+      &quot;underwritingApproach&quot;: null
+    },
+    {
+      &quot;code&quot;: &quot;ENHANCED_RIDER&quot;,
+      &quot;applied&quot;: false,
+      &quot;name&quot;: &quot;Wfl Group CI Benefit Rider&quot;,
+      &quot;maxBenefitAmount&quot;: null,
+      &quot;underwritingApproach&quot;: null
+    },
+    {
+      &quot;code&quot;: &quot;CAREGIVER_BENEFIT_RIDER&quot;,
+      &quot;applied&quot;: false,
+      &quot;name&quot;: &quot;Riders&quot;,
+      &quot;maxBenefitAmount&quot;: null,
+      &quot;underwritingApproach&quot;: null
+    },
+    {
+      &quot;code&quot;: null,
+      &quot;applied&quot;: null,
+      &quot;name&quot;: &quot;Guaranteed Issue&quot;,
+      &quot;maxBenefitAmount&quot;: [
+      ],
+      &quot;underwritingApproach&quot;: &quot;SIMPLIFIED&quot;
+    }
+  ],
+  &quot;sponsor&quot;: 0,
+  &quot;renewalFrequency&quot;: &quot;99&quot;,
+  &quot;minNumberOfParticipants&quot;: 5,
+  &quot;revisionNumber&quot;: 1,
+  &quot;currentRevisionInd&quot;: true,
+  &quot;maxNumberOfParticipants&quot;: null,
+  &quot;policyNumber&quot;: &quot;MP0000700575&quot;,
+  &quot;coverages&quot;: [
+    {
+      &quot;minAmount&quot;: null,
+      &quot;memberPaymentModes&quot;: [
+        &quot;12&quot;
+      ],
+      &quot;annualEnrollmentUnderwritingOffer&quot;: null,
+      &quot;benefitType&quot;: &quot;INC_VALUE_RANGE&quot;,
+      &quot;directBilled&quot;: false,
+      &quot;oid&quot;: &quot;tQWXQXBMvFHFiQLWNcBLrw&quot;,
+      &quot;sponsorPaymentMode&quot;: null,
+      &quot;benefitStructure&quot;: [
+        {
+          &quot;eliminationPeriod&quot;: null,
+          &quot;continuouslyInsuredPeriod&quot;: null,
+          &quot;lookBackPeriod&quot;: null,
+          &quot;amountOptions&quot;: null,
+          &quot;maxBenefitPeriod&quot;: null,
+          &quot;eliminationPeriodSickness&quot;: null,
+          &quot;preExistingConditions&quot;: null
+        }
+      ],
+      &quot;flatRate&quot;: null,
+      &quot;planCd&quot;: &quot;10YEARS_1&quot;,
+      &quot;rateBasisCd&quot;: &quot;PEMP&quot;,
+      &quot;amountOptions&quot;: null,
+      &quot;maxAmount&quot;: 68.89871308,
+      &quot;sponsorContribution&quot;: [
+        0.0
+      ],
+      &quot;underwritingOfferLifeEvent&quot;: null,
+      &quot;minParticipantCount&quot;: null,
+      &quot;classificationGroupCoverageRelationships&quot;: [
+        {
+          &quot;classificationGroupName&quot;: &quot;All Eligible Employees&quot;,
+          &quot;amountOptions&quot;: null,
+          &quot;customizeCoverage&quot;: false,
+          &quot;rate&quot;: 68.89871308,
+          &quot;classificationGroupCode&quot;: &quot;1&quot;,
+          &quot;classificationGroupOid&quot;: &quot;lvrLF8xoTLtO5HTd1zJKuw&quot;,
+          &quot;useSubgroups&quot;: false,
+          &quot;classificationSubgroupRatings&quot;: [
+            {
+              &quot;classificationSubgroupName&quot;: &quot;DEFAULT&quot;,
+              &quot;tier&quot;: null,
+              &quot;rate&quot;: null,
+              &quot;estimatedParticipantCount&quot;: null,
+              &quot;tierRatings&quot;: [
+                {
+                  &quot;classificationSubgroupName&quot;: null,
+                  &quot;tier&quot;: &quot;EEO&quot;,
+                  &quot;rate&quot;: 11.88108411,
+                  &quot;estimatedParticipantCount&quot;: 30,
+                  &quot;tierRatings&quot;: null,
+                  &quot;estimatedVolume&quot;: 0.0,
+                  &quot;classificationSubgroupOid&quot;: null
+                },
+                {
+                  &quot;classificationSubgroupName&quot;: null,
+                  &quot;tier&quot;: &quot;EES&quot;,
+                  &quot;rate&quot;: 17.82162617,
+                  &quot;estimatedParticipantCount&quot;: 20,
+                  &quot;tierRatings&quot;: null,
+                  &quot;estimatedVolume&quot;: 0.0,
+                  &quot;classificationSubgroupOid&quot;: null
+                },
+                {
+                  &quot;classificationSubgroupName&quot;: null,
+                  &quot;tier&quot;: &quot;EEC&quot;,
+                  &quot;rate&quot;: 16.62773037,
+                  &quot;estimatedParticipantCount&quot;: 40,
+                  &quot;tierRatings&quot;: null,
+                  &quot;estimatedVolume&quot;: 0.0,
+                  &quot;classificationSubgroupOid&quot;: null
+                },
+                {
+                  &quot;classificationSubgroupName&quot;: null,
+                  &quot;tier&quot;: &quot;EEF&quot;,
+                  &quot;rate&quot;: 22.56827243,
+                  &quot;estimatedParticipantCount&quot;: 10,
+                  &quot;tierRatings&quot;: null,
+                  &quot;estimatedVolume&quot;: 0.0,
+                  &quot;classificationSubgroupOid&quot;: null
+                }
+              ],
+              &quot;estimatedVolume&quot;: null,
+              &quot;classificationSubgroupOid&quot;: &quot;jIMkCtuMWbTBK4Qjt89Esg&quot;
+            }
+          ]
+        }
+      ],
+      &quot;eligibilityWaitingPeriod&quot;: null,
+      &quot;coverageTiers&quot;: [
+        &quot;EEC&quot;,
+        &quot;EEF&quot;,
+        &quot;EEO&quot;,
+        &quot;EES&quot;
+      ],
+      &quot;requiredParticipationPercentage&quot;: 0.0,
+      &quot;waitingPeriod&quot;: &quot;FirstMonthDate&quot;,
+      &quot;initialEnrollmentUnderwritingOffer&quot;: null,
+      &quot;PreconfigGroupBAORangeValue.minAmount&quot;: 10000.0,
+      &quot;taxability&quot;: &quot;PPPreBTax&quot;,
+      &quot;coverageCd&quot;: &quot;BASIC_10&quot;,
+      &quot;tierRatings&quot;: &quot;4&quot;,
+      &quot;selfAdministered&quot;: false,
+      &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+      &quot;participantContributionPercentage&quot;: 100.0,
+      &quot;waitingPeriodMode&quot;: null,
+      &quot;minHourlyReq&quot;: [
+        30.0
+      ],
+      &quot;PreconfigGroupBAORangeValue.maxAmount&quot;: 20000.0,
+      &quot;rateGuarantee&quot;: 2
+    }
+  ],
+  &quot;policyStatusCd&quot;: &quot;issued&quot;,
+  &quot;quoteCreationDate&quot;: &quot;2020-08-10&quot;,
+  &quot;productVersion&quot;: 1.0,
+  &quot;subProducerCd&quot;: &quot;2&quot;,
+  &quot;priorClaimsRetroactiveEffectiveDate&quot;: null,
+  &quot;member&quot;: 720.66,
+  &quot;shortTermInd&quot;: false,
+  &quot;issueDate&quot;: &quot;2020-08-10&quot;,
+  &quot;expirationDate&quot;: &quot;2021-08-10&quot;,
+  &quot;cancellationDate&quot;: null,
+  &quot;situsState&quot;: &quot;TX&quot;,
+  &quot;priorClaimsAllowed&quot;: false,
+  &quot;durationInMonths&quot;: 1188,
+  &quot;producerCd&quot;: &quot;QAG&quot;,
+  &quot;premiums&quot;: [
+    {
+      &quot;numberOfParticipants&quot;: 6,
+      &quot;volume&quot;: 60000.0,
+      &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+      &quot;annualPremium&quot;: 720.6600000000000000,
+      &quot;payor&quot;: &quot;MEMBER&quot;,
+      &quot;planCd&quot;: &quot;10YEARS_1&quot;,
+      &quot;paymentMode&quot;: &quot;12&quot;,
+      &quot;byPayor&quot;: [
+        {
+          &quot;numberOfParticipants&quot;: 6,
+          &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+          &quot;annualPremium&quot;: 720.66,
+          &quot;payor&quot;: &quot;MEMBER&quot;,
+          &quot;planCd&quot;: &quot;10YEARS_1&quot;,
+          &quot;byClassificationGroup&quot;: [
+            {
+              &quot;numberOfParticipants&quot;: 6,
+              &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+              &quot;annualPremium&quot;: 720.66,
+              &quot;payor&quot;: &quot;MEMBER&quot;,
+              &quot;paymentMode&quot;: &quot;12&quot;,
+              &quot;byClassificationSubGroup&quot;: null,
+              &quot;useSubGroups&quot;: false,
+              &quot;className&quot;: &quot;All Eligible Employees&quot;,
+              &quot;contributionPercentage&quot;: 100.0,
+              &quot;byClassificationGroupTier&quot;: [
+                {
+                  &quot;numberOfParticipants&quot;: 6,
+                  &quot;contributionType&quot;: &quot;VOLUNTARY&quot;,
+                  &quot;annualPremium&quot;: 720.66,
+                  &quot;payor&quot;: &quot;MEMBER&quot;,
+                  &quot;paymentMode&quot;: &quot;12&quot;,
+                  &quot;contributionPercentage&quot;: 100.0,
+                  &quot;coverageTierCd&quot;: &quot;EEO&quot;,
+                  &quot;modalPremium&quot;: 60.06
+                }
+              ],
+              &quot;modalPremium&quot;: 60.06
+            }
+          ],
+          &quot;paymentMode&quot;: &quot;12&quot;,
+          &quot;contributionPercentage&quot;: 100.0,
+          &quot;coverageCd&quot;: &quot;BASIC_10&quot;,
+          &quot;modalPremium&quot;: 60.06
+        }
+      ],
+      &quot;coverageCd&quot;: &quot;BASIC_10&quot;,
+      &quot;modalPremium&quot;: 60.06
+    }
+  ],
+  &quot;deliveryModelCd&quot;: &quot;GROUP&quot;,
+  &quot;takeOver&quot;: false,
+  &quot;customerNumber&quot;: &quot;510005&quot;,
+  &quot;timedPolicyStatusCd&quot;: &quot;inForce&quot;,
+  &quot;eligibleLives&quot;: [
+    100
+  ],
+  &quot;otherParticipationMin&quot;: null,
+  &quot;transactionTypeCd&quot;: &quot;policy&quot;,
+  &quot;anniversaryDate&quot;: &quot;2022-08-10&quot;,
+  &quot;productCode&quot;: &quot;GB_CI&quot;,
+  &quot;priorCarrierName&quot;: &quot;&quot;,
+  &quot;transactionEffectiveDate&quot;: &quot;2020-08-10&quot;,
+  &quot;priorCarrierPolicyNumber&quot;: &quot;&quot;,
+  &quot;enrollmentDetails&quot;: {
+    &quot;enrollmentStartDate&quot;: &quot;2020-07-10&quot;,
+    &quot;enrollmentUnderwritingOffer&quot;: &quot;GI&quot;,
+    &quot;enrollmentSolutionUsed&quot;: &quot;Online&quot;,
+    &quot;enrollmentEndDate&quot;: &quot;2020-08-09&quot;
+  },
+  &quot;totalAnnualPremium&quot;: 720.66,
+  &quot;effectiveDate&quot;: &quot;2020-08-10&quot;,
+  &quot;minParticipationPercentage&quot;: 100
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;=========Validating field values in response================= :&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="4.14">07:11:06.932 [print] =========Validating field values in response================= : 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.policyNumber == &#39;MP0000700575&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.customerNumber == &#39;510005&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.policyStatusCd == &#39;issued&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response.coverages[0].coverageCd == &#39;BASIC_10&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

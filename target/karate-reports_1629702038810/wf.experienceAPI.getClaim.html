@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>wf.experienceAPI.getClaim</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-08-23 02:59:47 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:26]"><span>[1.1:26]</span> <span>Validate get claim response for given Claim ID : C1392</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2.1:35]"><span>[2.1:35]</span> <span>Validate get claim responde code 400 for given Claim ID : C1392</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">wf/experienceAPI/getClaim.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">fetching Claim status through GET call in WFL CLaim Core Services</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:26]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:26]</span>
+                <span class="scenario-name">Validate get claim response for given Claim ID : C1392</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>779</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:26]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:26]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:26]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">66</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;wfl-claims-rs/v1/claims?claimNumber=C1392&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">658</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.11">02:59:46.727 request:
+1 &gt; GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392
+1 &gt; Authorization: Basic cWE6cWE=
+1 &gt; Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+02:59:46.960 response time in milliseconds: 187
+1 &lt; 200
+1 &lt; Content-Language: en
+1 &lt; Date: Mon, 23 Aug 2021 06:59:47 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+[{&quot;addresses&quot;:null,&quot;extension&quot;:{},&quot;currencyCd&quot;:null,&quot;policyNumber&quot;:&quot;CP0000863460&quot;,&quot;lossDt&quot;:&quot;2021-07-16T00:00:00Z&quot;,&quot;lossDesc&quot;:&quot;test&quot;,&quot;typeOfResolution&quot;:&quot;WITHDRAWN&quot;,&quot;productVersion&quot;:null,&quot;selectedRiskItemOids&quot;:null,&quot;knownTimeInd&quot;:null,&quot;componentName&quot;:null,&quot;causeOfLossCd&quot;:null,&quot;lossLocationDesc&quot;:null,&quot;claimNumber&quot;:&quot;C1392&quot;,&quot;policy&quot;:{&quot;termExpirationDate&quot;:&quot;2022-01-01T00:00:00Z&quot;,&quot;policyLOB&quot;:&quot;ACC&quot;,&quot;riskItems&quot;:null,&quot;policyNumber&quot;:&quot;CP0000863460&quot;,&quot;verified&quot;:null,&quot;policyStatus&quot;:&quot;ACTIVE&quot;,&quot;productVersion&quot;:null,&quot;inceptionDate&quot;:null,&quot;parties&quot;:[{&quot;nameTypeCd&quot;:null,&quot;lastName&quot;:&quot;Test&quot;,&quot;addresses&quot;:null,&quot;extension&quot;:{},&quot;bankAccountInfo&quot;:null,&quot;instanceName&quot;:null,&quot;roles&quot;:null,&quot;phones&quot;:null,&quot;bankName&quot;:null,&quot;oid&quot;:null,&quot;type&quot;:null,&quot;suffix&quot;:null,&quot;relationShipToInsuredCd&quot;:null,&quot;accountHolderName&quot;:null,&quot;emails&quot;:null,&quot;contactPreferenceCd&quot;:null,&quot;preferredPaymentMethod&quot;:null,&quot;companyNumber&quot;:null,&quot;namePrefix&quot;:null,&quot;bankBranchCd&quot;:null,&quot;bankAccountNumber&quot;:null,&quot;componentName&quot;:null,&quot;bankTransitNumber&quot;:null,&quot;birthDt&quot;:null,&quot;externalId&quot;:null,&quot;additionalNameInd&quot;:null,&quot;externalPartyInd&quot;:false,&quot;partyRoles&quot;:null,&quot;displayValue&quot;:null,&quot;firstName&quot;:&quot;Test 22&quot;,&quot;bankAccountType&quot;:null,&quot;bankCd&quot;:null,&quot;middleName&quot;:null,&quot;otherName&quot;:null,&quot;partyNumber&quot;:null,&quot;additionalName&quot;:null}],&quot;termEffectiveDate&quot;:&quot;2021-01-01T00:00:00Z&quot;,&quot;componentName&quot;:null,&quot;reportedPolicyNumber&quot;:&quot;CP0000863460&quot;,&quot;policyBLOB&quot;:null,&quot;productCd&quot;:&quot;GB_AC&quot;},&quot;reportingMethod&quot;:null,&quot;reportedDt&quot;:&quot;2021-07-16T18:31:00Z&quot;,&quot;totalIncurred&quot;:{&quot;amount&quot;:0.0,&quot;currencyCd&quot;:&quot;USD&quot;},&quot;policyProductCd&quot;:&quot;GB_AC&quot;,&quot;customerNumber&quot;:&quot;520181&quot;,&quot;claimsPolicyStatus&quot;:null,&quot;lineOfBusinessCd&quot;:&quot;ACC&quot;,&quot;claimStatusCd&quot;:&quot;CLOSED&quot;,&quot;claimSubStatusCd&quot;:null,&quot;additionalClaimNumber&quot;:&quot;OC1392&quot;,&quot;lossLocation&quot;:null,&quot;parties&quot;:null,&quot;secondaryLossCauseCd&quot;:null,&quot;fileOwner&quot;:{&quot;displayValue&quot;:&quot;New Claims \u2013 Accident CI HI&quot;,&quot;typeCd&quot;:null,&quot;refId&quot;:null},&quot;policyProductVersion&quot;:null,&quot;productCd&quot;:&quot;CLAIM_ACC_HEALTH&quot;}]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.13">02:59:46.976 [print] [
+  {
+    &quot;addresses&quot;: null,
+    &quot;extension&quot;: {
+    },
+    &quot;currencyCd&quot;: null,
+    &quot;policyNumber&quot;: &quot;CP0000863460&quot;,
+    &quot;lossDt&quot;: &quot;2021-07-16T00:00:00Z&quot;,
+    &quot;lossDesc&quot;: &quot;test&quot;,
+    &quot;typeOfResolution&quot;: &quot;WITHDRAWN&quot;,
+    &quot;productVersion&quot;: null,
+    &quot;selectedRiskItemOids&quot;: null,
+    &quot;knownTimeInd&quot;: null,
+    &quot;componentName&quot;: null,
+    &quot;causeOfLossCd&quot;: null,
+    &quot;lossLocationDesc&quot;: null,
+    &quot;claimNumber&quot;: &quot;C1392&quot;,
+    &quot;policy&quot;: {
+      &quot;termExpirationDate&quot;: &quot;2022-01-01T00:00:00Z&quot;,
+      &quot;policyLOB&quot;: &quot;ACC&quot;,
+      &quot;riskItems&quot;: null,
+      &quot;policyNumber&quot;: &quot;CP0000863460&quot;,
+      &quot;verified&quot;: null,
+      &quot;policyStatus&quot;: &quot;ACTIVE&quot;,
+      &quot;productVersion&quot;: null,
+      &quot;inceptionDate&quot;: null,
+      &quot;parties&quot;: [
+        {
+          &quot;nameTypeCd&quot;: null,
+          &quot;lastName&quot;: &quot;Test&quot;,
+          &quot;addresses&quot;: null,
+          &quot;extension&quot;: {
+          },
+          &quot;bankAccountInfo&quot;: null,
+          &quot;instanceName&quot;: null,
+          &quot;roles&quot;: null,
+          &quot;phones&quot;: null,
+          &quot;bankName&quot;: null,
+          &quot;oid&quot;: null,
+          &quot;type&quot;: null,
+          &quot;suffix&quot;: null,
+          &quot;relationShipToInsuredCd&quot;: null,
+          &quot;accountHolderName&quot;: null,
+          &quot;emails&quot;: null,
+          &quot;contactPreferenceCd&quot;: null,
+          &quot;preferredPaymentMethod&quot;: null,
+          &quot;companyNumber&quot;: null,
+          &quot;namePrefix&quot;: null,
+          &quot;bankBranchCd&quot;: null,
+          &quot;bankAccountNumber&quot;: null,
+          &quot;componentName&quot;: null,
+          &quot;bankTransitNumber&quot;: null,
+          &quot;birthDt&quot;: null,
+          &quot;externalId&quot;: null,
+          &quot;additionalNameInd&quot;: null,
+          &quot;externalPartyInd&quot;: false,
+          &quot;partyRoles&quot;: null,
+          &quot;displayValue&quot;: null,
+          &quot;firstName&quot;: &quot;Test 22&quot;,
+          &quot;bankAccountType&quot;: null,
+          &quot;bankCd&quot;: null,
+          &quot;middleName&quot;: null,
+          &quot;otherName&quot;: null,
+          &quot;partyNumber&quot;: null,
+          &quot;additionalName&quot;: null
+        }
+      ],
+      &quot;termEffectiveDate&quot;: &quot;2021-01-01T00:00:00Z&quot;,
+      &quot;componentName&quot;: null,
+      &quot;reportedPolicyNumber&quot;: &quot;CP0000863460&quot;,
+      &quot;policyBLOB&quot;: null,
+      &quot;productCd&quot;: &quot;GB_AC&quot;
+    },
+    &quot;reportingMethod&quot;: null,
+    &quot;reportedDt&quot;: &quot;2021-07-16T18:31:00Z&quot;,
+    &quot;totalIncurred&quot;: {
+      &quot;amount&quot;: 0.0,
+      &quot;currencyCd&quot;: &quot;USD&quot;
+    },
+    &quot;policyProductCd&quot;: &quot;GB_AC&quot;,
+    &quot;customerNumber&quot;: &quot;520181&quot;,
+    &quot;claimsPolicyStatus&quot;: null,
+    &quot;lineOfBusinessCd&quot;: &quot;ACC&quot;,
+    &quot;claimStatusCd&quot;: &quot;CLOSED&quot;,
+    &quot;claimSubStatusCd&quot;: null,
+    &quot;additionalClaimNumber&quot;: &quot;OC1392&quot;,
+    &quot;lossLocation&quot;: null,
+    &quot;parties&quot;: null,
+    &quot;secondaryLossCauseCd&quot;: null,
+    &quot;fileOwner&quot;: {
+      &quot;displayValue&quot;: &quot;New Claims \u2013 Accident CI HI&quot;,
+      &quot;typeCd&quot;: null,
+      &quot;refId&quot;: null
+    },
+    &quot;policyProductVersion&quot;: null,
+    &quot;productCd&quot;: &quot;CLAIM_ACC_HEALTH&quot;
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;=========Validating field values in response================= :&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.15">02:59:46.978 [print] =========Validating field values in response================= : 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response[0].policy.policyNumber == &#39;CP0000863460&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">28</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response[0].policy.productCd == &#39;GB_AC&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response[0].policy.policyStatus == &#39;ACTIVE&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response[0].policy.policyLOB == &#39;ACC&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response[0].claimNumber == &#39;C1392&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response[0].claimStatusCd == &#39;CLOSED&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match response[0].customerNumber == &#39;520181&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.1:35]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">reg</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.1:35]</span>
+                <span class="scenario-name">Validate get claim responde code 400 for given Claim ID : C1392</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>98</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.1:35]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.1:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = call read(&#39;basic-auth.js&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;wfl-claims-rs/v1/claims?claimNumber=C1392&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">96</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.30">02:59:47.026 request:
+1 &gt; GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392
+1 &gt; Authorization: Basic cWE6cWE=
+1 &gt; Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+02:59:47.119 response time in milliseconds: 91
+1 &lt; 200
+1 &lt; Content-Language: en
+1 &lt; Date: Mon, 23 Aug 2021 06:59:47 GMT
+1 &lt; Content-Type: application/json;charset=UTF-8
+1 &lt; Transfer-Encoding: chunked
+[{&quot;addresses&quot;:null,&quot;extension&quot;:{},&quot;currencyCd&quot;:null,&quot;policyNumber&quot;:&quot;CP0000863460&quot;,&quot;lossDt&quot;:&quot;2021-07-16T00:00:00Z&quot;,&quot;lossDesc&quot;:&quot;test&quot;,&quot;typeOfResolution&quot;:&quot;WITHDRAWN&quot;,&quot;productVersion&quot;:null,&quot;selectedRiskItemOids&quot;:null,&quot;knownTimeInd&quot;:null,&quot;componentName&quot;:null,&quot;causeOfLossCd&quot;:null,&quot;lossLocationDesc&quot;:null,&quot;claimNumber&quot;:&quot;C1392&quot;,&quot;policy&quot;:{&quot;termExpirationDate&quot;:&quot;2022-01-01T00:00:00Z&quot;,&quot;policyLOB&quot;:&quot;ACC&quot;,&quot;riskItems&quot;:null,&quot;policyNumber&quot;:&quot;CP0000863460&quot;,&quot;verified&quot;:null,&quot;policyStatus&quot;:&quot;ACTIVE&quot;,&quot;productVersion&quot;:null,&quot;inceptionDate&quot;:null,&quot;parties&quot;:[{&quot;nameTypeCd&quot;:null,&quot;lastName&quot;:&quot;Test&quot;,&quot;addresses&quot;:null,&quot;extension&quot;:{},&quot;bankAccountInfo&quot;:null,&quot;instanceName&quot;:null,&quot;roles&quot;:null,&quot;phones&quot;:null,&quot;bankName&quot;:null,&quot;oid&quot;:null,&quot;type&quot;:null,&quot;suffix&quot;:null,&quot;relationShipToInsuredCd&quot;:null,&quot;accountHolderName&quot;:null,&quot;emails&quot;:null,&quot;contactPreferenceCd&quot;:null,&quot;preferredPaymentMethod&quot;:null,&quot;companyNumber&quot;:null,&quot;namePrefix&quot;:null,&quot;bankBranchCd&quot;:null,&quot;bankAccountNumber&quot;:null,&quot;componentName&quot;:null,&quot;bankTransitNumber&quot;:null,&quot;birthDt&quot;:null,&quot;externalId&quot;:null,&quot;additionalNameInd&quot;:null,&quot;externalPartyInd&quot;:false,&quot;partyRoles&quot;:null,&quot;displayValue&quot;:null,&quot;firstName&quot;:&quot;Test 22&quot;,&quot;bankAccountType&quot;:null,&quot;bankCd&quot;:null,&quot;middleName&quot;:null,&quot;otherName&quot;:null,&quot;partyNumber&quot;:null,&quot;additionalName&quot;:null}],&quot;termEffectiveDate&quot;:&quot;2021-01-01T00:00:00Z&quot;,&quot;componentName&quot;:null,&quot;reportedPolicyNumber&quot;:&quot;CP0000863460&quot;,&quot;policyBLOB&quot;:null,&quot;productCd&quot;:&quot;GB_AC&quot;},&quot;reportingMethod&quot;:null,&quot;reportedDt&quot;:&quot;2021-07-16T18:31:00Z&quot;,&quot;totalIncurred&quot;:{&quot;amount&quot;:0.0,&quot;currencyCd&quot;:&quot;USD&quot;},&quot;policyProductCd&quot;:&quot;GB_AC&quot;,&quot;customerNumber&quot;:&quot;520181&quot;,&quot;claimsPolicyStatus&quot;:null,&quot;lineOfBusinessCd&quot;:&quot;ACC&quot;,&quot;claimStatusCd&quot;:&quot;CLOSED&quot;,&quot;claimSubStatusCd&quot;:null,&quot;additionalClaimNumber&quot;:&quot;OC1392&quot;,&quot;lossLocation&quot;:null,&quot;parties&quot;:null,&quot;secondaryLossCauseCd&quot;:null,&quot;fileOwner&quot;:{&quot;displayValue&quot;:&quot;New Claims \u2013 Accident CI HI&quot;,&quot;typeCd&quot;:null,&quot;refId&quot;:null},&quot;policyProductVersion&quot;:null,&quot;productCd&quot;:&quot;CLAIM_ACC_HEALTH&quot;}]
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.31">
+      <div class="step-ref failed">31</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.31">02:59:47.122 classpath:wf/experienceAPI/getClaim.feature:31
+Then status 400
+status code was: 200, expected: 400, response time in milliseconds: 91, url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1392, response: 
+[ {
+  &quot;claimSubStatusCd&quot; : null,
+  &quot;policy&quot; : {
+    &quot;termEffectiveDate&quot; : &quot;2021-01-01T00:00:00Z&quot;,
+    &quot;termExpirationDate&quot; : &quot;2022-01-01T00:00:00Z&quot;,
+    &quot;inceptionDate&quot; : null,
+    &quot;componentName&quot; : null,
+    &quot;riskItems&quot; : null,
+    &quot;parties&quot; : [ {
+      &quot;namePrefix&quot; : null,
+      &quot;firstName&quot; : &quot;Test 22&quot;,
+      &quot;middleName&quot; : null,
+      &quot;lastName&quot; : &quot;Test&quot;,
+      &quot;otherName&quot; : null,
+      &quot;nameTypeCd&quot; : null,
+      &quot;oid&quot; : null,
+      &quot;contactPreferenceCd&quot; : null,
+      &quot;displayValue&quot; : null,
+      &quot;relationShipToInsuredCd&quot; : null,
+      &quot;addresses&quot; : null,
+      &quot;componentName&quot; : null,
+      &quot;extension&quot; : { },
+      &quot;emails&quot; : null,
+      &quot;phones&quot; : null,
+      &quot;roles&quot; : null,
+      &quot;birthDt&quot; : null,
+      &quot;partyNumber&quot; : null,
+      &quot;companyNumber&quot; : null,
+      &quot;externalId&quot; : null,
+      &quot;preferredPaymentMethod&quot; : null,
+      &quot;bankAccountInfo&quot; : null,
+      &quot;bankName&quot; : null,
+      &quot;bankAccountNumber&quot; : null,
+      &quot;accountHolderName&quot; : null,
+      &quot;bankTransitNumber&quot; : null,
+      &quot;bankCd&quot; : null,
+      &quot;bankBranchCd&quot; : null,
+      &quot;bankAccountType&quot; : null,
+      &quot;additionalNameInd&quot; : null,
+      &quot;additionalName&quot; : null,
+      &quot;instanceName&quot; : null,
+      &quot;type&quot; : null,
+      &quot;partyRoles&quot; : null,
+      &quot;externalPartyInd&quot; : false,
+      &quot;suffix&quot; : null
+    } ],
+    &quot;policyNumber&quot; : &quot;CP0000863460&quot;,
+    &quot;productCd&quot; : &quot;GB_AC&quot;,
+    &quot;productVersion&quot; : null,
+    &quot;verified&quot; : null,
+    &quot;policyStatus&quot; : &quot;ACTIVE&quot;,
+    &quot;policyLOB&quot; : &quot;ACC&quot;,
+    &quot;policyBLOB&quot; : null,
+    &quot;reportedPolicyNumber&quot; : &quot;CP0000863460&quot;
+  },
+  &quot;claimNumber&quot; : &quot;C1392&quot;,
+  &quot;additionalClaimNumber&quot; : &quot;OC1392&quot;,
+  &quot;claimStatusCd&quot; : &quot;CLOSED&quot;,
+  &quot;lossDt&quot; : &quot;2021-07-16T00:00:00Z&quot;,
+  &quot;lossDesc&quot; : &quot;test&quot;,
+  &quot;customerNumber&quot; : &quot;520181&quot;,
+  &quot;reportedDt&quot; : &quot;2021-07-16T18:31:00Z&quot;,
+  &quot;policyNumber&quot; : &quot;CP0000863460&quot;,
+  &quot;policyProductCd&quot; : &quot;GB_AC&quot;,
+  &quot;knownTimeInd&quot; : null,
+  &quot;lineOfBusinessCd&quot; : &quot;ACC&quot;,
+  &quot;productVersion&quot; : null,
+  &quot;causeOfLossCd&quot; : null,
+  &quot;lossLocationDesc&quot; : null,
+  &quot;lossLocation&quot; : null,
+  &quot;secondaryLossCauseCd&quot; : null,
+  &quot;reportingMethod&quot; : null,
+  &quot;parties&quot; : null,
+  &quot;addresses&quot; : null,
+  &quot;componentName&quot; : null,
+  &quot;policyProductVersion&quot; : null,
+  &quot;totalIncurred&quot; : {
+    &quot;amount&quot; : 0.00,
+    &quot;currencyCd&quot; : &quot;USD&quot;
+  },
+  &quot;fileOwner&quot; : {
+    &quot;typeCd&quot; : null,
+    &quot;refId&quot; : null,
+    &quot;displayValue&quot; : &quot;New Claims – Accident CI HI&quot;
+  },
+  &quot;claimsPolicyStatus&quot; : null,
+  &quot;extension&quot; : { },
+  &quot;selectedRiskItemOids&quot; : null,
+  &quot;currencyCd&quot; : null,
+  &quot;typeOfResolution&quot; : &quot;WITHDRAWN&quot;,
+  &quot;productCd&quot; : &quot;CLAIM_ACC_HEALTH&quot;
+} ]
+classpath:wf/experienceAPI/getClaim.feature:31
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
