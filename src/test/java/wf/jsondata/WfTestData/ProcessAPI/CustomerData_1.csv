@@ -1,0 +1,3 @@
+TestCase_ID,Customer_number,exp_customerType,exp_accountNumber,exp_customerStatus
+ TC1,510377,INDV,610377,CUSTOMER
+TC2,510377,INDV,610377,CUSTOMER

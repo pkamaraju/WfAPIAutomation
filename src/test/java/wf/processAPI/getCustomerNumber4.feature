@@ -11,15 +11,14 @@ Feature: Fetching Customer details through GET call in wfl-claims-rs Core Servic
     Then status 200
     Then print response
      # * match response == '#array'
-    * print '=========Validating field values in response================= :'
+    * print '=========Validating field values in response for Test case ID :=================<TestCase_ID>'
     * match response[0].customerNumber == '<Customer_number>'
     * match response[0].customerType == '<exp_customerType>'
     * match response[0].accountNumber == '<exp_accountNumber>'
     * match response[0].customerStatus == '<exp_customerStatus>'
 
     Examples:
-      | Customer_number | exp_customerType | exp_accountNumber | exp_customerStatus |
-      | 510377          | INDV             | 610377            | CUSTOMER           |
-      | 510977          | INDV             | 610977            | CUSTOMER           |
+      | read('../jsondata/WfTestData/ProcessAPI/CustomerData_1.csv') |
+
 
 

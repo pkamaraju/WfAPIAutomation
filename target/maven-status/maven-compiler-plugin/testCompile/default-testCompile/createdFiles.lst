@@ -1,2 +1,6 @@
-wflclaim\SmokeTestRunner.class
-wflclaim\TestRunner.class
+wf\testRunner\SystemAPIRegTestRunner.class
+wf\testRunner\ProcessAPISmokeTestRunner.class
+wf\testRunner\ExperienceAPISmokeTestRunner.class
+wf\testRunner\PrcoessAPIRegTestRunner.class
+wf\testRunner\ExperienceAPIRegTestRunner.class
+wf\testRunner\SystemAPISmokeTestRunner.class
