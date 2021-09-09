@@ -6883,3 +6883,1372 @@ src/test/java/wf/processAPI/getCustomerNumber4.feature:14
  
 09:31:01.210 [main] INFO  com.intuit.karate - [print] =========Validating field values in response for Test case ID :=================TC2 
 09:31:02.277 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/wf/processAPI/getCustomerNumber4.feature
+10:12:51.085 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+10:12:51.103 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1630505571097
+10:12:51.148 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 21 - ^Validate get customer details for given Claim ID \: .*$
+10:12:52.567 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 21 - ^Validate get customer details for given Claim ID \: .*$
+10:12:53.092 [main] DEBUG com.intuit.karate - request:
+1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510377
+1 > Authorization: Basic cWE6cWE=
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+10:12:53.326 [main] DEBUG com.intuit.karate - response time in milliseconds: 226
+1 < 200
+1 < Content-Language: en
+1 < X-Paging-Limit: 10
+1 < X-Paging-Offset: 0
+1 < X-Total-Count: 1
+1 < Date: Wed, 01 Sep 2021 14:12:53 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+[{"addresses":[{"temporary":false,"city":"Walnut Creek","postalCode":"94596","latitude":null,"countryCd":"US","county":null,"accuracy":null,"contactType":"residence","referenceId":null,"effectiveTo":null,"duration":null,"subdivision":null,"extensionFields":{},"validationIndicator":null,"stateProvCd":"CA","addressLine1":"Address97144281","addressLine2":"","id":7905231,"addressLine3":"","contactMethod":"ADDRESS","longitude":null,"inCareOf":null,"preferredInd":null,"communicationPreferences":[],"attention":null,"comment":null,"doNotSolicitInd":null,"effectiveFrom":null}],"preferredSpokenLanguageCd":"ENGLISH","registeredOnline":false,"individualDetails":{"lastName":"Smith09877373","associateEmployments":false,"designationDescription":null,"deceased":false,"occupationDescription":null,"title":null,"suffix":null,"associateBusinessEntity":false,"extensionFields":{},"genderCd":"male","nickname":null,"deathDate":null,"associateProviders":false,"occupationCd":null,"designationCd":null,"birthDate":"1995-09-02","firstName":"John87780675","deathNotificationReceived":false,"disabilities":[],"maritalStatusCd":null,"taxId":"046-42-2369","citizenshipCd":null,"tobaccoCd":"YES","middleName":"","interests":[]},"majorAccount":null,"lastUpdateDate":"2020-09-02T08:44:02.380Z","preferredCurrency":null,"phones":[],"sourceCd":"UNKNOWN","socialNets":[],"rateDatePayment":null,"businessCustomerAdditionalNames":null,"segments":[],"customerStatus":"CUSTOMER","emails":[],"webAddresses":[],"specialClaimReview":false,"archived":false,"customerType":"INDV","sourceOfExchangeRate":null,"extensionFields":{},"groupInfo":[],"preferredWrittenLanguageCd":"ENGLISH","customerEmployments":null,"paperless":false,"agencies":[],"indCustomerAdditionalNames":[],"businessDetails":null,"customerNumber":"510377","accountNumber":"610377","genericRelationships":[],"displayValue":"John87780675 Smith09877373","ratingCd":"UNKNOWN","preferredContactMethod":null,"navigationLinks":[],"chats":[],"rateDateIntake":null,"brandCd":null,"providers":null}]
+10:12:53.336 [main] INFO  com.intuit.karate - [print] [
+  {
+    "addresses": [
+      {
+        "temporary": false,
+        "city": "Walnut Creek",
+        "postalCode": "94596",
+        "latitude": null,
+        "countryCd": "US",
+        "county": null,
+        "accuracy": null,
+        "contactType": "residence",
+        "referenceId": null,
+        "effectiveTo": null,
+        "duration": null,
+        "subdivision": null,
+        "extensionFields": {
+        },
+        "validationIndicator": null,
+        "stateProvCd": "CA",
+        "addressLine1": "Address97144281",
+        "addressLine2": "",
+        "id": 7905231,
+        "addressLine3": "",
+        "contactMethod": "ADDRESS",
+        "longitude": null,
+        "inCareOf": null,
+        "preferredInd": null,
+        "communicationPreferences": [
+        ],
+        "attention": null,
+        "comment": null,
+        "doNotSolicitInd": null,
+        "effectiveFrom": null
+      }
+    ],
+    "preferredSpokenLanguageCd": "ENGLISH",
+    "registeredOnline": false,
+    "individualDetails": {
+      "lastName": "Smith09877373",
+      "associateEmployments": false,
+      "designationDescription": null,
+      "deceased": false,
+      "occupationDescription": null,
+      "title": null,
+      "suffix": null,
+      "associateBusinessEntity": false,
+      "extensionFields": {
+      },
+      "genderCd": "male",
+      "nickname": null,
+      "deathDate": null,
+      "associateProviders": false,
+      "occupationCd": null,
+      "designationCd": null,
+      "birthDate": "1995-09-02",
+      "firstName": "John87780675",
+      "deathNotificationReceived": false,
+      "disabilities": [
+      ],
+      "maritalStatusCd": null,
+      "taxId": "046-42-2369",
+      "citizenshipCd": null,
+      "tobaccoCd": "YES",
+      "middleName": "",
+      "interests": [
+      ]
+    },
+    "majorAccount": null,
+    "lastUpdateDate": "2020-09-02T08:44:02.380Z",
+    "preferredCurrency": null,
+    "phones": [
+    ],
+    "sourceCd": "UNKNOWN",
+    "socialNets": [
+    ],
+    "rateDatePayment": null,
+    "businessCustomerAdditionalNames": null,
+    "segments": [
+    ],
+    "customerStatus": "CUSTOMER",
+    "emails": [
+    ],
+    "webAddresses": [
+    ],
+    "specialClaimReview": false,
+    "archived": false,
+    "customerType": "INDV",
+    "sourceOfExchangeRate": null,
+    "extensionFields": {
+    },
+    "groupInfo": [
+    ],
+    "preferredWrittenLanguageCd": "ENGLISH",
+    "customerEmployments": null,
+    "paperless": false,
+    "agencies": [
+    ],
+    "indCustomerAdditionalNames": [
+    ],
+    "businessDetails": null,
+    "customerNumber": "510377",
+    "accountNumber": "610377",
+    "genericRelationships": [
+    ],
+    "displayValue": "John87780675 Smith09877373",
+    "ratingCd": "UNKNOWN",
+    "preferredContactMethod": null,
+    "navigationLinks": [
+    ],
+    "chats": [
+    ],
+    "rateDateIntake": null,
+    "brandCd": null,
+    "providers": null
+  }
+]
+ 
+10:12:53.340 [main] INFO  com.intuit.karate - [print] =========Validating field values in response for Test case ID :================= TC1 
+10:12:53.375 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 21 - ^Validate get customer details for given Claim ID \: .*$
+10:12:53.388 [main] DEBUG com.intuit.karate - request:
+2 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510377
+2 > Authorization: Basic cWE6cWE=
+2 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+10:12:53.509 [main] DEBUG com.intuit.karate - response time in milliseconds: 120
+2 < 200
+2 < Content-Language: en
+2 < X-Paging-Limit: 10
+2 < X-Paging-Offset: 0
+2 < X-Total-Count: 1
+2 < Date: Wed, 01 Sep 2021 14:12:53 GMT
+2 < Content-Type: application/json;charset=UTF-8
+2 < Transfer-Encoding: chunked
+[{"addresses":[{"temporary":false,"city":"Walnut Creek","postalCode":"94596","latitude":null,"countryCd":"US","county":null,"accuracy":null,"contactType":"residence","referenceId":null,"effectiveTo":null,"duration":null,"subdivision":null,"extensionFields":{},"validationIndicator":null,"stateProvCd":"CA","addressLine1":"Address97144281","addressLine2":"","id":7905231,"addressLine3":"","contactMethod":"ADDRESS","longitude":null,"inCareOf":null,"preferredInd":null,"communicationPreferences":[],"attention":null,"comment":null,"doNotSolicitInd":null,"effectiveFrom":null}],"preferredSpokenLanguageCd":"ENGLISH","registeredOnline":false,"individualDetails":{"lastName":"Smith09877373","associateEmployments":false,"designationDescription":null,"deceased":false,"occupationDescription":null,"title":null,"suffix":null,"associateBusinessEntity":false,"extensionFields":{},"genderCd":"male","nickname":null,"deathDate":null,"associateProviders":false,"occupationCd":null,"designationCd":null,"birthDate":"1995-09-02","firstName":"John87780675","deathNotificationReceived":false,"disabilities":[],"maritalStatusCd":null,"taxId":"046-42-2369","citizenshipCd":null,"tobaccoCd":"YES","middleName":"","interests":[]},"majorAccount":null,"lastUpdateDate":"2020-09-02T08:44:02.380Z","preferredCurrency":null,"phones":[],"sourceCd":"UNKNOWN","socialNets":[],"rateDatePayment":null,"businessCustomerAdditionalNames":null,"segments":[],"customerStatus":"CUSTOMER","emails":[],"webAddresses":[],"specialClaimReview":false,"archived":false,"customerType":"INDV","sourceOfExchangeRate":null,"extensionFields":{},"groupInfo":[],"preferredWrittenLanguageCd":"ENGLISH","customerEmployments":null,"paperless":false,"agencies":[],"indCustomerAdditionalNames":[],"businessDetails":null,"customerNumber":"510377","accountNumber":"610377","genericRelationships":[],"displayValue":"John87780675 Smith09877373","ratingCd":"UNKNOWN","preferredContactMethod":null,"navigationLinks":[],"chats":[],"rateDateIntake":null,"brandCd":null,"providers":null}]
+10:12:53.511 [main] INFO  com.intuit.karate - [print] [
+  {
+    "addresses": [
+      {
+        "temporary": false,
+        "city": "Walnut Creek",
+        "postalCode": "94596",
+        "latitude": null,
+        "countryCd": "US",
+        "county": null,
+        "accuracy": null,
+        "contactType": "residence",
+        "referenceId": null,
+        "effectiveTo": null,
+        "duration": null,
+        "subdivision": null,
+        "extensionFields": {
+        },
+        "validationIndicator": null,
+        "stateProvCd": "CA",
+        "addressLine1": "Address97144281",
+        "addressLine2": "",
+        "id": 7905231,
+        "addressLine3": "",
+        "contactMethod": "ADDRESS",
+        "longitude": null,
+        "inCareOf": null,
+        "preferredInd": null,
+        "communicationPreferences": [
+        ],
+        "attention": null,
+        "comment": null,
+        "doNotSolicitInd": null,
+        "effectiveFrom": null
+      }
+    ],
+    "preferredSpokenLanguageCd": "ENGLISH",
+    "registeredOnline": false,
+    "individualDetails": {
+      "lastName": "Smith09877373",
+      "associateEmployments": false,
+      "designationDescription": null,
+      "deceased": false,
+      "occupationDescription": null,
+      "title": null,
+      "suffix": null,
+      "associateBusinessEntity": false,
+      "extensionFields": {
+      },
+      "genderCd": "male",
+      "nickname": null,
+      "deathDate": null,
+      "associateProviders": false,
+      "occupationCd": null,
+      "designationCd": null,
+      "birthDate": "1995-09-02",
+      "firstName": "John87780675",
+      "deathNotificationReceived": false,
+      "disabilities": [
+      ],
+      "maritalStatusCd": null,
+      "taxId": "046-42-2369",
+      "citizenshipCd": null,
+      "tobaccoCd": "YES",
+      "middleName": "",
+      "interests": [
+      ]
+    },
+    "majorAccount": null,
+    "lastUpdateDate": "2020-09-02T08:44:02.380Z",
+    "preferredCurrency": null,
+    "phones": [
+    ],
+    "sourceCd": "UNKNOWN",
+    "socialNets": [
+    ],
+    "rateDatePayment": null,
+    "businessCustomerAdditionalNames": null,
+    "segments": [
+    ],
+    "customerStatus": "CUSTOMER",
+    "emails": [
+    ],
+    "webAddresses": [
+    ],
+    "specialClaimReview": false,
+    "archived": false,
+    "customerType": "INDV",
+    "sourceOfExchangeRate": null,
+    "extensionFields": {
+    },
+    "groupInfo": [
+    ],
+    "preferredWrittenLanguageCd": "ENGLISH",
+    "customerEmployments": null,
+    "paperless": false,
+    "agencies": [
+    ],
+    "indCustomerAdditionalNames": [
+    ],
+    "businessDetails": null,
+    "customerNumber": "510377",
+    "accountNumber": "610377",
+    "genericRelationships": [
+    ],
+    "displayValue": "John87780675 Smith09877373",
+    "ratingCd": "UNKNOWN",
+    "preferredContactMethod": null,
+    "navigationLinks": [
+    ],
+    "chats": [
+    ],
+    "rateDateIntake": null,
+    "brandCd": null,
+    "providers": null
+  }
+]
+ 
+10:12:53.514 [main] INFO  com.intuit.karate - [print] =========Validating field values in response for Test case ID :=================TC2 
+10:12:54.618 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/wf/processAPI/getCustomerNumber4.feature
+03:05:44.363 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:05:44.386 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1630566344380
+03:05:44.429 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 21 - ^Validate get customer details for given Claim ID \: .*$
+03:05:45.824 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 21 - ^Validate get customer details for given Claim ID \: .*$
+03:05:46.310 [main] DEBUG com.intuit.karate - request:
+1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510377
+1 > Authorization: Basic cWE6cWE=
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:05:48.519 [main] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to aws07wflapp02.aws07.wfl.cloud:8080 [aws07wflapp02.aws07.wfl.cloud/10.20.51.134] failed: Connection refused: no further information, http call failed after 2670 milliseconds for url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510377
+03:05:48.520 [main] ERROR com.intuit.karate - src/test/java/wf/processAPI/getCustomerNumber4.feature:10
+When method GET
+http call failed after 2670 milliseconds for url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510377
+src/test/java/wf/processAPI/getCustomerNumber4.feature:10
+03:05:48.522 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 21 - ^Validate get customer details for given Claim ID \: .*$
+03:05:48.535 [main] DEBUG com.intuit.karate - request:
+2 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510377
+2 > Authorization: Basic cWE6cWE=
+2 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+2 > Accept-Encoding: gzip,deflate
+
+
+03:05:50.688 [main] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to aws07wflapp02.aws07.wfl.cloud:8080 [aws07wflapp02.aws07.wfl.cloud/10.20.51.134] failed: Connection refused: no further information, http call failed after 2155 milliseconds for url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510377
+03:05:50.688 [main] ERROR com.intuit.karate - src/test/java/wf/processAPI/getCustomerNumber4.feature:10
+When method GET
+http call failed after 2155 milliseconds for url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/customercore-rs/v1/customers/details?customerNumber=510377
+src/test/java/wf/processAPI/getCustomerNumber4.feature:10
+03:05:51.789 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/wf/processAPI/getCustomerNumber4.feature
+03:06:03.977 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:06:03.998 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1630566363992
+03:06:04.036 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 26 - ^Validate get master policy details for given Claim ID \: .*$
+03:06:05.840 [main] DEBUG com.intuit.karate - request:
+1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/certificates/CP0001002025
+1 > Authorization: Basic cWE6cWE=
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:06:08.012 [main] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to aws07wflapp02.aws07.wfl.cloud:8080 [aws07wflapp02.aws07.wfl.cloud/10.20.51.134] failed: Connection refused: no further information, http call failed after 2666 milliseconds for url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/certificates/CP0001002025
+03:06:08.013 [main] ERROR com.intuit.karate - src/test/java/wf/systemAPI/getCertificatePolicy_acc.feature:10
+When method GET
+http call failed after 2666 milliseconds for url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/certificates/CP0001002025
+src/test/java/wf/systemAPI/getCertificatePolicy_acc.feature:10
+03:06:08.016 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^Validate get master policy details for given Claim ID \: .*$
+03:06:08.031 [main] DEBUG com.intuit.karate - request:
+1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/certificates/CP0001003505
+1 > Authorization: Basic cWE6cWE=
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:06:10.163 [main] ERROR com.intuit.karate - karate.org.apache.http.conn.HttpHostConnectException: Connect to aws07wflapp02.aws07.wfl.cloud:8080 [aws07wflapp02.aws07.wfl.cloud/10.20.51.134] failed: Connection refused: no further information, http call failed after 2134 milliseconds for url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/certificates/CP0001003505
+03:06:10.163 [main] ERROR com.intuit.karate - src/test/java/wf/systemAPI/getCertificatePolicy_acc.feature:10
+When method GET
+http call failed after 2134 milliseconds for url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/certificates/CP0001003505
+src/test/java/wf/systemAPI/getCertificatePolicy_acc.feature:10
+03:06:11.251 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/wf/systemAPI/getCertificatePolicy_acc.feature
+03:13:39.622 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+03:13:39.640 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1630566819633
+03:13:39.679 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 26 - ^Validate get master policy details for given Claim ID \: .*$
+03:13:41.576 [main] DEBUG com.intuit.karate - request:
+1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/certificates/CP0001002025
+1 > Authorization: Basic cWE6cWE=
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:13:42.357 [main] DEBUG com.intuit.karate - response time in milliseconds: 735
+1 < 200
+1 < Content-Language: en
+1 < Date: Thu, 02 Sep 2021 07:13:42 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"currencyCd":"USD","insured":{"lastName":"HS","address":null,"dateOfBirth":"1970-01-01","oid":"qBqvRCUCyA1rD7P0075Miw","title":null,"suffix":null,"classificationGroup":"All Eligible Employees","firstName":"Accident","classificationSubGroup":"50-54","maritalStatusCd":null,"genderCd":"male","taxId":"124-85-1234","tobaccoCd":"NO","middleName":"","relationshipToSponsor":{"originalHireDate":"1999-01-01","rehireDate":null,"employmentType":null,"jobTitle":"MA manager","jobCode":"ANY","employeeId":"","type":"EMPLOYMENT","employmentStatus":"ACT","payClass":"N\/A","payrollFrequency":"BIWEEKLY","payType":"SALARY","salaryAmount":50000.0,"unionMember":false,"expatriate":null}},"revisionNumber":1,"currentRevisionInd":true,"masterPolicyCustomerNumber":"510005","policyNumber":"CP0001002025","countryCd":"US","coverages":[{"benefitAmount":null,"classSubGroupName":"DEFAULT","benefitType":null,"className":"All Eligible Employees","oid":"sszgCNOdo8yd0lHre-tCTg","coverageCd":"ACCIDENT_1","sponsorPaymentMode":null,"contributionType":"VOLUNTARY","planCd":"PLAN_1","originalEffectiveDate":"2021-01-01","amountOptions":null,"memberPaymentMode":"12","beneficiaries":[],"effectiveDate":"2021-01-01","participants":[{"lastName":"HS","benefitAmount":null,"address":null,"dateOfBirth":"1970-01-01","oid":"m6Rf_RUnhywFbYOsoOVAQA","title":null,"suffix":null,"customerName":"Accident HS","firstName":"Accident","maritalStatusCd":null,"genderCd":"male","taxId":"124-85-1234","roleTypeCd":"PRIMARY_P","tobaccoCd":"NO","middleName":"","roleNameCd":"Participant","relationshipToInsuredCd":"SELF"}]}],"policyStatusCd":"issued","productVersion":1.0,"planCd":"PLAN_1","inceptionDate":"2021-01-01","expirationDate":"2022-01-01","cancellationDate":null,"masterPolicyCustomerName":"The Zombie Defense Serum Coffee Co.","premiums":[{"benefitAmount":null,"annualPremium":170.21,"coverageName":"Accident 1","paymentMode":"12","numberOfInsureds":1,"coverageCd":"ACCIDENT_1","modalPremium":14.18,"contributionType":"VOLUNTARY","payorCd":"MEMBER","payor":"Member","tier":"EEO","rate":170.21,"transAprp":170.2100000000000000,"rateBasis":"Per Employee","contributionPercent":100.0}],"masterPolicyEffectiveDate":"2021-01-01","renewalDate":"2022-01-01","customerNumber":"520787","timedPolicyStatusCd":"inForce","transactionTypeCd":"policy","customerName":"Accident HS","lastCancellationDate":null,"anniversaryDate":"2022-01-01","productCode":"GB_AC","transactionEffectiveDate":"2021-01-01","riskStateCd":"TX","masterPolicyNumber":"MP0001002000","effectiveDate":"2021-01-01"}
+03:13:42.375 [main] INFO  com.intuit.karate - [print] {
+  "currencyCd": "USD",
+  "insured": {
+    "lastName": "HS",
+    "address": null,
+    "dateOfBirth": "1970-01-01",
+    "oid": "qBqvRCUCyA1rD7P0075Miw",
+    "title": null,
+    "suffix": null,
+    "classificationGroup": "All Eligible Employees",
+    "firstName": "Accident",
+    "classificationSubGroup": "50-54",
+    "maritalStatusCd": null,
+    "genderCd": "male",
+    "taxId": "124-85-1234",
+    "tobaccoCd": "NO",
+    "middleName": "",
+    "relationshipToSponsor": {
+      "originalHireDate": "1999-01-01",
+      "rehireDate": null,
+      "employmentType": null,
+      "jobTitle": "MA manager",
+      "jobCode": "ANY",
+      "employeeId": "",
+      "type": "EMPLOYMENT",
+      "employmentStatus": "ACT",
+      "payClass": "N/A",
+      "payrollFrequency": "BIWEEKLY",
+      "payType": "SALARY",
+      "salaryAmount": 50000.0,
+      "unionMember": false,
+      "expatriate": null
+    }
+  },
+  "revisionNumber": 1,
+  "currentRevisionInd": true,
+  "masterPolicyCustomerNumber": "510005",
+  "policyNumber": "CP0001002025",
+  "countryCd": "US",
+  "coverages": [
+    {
+      "benefitAmount": null,
+      "classSubGroupName": "DEFAULT",
+      "benefitType": null,
+      "className": "All Eligible Employees",
+      "oid": "sszgCNOdo8yd0lHre-tCTg",
+      "coverageCd": "ACCIDENT_1",
+      "sponsorPaymentMode": null,
+      "contributionType": "VOLUNTARY",
+      "planCd": "PLAN_1",
+      "originalEffectiveDate": "2021-01-01",
+      "amountOptions": null,
+      "memberPaymentMode": "12",
+      "beneficiaries": [
+      ],
+      "effectiveDate": "2021-01-01",
+      "participants": [
+        {
+          "lastName": "HS",
+          "benefitAmount": null,
+          "address": null,
+          "dateOfBirth": "1970-01-01",
+          "oid": "m6Rf_RUnhywFbYOsoOVAQA",
+          "title": null,
+          "suffix": null,
+          "customerName": "Accident HS",
+          "firstName": "Accident",
+          "maritalStatusCd": null,
+          "genderCd": "male",
+          "taxId": "124-85-1234",
+          "roleTypeCd": "PRIMARY_P",
+          "tobaccoCd": "NO",
+          "middleName": "",
+          "roleNameCd": "Participant",
+          "relationshipToInsuredCd": "SELF"
+        }
+      ]
+    }
+  ],
+  "policyStatusCd": "issued",
+  "productVersion": 1.0,
+  "planCd": "PLAN_1",
+  "inceptionDate": "2021-01-01",
+  "expirationDate": "2022-01-01",
+  "cancellationDate": null,
+  "masterPolicyCustomerName": "The Zombie Defense Serum Coffee Co.",
+  "premiums": [
+    {
+      "benefitAmount": null,
+      "annualPremium": 170.21,
+      "coverageName": "Accident 1",
+      "paymentMode": "12",
+      "numberOfInsureds": 1,
+      "coverageCd": "ACCIDENT_1",
+      "modalPremium": 14.18,
+      "contributionType": "VOLUNTARY",
+      "payorCd": "MEMBER",
+      "payor": "Member",
+      "tier": "EEO",
+      "rate": 170.21,
+      "transAprp": 170.2100000000000000,
+      "rateBasis": "Per Employee",
+      "contributionPercent": 100.0
+    }
+  ],
+  "masterPolicyEffectiveDate": "2021-01-01",
+  "renewalDate": "2022-01-01",
+  "customerNumber": "520787",
+  "timedPolicyStatusCd": "inForce",
+  "transactionTypeCd": "policy",
+  "customerName": "Accident HS",
+  "lastCancellationDate": null,
+  "anniversaryDate": "2022-01-01",
+  "productCode": "GB_AC",
+  "transactionEffectiveDate": "2021-01-01",
+  "riskStateCd": "TX",
+  "masterPolicyNumber": "MP0001002000",
+  "effectiveDate": "2021-01-01"
+}
+ 
+03:13:42.379 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+03:13:42.419 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^Validate get master policy details for given Claim ID \: .*$
+03:13:42.434 [main] DEBUG com.intuit.karate - request:
+1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/certificates/CP0001003505
+1 > Authorization: Basic cWE6cWE=
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+03:13:43.542 [main] DEBUG com.intuit.karate - response time in milliseconds: 1107
+1 < 200
+1 < Content-Language: en
+1 < Date: Thu, 02 Sep 2021 07:13:43 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"currencyCd":"USD","insured":{"lastName":"all","address":null,"dateOfBirth":"1959-01-01","oid":"s5hDPBGZ3c7XR7bjAFBISw","title":null,"suffix":null,"classificationGroup":"All Eligible Employees","firstName":"portal","classificationSubGroup":"60-64","maritalStatusCd":null,"genderCd":"male","taxId":"152-66-1234","tobaccoCd":"NO","middleName":"","relationshipToSponsor":{"originalHireDate":"1990-01-01","rehireDate":null,"employmentType":null,"jobTitle":"manager of manager","jobCode":"ANY","employeeId":"","type":"EMPLOYMENT","employmentStatus":"ACT","payClass":"N\/A","payrollFrequency":"BIWEEKLY","payType":"SALARY","salaryAmount":200000.0,"unionMember":false,"expatriate":null}},"revisionNumber":2,"currentRevisionInd":true,"masterPolicyCustomerNumber":"510005","policyNumber":"CP0001003505","countryCd":"US","coverages":[{"benefitAmount":null,"classSubGroupName":"DEFAULT","benefitType":null,"className":"All Eligible Employees","oid":"myLM9yZdrVNh8gFSZyJC8Q","coverageCd":"ACCIDENT_1","sponsorPaymentMode":null,"contributionType":"VOLUNTARY","planCd":"PLAN_1","originalEffectiveDate":"2021-01-01","amountOptions":null,"memberPaymentMode":"12","beneficiaries":[],"effectiveDate":"2021-01-01","participants":[{"lastName":"all","benefitAmount":null,"address":null,"dateOfBirth":"1959-01-01","oid":"jsr7Qv8jj5K9Ozc_axdAag","title":null,"suffix":null,"customerName":"portal all","firstName":"portal","maritalStatusCd":null,"genderCd":"male","taxId":"152-66-1234","roleTypeCd":"PRIMARY_P","tobaccoCd":"NO","middleName":"","roleNameCd":"Participant","relationshipToInsuredCd":"SELF"},{"lastName":"child","benefitAmount":null,"address":null,"dateOfBirth":"2018-01-01","oid":"hEundSkphUCT-ST072tLVA","title":null,"suffix":null,"customerName":"test child","firstName":"test","maritalStatusCd":null,"genderCd":"male","taxId":"124-78-1234","roleTypeCd":"CHILD_P","tobaccoCd":null,"middleName":"","roleNameCd":"Participant","relationshipToInsuredCd":"CHILD_SON"}]}],"policyStatusCd":"issued","productVersion":1.0,"planCd":"PLAN_1","inceptionDate":"2021-01-01","expirationDate":"2022-01-01","cancellationDate":null,"masterPolicyCustomerName":"The Zombie Defense Serum Coffee Co.","premiums":[{"benefitAmount":null,"annualPremium":307.98,"coverageName":"Accident 1","paymentMode":"12","numberOfInsureds":2,"coverageCd":"ACCIDENT_1","modalPremium":25.67,"contributionType":"VOLUNTARY","payorCd":"MEMBER","payor":"Member","tier":"EEC","rate":307.98,"transAprp":57.4000000000000000,"rateBasis":"Per Employee","contributionPercent":100.0}],"masterPolicyEffectiveDate":"2021-01-01","renewalDate":"2022-01-01","customerNumber":"520791","timedPolicyStatusCd":"inForce","transactionTypeCd":"endorsement","customerName":"portal all","lastCancellationDate":null,"anniversaryDate":"2022-01-01","productCode":"GB_AC","transactionEffectiveDate":"2021-07-22","riskStateCd":"TX","masterPolicyNumber":"MP0001002000","effectiveDate":"2021-01-01"}
+03:13:43.544 [main] INFO  com.intuit.karate - [print] {
+  "currencyCd": "USD",
+  "insured": {
+    "lastName": "all",
+    "address": null,
+    "dateOfBirth": "1959-01-01",
+    "oid": "s5hDPBGZ3c7XR7bjAFBISw",
+    "title": null,
+    "suffix": null,
+    "classificationGroup": "All Eligible Employees",
+    "firstName": "portal",
+    "classificationSubGroup": "60-64",
+    "maritalStatusCd": null,
+    "genderCd": "male",
+    "taxId": "152-66-1234",
+    "tobaccoCd": "NO",
+    "middleName": "",
+    "relationshipToSponsor": {
+      "originalHireDate": "1990-01-01",
+      "rehireDate": null,
+      "employmentType": null,
+      "jobTitle": "manager of manager",
+      "jobCode": "ANY",
+      "employeeId": "",
+      "type": "EMPLOYMENT",
+      "employmentStatus": "ACT",
+      "payClass": "N/A",
+      "payrollFrequency": "BIWEEKLY",
+      "payType": "SALARY",
+      "salaryAmount": 200000.0,
+      "unionMember": false,
+      "expatriate": null
+    }
+  },
+  "revisionNumber": 2,
+  "currentRevisionInd": true,
+  "masterPolicyCustomerNumber": "510005",
+  "policyNumber": "CP0001003505",
+  "countryCd": "US",
+  "coverages": [
+    {
+      "benefitAmount": null,
+      "classSubGroupName": "DEFAULT",
+      "benefitType": null,
+      "className": "All Eligible Employees",
+      "oid": "myLM9yZdrVNh8gFSZyJC8Q",
+      "coverageCd": "ACCIDENT_1",
+      "sponsorPaymentMode": null,
+      "contributionType": "VOLUNTARY",
+      "planCd": "PLAN_1",
+      "originalEffectiveDate": "2021-01-01",
+      "amountOptions": null,
+      "memberPaymentMode": "12",
+      "beneficiaries": [
+      ],
+      "effectiveDate": "2021-01-01",
+      "participants": [
+        {
+          "lastName": "all",
+          "benefitAmount": null,
+          "address": null,
+          "dateOfBirth": "1959-01-01",
+          "oid": "jsr7Qv8jj5K9Ozc_axdAag",
+          "title": null,
+          "suffix": null,
+          "customerName": "portal all",
+          "firstName": "portal",
+          "maritalStatusCd": null,
+          "genderCd": "male",
+          "taxId": "152-66-1234",
+          "roleTypeCd": "PRIMARY_P",
+          "tobaccoCd": "NO",
+          "middleName": "",
+          "roleNameCd": "Participant",
+          "relationshipToInsuredCd": "SELF"
+        },
+        {
+          "lastName": "child",
+          "benefitAmount": null,
+          "address": null,
+          "dateOfBirth": "2018-01-01",
+          "oid": "hEundSkphUCT-ST072tLVA",
+          "title": null,
+          "suffix": null,
+          "customerName": "test child",
+          "firstName": "test",
+          "maritalStatusCd": null,
+          "genderCd": "male",
+          "taxId": "124-78-1234",
+          "roleTypeCd": "CHILD_P",
+          "tobaccoCd": null,
+          "middleName": "",
+          "roleNameCd": "Participant",
+          "relationshipToInsuredCd": "CHILD_SON"
+        }
+      ]
+    }
+  ],
+  "policyStatusCd": "issued",
+  "productVersion": 1.0,
+  "planCd": "PLAN_1",
+  "inceptionDate": "2021-01-01",
+  "expirationDate": "2022-01-01",
+  "cancellationDate": null,
+  "masterPolicyCustomerName": "The Zombie Defense Serum Coffee Co.",
+  "premiums": [
+    {
+      "benefitAmount": null,
+      "annualPremium": 307.98,
+      "coverageName": "Accident 1",
+      "paymentMode": "12",
+      "numberOfInsureds": 2,
+      "coverageCd": "ACCIDENT_1",
+      "modalPremium": 25.67,
+      "contributionType": "VOLUNTARY",
+      "payorCd": "MEMBER",
+      "payor": "Member",
+      "tier": "EEC",
+      "rate": 307.98,
+      "transAprp": 57.4000000000000000,
+      "rateBasis": "Per Employee",
+      "contributionPercent": 100.0
+    }
+  ],
+  "masterPolicyEffectiveDate": "2021-01-01",
+  "renewalDate": "2022-01-01",
+  "customerNumber": "520791",
+  "timedPolicyStatusCd": "inForce",
+  "transactionTypeCd": "endorsement",
+  "customerName": "portal all",
+  "lastCancellationDate": null,
+  "anniversaryDate": "2022-01-01",
+  "productCode": "GB_AC",
+  "transactionEffectiveDate": "2021-07-22",
+  "riskStateCd": "TX",
+  "masterPolicyNumber": "MP0001002000",
+  "effectiveDate": "2021-01-01"
+}
+ 
+03:13:43.546 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+03:13:44.628 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/wf/systemAPI/getCertificatePolicy_acc.feature
+06:21:34.706 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+06:21:34.725 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1630578094719
+06:21:34.774 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 26 - ^Validate get certificate policy details for given Claim ID \: .*$
+06:21:36.685 [main] DEBUG com.intuit.karate - request:
+1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/certificates/CP0000758833
+1 > Authorization: Basic cWE6cWE=
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+06:21:37.266 [main] DEBUG com.intuit.karate - response time in milliseconds: 536
+1 < 200
+1 < Content-Language: en
+1 < Date: Thu, 02 Sep 2021 10:21:37 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"currencyCd":"USD","insured":{"lastName":"Washington","address":null,"dateOfBirth":"1983-04-19","oid":"l--iuQJgGKNL58y9MMJG1A","title":null,"suffix":"III","classificationGroup":"All Eligible Employees","firstName":"Archibald","classificationSubGroup":"35-39","maritalStatusCd":"M","genderCd":"male","taxId":"567-00-0987","tobaccoCd":"NO","middleName":"","relationshipToSponsor":{"originalHireDate":"2019-03-12","rehireDate":null,"employmentType":null,"jobTitle":"Manager","jobCode":"SE","employeeId":"","type":"EMPLOYMENT","employmentStatus":"ACT","payClass":"FULL_TIME","payrollFrequency":"BIWEEKLY","payType":"SALARY","salaryAmount":123000.0,"unionMember":false,"expatriate":null}},"revisionNumber":1,"currentRevisionInd":true,"masterPolicyCustomerNumber":"510005","policyNumber":"CP0000758833","countryCd":"US","coverages":[{"benefitAmount":null,"classSubGroupName":"DEFAULT","benefitType":null,"className":"All Eligible Employees","oid":"uB75T4E4K8FVJC5o57dJ-w","coverageCd":"HOSPITAL_INDEMNITY_3","sponsorPaymentMode":null,"contributionType":"VOLUNTARY","planCd":"COMPOSITE_1","originalEffectiveDate":"2020-12-16","amountOptions":null,"memberPaymentMode":"12","beneficiaries":[],"effectiveDate":"2020-12-16","participants":[{"lastName":"Washington","benefitAmount":null,"address":null,"dateOfBirth":"1983-04-19","oid":"krfZsEQNTaxCowWng3ZKRQ","title":null,"suffix":"III","customerName":"Archibald Washington III","firstName":"Archibald","maritalStatusCd":"M","genderCd":"male","taxId":"567-00-0987","roleTypeCd":"PRIMARY_P","tobaccoCd":"NO","middleName":"","roleNameCd":"Participant","relationshipToInsuredCd":"SELF"},{"lastName":"Washington","benefitAmount":null,"address":null,"dateOfBirth":"1989-01-26","oid":"qteKkNEP7j5An5eJaSdAeQ","title":null,"suffix":null,"customerName":"Gertrude Washington","firstName":"Gertrude","maritalStatusCd":null,"genderCd":"female","taxId":null,"roleTypeCd":"SPOUSE_P","tobaccoCd":null,"middleName":"","roleNameCd":"Participant","relationshipToInsuredCd":"SPOUSE_WIFE"}]}],"policyStatusCd":"issued","productVersion":1.0,"planCd":"COMPOSITE_1","inceptionDate":"2020-12-16","expirationDate":"2021-12-16","cancellationDate":null,"masterPolicyCustomerName":"The Zombie Defense Serum Coffee Co.","premiums":[{"benefitAmount":null,"annualPremium":25.15,"coverageName":"Basic Hospital Indemnity","paymentMode":"12","numberOfInsureds":2,"coverageCd":"HOSPITAL_INDEMNITY_3","modalPremium":2.1,"contributionType":"VOLUNTARY","payorCd":"MEMBER","payor":"Member","tier":"EES","rate":25.15,"transAprp":25.1500000000000000,"rateBasis":"Per Insured","contributionPercent":100.0}],"masterPolicyEffectiveDate":"2020-12-16","renewalDate":"2021-12-16","customerNumber":"514728","timedPolicyStatusCd":"inForce","transactionTypeCd":"policy","customerName":"Archibald Washington III","lastCancellationDate":null,"anniversaryDate":"2021-12-16","productCode":"GB_HI","transactionEffectiveDate":"2020-12-16","riskStateCd":"TN","masterPolicyNumber":"MP0000707203","effectiveDate":"2020-12-16"}
+06:21:37.281 [main] INFO  com.intuit.karate - [print] {
+  "currencyCd": "USD",
+  "insured": {
+    "lastName": "Washington",
+    "address": null,
+    "dateOfBirth": "1983-04-19",
+    "oid": "l--iuQJgGKNL58y9MMJG1A",
+    "title": null,
+    "suffix": "III",
+    "classificationGroup": "All Eligible Employees",
+    "firstName": "Archibald",
+    "classificationSubGroup": "35-39",
+    "maritalStatusCd": "M",
+    "genderCd": "male",
+    "taxId": "567-00-0987",
+    "tobaccoCd": "NO",
+    "middleName": "",
+    "relationshipToSponsor": {
+      "originalHireDate": "2019-03-12",
+      "rehireDate": null,
+      "employmentType": null,
+      "jobTitle": "Manager",
+      "jobCode": "SE",
+      "employeeId": "",
+      "type": "EMPLOYMENT",
+      "employmentStatus": "ACT",
+      "payClass": "FULL_TIME",
+      "payrollFrequency": "BIWEEKLY",
+      "payType": "SALARY",
+      "salaryAmount": 123000.0,
+      "unionMember": false,
+      "expatriate": null
+    }
+  },
+  "revisionNumber": 1,
+  "currentRevisionInd": true,
+  "masterPolicyCustomerNumber": "510005",
+  "policyNumber": "CP0000758833",
+  "countryCd": "US",
+  "coverages": [
+    {
+      "benefitAmount": null,
+      "classSubGroupName": "DEFAULT",
+      "benefitType": null,
+      "className": "All Eligible Employees",
+      "oid": "uB75T4E4K8FVJC5o57dJ-w",
+      "coverageCd": "HOSPITAL_INDEMNITY_3",
+      "sponsorPaymentMode": null,
+      "contributionType": "VOLUNTARY",
+      "planCd": "COMPOSITE_1",
+      "originalEffectiveDate": "2020-12-16",
+      "amountOptions": null,
+      "memberPaymentMode": "12",
+      "beneficiaries": [
+      ],
+      "effectiveDate": "2020-12-16",
+      "participants": [
+        {
+          "lastName": "Washington",
+          "benefitAmount": null,
+          "address": null,
+          "dateOfBirth": "1983-04-19",
+          "oid": "krfZsEQNTaxCowWng3ZKRQ",
+          "title": null,
+          "suffix": "III",
+          "customerName": "Archibald Washington III",
+          "firstName": "Archibald",
+          "maritalStatusCd": "M",
+          "genderCd": "male",
+          "taxId": "567-00-0987",
+          "roleTypeCd": "PRIMARY_P",
+          "tobaccoCd": "NO",
+          "middleName": "",
+          "roleNameCd": "Participant",
+          "relationshipToInsuredCd": "SELF"
+        },
+        {
+          "lastName": "Washington",
+          "benefitAmount": null,
+          "address": null,
+          "dateOfBirth": "1989-01-26",
+          "oid": "qteKkNEP7j5An5eJaSdAeQ",
+          "title": null,
+          "suffix": null,
+          "customerName": "Gertrude Washington",
+          "firstName": "Gertrude",
+          "maritalStatusCd": null,
+          "genderCd": "female",
+          "taxId": null,
+          "roleTypeCd": "SPOUSE_P",
+          "tobaccoCd": null,
+          "middleName": "",
+          "roleNameCd": "Participant",
+          "relationshipToInsuredCd": "SPOUSE_WIFE"
+        }
+      ]
+    }
+  ],
+  "policyStatusCd": "issued",
+  "productVersion": 1.0,
+  "planCd": "COMPOSITE_1",
+  "inceptionDate": "2020-12-16",
+  "expirationDate": "2021-12-16",
+  "cancellationDate": null,
+  "masterPolicyCustomerName": "The Zombie Defense Serum Coffee Co.",
+  "premiums": [
+    {
+      "benefitAmount": null,
+      "annualPremium": 25.15,
+      "coverageName": "Basic Hospital Indemnity",
+      "paymentMode": "12",
+      "numberOfInsureds": 2,
+      "coverageCd": "HOSPITAL_INDEMNITY_3",
+      "modalPremium": 2.1,
+      "contributionType": "VOLUNTARY",
+      "payorCd": "MEMBER",
+      "payor": "Member",
+      "tier": "EES",
+      "rate": 25.15,
+      "transAprp": 25.1500000000000000,
+      "rateBasis": "Per Insured",
+      "contributionPercent": 100.0
+    }
+  ],
+  "masterPolicyEffectiveDate": "2020-12-16",
+  "renewalDate": "2021-12-16",
+  "customerNumber": "514728",
+  "timedPolicyStatusCd": "inForce",
+  "transactionTypeCd": "policy",
+  "customerName": "Archibald Washington III",
+  "lastCancellationDate": null,
+  "anniversaryDate": "2021-12-16",
+  "productCode": "GB_HI",
+  "transactionEffectiveDate": "2020-12-16",
+  "riskStateCd": "TN",
+  "masterPolicyNumber": "MP0000707203",
+  "effectiveDate": "2020-12-16"
+}
+ 
+06:21:37.285 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+06:21:37.324 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^Validate get certificate policy details for given Claim ID \: .*$
+06:21:37.338 [main] DEBUG com.intuit.karate - request:
+1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/certificates/CP0001002026
+1 > Authorization: Basic cWE6cWE=
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+06:21:37.752 [main] DEBUG com.intuit.karate - response time in milliseconds: 413
+1 < 200
+1 < Content-Language: en
+1 < Date: Thu, 02 Sep 2021 10:21:38 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"currencyCd":"USD","insured":{"lastName":"indemnity","address":null,"dateOfBirth":"1959-01-01","oid":"rQtb5mFO1LAH5WKJMFtAFg","title":null,"suffix":null,"classificationGroup":"All Eligible Employees","firstName":"Hospital","classificationSubGroup":"60-64","maritalStatusCd":null,"genderCd":"male","taxId":"125-98-1234","tobaccoCd":"NO","middleName":"","relationshipToSponsor":{"originalHireDate":"1980-01-01","rehireDate":null,"employmentType":null,"jobTitle":"mma manager","jobCode":"ANY","employeeId":"","type":"EMPLOYMENT","employmentStatus":"ACT","payClass":"FULL_TIME","payrollFrequency":"BIWEEKLY","payType":"SALARY","salaryAmount":150000.0,"unionMember":null,"expatriate":null}},"revisionNumber":1,"currentRevisionInd":true,"masterPolicyCustomerNumber":"510005","policyNumber":"CP0001002026","countryCd":"US","coverages":[{"benefitAmount":null,"classSubGroupName":"DEFAULT","benefitType":null,"className":"All Eligible Employees","oid":"kKeJfI2mSRGFWSOTTXdHaA","coverageCd":"HOSPITAL_INDEMNITY_3","sponsorPaymentMode":null,"contributionType":"VOLUNTARY","planCd":"COMPOSITE_1","originalEffectiveDate":"2020-12-16","amountOptions":null,"memberPaymentMode":"12","beneficiaries":[],"effectiveDate":"2020-12-16","participants":[{"lastName":"indemnity","benefitAmount":null,"address":null,"dateOfBirth":"1959-01-01","oid":"qHwvTCzpiok8-rlE4jtM7A","title":null,"suffix":null,"customerName":"Hospital indemnity","firstName":"Hospital","maritalStatusCd":null,"genderCd":"male","taxId":"125-98-1234","roleTypeCd":"PRIMARY_P","tobaccoCd":"NO","middleName":"","roleNameCd":"Participant","relationshipToInsuredCd":"SELF"}]}],"policyStatusCd":"issued","productVersion":1.0,"planCd":"COMPOSITE_1","inceptionDate":"2020-12-16","expirationDate":"2021-12-16","cancellationDate":null,"masterPolicyCustomerName":"The Zombie Defense Serum Coffee Co.","premiums":[{"benefitAmount":null,"annualPremium":11.06,"coverageName":"Basic Hospital Indemnity","paymentMode":"12","numberOfInsureds":1,"coverageCd":"HOSPITAL_INDEMNITY_3","modalPremium":0.92,"contributionType":"VOLUNTARY","payorCd":"MEMBER","payor":"Member","tier":"EEO","rate":11.06,"transAprp":11.0600000000000000,"rateBasis":"Per Insured","contributionPercent":100.0}],"masterPolicyEffectiveDate":"2020-12-16","renewalDate":"2021-12-16","customerNumber":"520788","timedPolicyStatusCd":"inForce","transactionTypeCd":"policy","customerName":"Hospital indemnity","lastCancellationDate":null,"anniversaryDate":"2021-12-16","productCode":"GB_HI","transactionEffectiveDate":"2020-12-16","riskStateCd":"TN","masterPolicyNumber":"MP0000707203","effectiveDate":"2020-12-16"}
+06:21:37.755 [main] INFO  com.intuit.karate - [print] {
+  "currencyCd": "USD",
+  "insured": {
+    "lastName": "indemnity",
+    "address": null,
+    "dateOfBirth": "1959-01-01",
+    "oid": "rQtb5mFO1LAH5WKJMFtAFg",
+    "title": null,
+    "suffix": null,
+    "classificationGroup": "All Eligible Employees",
+    "firstName": "Hospital",
+    "classificationSubGroup": "60-64",
+    "maritalStatusCd": null,
+    "genderCd": "male",
+    "taxId": "125-98-1234",
+    "tobaccoCd": "NO",
+    "middleName": "",
+    "relationshipToSponsor": {
+      "originalHireDate": "1980-01-01",
+      "rehireDate": null,
+      "employmentType": null,
+      "jobTitle": "mma manager",
+      "jobCode": "ANY",
+      "employeeId": "",
+      "type": "EMPLOYMENT",
+      "employmentStatus": "ACT",
+      "payClass": "FULL_TIME",
+      "payrollFrequency": "BIWEEKLY",
+      "payType": "SALARY",
+      "salaryAmount": 150000.0,
+      "unionMember": null,
+      "expatriate": null
+    }
+  },
+  "revisionNumber": 1,
+  "currentRevisionInd": true,
+  "masterPolicyCustomerNumber": "510005",
+  "policyNumber": "CP0001002026",
+  "countryCd": "US",
+  "coverages": [
+    {
+      "benefitAmount": null,
+      "classSubGroupName": "DEFAULT",
+      "benefitType": null,
+      "className": "All Eligible Employees",
+      "oid": "kKeJfI2mSRGFWSOTTXdHaA",
+      "coverageCd": "HOSPITAL_INDEMNITY_3",
+      "sponsorPaymentMode": null,
+      "contributionType": "VOLUNTARY",
+      "planCd": "COMPOSITE_1",
+      "originalEffectiveDate": "2020-12-16",
+      "amountOptions": null,
+      "memberPaymentMode": "12",
+      "beneficiaries": [
+      ],
+      "effectiveDate": "2020-12-16",
+      "participants": [
+        {
+          "lastName": "indemnity",
+          "benefitAmount": null,
+          "address": null,
+          "dateOfBirth": "1959-01-01",
+          "oid": "qHwvTCzpiok8-rlE4jtM7A",
+          "title": null,
+          "suffix": null,
+          "customerName": "Hospital indemnity",
+          "firstName": "Hospital",
+          "maritalStatusCd": null,
+          "genderCd": "male",
+          "taxId": "125-98-1234",
+          "roleTypeCd": "PRIMARY_P",
+          "tobaccoCd": "NO",
+          "middleName": "",
+          "roleNameCd": "Participant",
+          "relationshipToInsuredCd": "SELF"
+        }
+      ]
+    }
+  ],
+  "policyStatusCd": "issued",
+  "productVersion": 1.0,
+  "planCd": "COMPOSITE_1",
+  "inceptionDate": "2020-12-16",
+  "expirationDate": "2021-12-16",
+  "cancellationDate": null,
+  "masterPolicyCustomerName": "The Zombie Defense Serum Coffee Co.",
+  "premiums": [
+    {
+      "benefitAmount": null,
+      "annualPremium": 11.06,
+      "coverageName": "Basic Hospital Indemnity",
+      "paymentMode": "12",
+      "numberOfInsureds": 1,
+      "coverageCd": "HOSPITAL_INDEMNITY_3",
+      "modalPremium": 0.92,
+      "contributionType": "VOLUNTARY",
+      "payorCd": "MEMBER",
+      "payor": "Member",
+      "tier": "EEO",
+      "rate": 11.06,
+      "transAprp": 11.0600000000000000,
+      "rateBasis": "Per Insured",
+      "contributionPercent": 100.0
+    }
+  ],
+  "masterPolicyEffectiveDate": "2020-12-16",
+  "renewalDate": "2021-12-16",
+  "customerNumber": "520788",
+  "timedPolicyStatusCd": "inForce",
+  "transactionTypeCd": "policy",
+  "customerName": "Hospital indemnity",
+  "lastCancellationDate": null,
+  "anniversaryDate": "2021-12-16",
+  "productCode": "GB_HI",
+  "transactionEffectiveDate": "2020-12-16",
+  "riskStateCd": "TN",
+  "masterPolicyNumber": "MP0000707203",
+  "effectiveDate": "2020-12-16"
+}
+ 
+06:21:37.757 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+06:21:37.763 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 28 - ^Validate get certificate policy details for given Claim ID \: .*$
+06:21:37.775 [main] DEBUG com.intuit.karate - request:
+1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/certificates/CP0001003507
+1 > Authorization: Basic cWE6cWE=
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+06:21:38.185 [main] DEBUG com.intuit.karate - response time in milliseconds: 409
+1 < 200
+1 < Content-Language: en
+1 < Date: Thu, 02 Sep 2021 10:21:38 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"currencyCd":"USD","insured":{"lastName":"all","address":null,"dateOfBirth":"1959-01-01","oid":"lUyRNDC_CsKtRFLcrNRPUg","title":null,"suffix":null,"classificationGroup":"All Eligible Employees","firstName":"portal","classificationSubGroup":"60-64","maritalStatusCd":null,"genderCd":"male","taxId":"152-66-1234","tobaccoCd":"NO","middleName":"","relationshipToSponsor":{"originalHireDate":"1990-01-01","rehireDate":null,"employmentType":null,"jobTitle":"manager of manager","jobCode":"ANY","employeeId":"","type":"EMPLOYMENT","employmentStatus":"ACT","payClass":"N\/A","payrollFrequency":"BIWEEKLY","payType":"SALARY","salaryAmount":200000.0,"unionMember":false,"expatriate":null}},"revisionNumber":1,"currentRevisionInd":true,"masterPolicyCustomerNumber":"510005","policyNumber":"CP0001003507","countryCd":"US","coverages":[{"benefitAmount":null,"classSubGroupName":"DEFAULT","benefitType":null,"className":"All Eligible Employees","oid":"vmfU4JKnJOD3N_YgEDtM1w","coverageCd":"HOSPITAL_INDEMNITY_3","sponsorPaymentMode":null,"contributionType":"VOLUNTARY","planCd":"COMPOSITE_1","originalEffectiveDate":"2020-12-16","amountOptions":null,"memberPaymentMode":"12","beneficiaries":[],"effectiveDate":"2020-12-16","participants":[{"lastName":"all","benefitAmount":null,"address":null,"dateOfBirth":"1959-01-01","oid":"tw_KMsgOCK0Q6UAzl89CrA","title":null,"suffix":null,"customerName":"portal all","firstName":"portal","maritalStatusCd":null,"genderCd":"male","taxId":"152-66-1234","roleTypeCd":"PRIMARY_P","tobaccoCd":"NO","middleName":"","roleNameCd":"Participant","relationshipToInsuredCd":"SELF"}]}],"policyStatusCd":"issued","productVersion":1.0,"planCd":"COMPOSITE_1","inceptionDate":"2020-12-16","expirationDate":"2021-12-16","cancellationDate":null,"masterPolicyCustomerName":"The Zombie Defense Serum Coffee Co.","premiums":[{"benefitAmount":null,"annualPremium":11.06,"coverageName":"Basic Hospital Indemnity","paymentMode":"12","numberOfInsureds":1,"coverageCd":"HOSPITAL_INDEMNITY_3","modalPremium":0.92,"contributionType":"VOLUNTARY","payorCd":"MEMBER","payor":"Member","tier":"EEO","rate":11.06,"transAprp":11.0600000000000000,"rateBasis":"Per Insured","contributionPercent":100.0}],"masterPolicyEffectiveDate":"2020-12-16","renewalDate":"2021-12-16","customerNumber":"520791","timedPolicyStatusCd":"inForce","transactionTypeCd":"policy","customerName":"portal all","lastCancellationDate":null,"anniversaryDate":"2021-12-16","productCode":"GB_HI","transactionEffectiveDate":"2020-12-16","riskStateCd":"TN","masterPolicyNumber":"MP0000707203","effectiveDate":"2020-12-16"}
+06:21:38.188 [main] INFO  com.intuit.karate - [print] {
+  "currencyCd": "USD",
+  "insured": {
+    "lastName": "all",
+    "address": null,
+    "dateOfBirth": "1959-01-01",
+    "oid": "lUyRNDC_CsKtRFLcrNRPUg",
+    "title": null,
+    "suffix": null,
+    "classificationGroup": "All Eligible Employees",
+    "firstName": "portal",
+    "classificationSubGroup": "60-64",
+    "maritalStatusCd": null,
+    "genderCd": "male",
+    "taxId": "152-66-1234",
+    "tobaccoCd": "NO",
+    "middleName": "",
+    "relationshipToSponsor": {
+      "originalHireDate": "1990-01-01",
+      "rehireDate": null,
+      "employmentType": null,
+      "jobTitle": "manager of manager",
+      "jobCode": "ANY",
+      "employeeId": "",
+      "type": "EMPLOYMENT",
+      "employmentStatus": "ACT",
+      "payClass": "N/A",
+      "payrollFrequency": "BIWEEKLY",
+      "payType": "SALARY",
+      "salaryAmount": 200000.0,
+      "unionMember": false,
+      "expatriate": null
+    }
+  },
+  "revisionNumber": 1,
+  "currentRevisionInd": true,
+  "masterPolicyCustomerNumber": "510005",
+  "policyNumber": "CP0001003507",
+  "countryCd": "US",
+  "coverages": [
+    {
+      "benefitAmount": null,
+      "classSubGroupName": "DEFAULT",
+      "benefitType": null,
+      "className": "All Eligible Employees",
+      "oid": "vmfU4JKnJOD3N_YgEDtM1w",
+      "coverageCd": "HOSPITAL_INDEMNITY_3",
+      "sponsorPaymentMode": null,
+      "contributionType": "VOLUNTARY",
+      "planCd": "COMPOSITE_1",
+      "originalEffectiveDate": "2020-12-16",
+      "amountOptions": null,
+      "memberPaymentMode": "12",
+      "beneficiaries": [
+      ],
+      "effectiveDate": "2020-12-16",
+      "participants": [
+        {
+          "lastName": "all",
+          "benefitAmount": null,
+          "address": null,
+          "dateOfBirth": "1959-01-01",
+          "oid": "tw_KMsgOCK0Q6UAzl89CrA",
+          "title": null,
+          "suffix": null,
+          "customerName": "portal all",
+          "firstName": "portal",
+          "maritalStatusCd": null,
+          "genderCd": "male",
+          "taxId": "152-66-1234",
+          "roleTypeCd": "PRIMARY_P",
+          "tobaccoCd": "NO",
+          "middleName": "",
+          "roleNameCd": "Participant",
+          "relationshipToInsuredCd": "SELF"
+        }
+      ]
+    }
+  ],
+  "policyStatusCd": "issued",
+  "productVersion": 1.0,
+  "planCd": "COMPOSITE_1",
+  "inceptionDate": "2020-12-16",
+  "expirationDate": "2021-12-16",
+  "cancellationDate": null,
+  "masterPolicyCustomerName": "The Zombie Defense Serum Coffee Co.",
+  "premiums": [
+    {
+      "benefitAmount": null,
+      "annualPremium": 11.06,
+      "coverageName": "Basic Hospital Indemnity",
+      "paymentMode": "12",
+      "numberOfInsureds": 1,
+      "coverageCd": "HOSPITAL_INDEMNITY_3",
+      "modalPremium": 0.92,
+      "contributionType": "VOLUNTARY",
+      "payorCd": "MEMBER",
+      "payor": "Member",
+      "tier": "EEO",
+      "rate": 11.06,
+      "transAprp": 11.0600000000000000,
+      "rateBasis": "Per Insured",
+      "contributionPercent": 100.0
+    }
+  ],
+  "masterPolicyEffectiveDate": "2020-12-16",
+  "renewalDate": "2021-12-16",
+  "customerNumber": "520791",
+  "timedPolicyStatusCd": "inForce",
+  "transactionTypeCd": "policy",
+  "customerName": "portal all",
+  "lastCancellationDate": null,
+  "anniversaryDate": "2021-12-16",
+  "productCode": "GB_HI",
+  "transactionEffectiveDate": "2020-12-16",
+  "riskStateCd": "TN",
+  "masterPolicyNumber": "MP0000707203",
+  "effectiveDate": "2020-12-16"
+}
+ 
+06:21:38.189 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+06:21:39.450 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/wf/systemAPI/getCertificatePolicy_hi.feature
+09:21:26.577 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:21:26.632 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1631020886600
+09:21:26.696 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 21 - ^Validate get master certificate policy details for given Policy number \: .*$
+09:21:29.259 [main] DEBUG com.intuit.karate - request:
+1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/master-policies/MP0000700575/certificates?offset=0&limit=20
+1 > Authorization: Basic cWE6cWE=
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:21:29.527 [main] DEBUG com.intuit.karate - response time in milliseconds: 194
+1 < 200
+1 < Content-Language: en
+1 < Date: Tue, 07 Sep 2021 13:21:29 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"certificateDtoList":[{"primaryParticipantName":"Jennifer Finchum","currentRevisionInd":true,"issueState":"TX","policyNumber":"CP0000701646","renewalDate":"2021-08-10T00:00:00Z","customerNumber":"510494","timedPolicyStatusCd":"dataGather","transactionTypeCd":"quote","policyStatusCd":"dataGather","anniversaryDate":"2022-08-10T00:00:00Z","transactionEffectiveDate":"2020-08-10T00:00:00Z","primaryParticipantTaxId":"926-93-6209","issueCountry":"US","revisionNo":0,"effectiveDate":"2020-08-10T00:00:00Z","expirationDate":"2021-08-10T00:00:00Z","cancellationDate":null},{"primaryParticipantName":"JuJu Smith-Shuester","currentRevisionInd":true,"issueState":"TX","policyNumber":"CP0000701733","renewalDate":"2021-08-10T00:00:00Z","customerNumber":"510521","timedPolicyStatusCd":"inForce","transactionTypeCd":"policy","policyStatusCd":"issued","anniversaryDate":"2022-08-10T00:00:00Z","transactionEffectiveDate":"2020-08-10T00:00:00Z","primaryParticipantTaxId":"191-91-9191","issueCountry":"US","revisionNo":1,"effectiveDate":"2020-08-10T00:00:00Z","expirationDate":"2021-08-10T00:00:00Z","cancellationDate":null},{"primaryParticipantName":"JuJu Smith-Shuester","currentRevisionInd":false,"issueState":"TX","policyNumber":"CP0000701733","renewalDate":"2021-08-10T00:00:00Z","customerNumber":"510521","timedPolicyStatusCd":"initiated","transactionTypeCd":"endorsement","policyStatusCd":"initiated","anniversaryDate":"2022-08-10T00:00:00Z","transactionEffectiveDate":"2020-10-23T00:00:00Z","primaryParticipantTaxId":"191-91-9191","issueCountry":"US","revisionNo":1,"effectiveDate":"2020-08-10T00:00:00Z","expirationDate":"2021-08-10T00:00:00Z","cancellationDate":null},{"primaryParticipantName":"JuJu Smith-Shuester","currentRevisionInd":false,"issueState":"TX","policyNumber":"CP0000701733","renewalDate":"2021-08-10T00:00:00Z","customerNumber":"510521","timedPolicyStatusCd":"initiated","transactionTypeCd":"endorsement","policyStatusCd":"initiated","anniversaryDate":"2022-08-10T00:00:00Z","transactionEffectiveDate":"2020-08-10T00:00:00Z","primaryParticipantTaxId":"191-91-9191","issueCountry":"US","revisionNo":1,"effectiveDate":"2020-08-10T00:00:00Z","expirationDate":"2021-08-10T00:00:00Z","cancellationDate":null},{"primaryParticipantName":"Robert Finchum","currentRevisionInd":true,"issueState":"TX","policyNumber":"CP0000702652","renewalDate":"2021-08-10T00:00:00Z","customerNumber":"510200","timedPolicyStatusCd":"inForce","transactionTypeCd":"policy","policyStatusCd":"issued","anniversaryDate":"2022-08-10T00:00:00Z","transactionEffectiveDate":"2020-08-10T00:00:00Z","primaryParticipantTaxId":"091-62-8262","issueCountry":"US","revisionNo":1,"effectiveDate":"2020-08-10T00:00:00Z","expirationDate":"2021-08-10T00:00:00Z","cancellationDate":null},{"primaryParticipantName":"test murshed","currentRevisionInd":true,"issueState":"TX","policyNumber":"CP0000950110","renewalDate":"2021-08-10T00:00:00Z","customerNumber":"520271","timedPolicyStatusCd":"inForce","transactionTypeCd":"policy","policyStatusCd":"issued","anniversaryDate":"2022-08-10T00:00:00Z","transactionEffectiveDate":"2020-08-10T00:00:00Z","primaryParticipantTaxId":"128-56-9523","issueCountry":"US","revisionNo":1,"effectiveDate":"2020-08-10T00:00:00Z","expirationDate":"2021-08-10T00:00:00Z","cancellationDate":null},{"primaryParticipantName":"shah murshed","currentRevisionInd":true,"issueState":"TX","policyNumber":"CP0001001993","renewalDate":"2021-08-10T00:00:00Z","customerNumber":"520777","timedPolicyStatusCd":"inForce","transactionTypeCd":"policy","policyStatusCd":"issued","anniversaryDate":"2022-08-10T00:00:00Z","transactionEffectiveDate":"2020-08-10T00:00:00Z","primaryParticipantTaxId":"124-59-1234","issueCountry":"US","revisionNo":1,"effectiveDate":"2020-08-10T00:00:00Z","expirationDate":"2021-08-10T00:00:00Z","cancellationDate":null},{"primaryParticipantName":"Portal testing","currentRevisionInd":true,"issueState":"TX","policyNumber":"CP0001001994","renewalDate":"2021-08-10T00:00:00Z","customerNumber":"520778","timedPolicyStatusCd":"inForce","transactionTypeCd":"policy","policyStatusCd":"issued","anniversaryDate":"2022-08-10T00:00:00Z","transactionEffectiveDate":"2020-08-10T00:00:00Z","primaryParticipantTaxId":"159-89-1234","issueCountry":"US","revisionNo":1,"effectiveDate":"2020-08-10T00:00:00Z","expirationDate":"2021-08-10T00:00:00Z","cancellationDate":null},{"primaryParticipantName":"portal all","currentRevisionInd":true,"issueState":"TX","policyNumber":"CP0001003506","renewalDate":"2021-08-10T00:00:00Z","customerNumber":"520791","timedPolicyStatusCd":"inForce","transactionTypeCd":"policy","policyStatusCd":"issued","anniversaryDate":"2022-08-10T00:00:00Z","transactionEffectiveDate":"2020-08-10T00:00:00Z","primaryParticipantTaxId":"152-66-1234","issueCountry":"US","revisionNo":1,"effectiveDate":"2020-08-10T00:00:00Z","expirationDate":"2021-08-10T00:00:00Z","cancellationDate":null}],"masterPolicyNumber":"MP0000700575","masterPolicyEffectiveDate":"2020-08-10T00:00:00Z"}
+09:21:29.546 [main] INFO  com.intuit.karate - [print] {
+  "certificateDtoList": [
+    {
+      "primaryParticipantName": "Jennifer Finchum",
+      "currentRevisionInd": true,
+      "issueState": "TX",
+      "policyNumber": "CP0000701646",
+      "renewalDate": "2021-08-10T00:00:00Z",
+      "customerNumber": "510494",
+      "timedPolicyStatusCd": "dataGather",
+      "transactionTypeCd": "quote",
+      "policyStatusCd": "dataGather",
+      "anniversaryDate": "2022-08-10T00:00:00Z",
+      "transactionEffectiveDate": "2020-08-10T00:00:00Z",
+      "primaryParticipantTaxId": "926-93-6209",
+      "issueCountry": "US",
+      "revisionNo": 0,
+      "effectiveDate": "2020-08-10T00:00:00Z",
+      "expirationDate": "2021-08-10T00:00:00Z",
+      "cancellationDate": null
+    },
+    {
+      "primaryParticipantName": "JuJu Smith-Shuester",
+      "currentRevisionInd": true,
+      "issueState": "TX",
+      "policyNumber": "CP0000701733",
+      "renewalDate": "2021-08-10T00:00:00Z",
+      "customerNumber": "510521",
+      "timedPolicyStatusCd": "inForce",
+      "transactionTypeCd": "policy",
+      "policyStatusCd": "issued",
+      "anniversaryDate": "2022-08-10T00:00:00Z",
+      "transactionEffectiveDate": "2020-08-10T00:00:00Z",
+      "primaryParticipantTaxId": "191-91-9191",
+      "issueCountry": "US",
+      "revisionNo": 1,
+      "effectiveDate": "2020-08-10T00:00:00Z",
+      "expirationDate": "2021-08-10T00:00:00Z",
+      "cancellationDate": null
+    },
+    {
+      "primaryParticipantName": "JuJu Smith-Shuester",
+      "currentRevisionInd": false,
+      "issueState": "TX",
+      "policyNumber": "CP0000701733",
+      "renewalDate": "2021-08-10T00:00:00Z",
+      "customerNumber": "510521",
+      "timedPolicyStatusCd": "initiated",
+      "transactionTypeCd": "endorsement",
+      "policyStatusCd": "initiated",
+      "anniversaryDate": "2022-08-10T00:00:00Z",
+      "transactionEffectiveDate": "2020-10-23T00:00:00Z",
+      "primaryParticipantTaxId": "191-91-9191",
+      "issueCountry": "US",
+      "revisionNo": 1,
+      "effectiveDate": "2020-08-10T00:00:00Z",
+      "expirationDate": "2021-08-10T00:00:00Z",
+      "cancellationDate": null
+    },
+    {
+      "primaryParticipantName": "JuJu Smith-Shuester",
+      "currentRevisionInd": false,
+      "issueState": "TX",
+      "policyNumber": "CP0000701733",
+      "renewalDate": "2021-08-10T00:00:00Z",
+      "customerNumber": "510521",
+      "timedPolicyStatusCd": "initiated",
+      "transactionTypeCd": "endorsement",
+      "policyStatusCd": "initiated",
+      "anniversaryDate": "2022-08-10T00:00:00Z",
+      "transactionEffectiveDate": "2020-08-10T00:00:00Z",
+      "primaryParticipantTaxId": "191-91-9191",
+      "issueCountry": "US",
+      "revisionNo": 1,
+      "effectiveDate": "2020-08-10T00:00:00Z",
+      "expirationDate": "2021-08-10T00:00:00Z",
+      "cancellationDate": null
+    },
+    {
+      "primaryParticipantName": "Robert Finchum",
+      "currentRevisionInd": true,
+      "issueState": "TX",
+      "policyNumber": "CP0000702652",
+      "renewalDate": "2021-08-10T00:00:00Z",
+      "customerNumber": "510200",
+      "timedPolicyStatusCd": "inForce",
+      "transactionTypeCd": "policy",
+      "policyStatusCd": "issued",
+      "anniversaryDate": "2022-08-10T00:00:00Z",
+      "transactionEffectiveDate": "2020-08-10T00:00:00Z",
+      "primaryParticipantTaxId": "091-62-8262",
+      "issueCountry": "US",
+      "revisionNo": 1,
+      "effectiveDate": "2020-08-10T00:00:00Z",
+      "expirationDate": "2021-08-10T00:00:00Z",
+      "cancellationDate": null
+    },
+    {
+      "primaryParticipantName": "test murshed",
+      "currentRevisionInd": true,
+      "issueState": "TX",
+      "policyNumber": "CP0000950110",
+      "renewalDate": "2021-08-10T00:00:00Z",
+      "customerNumber": "520271",
+      "timedPolicyStatusCd": "inForce",
+      "transactionTypeCd": "policy",
+      "policyStatusCd": "issued",
+      "anniversaryDate": "2022-08-10T00:00:00Z",
+      "transactionEffectiveDate": "2020-08-10T00:00:00Z",
+      "primaryParticipantTaxId": "128-56-9523",
+      "issueCountry": "US",
+      "revisionNo": 1,
+      "effectiveDate": "2020-08-10T00:00:00Z",
+      "expirationDate": "2021-08-10T00:00:00Z",
+      "cancellationDate": null
+    },
+    {
+      "primaryParticipantName": "shah murshed",
+      "currentRevisionInd": true,
+      "issueState": "TX",
+      "policyNumber": "CP0001001993",
+      "renewalDate": "2021-08-10T00:00:00Z",
+      "customerNumber": "520777",
+      "timedPolicyStatusCd": "inForce",
+      "transactionTypeCd": "policy",
+      "policyStatusCd": "issued",
+      "anniversaryDate": "2022-08-10T00:00:00Z",
+      "transactionEffectiveDate": "2020-08-10T00:00:00Z",
+      "primaryParticipantTaxId": "124-59-1234",
+      "issueCountry": "US",
+      "revisionNo": 1,
+      "effectiveDate": "2020-08-10T00:00:00Z",
+      "expirationDate": "2021-08-10T00:00:00Z",
+      "cancellationDate": null
+    },
+    {
+      "primaryParticipantName": "Portal testing",
+      "currentRevisionInd": true,
+      "issueState": "TX",
+      "policyNumber": "CP0001001994",
+      "renewalDate": "2021-08-10T00:00:00Z",
+      "customerNumber": "520778",
+      "timedPolicyStatusCd": "inForce",
+      "transactionTypeCd": "policy",
+      "policyStatusCd": "issued",
+      "anniversaryDate": "2022-08-10T00:00:00Z",
+      "transactionEffectiveDate": "2020-08-10T00:00:00Z",
+      "primaryParticipantTaxId": "159-89-1234",
+      "issueCountry": "US",
+      "revisionNo": 1,
+      "effectiveDate": "2020-08-10T00:00:00Z",
+      "expirationDate": "2021-08-10T00:00:00Z",
+      "cancellationDate": null
+    },
+    {
+      "primaryParticipantName": "portal all",
+      "currentRevisionInd": true,
+      "issueState": "TX",
+      "policyNumber": "CP0001003506",
+      "renewalDate": "2021-08-10T00:00:00Z",
+      "customerNumber": "520791",
+      "timedPolicyStatusCd": "inForce",
+      "transactionTypeCd": "policy",
+      "policyStatusCd": "issued",
+      "anniversaryDate": "2022-08-10T00:00:00Z",
+      "transactionEffectiveDate": "2020-08-10T00:00:00Z",
+      "primaryParticipantTaxId": "152-66-1234",
+      "issueCountry": "US",
+      "revisionNo": 1,
+      "effectiveDate": "2020-08-10T00:00:00Z",
+      "expirationDate": "2021-08-10T00:00:00Z",
+      "cancellationDate": null
+    }
+  ],
+  "masterPolicyNumber": "MP0000700575",
+  "masterPolicyEffectiveDate": "2020-08-10T00:00:00Z"
+}
+ 
+09:21:29.552 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+09:21:29.597 [main] ERROR com.intuit.karate - src/test/java/wf/systemAPI/getMasterCertificatePolicy_basic.feature:16
+* match response.certificateDtoList[*].customerNumber == ["510494","510521","510521","510200","520271","520777","520778","520791"]
+match failed: EQUALS
+  $ | not equal | actual array length is not equal to expected - 9:8 (LIST:LIST)
+  ["510494","510521","510521","510521","510200","520271","520777","520778","520791"]
+  ["510494","510521","510521","510200","520271","520777","520778","520791"]
+
+
+src/test/java/wf/systemAPI/getMasterCertificatePolicy_basic.feature:16
+09:21:31.058 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/wf/systemAPI/getMasterCertificatePolicy_basic.feature
+09:11:26.186 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:11:26.206 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1631106686200
+09:11:26.255 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 26 - ^Validate get certificate policy details for given Claim ID \: .*$
+09:11:28.367 [main] DEBUG com.intuit.karate - request:
+1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/certificates/CP0000700886
+1 > Authorization: Basic cWE6cWE=
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:11:28.867 [main] DEBUG com.intuit.karate - response time in milliseconds: 452
+1 < 422
+1 < Content-Language: en
+1 < Date: Wed, 08 Sep 2021 13:11:29 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"errorCode":"VGBC20007","message":"No Certificates Policies found for your request"}
+09:11:28.870 [main] ERROR com.intuit.karate - src/test/java/wf/systemAPI/getCertifyPolicy_std.feature:11
+Then status 200
+status code was: 422, expected: 200, response time in milliseconds: 452, url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/certificates/CP0000700886, response: 
+{
+  "errorCode" : "VGBC20007",
+  "message" : "No Certificates Policies found for your request"
+}
+src/test/java/wf/systemAPI/getCertifyPolicy_std.feature:11
+09:11:28.872 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^Validate get certificate policy details for given Claim ID \: .*$
+09:11:28.891 [main] DEBUG com.intuit.karate - request:
+1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/certificates/CP0000950153
+1 > Authorization: Basic cWE6cWE=
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:11:29.093 [main] DEBUG com.intuit.karate - response time in milliseconds: 202
+1 < 422
+1 < Content-Language: en
+1 < Date: Wed, 08 Sep 2021 13:11:29 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"errorCode":"VGBC20007","message":"No Certificates Policies found for your request"}
+09:11:29.095 [main] ERROR com.intuit.karate - src/test/java/wf/systemAPI/getCertifyPolicy_std.feature:11
+Then status 200
+status code was: 422, expected: 200, response time in milliseconds: 202, url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/certificates/CP0000950153, response: 
+{
+  "errorCode" : "VGBC20007",
+  "message" : "No Certificates Policies found for your request"
+}
+src/test/java/wf/systemAPI/getCertifyPolicy_std.feature:11
+09:11:29.098 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 28 - ^Validate get certificate policy details for given Claim ID \: .*$
+09:11:29.113 [main] DEBUG com.intuit.karate - request:
+1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/certificates/CP0001003508
+1 > Authorization: Basic cWE6cWE=
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:11:29.264 [main] DEBUG com.intuit.karate - response time in milliseconds: 150
+1 < 422
+1 < Content-Language: en
+1 < Date: Wed, 08 Sep 2021 13:11:29 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+{"errorCode":"VGBC20007","message":"No Certificates Policies found for your request"}
+09:11:29.265 [main] ERROR com.intuit.karate - src/test/java/wf/systemAPI/getCertifyPolicy_std.feature:11
+Then status 200
+status code was: 422, expected: 200, response time in milliseconds: 150, url: http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/policy-group-rs/v1/certificates/CP0001003508, response: 
+{
+  "errorCode" : "VGBC20007",
+  "message" : "No Certificates Policies found for your request"
+}
+src/test/java/wf/systemAPI/getCertifyPolicy_std.feature:11
+09:11:30.520 [main] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) src/test/java/wf/systemAPI/getCertifyPolicy_std.feature
