@@ -19,10 +19,9 @@ Feature: Fetching  policy details through GET call in policy-group-rs for STD co
     * match response.masterPolicyCustomerNumber == '<exp_masterPolicyCustomerNumber>'
     * match response.coverages[0].coverageCd == '<exp_coverageCd>'
     * match response.premiums[0].coverageName == '<exp_coverageName>'
-    * match response.premiums[0].tier == '<exp_tier>'
 
     Examples:
-      | Policy_number | exp_customerNumber | exp_policyStatusCd | exp_masterPolicyNumber|exp_masterPolicyCustomerNumber | exp_coverageCd | exp_coverageName | exp_tier |
-      | CP0000700886  | 520787             | issued             | MP0001002000          |  510005                       | ACCIDENT_1     | Accident 1       |   EEO    |
-      | CP0000950153  | 520791             | issued             | MP0001002000          |  510005                       | ACCIDENT_1     | Accident 1       |   EEC    |
-      | CP0001003508  | 520791             | issued             | MP0001002000          |  510005                       | ACCIDENT_1     | Accident 1       |   EEC    |
+      | Policy_number | exp_customerNumber | exp_policyStatusCd | exp_masterPolicyNumber|exp_masterPolicyCustomerNumber | exp_coverageCd | exp_coverageName |
+      | CP0000700886  | 520787             | issued             | MP0000700583          |  510005                       | STD            | STD Core         |
+      | CP0000950153  | 520274             | issued             | MP0000700583          |  510005                       | STD            | STD Core         |
+      | CP0001003508  | 520791             | issued             | MP0000700583          |  510005                       | STD            | STD Core         |

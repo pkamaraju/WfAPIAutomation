@@ -22,11 +22,11 @@ Feature: Fetching  policy details through GET call in policy-group-rs for basic 
     * match response.premiums[0].tier == '<exp_tier>'
 
     Examples:
-      | Policy_number | exp_customerNumber | exp_policyStatusCd | exp_masterPolicyNumber|exp_masterPolicyCustomerNumber | exp_coverageCd | exp_coverageName | exp_tier |
-      | CP0000701646  | 510494             | issued             | MP0000700575          |  510005                       | ACCIDENT_1     | Accident 1       |   EEO    |
-      | CP0000701733  | 510521             | issued             | MP0000700575          |  510005                       | ACCIDENT_1     | Accident 1       |   EEC    |
-      | CP0000702652  | 510200             | issued             | MP0000700575          |  510005                       | ACCIDENT_1     | Accident 1       |   EEC    |
-      | CP0000950110  | 520271             | issued             | MP0000700575          |  510005                       | ACCIDENT_1     | Accident 1       |   EEC    |
-      | CP0001001993  | 520777             | issued             | MP0000700575          |  510005                       | ACCIDENT_1     | Accident 1       |   EEC    |
-      | CP0001001994  | 520778             | issued             | MP0000700575          |  510005                       | ACCIDENT_1     | Accident 1       |   EEC    |
-      | CP0001003506  | 520791             | issued             | MP0000700575          |  510005                       | ACCIDENT_1     | Accident 1       |   EEC    |
+      | Policy_number | exp_customerNumber | exp_policyStatusCd | exp_masterPolicyNumber|exp_masterPolicyCustomerNumber | exp_coverageCd | exp_coverageName            | exp_tier |
+      | CP0000701646  | 510494             | issued             | MP0000700575          |  510005                       | BASIC_10       | Basic Critical Illness      |   EEO    |
+      | CP0000701733  | 510521             | issued             | MP0000700575          |  510005                       | BASIC_10       | Basic Critical Illness      |   EEO    |
+      | CP0000702652  | 510200             | issued             | MP0000700575          |  510005                       | BASIC_10       | Basic Critical Illness      |   EEO    |
+      | CP0000950110  | 520271             | issued             | MP0000700575          |  510005                       | BASIC_10       | Basic Critical Illness      |   EEO    |
+      | CP0001001993  | 520777             | issued             | MP0000700575          |  510005                       | BASIC_10       | Basic Critical Illness      |   EEO    |
+      | CP0001001994  | 520778             | issued             | MP0000700575          |  510005                       | BASIC_10       | Basic Critical Illness      |   EEO    |
+      | CP0001003506  | 520791             | issued             | MP0000700575          |  510005                       | BASIC_10       | Basic Critical Illness      |   EEO    |
