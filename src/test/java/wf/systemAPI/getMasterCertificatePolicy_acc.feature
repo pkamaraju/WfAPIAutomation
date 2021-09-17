@@ -17,6 +17,6 @@ Feature: Fetching master certificate policy details through GET call in master-p
     * match response.certificateDtoList[*].policyNumber == <exp_policyNumber>
     * match response.certificateDtoList[*].primaryParticipantName == <exp_primaryParticipantName>
     Examples:
-      | master_Policy_number | exp_customerNumber           | exp_policyNumber                               | exp_primaryParticipantName                |
-      | MP0001002000         | ["520787","520791","520791"] | ["CP0001002025","CP0001003505","CP0001003505"] | ["Accident HS","portal all","portal all"] |
+      | master_Policy_number | exp_customerNumber                    | exp_policyNumber                                              | exp_primaryParticipantName                               |
+      | MP0001002000         | ["520787","520791","520791","520948"] | ["CP0001002025","CP0001003505","CP0001003505","CP0001042409"] | ["Accident HS","portal all","portal all","shah murshed"] |
 
