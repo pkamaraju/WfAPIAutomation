@@ -1,4 +1,4 @@
-Feature: fetching Claim status through GET call in WFL CLaim Core Services
+Feature: fetching Claim status through GET call in WFL CLaim Core Services for ACCIDENT_1 coverage
 
   Background:
     * url baseUrl
@@ -23,13 +23,8 @@ Feature: fetching Claim status through GET call in WFL CLaim Core Services
 
     Examples:
       | ClaimID | exp_policyNumber | exp_productCd | exp_policyStatus | exp_policyLOB | exp_claimStatusCd | exp_customerNumber |
-      | C1392   | CP0000863460     | GB_AC         | ACTIVE           | ACC           | CLOSED            | 520181             |
-  @reg
-  Scenario Outline: Validate get claim response code 400 for given Claim ID : <ClaimID>
-    Given path 'wfl-claims-rs/v1/claims?claimNumber=<ClaimID>'
-    When method GET
-    Then status 400
-     # * match response == '#array'
-    Examples:
-      | ClaimID |
-      | C1392   |
+      | C1399   | CP0001003505     | GB_AC         | ACTIVE           | ACC           | OPEN            | 520791              |
+      | C1398   | CP0001003505     | GB_AC         | ACTIVE           | ACC           | OPEN            | 520791              |
+      | C1393   | CP0001003505     | GB_AC         | ACTIVE           | ACC           | OPEN            | 520791              |
+      | C1400   | CP0001003505     | GB_AC         | ACTIVE           | ACC           | INITIAL         | 520791              |
+      | C1392   | CP0000863460     | GB_AC         | ACTIVE           | ACC           | CLOSED           | 520181             |
