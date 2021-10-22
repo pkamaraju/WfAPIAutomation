@@ -29451,3 +29451,357 @@ src/test/java/wf/systemAPI/getClaim_std.feature:22
  
 05:14:23.599 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
 05:14:24.972 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/wf/systemAPI/getClaim_std.feature
+09:21:10.705 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:21:10.725 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1634044870711
+09:21:10.775 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 26 - ^Validate get claim response for given Claim ID \: .*$
+09:21:13.319 [main] DEBUG com.intuit.karate - request:
+1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1370
+1 > Authorization: Basic cWE6cWE=
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:21:13.614 [main] DEBUG com.intuit.karate - response time in milliseconds: 244
+1 < 200
+1 < Content-Language: en
+1 < Date: Tue, 12 Oct 2021 13:21:13 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+[{"addresses":null,"extension":{},"currencyCd":null,"policyNumber":"CP0000758833","lossDt":"2021-07-02T00:00:00Z","lossDesc":"test","typeOfResolution":null,"productVersion":null,"selectedRiskItemOids":null,"knownTimeInd":null,"componentName":null,"causeOfLossCd":null,"lossLocationDesc":null,"claimNumber":"C1370","policy":{"termExpirationDate":"2021-12-16T00:00:00Z","policyLOB":"HI","riskItems":null,"policyNumber":"CP0000758833","verified":null,"policyStatus":"ACTIVE","productVersion":null,"inceptionDate":null,"parties":[{"nameTypeCd":null,"lastName":"Washington","addresses":null,"extension":{},"bankAccountInfo":null,"instanceName":null,"roles":null,"phones":null,"bankName":null,"oid":null,"type":null,"suffix":null,"relationShipToInsuredCd":null,"accountHolderName":null,"emails":null,"contactPreferenceCd":null,"preferredPaymentMethod":null,"companyNumber":null,"namePrefix":null,"bankBranchCd":null,"bankAccountNumber":null,"componentName":null,"bankTransitNumber":null,"birthDt":null,"externalId":null,"additionalNameInd":null,"externalPartyInd":false,"partyRoles":null,"displayValue":null,"firstName":"Archibald","bankAccountType":null,"bankCd":null,"middleName":"","otherName":null,"partyNumber":null,"additionalName":null}],"termEffectiveDate":"2020-12-16T00:00:00Z","componentName":null,"reportedPolicyNumber":"CP0000758833","policyBLOB":null,"productCd":"GB_HI"},"reportingMethod":null,"reportedDt":"2021-07-02T14:49:00Z","totalIncurred":{"amount":0.0,"currencyCd":"USD"},"policyProductCd":"GB_HI","customerNumber":"514728","claimsPolicyStatus":null,"lineOfBusinessCd":"HI","claimStatusCd":"INITIAL","claimSubStatusCd":null,"additionalClaimNumber":"TC1370","lossLocation":null,"parties":null,"secondaryLossCauseCd":null,"fileOwner":{"displayValue":"","typeCd":null,"refId":null},"policyProductVersion":null,"productCd":"CLAIM_ACC_HEALTH"}]
+09:21:13.632 [main] INFO  com.intuit.karate - [print] [
+  {
+    "addresses": null,
+    "extension": {
+    },
+    "currencyCd": null,
+    "policyNumber": "CP0000758833",
+    "lossDt": "2021-07-02T00:00:00Z",
+    "lossDesc": "test",
+    "typeOfResolution": null,
+    "productVersion": null,
+    "selectedRiskItemOids": null,
+    "knownTimeInd": null,
+    "componentName": null,
+    "causeOfLossCd": null,
+    "lossLocationDesc": null,
+    "claimNumber": "C1370",
+    "policy": {
+      "termExpirationDate": "2021-12-16T00:00:00Z",
+      "policyLOB": "HI",
+      "riskItems": null,
+      "policyNumber": "CP0000758833",
+      "verified": null,
+      "policyStatus": "ACTIVE",
+      "productVersion": null,
+      "inceptionDate": null,
+      "parties": [
+        {
+          "nameTypeCd": null,
+          "lastName": "Washington",
+          "addresses": null,
+          "extension": {
+          },
+          "bankAccountInfo": null,
+          "instanceName": null,
+          "roles": null,
+          "phones": null,
+          "bankName": null,
+          "oid": null,
+          "type": null,
+          "suffix": null,
+          "relationShipToInsuredCd": null,
+          "accountHolderName": null,
+          "emails": null,
+          "contactPreferenceCd": null,
+          "preferredPaymentMethod": null,
+          "companyNumber": null,
+          "namePrefix": null,
+          "bankBranchCd": null,
+          "bankAccountNumber": null,
+          "componentName": null,
+          "bankTransitNumber": null,
+          "birthDt": null,
+          "externalId": null,
+          "additionalNameInd": null,
+          "externalPartyInd": false,
+          "partyRoles": null,
+          "displayValue": null,
+          "firstName": "Archibald",
+          "bankAccountType": null,
+          "bankCd": null,
+          "middleName": "",
+          "otherName": null,
+          "partyNumber": null,
+          "additionalName": null
+        }
+      ],
+      "termEffectiveDate": "2020-12-16T00:00:00Z",
+      "componentName": null,
+      "reportedPolicyNumber": "CP0000758833",
+      "policyBLOB": null,
+      "productCd": "GB_HI"
+    },
+    "reportingMethod": null,
+    "reportedDt": "2021-07-02T14:49:00Z",
+    "totalIncurred": {
+      "amount": 0.0,
+      "currencyCd": "USD"
+    },
+    "policyProductCd": "GB_HI",
+    "customerNumber": "514728",
+    "claimsPolicyStatus": null,
+    "lineOfBusinessCd": "HI",
+    "claimStatusCd": "INITIAL",
+    "claimSubStatusCd": null,
+    "additionalClaimNumber": "TC1370",
+    "lossLocation": null,
+    "parties": null,
+    "secondaryLossCauseCd": null,
+    "fileOwner": {
+      "displayValue": "",
+      "typeCd": null,
+      "refId": null
+    },
+    "policyProductVersion": null,
+    "productCd": "CLAIM_ACC_HEALTH"
+  }
+]
+ 
+09:21:13.635 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+09:21:13.678 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 27 - ^Validate get claim response for given Claim ID \: .*$
+09:21:13.694 [main] DEBUG com.intuit.karate - request:
+1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1369
+1 > Authorization: Basic cWE6cWE=
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:21:13.783 [main] DEBUG com.intuit.karate - response time in milliseconds: 88
+1 < 200
+1 < Content-Language: en
+1 < Date: Tue, 12 Oct 2021 13:21:13 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+[{"addresses":null,"extension":{},"currencyCd":null,"policyNumber":"CP0000758833","lossDt":"2021-07-02T00:00:00Z","lossDesc":"test","typeOfResolution":null,"productVersion":null,"selectedRiskItemOids":null,"knownTimeInd":null,"componentName":null,"causeOfLossCd":null,"lossLocationDesc":null,"claimNumber":"C1369","policy":{"termExpirationDate":"2021-12-16T00:00:00Z","policyLOB":"HI","riskItems":null,"policyNumber":"CP0000758833","verified":null,"policyStatus":"ACTIVE","productVersion":null,"inceptionDate":null,"parties":[{"nameTypeCd":null,"lastName":"Washington","addresses":null,"extension":{},"bankAccountInfo":null,"instanceName":null,"roles":null,"phones":null,"bankName":null,"oid":null,"type":null,"suffix":null,"relationShipToInsuredCd":null,"accountHolderName":null,"emails":null,"contactPreferenceCd":null,"preferredPaymentMethod":null,"companyNumber":null,"namePrefix":null,"bankBranchCd":null,"bankAccountNumber":null,"componentName":null,"bankTransitNumber":null,"birthDt":null,"externalId":null,"additionalNameInd":null,"externalPartyInd":false,"partyRoles":null,"displayValue":null,"firstName":"Archibald","bankAccountType":null,"bankCd":null,"middleName":"","otherName":null,"partyNumber":null,"additionalName":null}],"termEffectiveDate":"2020-12-16T00:00:00Z","componentName":null,"reportedPolicyNumber":"CP0000758833","policyBLOB":null,"productCd":"GB_HI"},"reportingMethod":null,"reportedDt":"2021-07-02T14:39:00Z","totalIncurred":{"amount":0.0,"currencyCd":"USD"},"policyProductCd":"GB_HI","customerNumber":"514728","claimsPolicyStatus":null,"lineOfBusinessCd":"HI","claimStatusCd":"OPEN","claimSubStatusCd":null,"additionalClaimNumber":"OC1369","lossLocation":null,"parties":null,"secondaryLossCauseCd":null,"fileOwner":{"displayValue":"New Claims \u2013 Accident CI HI","typeCd":null,"refId":null},"policyProductVersion":null,"productCd":"CLAIM_ACC_HEALTH"}]
+09:21:13.785 [main] INFO  com.intuit.karate - [print] [
+  {
+    "addresses": null,
+    "extension": {
+    },
+    "currencyCd": null,
+    "policyNumber": "CP0000758833",
+    "lossDt": "2021-07-02T00:00:00Z",
+    "lossDesc": "test",
+    "typeOfResolution": null,
+    "productVersion": null,
+    "selectedRiskItemOids": null,
+    "knownTimeInd": null,
+    "componentName": null,
+    "causeOfLossCd": null,
+    "lossLocationDesc": null,
+    "claimNumber": "C1369",
+    "policy": {
+      "termExpirationDate": "2021-12-16T00:00:00Z",
+      "policyLOB": "HI",
+      "riskItems": null,
+      "policyNumber": "CP0000758833",
+      "verified": null,
+      "policyStatus": "ACTIVE",
+      "productVersion": null,
+      "inceptionDate": null,
+      "parties": [
+        {
+          "nameTypeCd": null,
+          "lastName": "Washington",
+          "addresses": null,
+          "extension": {
+          },
+          "bankAccountInfo": null,
+          "instanceName": null,
+          "roles": null,
+          "phones": null,
+          "bankName": null,
+          "oid": null,
+          "type": null,
+          "suffix": null,
+          "relationShipToInsuredCd": null,
+          "accountHolderName": null,
+          "emails": null,
+          "contactPreferenceCd": null,
+          "preferredPaymentMethod": null,
+          "companyNumber": null,
+          "namePrefix": null,
+          "bankBranchCd": null,
+          "bankAccountNumber": null,
+          "componentName": null,
+          "bankTransitNumber": null,
+          "birthDt": null,
+          "externalId": null,
+          "additionalNameInd": null,
+          "externalPartyInd": false,
+          "partyRoles": null,
+          "displayValue": null,
+          "firstName": "Archibald",
+          "bankAccountType": null,
+          "bankCd": null,
+          "middleName": "",
+          "otherName": null,
+          "partyNumber": null,
+          "additionalName": null
+        }
+      ],
+      "termEffectiveDate": "2020-12-16T00:00:00Z",
+      "componentName": null,
+      "reportedPolicyNumber": "CP0000758833",
+      "policyBLOB": null,
+      "productCd": "GB_HI"
+    },
+    "reportingMethod": null,
+    "reportedDt": "2021-07-02T14:39:00Z",
+    "totalIncurred": {
+      "amount": 0.0,
+      "currencyCd": "USD"
+    },
+    "policyProductCd": "GB_HI",
+    "customerNumber": "514728",
+    "claimsPolicyStatus": null,
+    "lineOfBusinessCd": "HI",
+    "claimStatusCd": "OPEN",
+    "claimSubStatusCd": null,
+    "additionalClaimNumber": "OC1369",
+    "lossLocation": null,
+    "parties": null,
+    "secondaryLossCauseCd": null,
+    "fileOwner": {
+      "displayValue": "New Claims \u2013 Accident CI HI",
+      "typeCd": null,
+      "refId": null
+    },
+    "policyProductVersion": null,
+    "productCd": "CLAIM_ACC_HEALTH"
+  }
+]
+ 
+09:21:13.787 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+09:21:13.792 [main] INFO  c.intuit.karate.core.FeatureRuntime - found scenario at line: 28 - ^Validate get claim response for given Claim ID \: .*$
+09:21:13.806 [main] DEBUG com.intuit.karate - request:
+1 > GET http://aws07wflapp02.aws07.wfl.cloud:8080/wfl-app/services/wfl-claims-rs/v1/claims?claimNumber=C1447
+1 > Authorization: Basic cWE6cWE=
+1 > Host: aws07wflapp02.aws07.wfl.cloud:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/16.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:21:13.895 [main] DEBUG com.intuit.karate - response time in milliseconds: 87
+1 < 200
+1 < Content-Language: en
+1 < Date: Tue, 12 Oct 2021 13:21:13 GMT
+1 < Content-Type: application/json;charset=UTF-8
+1 < Transfer-Encoding: chunked
+[{"addresses":null,"extension":{},"currencyCd":null,"policyNumber":"CP0000758833","lossDt":"2021-10-12T00:00:00Z","lossDesc":"tesr","typeOfResolution":"CLOSED","productVersion":null,"selectedRiskItemOids":null,"knownTimeInd":null,"componentName":null,"causeOfLossCd":null,"lossLocationDesc":null,"claimNumber":"C1447","policy":{"termExpirationDate":"2021-12-16T00:00:00Z","policyLOB":"HI","riskItems":null,"policyNumber":"CP0000758833","verified":null,"policyStatus":"ACTIVE","productVersion":null,"inceptionDate":null,"parties":[{"nameTypeCd":null,"lastName":"Washington","addresses":null,"extension":{},"bankAccountInfo":null,"instanceName":null,"roles":null,"phones":null,"bankName":null,"oid":null,"type":null,"suffix":null,"relationShipToInsuredCd":null,"accountHolderName":null,"emails":null,"contactPreferenceCd":null,"preferredPaymentMethod":null,"companyNumber":null,"namePrefix":null,"bankBranchCd":null,"bankAccountNumber":null,"componentName":null,"bankTransitNumber":null,"birthDt":null,"externalId":null,"additionalNameInd":null,"externalPartyInd":false,"partyRoles":null,"displayValue":null,"firstName":"Archibald","bankAccountType":null,"bankCd":null,"middleName":"","otherName":null,"partyNumber":null,"additionalName":null}],"termEffectiveDate":"2020-12-16T00:00:00Z","componentName":null,"reportedPolicyNumber":"CP0000758833","policyBLOB":null,"productCd":"GB_HI"},"reportingMethod":null,"reportedDt":"2021-10-12T13:14:00Z","totalIncurred":{"amount":0.0,"currencyCd":"USD"},"policyProductCd":"GB_HI","customerNumber":"514728","claimsPolicyStatus":null,"lineOfBusinessCd":"HI","claimStatusCd":"CLOSED","claimSubStatusCd":null,"additionalClaimNumber":"OC1447","lossLocation":null,"parties":null,"secondaryLossCauseCd":null,"fileOwner":{"displayValue":"New Claims \u2013 Accident CI HI","typeCd":null,"refId":null},"policyProductVersion":null,"productCd":"CLAIM_ACC_HEALTH"}]
+09:21:13.898 [main] INFO  com.intuit.karate - [print] [
+  {
+    "addresses": null,
+    "extension": {
+    },
+    "currencyCd": null,
+    "policyNumber": "CP0000758833",
+    "lossDt": "2021-10-12T00:00:00Z",
+    "lossDesc": "tesr",
+    "typeOfResolution": "CLOSED",
+    "productVersion": null,
+    "selectedRiskItemOids": null,
+    "knownTimeInd": null,
+    "componentName": null,
+    "causeOfLossCd": null,
+    "lossLocationDesc": null,
+    "claimNumber": "C1447",
+    "policy": {
+      "termExpirationDate": "2021-12-16T00:00:00Z",
+      "policyLOB": "HI",
+      "riskItems": null,
+      "policyNumber": "CP0000758833",
+      "verified": null,
+      "policyStatus": "ACTIVE",
+      "productVersion": null,
+      "inceptionDate": null,
+      "parties": [
+        {
+          "nameTypeCd": null,
+          "lastName": "Washington",
+          "addresses": null,
+          "extension": {
+          },
+          "bankAccountInfo": null,
+          "instanceName": null,
+          "roles": null,
+          "phones": null,
+          "bankName": null,
+          "oid": null,
+          "type": null,
+          "suffix": null,
+          "relationShipToInsuredCd": null,
+          "accountHolderName": null,
+          "emails": null,
+          "contactPreferenceCd": null,
+          "preferredPaymentMethod": null,
+          "companyNumber": null,
+          "namePrefix": null,
+          "bankBranchCd": null,
+          "bankAccountNumber": null,
+          "componentName": null,
+          "bankTransitNumber": null,
+          "birthDt": null,
+          "externalId": null,
+          "additionalNameInd": null,
+          "externalPartyInd": false,
+          "partyRoles": null,
+          "displayValue": null,
+          "firstName": "Archibald",
+          "bankAccountType": null,
+          "bankCd": null,
+          "middleName": "",
+          "otherName": null,
+          "partyNumber": null,
+          "additionalName": null
+        }
+      ],
+      "termEffectiveDate": "2020-12-16T00:00:00Z",
+      "componentName": null,
+      "reportedPolicyNumber": "CP0000758833",
+      "policyBLOB": null,
+      "productCd": "GB_HI"
+    },
+    "reportingMethod": null,
+    "reportedDt": "2021-10-12T13:14:00Z",
+    "totalIncurred": {
+      "amount": 0.0,
+      "currencyCd": "USD"
+    },
+    "policyProductCd": "GB_HI",
+    "customerNumber": "514728",
+    "claimsPolicyStatus": null,
+    "lineOfBusinessCd": "HI",
+    "claimStatusCd": "CLOSED",
+    "claimSubStatusCd": null,
+    "additionalClaimNumber": "OC1447",
+    "lossLocation": null,
+    "parties": null,
+    "secondaryLossCauseCd": null,
+    "fileOwner": {
+      "displayValue": "New Claims \u2013 Accident CI HI",
+      "typeCd": null,
+      "refId": null
+    },
+    "policyProductVersion": null,
+    "productCd": "CLAIM_ACC_HEALTH"
+  }
+]
+ 
+09:21:13.899 [main] INFO  com.intuit.karate - [print] =========Validating field values in response================= : 
+09:21:15.279 [main] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) src/test/java/wf/systemAPI/getClaim_hi.feature

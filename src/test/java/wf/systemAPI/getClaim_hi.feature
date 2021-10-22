@@ -25,3 +25,4 @@ Feature: fetching Claim status through GET call in WFL CLaim Core Services for H
       | ClaimID | exp_policyNumber | exp_productCd | exp_policyStatus | exp_policyLOB | exp_claimStatusCd | exp_customerNumber |
       | C1370	| CP0000758833     | GB_HI         | ACTIVE           | HI            | INITIAL           | 514728             |
       | C1369	| CP0000758833     | GB_HI         | ACTIVE           | HI            | OPEN              | 514728             |
+      | C1447	| CP0000758833     | GB_HI         | ACTIVE           | HI            | CLOSED            | 514728             |

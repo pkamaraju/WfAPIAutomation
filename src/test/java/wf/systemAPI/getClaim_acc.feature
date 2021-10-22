@@ -27,4 +27,4 @@ Feature: fetching Claim status through GET call in WFL CLaim Core Services for A
       | C1398   | CP0001003505     | GB_AC         | ACTIVE           | ACC           | OPEN            | 520791              |
       | C1393   | CP0001003505     | GB_AC         | ACTIVE           | ACC           | OPEN            | 520791              |
       | C1400   | CP0001003505     | GB_AC         | ACTIVE           | ACC           | INITIAL         | 520791              |
-      | C1392   | CP0000863460     | GB_AC         | ACTIVE           | ACC           | CLOSED           | 520181             |
+      | C1392   | CP0000863460     | GB_AC         | ACTIVE           | ACC           | CLOSED          | 520181             |
