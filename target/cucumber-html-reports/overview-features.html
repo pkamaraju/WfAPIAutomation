@@ -51,9 +51,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                330,
-                7,
-                51,
+                477,
+                15,
+                92,
                 0,
                 0
             ],
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 388) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 584) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                23,
-                7
+                29,
+                15
             ],
             backgroundColor: [
                 "#00B000",
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 30) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 44) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -157,8 +157,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   10,
-                   4
+                   8,
+                   9
                ],
                backgroundColor: [
                 "#00B000",
@@ -191,7 +191,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 14) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 17) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -232,7 +232,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>demo</td>
-            <td>17 Sep 2021, 06:07</td>
+            <td>21 Feb 2022, 09:55</td>
     </tr>
   </tbody>
 </table>
@@ -340,59 +340,59 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="1197022700">1s 197ms</td>
+        <td class="duration" data-value="1770364702">1s 770ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
         <td class="tagname"><a href="report-feature_wf-systemAPI-getCertificatePolicy_acc-feature_1.html">wf/systemAPI/getCertificatePolicy_acc.feature</a></td>
         
-        <td      class="passed"    >30</td>
-        <td >0</td>
+        <td      class="passed"    >29</td>
+        <td      class="failed"    >1</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td class="total">30</td>
 
-        <td  class="passed"    >2</td>
-        <td >0</td>
+        <td  class="passed"    >1</td>
+        <td  class="failed"    >1</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="1543760900">1s 543ms</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="5029128600">5s 029ms</td>
+        <td class="failed">Failed</td>
       </tr>
           <tr>
         <td class="tagname"><a href="report-feature_wf-systemAPI-getCertificatePolicy_basic-feature_2.html">wf/systemAPI/getCertificatePolicy_basic.feature</a></td>
         
-        <td      class="passed"    >61</td>
-        <td      class="failed"    >4</td>
-        <td     class="skipped"   >40</td>
+        <td      class="passed"    >55</td>
+        <td      class="failed"    >5</td>
+        <td     class="skipped"   >45</td>
         <td >0</td>
         <td >0</td>
         <td class="total">105</td>
 
-        <td  class="passed"    >3</td>
-        <td  class="failed"    >4</td>
+        <td  class="passed"    >2</td>
+        <td  class="failed"    >5</td>
         <td class="total">7</td>
 
-        <td class="duration" data-value="1880789200">1s 880ms</td>
+        <td class="duration" data-value="3313558913">3s 313ms</td>
         <td class="failed">Failed</td>
       </tr>
           <tr>
         <td class="tagname"><a href="report-feature_wf-systemAPI-getCertificatePolicy_hi-feature_3.html">wf/systemAPI/getCertificatePolicy_hi.feature</a></td>
         
-        <td      class="passed"    >45</td>
-        <td >0</td>
-        <td >0</td>
+        <td      class="passed"    >12</td>
+        <td      class="failed"    >3</td>
+        <td     class="skipped"   >30</td>
         <td >0</td>
         <td >0</td>
         <td class="total">45</td>
 
-        <td  class="passed"    >3</td>
         <td >0</td>
+        <td  class="failed"    >3</td>
         <td class="total">3</td>
 
-        <td class="duration" data-value="1657207700">1s 657ms</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="397236302">397ms</td>
+        <td class="failed">Failed</td>
       </tr>
           <tr>
         <td class="tagname"><a href="report-feature_wf-systemAPI-getCertifyPolicy_std-feature_4.html">wf/systemAPI/getCertifyPolicy_std.feature</a></td>
@@ -408,28 +408,79 @@ $(document).ready(function() {
         <td  class="failed"    >1</td>
         <td class="total">3</td>
 
-        <td class="duration" data-value="987421900">987ms</td>
+        <td class="duration" data-value="2313596402">2s 313ms</td>
         <td class="failed">Failed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_wf-systemAPI-getClaim-feature_5.html">wf/systemAPI/getClaim.feature</a></td>
+        <td class="tagname"><a href="report-feature_wf-systemAPI-getClaim_acc-feature_5.html">wf/systemAPI/getClaim_acc.feature</a></td>
         
-        <td      class="passed"    >18</td>
+        <td      class="passed"    >70</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">70</td>
+
+        <td  class="passed"    >5</td>
+        <td >0</td>
+        <td class="total">5</td>
+
+        <td class="duration" data-value="2028038202">2s 028ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_wf-systemAPI-getClaim_basic-feature_6.html">wf/systemAPI/getClaim_basic.feature</a></td>
+        
+        <td      class="passed"    >60</td>
         <td      class="failed"    >1</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">19</td>
+        <td class="total">61</td>
 
-        <td  class="passed"    >1</td>
+        <td  class="passed"    >4</td>
         <td  class="failed"    >1</td>
-        <td class="total">2</td>
+        <td class="total">5</td>
 
-        <td class="duration" data-value="197018600">197ms</td>
+        <td class="duration" data-value="793771705">793ms</td>
         <td class="failed">Failed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_wf-systemAPI-getCustomerNumber-feature_6.html">wf/systemAPI/getCustomerNumber.feature</a></td>
+        <td class="tagname"><a href="report-feature_wf-systemAPI-getClaim_hi-feature_7.html">wf/systemAPI/getClaim_hi.feature</a></td>
+        
+        <td      class="passed"    >42</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">42</td>
+
+        <td  class="passed"    >3</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td class="duration" data-value="473840498">473ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_wf-systemAPI-getClaim_std-feature_8.html">wf/systemAPI/getClaim_std.feature</a></td>
+        
+        <td      class="passed"    >42</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">42</td>
+
+        <td  class="passed"    >3</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td class="duration" data-value="465423496">465ms</td>
+        <td class="passed">Passed</td>
+      </tr>
+          <tr>
+        <td class="tagname"><a href="report-feature_wf-systemAPI-getCustomerNumber-feature_9.html">wf/systemAPI/getCustomerNumber.feature</a></td>
         
         <td      class="passed"    >22</td>
         <td >0</td>
@@ -442,11 +493,11 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="275846900">275ms</td>
+        <td class="duration" data-value="467884598">467ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_wf-systemAPI-getMasterCertificatePolicy_acc-feature_7.html">wf/systemAPI/getMasterCertificatePolicy_acc.feature</a></td>
+        <td class="tagname"><a href="report-feature_wf-systemAPI-getMasterCertificatePolicy_acc-feature_10.html">wf/systemAPI/getMasterCertificatePolicy_acc.feature</a></td>
         
         <td      class="passed"    >9</td>
         <td      class="failed"    >1</td>
@@ -459,62 +510,62 @@ $(document).ready(function() {
         <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="127657000">127ms</td>
+        <td class="duration" data-value="320590198">320ms</td>
         <td class="failed">Failed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_wf-systemAPI-getMasterCertificatePolicy_basic-feature_8.html">wf/systemAPI/getMasterCertificatePolicy_basic.feature</a></td>
+        <td class="tagname"><a href="report-feature_wf-systemAPI-getMasterCertificatePolicy_basic-feature_11.html">wf/systemAPI/getMasterCertificatePolicy_basic.feature</a></td>
         
-        <td      class="passed"    >12</td>
-        <td >0</td>
-        <td >0</td>
+        <td      class="passed"    >9</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >2</td>
         <td >0</td>
         <td >0</td>
         <td class="total">12</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="123292400">123ms</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="140479202">140ms</td>
+        <td class="failed">Failed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_wf-systemAPI-getMasterCertificatePolicy_hi-feature_9.html">wf/systemAPI/getMasterCertificatePolicy_hi.feature</a></td>
+        <td class="tagname"><a href="report-feature_wf-systemAPI-getMasterCertificatePolicy_hi-feature_12.html">wf/systemAPI/getMasterCertificatePolicy_hi.feature</a></td>
         
-        <td      class="passed"    >12</td>
-        <td >0</td>
-        <td >0</td>
+        <td      class="passed"    >9</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >2</td>
         <td >0</td>
         <td >0</td>
         <td class="total">12</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="109156900">109ms</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="141987699">141ms</td>
+        <td class="failed">Failed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_wf-systemAPI-getMasterCertificatePolicy_std-feature_10.html">wf/systemAPI/getMasterCertificatePolicy_std.feature</a></td>
+        <td class="tagname"><a href="report-feature_wf-systemAPI-getMasterCertificatePolicy_std-feature_13.html">wf/systemAPI/getMasterCertificatePolicy_std.feature</a></td>
         
-        <td      class="passed"    >12</td>
-        <td >0</td>
-        <td >0</td>
+        <td      class="passed"    >9</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >2</td>
         <td >0</td>
         <td >0</td>
         <td class="total">12</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="119309900">119ms</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="149095500">149ms</td>
+        <td class="failed">Failed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_wf-systemAPI-getMasterPolicy_acc-feature_11.html">wf/systemAPI/getMasterPolicy_acc.feature</a></td>
+        <td class="tagname"><a href="report-feature_wf-systemAPI-getMasterPolicy_acc-feature_14.html">wf/systemAPI/getMasterPolicy_acc.feature</a></td>
         
         <td      class="passed"    >44</td>
         <td >0</td>
@@ -527,11 +578,11 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">4</td>
 
-        <td class="duration" data-value="1940945700">1s 940ms</td>
+        <td class="duration" data-value="2438489103">2s 438ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_wf-systemAPI-getMasterPolicy_hi-feature_12.html">wf/systemAPI/getMasterPolicy_hi.feature</a></td>
+        <td class="tagname"><a href="report-feature_wf-systemAPI-getMasterPolicy_hi-feature_15.html">wf/systemAPI/getMasterPolicy_hi.feature</a></td>
         
         <td      class="passed"    >11</td>
         <td >0</td>
@@ -544,11 +595,11 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="464670600">464ms</td>
+        <td class="duration" data-value="558408396">558ms</td>
         <td class="passed">Passed</td>
       </tr>
           <tr>
-        <td class="tagname"><a href="report-feature_wf-systemAPI-getMasterPolicy_std-feature_13.html">wf/systemAPI/getMasterPolicy_std.feature</a></td>
+        <td class="tagname"><a href="report-feature_wf-systemAPI-getMasterPolicy_std-feature_16.html">wf/systemAPI/getMasterPolicy_std.feature</a></td>
         
         <td      class="passed"    >11</td>
         <td >0</td>
@@ -561,41 +612,41 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="429319000">429ms</td>
+        <td class="duration" data-value="558803401">558ms</td>
         <td class="passed">Passed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
-      <td>14</td>
-            <td>330</td>
-      <td>7</td>
-      <td>51</td>
+      <td>17</td>
+            <td>477</td>
+      <td>15</td>
+      <td>92</td>
       <td>0</td>
       <td>0</td>
-      <td>388</td>
+      <td>584</td>
 
-      <td>23</td>
-      <td>7</td>
-      <td>30</td>
+      <td>29</td>
+      <td>15</td>
+      <td>44</td>
 
-      <td class="duration">11s 053ms</td>
+      <td class="duration">21s 360ms</td>
       <td></td>
     </tr>
     <tr>
       <td></td>
-            <td>85.05%</td>
-      <td>1.80%</td>
-      <td>13.14%</td>
+            <td>81.68%</td>
+      <td>2.57%</td>
+      <td>15.75%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>76.67%</td>
-      <td>23.33%</td>
+      <td>65.91%</td>
+      <td>34.09%</td>
       <td></td>
       <td></td>
-      <td>71.43%</td>
+      <td>47.06%</td>
     </tr>
   </tfoot>
 </table>
